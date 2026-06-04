@@ -15,6 +15,8 @@ python .\scripts\update_reading.py --questions 20 --correct 16 --minutes 35
 powershell -ExecutionPolicy Bypass -File .\scripts\install_daily_update.ps1
 ```
 
+安装器还会在登录 Windows 时恢复上次 Chrome 会话，并额外打开公开学习监督台。
+
 课程播放器在本地服务器运行时，会将浏览器中的观看进度同步到 `data/course_progress.json`。
 
 ## TCF 阅读自动同步
