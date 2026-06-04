@@ -43,7 +43,12 @@
       border-radius: 8px;
       background: color-mix(in srgb, var(--panel) 92%, transparent);
     }
-    .hero { grid-column: 1 / -1; display: grid; grid-template-columns: 1.2fr .8fr; align-items: end; gap: 20px; }
+    .hero { grid-column: 1 / -1; }
+    .goalGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .goal { padding: 16px; border: 1px solid var(--line); background: rgba(3, 15, 11, .42); border-radius: 5px; }
+    .goalTop { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+    .goalTop span { color: var(--muted); font-size: 12px; }
+    .goalValue { margin-top: 18px; font-size: 31px; line-height: 1; font-weight: 800; font-variant-numeric: tabular-nums; }
     .heroValue, .big { font-variant-numeric: tabular-nums; font-weight: 800; }
     .heroValue { margin-top: 14px; font-size: clamp(48px, 12vw, 100px); line-height: .85; color: var(--green); }
     .big { margin-top: 18px; font-size: 36px; }
@@ -70,7 +75,7 @@
       header { align-items: start; }
       .grid { grid-template-columns: 1fr; }
       .hero, .wide { grid-column: auto; }
-      .hero { grid-template-columns: 1fr; }
+      .goalGrid { grid-template-columns: 1fr; }
       .date { font-size: 12px; }
       .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
       .stat b { font-size: 17px; }
@@ -105,8 +110,24 @@
       document.querySelector("#updated").textContent = `更新于 ${new Date(data.updatedAt).toLocaleString("zh-CN")}`;
       document.querySelector("#dashboard").innerHTML = `
         <article class="card hero">
-          <div><p class="muted">今日目标完成度</p><div class="heroValue">${pct(data.today.score)}</div>${bar(data.today.score)}</div>
-          <div>${stats([[n(data.today.focusMinutes), "专注分钟"], [n(a.today.reviews), "Anki 复习"], [n(r.today.questions), "阅读题目"]])}</div>
+          <div class="sectionHead"><h2>今日三个目标</h2><span class="muted">${n(data.today.focusMinutes)} 分钟已记录</span></div>
+          <div class="goalGrid">
+            <div class="goal">
+              <div class="goalTop"><h2>阅读单项</h2><span>每日 1 Test</span></div>
+              <div class="goalValue">${n(r.today.questions)} / 39 <span class="unit">题</span></div>
+              ${bar(r.today.goalPercent)}
+            </div>
+            <div class="goal">
+              <div class="goalTop"><h2>Anki 新词</h2><span>每日 20 个</span></div>
+              <div class="goalValue">${n(a.today.new)} / 20 <span class="unit">新卡</span></div>
+              ${bar(Math.min(100, a.today.new / 20 * 100))}
+            </div>
+            <div class="goal">
+              <div class="goalTop"><h2>课程观看</h2><span>每日 60 分钟</span></div>
+              <div class="goalValue">${n(c.today.minutes, 1)} / 60 <span class="unit">分钟</span></div>
+              ${bar(c.today.goalPercent)}
+            </div>
+          </div>
         </article>
         <article class="card">
           <div class="sectionHead"><h2>Anki</h2><span class="streak">${n(a.streak)} 天连续</span></div>

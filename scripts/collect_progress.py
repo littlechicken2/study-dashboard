@@ -11,6 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 COURSE_PROGRESS = DATA / "course_progress.json"
+COURSE_HISTORY = DATA / "course_history.json"
 READING_LOG = DATA / "reading_log.json"
 READING_PROGRESS = DATA / "reading_progress.json"
 OUTPUT = DATA / "progress.json"
@@ -85,6 +86,18 @@ def collect_anki(days=30):
 def collect_course():
     synced = read_json(COURSE_PROGRESS, {})
     if synced.get("courses"):
+        for course in synced["courses"]:
+            course["label"] = COURSE_LABELS.get(course.get("id"), course.get("label", "Course"))
+        history = read_json(COURSE_HISTORY, {"entries": []})
+        today = datetime.now().date().isoformat()
+        row = next((x for x in history.get("entries", []) if x.get("date") == today), {})
+        watched_today = max(0, float(row.get("dailySeconds", 0) or 0))
+        minutes = round(watched_today / 60, 1)
+        synced["today"] = {
+            "minutes": minutes,
+            "goalMinutes": 60,
+            "goalPercent": round(min(1, minutes / 60) * 100, 2),
+        }
         return synced
     durations = read_json(COURSE_DURATIONS, {})
     totals = defaultdict(float)
@@ -105,6 +118,7 @@ def collect_course():
         "lastLesson": None,
         "courses": courses,
         "total": {"watchedSeconds": 0, "durationSeconds": round(sum(totals.values()), 2), "percent": 0},
+        "today": {"minutes": 0, "goalMinutes": 60, "goalPercent": 0},
     }
 
 
@@ -156,15 +170,9 @@ def main():
     course = collect_course()
     reading = collect_reading(args.days)
     focus = round(anki["today"]["minutes"] + reading["today"]["minutes"])
-    score = min(100, round(
-        min(1, anki["today"]["reviews"] / 100) * 45
-        + min(1, reading["today"]["questions"] / 20) * 35
-        + min(1, focus / 90) * 20,
-        2,
-    ))
     payload = {
         "updatedAt": datetime.now().astimezone().isoformat(timespec="seconds"),
-        "today": {"date": datetime.now().date().isoformat(), "score": score, "focusMinutes": focus},
+        "today": {"date": datetime.now().date().isoformat(), "focusMinutes": focus},
         "anki": anki,
         "course": course,
         "reading": reading,

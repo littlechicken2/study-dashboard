@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-04T05:20:33.383Z",
+  "updatedAt": "2026-06-04T05:42:05.194Z",
   "lastLesson": {
     "id": "a1/3_1.mp4",
     "title": "Ça va ? 与 aller / avoir",
@@ -10,42 +10,42 @@
     {
       "id": "phonetics",
       "label": "语音入门",
-      "watchedSeconds": 0,
+      "watchedSeconds": 0.0,
       "durationSeconds": 19072.65,
-      "percent": 0
+      "percent": 0.0
     },
     {
       "id": "a1",
       "label": "A1",
-      "watchedSeconds": 0,
+      "watchedSeconds": 0.0,
       "durationSeconds": 79062.89,
-      "percent": 0
+      "percent": 0.0
     },
     {
       "id": "a2",
       "label": "A2",
-      "watchedSeconds": 0,
+      "watchedSeconds": 0.0,
       "durationSeconds": 93834.33,
-      "percent": 0
+      "percent": 0.0
     },
     {
       "id": "b1",
       "label": "B1",
-      "watchedSeconds": 0,
+      "watchedSeconds": 0.0,
       "durationSeconds": 63339.68,
-      "percent": 0
+      "percent": 0.0
     },
     {
       "id": "b2",
       "label": "B2",
-      "watchedSeconds": 0,
+      "watchedSeconds": 0.0,
       "durationSeconds": 232009.4,
-      "percent": 0
+      "percent": 0.0
     }
   ],
   "total": {
-    "watchedSeconds": 0,
+    "watchedSeconds": 0.0,
     "durationSeconds": 487318.95,
-    "percent": 0
+    "percent": 0.0
   }
 }
