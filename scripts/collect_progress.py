@@ -83,7 +83,7 @@ def collect_anki(days=30):
     return result
 
 
-def collect_course():
+def collect_course(days=365):
     synced = read_json(COURSE_PROGRESS, {})
     if synced.get("courses"):
         for course in synced["courses"]:
@@ -101,6 +101,18 @@ def collect_course():
             "goalMinutes": 60,
             "goalPercent": round(min(1, minutes / 60) * 100, 2),
         }
+        start = datetime.now().date() - timedelta(days=days - 1)
+        daily = {x.get("date"): x for x in history.get("entries", [])}
+        synced["history"] = []
+        for offset in range(days):
+            key = (start + timedelta(days=offset)).isoformat()
+            item = daily.get(key, {})
+            minutes = round(max(0, float(item.get("dailySeconds", 0) or 0)) / 60, 1)
+            synced["history"].append({
+                "date": key,
+                "minutes": minutes,
+                "goalPercent": round(min(1, minutes / 60) * 100, 2),
+            })
         return synced
     durations = read_json(COURSE_DURATIONS, {})
     totals = defaultdict(float)
@@ -167,10 +179,10 @@ def collect_reading(days=30):
 
 def main():
     parser = argparse.ArgumentParser(description="Collect local study stats for the public dashboard.")
-    parser.add_argument("--days", type=int, default=30)
+    parser.add_argument("--days", type=int, default=365)
     args = parser.parse_args()
     anki = collect_anki(args.days)
-    course = collect_course()
+    course = collect_course(args.days)
     reading = collect_reading(args.days)
     focus = round(anki["today"]["minutes"] + reading["today"]["minutes"])
     payload = {

@@ -16,6 +16,10 @@
       --cyan: #62d9de;
       --yellow: #f5ce69;
       --red: #ff8e7f;
+      --ms-blue: #00a4ef;
+      --ms-green: #7fba00;
+      --ms-yellow: #ffb900;
+      --ms-red: #f25022;
     }
     * { box-sizing: border-box; }
     body {
@@ -72,6 +76,51 @@
     .courseRow strong, .courseRow span { font-variant-numeric: tabular-nums; }
     .courseRow span { text-align: right; color: var(--muted); }
     .streak { color: var(--yellow); }
+    .calendarCard { grid-column: 1 / -1; overflow: hidden; }
+    .calendarLegend { display: flex; flex-wrap: wrap; gap: 14px; color: var(--muted); font-size: 12px; }
+    .calendarLegend span { display: inline-flex; align-items: center; gap: 5px; }
+    .legendDot { width: 9px; height: 9px; border-radius: 2px; }
+    .yearCalendarWrap { margin-top: 18px; overflow-x: auto; padding-bottom: 6px; }
+    .yearCalendar {
+      display: grid;
+      grid-template-rows: repeat(7, 13px);
+      grid-auto-flow: column;
+      grid-auto-columns: 13px;
+      gap: 4px;
+      min-width: max-content;
+    }
+    .calendarDay {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 1px;
+      width: 13px;
+      height: 13px;
+      padding: 1px;
+      border: 1px solid #284238;
+      border-radius: 2px;
+      background: #0a1713;
+      position: relative;
+    }
+    .calendarDay i { display: block; background: #1a2b25; }
+    .calendarDay .reading.done { background: var(--ms-blue); }
+    .calendarDay .anki.done { background: var(--ms-green); }
+    .calendarDay .course.done { background: var(--ms-yellow); }
+    .calendarDay .all.done { background: var(--ms-red); }
+    .calendarDay:hover::after {
+      content: attr(data-tip);
+      position: absolute;
+      bottom: calc(100% + 6px);
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 6px 8px;
+      white-space: nowrap;
+      background: #000;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 11px;
+      z-index: 5;
+    }
     footer { margin-top: 22px; color: var(--muted); font-size: 12px; }
     @media (max-width: 760px) {
       main { padding-top: 26px; }
@@ -108,6 +157,27 @@
       const max = Math.max(1, ...recent.map(x => x.value || 0));
       return `<div class="history">${recent.map(x => `<i class="day" style="--height:${Math.max(3, (x.value || 0) / max * 100)}%" data-tip="${x.date}: ${n(x.value)}"></i>`).join("")}</div>`;
     };
+    const yearCalendar = (ankiRows, readingRows, courseRows) => {
+      const byDate = rows => new Map((rows || []).map(x => [x.date, x]));
+      const anki = byDate(ankiRows), reading = byDate(readingRows), course = byDate(courseRows);
+      const end = new Date();
+      end.setHours(0, 0, 0, 0);
+      const start = new Date(end);
+      start.setDate(start.getDate() - 364 - start.getDay());
+      const cells = [];
+      for (const day = new Date(start); day <= end; day.setDate(day.getDate() + 1)) {
+        const date = day.toLocaleDateString("en-CA");
+        const r = (reading.get(date)?.goalPercent || 0) >= 100;
+        const a = (anki.get(date)?.new || 0) >= 20;
+        const c = (course.get(date)?.minutes || 0) >= 60;
+        const all = r && a && c;
+        cells.push(`<span class="calendarDay" data-tip="${date} · 阅读${r ? "完成" : "未完成"} · Anki${a ? "完成" : "未完成"} · 课程${c ? "完成" : "未完成"}">
+          <i class="reading ${r ? "done" : ""}"></i><i class="anki ${a ? "done" : ""}"></i>
+          <i class="course ${c ? "done" : ""}"></i><i class="all ${all ? "done" : ""}"></i>
+        </span>`);
+      }
+      return `<div class="yearCalendarWrap"><div class="yearCalendar">${cells.join("")}</div></div>`;
+    };
     async function load() {
       const data = await fetch(`data/progress.json?t=${Date.now()}`).then(r => r.json());
       const a = data.anki, c = data.course, r = data.reading;
@@ -138,6 +208,18 @@
               ${bar(c.today.goalPercent)}
             </div>
           </div>
+        </article>
+        <article class="card calendarCard">
+          <div class="sectionHead">
+            <h2>年度学习日历</h2>
+            <div class="calendarLegend">
+              <span><i class="legendDot" style="background:var(--ms-blue)"></i>阅读</span>
+              <span><i class="legendDot" style="background:var(--ms-green)"></i>Anki</span>
+              <span><i class="legendDot" style="background:var(--ms-yellow)"></i>课程</span>
+              <span><i class="legendDot" style="background:var(--ms-red)"></i>三项完成</span>
+            </div>
+          </div>
+          ${yearCalendar(a.history, r.history, c.history)}
         </article>
         <article class="card">
           <div class="sectionHead"><h2>Anki</h2><span class="streak">${n(a.streak)} 天连续</span></div>

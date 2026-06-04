@@ -1,21 +1,2031 @@
 {
-  "updatedAt": "2026-06-04T14:39:42-04:00",
+  "updatedAt": "2026-06-04T15:10:16-04:00",
   "today": {
     "date": "2026-06-04",
-    "focusMinutes": 52
+    "focusMinutes": 66
   },
   "anki": {
     "today": {
-      "reviews": 207,
-      "new": 43,
-      "minutes": 27.2
+      "reviews": 280,
+      "new": 78,
+      "minutes": 41.1
     },
     "total": {
       "cards": 35974,
-      "mature": 96
+      "mature": 97
     },
     "streak": 2,
     "history": [
+      {
+        "date": "2025-06-05",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-06",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-07",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-08",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-09",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-10",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-11",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-12",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-13",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-14",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-15",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-16",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-17",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-18",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-19",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-20",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-21",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-22",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-23",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-24",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-25",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-26",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-27",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-28",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-29",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-06-30",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-01",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-02",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-03",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-04",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-05",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-06",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-07",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-08",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-09",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-10",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-11",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-12",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-13",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-14",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-15",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-16",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-17",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-18",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-19",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-20",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-21",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-22",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-23",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-24",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-25",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-26",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-27",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-28",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-29",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-30",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-07-31",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-01",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-02",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-03",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-04",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-05",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-06",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-07",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-08",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-09",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-10",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-11",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-12",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-13",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-14",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-15",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-16",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-17",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-18",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-19",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-20",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-21",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-22",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-23",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-24",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-25",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-26",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-27",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-28",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-29",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-30",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-08-31",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-01",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-02",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-03",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-04",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-05",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-06",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-07",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-08",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-09",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-10",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-11",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-12",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-13",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-14",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-15",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-16",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-17",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-18",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-19",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-20",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-21",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-22",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-23",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-24",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-25",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-26",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-27",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-28",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-29",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-09-30",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-01",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-02",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-03",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-04",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-05",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-06",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-07",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-08",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-09",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-10",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-11",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-12",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-13",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-14",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-15",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-16",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-17",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-18",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-19",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-20",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-21",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-22",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-23",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-24",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-25",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-26",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-27",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-28",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-29",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-30",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-10-31",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-01",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-02",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-03",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-04",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-05",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-06",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-07",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-08",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-09",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-10",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-11",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-12",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-13",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-14",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-15",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-16",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-17",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-18",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-19",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-20",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-21",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-22",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-23",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-24",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-25",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-26",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-27",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-28",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-29",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-11-30",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-01",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-02",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-03",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-04",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-05",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-06",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-07",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-08",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-09",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-10",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-11",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-12",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-13",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-14",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-15",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-16",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-17",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-18",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-19",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-20",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-21",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-22",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-23",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-24",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-25",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-26",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-27",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-28",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-29",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-30",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2025-12-31",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-01",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-02",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-03",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-04",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-05",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-06",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-07",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-08",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-09",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-10",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-11",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-12",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-13",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-14",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-15",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-16",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-17",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-18",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-19",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-20",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-21",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-22",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-23",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-24",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-25",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-26",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-27",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-28",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-29",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-30",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-01-31",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-01",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-02",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-03",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-04",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-05",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-06",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-07",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-08",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-09",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-10",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-11",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-12",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-13",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-14",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-15",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-16",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-17",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-18",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-19",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-20",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-21",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-22",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-23",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-24",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-25",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-26",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-27",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-02-28",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-01",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-02",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-03",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-04",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-05",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-06",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-07",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-08",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-09",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-10",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-11",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-12",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-13",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-14",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-15",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-16",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-17",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-18",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-19",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-20",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-21",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-22",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-23",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-24",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-25",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-26",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-27",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-28",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-29",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-30",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-03-31",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-01",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-02",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-03",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-04",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-05",
+        "reviews": 29,
+        "new": 163,
+        "minutes": 3.0
+      },
+      {
+        "date": "2026-04-06",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-07",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-08",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-09",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-10",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-11",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-12",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-13",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-14",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-15",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-16",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-17",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-18",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-19",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-20",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-21",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-22",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-23",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-24",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-25",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-26",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-27",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-28",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-29",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-04-30",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-05-01",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-05-02",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-05-03",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
+      },
+      {
+        "date": "2026-05-04",
+        "reviews": 206,
+        "new": 302,
+        "minutes": 37.4
+      },
+      {
+        "date": "2026-05-05",
+        "reviews": 21,
+        "new": 21,
+        "minutes": 2.0
+      },
       {
         "date": "2026-05-06",
         "reviews": 135,
@@ -25,7 +2035,7 @@
       {
         "date": "2026-05-07",
         "reviews": 142,
-        "new": 211,
+        "new": 214,
         "minutes": 28.4
       },
       {
@@ -49,7 +2059,7 @@
       {
         "date": "2026-05-11",
         "reviews": 216,
-        "new": 143,
+        "new": 148,
         "minutes": 29.1
       },
       {
@@ -163,13 +2173,13 @@
       {
         "date": "2026-05-30",
         "reviews": 86,
-        "new": 66,
+        "new": 80,
         "minutes": 11.2
       },
       {
         "date": "2026-05-31",
         "reviews": 75,
-        "new": 54,
+        "new": 69,
         "minutes": 15.3
       },
       {
@@ -192,9 +2202,9 @@
       },
       {
         "date": "2026-06-04",
-        "reviews": 207,
-        "new": 43,
-        "minutes": 27.2
+        "reviews": 280,
+        "new": 78,
+        "minutes": 41.1
       }
     ]
   },
@@ -249,30 +2259,5207 @@
       "percent": 7.8
     },
     "today": {
-      "minutes": 315.6,
+      "minutes": 0.0,
       "goalMinutes": 60,
-      "goalPercent": 100
-    }
+      "goalPercent": 0.0
+    },
+    "history": [
+      {
+        "date": "2025-06-05",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-06",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-07",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-08",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-09",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-10",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-11",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-12",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-13",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-14",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-15",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-16",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-17",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-18",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-19",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-20",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-21",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-22",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-23",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-24",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-25",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-26",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-27",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-28",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-29",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-30",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-01",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-02",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-03",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-04",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-05",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-06",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-07",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-08",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-09",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-10",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-11",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-12",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-13",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-14",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-15",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-16",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-17",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-18",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-19",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-20",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-21",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-22",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-23",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-24",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-25",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-26",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-27",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-28",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-29",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-30",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-31",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-01",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-02",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-03",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-04",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-05",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-06",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-07",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-08",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-09",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-10",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-11",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-12",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-13",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-14",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-15",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-16",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-17",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-18",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-19",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-20",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-21",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-22",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-23",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-24",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-25",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-26",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-27",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-28",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-29",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-30",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-31",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-01",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-02",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-03",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-04",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-05",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-06",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-07",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-08",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-09",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-10",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-11",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-12",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-13",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-14",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-15",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-16",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-17",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-18",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-19",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-20",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-21",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-22",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-23",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-24",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-25",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-26",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-27",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-28",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-29",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-30",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-01",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-02",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-03",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-04",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-05",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-06",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-07",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-08",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-09",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-10",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-11",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-12",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-13",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-14",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-15",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-16",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-17",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-18",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-19",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-20",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-21",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-22",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-23",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-24",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-25",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-26",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-27",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-28",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-29",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-30",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-31",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-01",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-02",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-03",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-04",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-05",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-06",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-07",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-08",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-09",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-10",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-11",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-12",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-13",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-14",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-15",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-16",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-17",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-18",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-19",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-20",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-21",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-22",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-23",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-24",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-25",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-26",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-27",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-28",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-29",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-30",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-01",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-02",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-03",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-04",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-05",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-06",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-07",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-08",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-09",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-10",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-11",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-12",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-13",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-14",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-15",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-16",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-17",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-18",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-19",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-20",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-21",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-22",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-23",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-24",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-25",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-26",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-27",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-28",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-29",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-30",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-31",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-01",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-02",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-03",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-04",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-05",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-06",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-07",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-08",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-09",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-10",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-11",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-12",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-13",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-14",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-15",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-16",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-17",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-18",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-19",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-20",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-21",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-22",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-23",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-24",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-25",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-26",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-27",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-28",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-29",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-30",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-31",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-01",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-02",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-03",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-04",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-05",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-06",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-07",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-08",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-09",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-10",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-11",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-12",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-13",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-14",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-15",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-16",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-17",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-18",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-19",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-20",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-21",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-22",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-23",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-24",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-25",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-26",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-27",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-28",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-01",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-02",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-03",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-04",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-05",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-06",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-07",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-08",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-09",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-10",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-11",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-12",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-13",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-14",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-15",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-16",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-17",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-18",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-19",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-20",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-21",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-22",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-23",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-24",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-25",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-26",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-27",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-28",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-29",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-30",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-31",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-01",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-02",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-03",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-04",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-05",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-06",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-07",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-08",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-09",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-10",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-11",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-12",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-13",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-14",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-15",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-16",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-17",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-18",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-19",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-20",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-21",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-22",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-23",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-24",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-25",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-26",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-27",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-28",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-29",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-30",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-01",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-02",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-03",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-04",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-05",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-06",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-07",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-08",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-09",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-10",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-11",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-12",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-13",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-14",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-15",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-16",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-17",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-18",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-19",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-20",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-21",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-22",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-23",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-24",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-25",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-26",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-27",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-28",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-29",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-30",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-31",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-06-01",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-06-02",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-06-03",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-06-04",
+        "minutes": 0.0,
+        "goalPercent": 0.0
+      }
+    ]
   },
   "reading": {
     "today": {
       "date": "2026-06-04",
-      "sets": 0.2564102564102564,
-      "questions": 10,
-      "correct": 9,
+      "sets": 0.28205128205128205,
+      "questions": 11,
+      "correct": 10,
       "minutes": 25.2,
       "tests": [
         {
           "test": "test01",
-          "answered": 10,
-          "correct": 9,
+          "answered": 11,
+          "correct": 10,
           "total": 39
         }
       ],
-      "accuracy": 90.0,
-      "goalPercent": 25.64
+      "accuracy": 90.91,
+      "goalPercent": 28.21
     },
     "history": [
+      {
+        "date": "2025-06-05",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-06",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-07",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-08",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-09",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-10",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-11",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-12",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-13",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-14",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-15",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-16",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-17",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-18",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-19",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-20",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-21",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-22",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-23",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-24",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-25",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-26",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-27",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-28",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-29",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-06-30",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-01",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-02",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-03",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-04",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-05",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-06",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-07",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-08",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-09",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-10",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-11",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-12",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-13",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-14",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-15",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-16",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-17",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-18",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-19",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-20",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-21",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-22",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-23",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-24",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-25",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-26",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-27",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-28",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-29",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-30",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-07-31",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-01",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-02",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-03",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-04",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-05",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-06",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-07",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-08",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-09",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-10",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-11",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-12",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-13",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-14",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-15",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-16",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-17",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-18",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-19",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-20",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-21",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-22",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-23",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-24",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-25",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-26",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-27",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-28",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-29",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-30",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-08-31",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-01",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-02",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-03",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-04",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-05",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-06",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-07",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-08",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-09",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-10",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-11",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-12",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-13",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-14",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-15",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-16",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-17",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-18",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-19",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-20",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-21",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-22",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-23",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-24",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-25",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-26",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-27",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-28",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-29",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-09-30",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-01",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-02",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-03",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-04",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-05",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-06",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-07",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-08",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-09",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-10",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-11",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-12",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-13",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-14",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-15",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-16",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-17",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-18",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-19",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-20",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-21",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-22",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-23",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-24",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-25",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-26",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-27",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-28",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-29",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-30",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-10-31",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-01",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-02",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-03",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-04",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-05",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-06",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-07",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-08",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-09",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-10",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-11",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-12",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-13",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-14",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-15",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-16",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-17",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-18",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-19",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-20",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-21",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-22",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-23",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-24",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-25",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-26",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-27",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-28",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-29",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-11-30",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-01",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-02",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-03",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-04",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-05",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-06",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-07",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-08",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-09",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-10",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-11",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-12",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-13",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-14",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-15",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-16",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-17",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-18",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-19",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-20",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-21",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-22",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-23",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-24",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-25",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-26",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-27",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-28",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-29",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-30",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2025-12-31",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-01",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-02",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-03",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-04",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-05",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-06",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-07",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-08",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-09",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-10",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-11",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-12",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-13",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-14",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-15",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-16",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-17",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-18",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-19",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-20",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-21",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-22",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-23",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-24",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-25",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-26",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-27",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-28",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-29",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-30",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-01-31",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-01",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-02",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-03",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-04",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-05",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-06",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-07",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-08",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-09",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-10",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-11",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-12",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-13",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-14",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-15",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-16",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-17",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-18",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-19",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-20",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-21",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-22",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-23",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-24",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-25",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-26",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-27",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-02-28",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-01",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-02",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-03",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-04",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-05",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-06",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-07",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-08",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-09",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-10",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-11",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-12",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-13",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-14",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-15",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-16",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-17",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-18",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-19",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-20",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-21",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-22",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-23",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-24",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-25",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-26",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-27",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-28",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-29",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-30",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-03-31",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-01",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-02",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-03",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-04",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-05",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-06",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-07",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-08",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-09",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-10",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-11",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-12",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-13",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-14",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-15",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-16",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-17",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-18",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-19",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-20",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-21",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-22",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-23",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-24",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-25",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-26",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-27",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-28",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-29",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-04-30",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-01",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-02",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-03",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-04",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-05-05",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
       {
         "date": "2026-05-06",
         "sets": 0,
@@ -565,20 +7752,20 @@
       },
       {
         "date": "2026-06-04",
-        "sets": 0.2564102564102564,
-        "questions": 10,
-        "correct": 9,
+        "sets": 0.28205128205128205,
+        "questions": 11,
+        "correct": 10,
         "minutes": 25.2,
         "tests": [
           {
             "test": "test01",
-            "answered": 10,
-            "correct": 9,
+            "answered": 11,
+            "correct": 10,
             "total": 39
           }
         ],
-        "accuracy": 90.0,
-        "goalPercent": 25.64
+        "accuracy": 90.91,
+        "goalPercent": 28.21
       }
     ]
   }
