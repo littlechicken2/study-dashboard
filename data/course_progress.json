@@ -10,9 +10,9 @@
     {
       "id": "phonetics",
       "label": "语音入门",
-      "watchedSeconds": 0.0,
+      "watchedSeconds": 19072.65,
       "durationSeconds": 19072.65,
-      "percent": 0.0
+      "percent": 100.0
     },
     {
       "id": "a1",
@@ -44,8 +44,8 @@
     }
   ],
   "total": {
-    "watchedSeconds": 0.0,
+    "watchedSeconds": 19072.65,
     "durationSeconds": 487318.95,
-    "percent": 0.0
+    "percent": 3.91
   }
 }

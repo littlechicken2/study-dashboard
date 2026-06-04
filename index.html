@@ -45,6 +45,9 @@
     }
     .hero { grid-column: 1 / -1; }
     .goalGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .dailyOverview { display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: end; margin-bottom: 22px; }
+    .dailyOverview .heroValue { min-width: 230px; }
+    .dailyOverviewText { padding-bottom: 5px; }
     .goal { padding: 16px; border: 1px solid var(--line); background: rgba(3, 15, 11, .42); border-radius: 5px; }
     .goalTop { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
     .goalTop span { color: var(--muted); font-size: 12px; }
@@ -76,6 +79,7 @@
       .grid { grid-template-columns: 1fr; }
       .hero, .wide { grid-column: auto; }
       .goalGrid { grid-template-columns: 1fr; }
+      .dailyOverview { grid-template-columns: 1fr; }
       .date { font-size: 12px; }
       .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
       .stat b { font-size: 17px; }
@@ -107,10 +111,16 @@
     async function load() {
       const data = await fetch(`data/progress.json?t=${Date.now()}`).then(r => r.json());
       const a = data.anki, c = data.course, r = data.reading;
+      const ankiGoal = Math.min(100, a.today.new / 20 * 100);
+      const dailyScore = (r.today.goalPercent + ankiGoal + c.today.goalPercent) / 3;
       document.querySelector("#updated").textContent = `更新于 ${new Date(data.updatedAt).toLocaleString("zh-CN")}`;
       document.querySelector("#dashboard").innerHTML = `
         <article class="card hero">
           <div class="sectionHead"><h2>今日三个目标</h2><span class="muted">${n(data.today.focusMinutes)} 分钟已记录</span></div>
+          <div class="dailyOverview">
+            <div><p class="muted">三个目标平均完成度</p><div class="heroValue">${pct(dailyScore)}</div></div>
+            <div class="dailyOverviewText"><p class="muted">阅读 ${pct(r.today.goalPercent)} · Anki ${pct(ankiGoal)} · 课程 ${pct(c.today.goalPercent)}</p>${bar(dailyScore)}</div>
+          </div>
           <div class="goalGrid">
             <div class="goal">
               <div class="goalTop"><h2>阅读单项</h2><span>每日 1 Test</span></div>

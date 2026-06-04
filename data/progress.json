@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-04T01:42:13-04:00",
+  "updatedAt": "2026-06-04T01:46:19-04:00",
   "today": {
     "date": "2026-06-04",
     "focusMinutes": 26
@@ -210,9 +210,9 @@
       {
         "id": "phonetics",
         "label": "A0",
-        "watchedSeconds": 0.0,
+        "watchedSeconds": 19072.65,
         "durationSeconds": 19072.65,
-        "percent": 0.0
+        "percent": 100.0
       },
       {
         "id": "a1",
@@ -244,9 +244,9 @@
       }
     ],
     "total": {
-      "watchedSeconds": 0.0,
+      "watchedSeconds": 19072.65,
       "durationSeconds": 487318.95,
-      "percent": 0.0
+      "percent": 3.91
     },
     "today": {
       "minutes": 0.0,
