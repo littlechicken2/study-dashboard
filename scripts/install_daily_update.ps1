@@ -6,9 +6,9 @@ $Chrome = Join-Path $env:ProgramFiles "Google\Chrome\Application\chrome.exe"
 $Dashboard = "https://littlechicken2.github.io/study-dashboard/"
 $Commands = @(
     "Set shell = CreateObject(""WScript.Shell"")",
-    "shell.Run ""powershell.exe -NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File """"""$Watcher"""""""", 0, False",
+    "shell.Run ""powershell.exe -NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File "" & Chr(34) & ""$Watcher"" & Chr(34), 0, False",
     "WScript.Sleep 3000",
-    "shell.Run """"""$Chrome"""" --restore-last-session """"""$Dashboard"""""""", 1, False"
+    "shell.Run Chr(34) & ""$Chrome"" & Chr(34) & "" --restore-last-session "" & Chr(34) & ""$Dashboard"" & Chr(34), 1, False"
 )
 Set-Content -LiteralPath $Launcher -Value $Commands -Encoding ASCII
 Start-Process -FilePath "powershell.exe" -ArgumentList "-NoProfile", "-WindowStyle", "Hidden", "-ExecutionPolicy", "Bypass", "-File", "`"$Watcher`"" -WindowStyle Hidden

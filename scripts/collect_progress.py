@@ -91,7 +91,10 @@ def collect_course():
         history = read_json(COURSE_HISTORY, {"entries": []})
         today = datetime.now().date().isoformat()
         row = next((x for x in history.get("entries", []) if x.get("date") == today), {})
-        watched_today = max(0, float(row.get("dailySeconds", 0) or 0))
+        total_watched = float(synced.get("total", {}).get("watchedSeconds", 0) or 0)
+        baseline = float(row.get("baselineSeconds", total_watched) or 0)
+        inferred_today = max(0, total_watched - baseline)
+        watched_today = max(0, float(row.get("dailySeconds", 0) or 0), inferred_today)
         minutes = round(watched_today / 60, 1)
         synced["today"] = {
             "minutes": minutes,
