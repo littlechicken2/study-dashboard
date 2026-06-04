@@ -122,9 +122,10 @@
           <div class="courseRows">${c.courses.map(x => `<div class="courseRow"><strong>${x.label}</strong>${bar(x.percent)}<span>${pct(x.percent)}</span></div>`).join("")}</div>
         </article>
         <article class="card">
-          <div class="sectionHead"><h2>阅读单项</h2><span class="muted">今日</span></div>
-          <div class="big">${pct(r.today.accuracy)}</div>
-          ${stats([[n(r.today.questions), "题目"], [n(r.today.correct), "答对"], [n(r.today.minutes), "分钟"]])}
+          <div class="sectionHead"><h2>阅读单项</h2><span class="muted">每日目标 1 Test</span></div>
+          <div class="big">${n(r.today.questions)} / 39 <span class="unit">题</span></div>
+          ${bar(r.today.goalPercent)}
+          ${stats([[pct(r.today.goalPercent), "目标完成"], [n(r.today.correct), "当前得分"], [n(r.today.minutes, 1), "分钟"]])}
         </article>`;
     }
     load().catch(err => {

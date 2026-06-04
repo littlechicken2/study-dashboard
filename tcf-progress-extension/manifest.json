@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "TCF Reading Progress Sync",
+  "version": "1.0.0",
+  "description": "Syncs only the visible test name, answered count, score and timer to the local study dashboard.",
+  "host_permissions": [
+    "http://127.0.0.1:8765/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://tcfca.cn/reading/test*"
+      ],
+      "js": [
+        "sync.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

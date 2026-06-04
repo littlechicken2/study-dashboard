@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 COURSE_PROGRESS = DATA / "course_progress.json"
 READING_LOG = DATA / "reading_log.json"
+READING_PROGRESS = DATA / "reading_progress.json"
 OUTPUT = DATA / "progress.json"
 COURSE_DURATIONS = Path(r"D:\WOK\POKESTOP\french_a1\data\video_durations.json")
 ANKI_ROOT = Path.home() / "AppData" / "Roaming" / "Anki2"
@@ -109,6 +110,7 @@ def collect_course():
 
 def collect_reading(days=30):
     raw = read_json(READING_LOG, {"entries": []})
+    automatic = read_json(READING_PROGRESS, {"entries": []})
     today = datetime.now().date()
     start = today - timedelta(days=days - 1)
     daily = defaultdict(lambda: {"sets": 0, "questions": 0, "correct": 0, "minutes": 0})
@@ -118,11 +120,29 @@ def collect_reading(days=30):
             continue
         for field in ("sets", "questions", "correct", "minutes"):
             daily[key][field] += float(entry.get(field, 0) or 0)
+    tests = defaultdict(list)
+    for entry in automatic.get("entries", []):
+        key = entry.get("date", "")
+        if key < start.isoformat():
+            continue
+        answered = int(entry.get("answered", 0) or 0)
+        correct = int(entry.get("correct", 0) or 0)
+        daily[key]["sets"] += answered / 39
+        daily[key]["questions"] += answered
+        daily[key]["correct"] += correct
+        daily[key]["minutes"] += round(int(entry.get("seconds", 0) or 0) / 60, 1)
+        tests[key].append({
+            "test": entry.get("test", ""),
+            "answered": answered,
+            "correct": correct,
+            "total": 39,
+        })
     history = []
     for offset in range(days):
         key = (start + timedelta(days=offset)).isoformat()
-        row = {"date": key, **daily[key]}
+        row = {"date": key, **daily[key], "tests": tests[key]}
         row["accuracy"] = round(row["correct"] / row["questions"] * 100, 2) if row["questions"] else 0
+        row["goalPercent"] = round(min(1, row["questions"] / 39) * 100, 2)
         history.append(row)
     today_row = history[-1]
     return {"today": today_row, "history": history}

@@ -17,6 +17,10 @@ powershell -ExecutionPolicy Bypass -File .\scripts\install_daily_update.ps1
 
 课程播放器在本地服务器运行时，会将浏览器中的观看进度同步到 `data/course_progress.json`。
 
+## TCF 阅读自动同步
+
+Chrome 扩展目录为 `tcf-progress-extension`。在 `chrome://extensions` 开启开发者模式，选择“加载已解压的扩展程序”，加载该目录。之后打开 `tcfca.cn/reading/testXX` 时，扩展只会读取页面上显示的 Test 名称、已答题数、分数和计时，并同步到本地看板。
+
 ## GitHub Pages
 
 将此目录推送到公开 GitHub 仓库，并在仓库设置的 Pages 中选择 `GitHub Actions`。此后本机计划任务会每日采集、提交并推送最新进度。
