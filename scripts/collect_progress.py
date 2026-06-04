@@ -1,0 +1,157 @@
+import argparse
+import json
+import shutil
+import sqlite3
+import tempfile
+from collections import defaultdict
+from datetime import datetime, timedelta
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+DATA = ROOT / "data"
+COURSE_PROGRESS = DATA / "course_progress.json"
+READING_LOG = DATA / "reading_log.json"
+OUTPUT = DATA / "progress.json"
+COURSE_DURATIONS = Path(r"D:\WOK\POKESTOP\french_a1\data\video_durations.json")
+ANKI_ROOT = Path.home() / "AppData" / "Roaming" / "Anki2"
+COURSE_LABELS = {"phonetics": "A0", "a1": "A1", "a2": "A2", "b1": "B1", "b2": "B2"}
+
+
+def read_json(path, default):
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return default
+
+
+def local_date_from_ms(value):
+    return datetime.fromtimestamp(value / 1000).date().isoformat()
+
+
+def find_anki_collection():
+    candidates = list(ANKI_ROOT.glob("*/collection.anki2"))
+    if not candidates:
+        return None
+    return max(candidates, key=lambda p: p.stat().st_mtime)
+
+
+def collect_anki(days=30):
+    result = {
+        "today": {"reviews": 0, "new": 0, "minutes": 0},
+        "total": {"cards": 0, "mature": 0},
+        "streak": 0,
+        "history": [],
+    }
+    source = find_anki_collection()
+    today = datetime.now().date()
+    start = today - timedelta(days=days - 1)
+    daily = defaultdict(lambda: {"reviews": 0, "new": 0, "minutes": 0})
+    if source:
+        with tempfile.TemporaryDirectory() as tmp:
+            copy = Path(tmp) / "collection.anki2"
+            shutil.copy2(source, copy)
+            db = sqlite3.connect(copy)
+            try:
+                result["total"]["cards"] = db.execute("select count(*) from cards").fetchone()[0]
+                result["total"]["mature"] = db.execute("select count(*) from cards where ivl >= 21").fetchone()[0]
+                start_ms = int(datetime.combine(start, datetime.min.time()).timestamp() * 1000)
+                for stamp, count, elapsed in db.execute(
+                    "select id, count(*), sum(time) from revlog where id >= ? group by date(id / 1000, 'unixepoch', 'localtime')",
+                    (start_ms,),
+                ):
+                    key = local_date_from_ms(stamp)
+                    daily[key]["reviews"] = count
+                    daily[key]["minutes"] = round((elapsed or 0) / 60000, 1)
+                for stamp, count in db.execute(
+                    "select min(id), count(*) from revlog group by cid having min(id) >= ?",
+                    (start_ms,),
+                ):
+                    daily[local_date_from_ms(stamp)]["new"] += count
+            finally:
+                db.close()
+    for offset in range(days):
+        key = (start + timedelta(days=offset)).isoformat()
+        result["history"].append({"date": key, **daily[key]})
+    result["today"] = daily[today.isoformat()]
+    cursor = today
+    while daily[cursor.isoformat()]["reviews"] > 0:
+        result["streak"] += 1
+        cursor -= timedelta(days=1)
+    return result
+
+
+def collect_course():
+    synced = read_json(COURSE_PROGRESS, {})
+    if synced.get("courses"):
+        return synced
+    durations = read_json(COURSE_DURATIONS, {})
+    totals = defaultdict(float)
+    for key, seconds in durations.items():
+        totals[key.split("/", 1)[0]] += float(seconds or 0)
+    courses = [
+        {
+            "id": key,
+            "label": COURSE_LABELS.get(key, key.upper()),
+            "watchedSeconds": 0,
+            "durationSeconds": round(total, 2),
+            "percent": 0,
+        }
+        for key, total in totals.items()
+    ]
+    return {
+        "updatedAt": None,
+        "lastLesson": None,
+        "courses": courses,
+        "total": {"watchedSeconds": 0, "durationSeconds": round(sum(totals.values()), 2), "percent": 0},
+    }
+
+
+def collect_reading(days=30):
+    raw = read_json(READING_LOG, {"entries": []})
+    today = datetime.now().date()
+    start = today - timedelta(days=days - 1)
+    daily = defaultdict(lambda: {"sets": 0, "questions": 0, "correct": 0, "minutes": 0})
+    for entry in raw.get("entries", []):
+        key = entry.get("date", "")
+        if key < start.isoformat():
+            continue
+        for field in ("sets", "questions", "correct", "minutes"):
+            daily[key][field] += float(entry.get(field, 0) or 0)
+    history = []
+    for offset in range(days):
+        key = (start + timedelta(days=offset)).isoformat()
+        row = {"date": key, **daily[key]}
+        row["accuracy"] = round(row["correct"] / row["questions"] * 100, 2) if row["questions"] else 0
+        history.append(row)
+    today_row = history[-1]
+    return {"today": today_row, "history": history}
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Collect local study stats for the public dashboard.")
+    parser.add_argument("--days", type=int, default=30)
+    args = parser.parse_args()
+    anki = collect_anki(args.days)
+    course = collect_course()
+    reading = collect_reading(args.days)
+    focus = round(anki["today"]["minutes"] + reading["today"]["minutes"])
+    score = min(100, round(
+        min(1, anki["today"]["reviews"] / 100) * 45
+        + min(1, reading["today"]["questions"] / 20) * 35
+        + min(1, focus / 90) * 20,
+        2,
+    ))
+    payload = {
+        "updatedAt": datetime.now().astimezone().isoformat(timespec="seconds"),
+        "today": {"date": datetime.now().date().isoformat(), "score": score, "focusMinutes": focus},
+        "anki": anki,
+        "course": course,
+        "reading": reading,
+    }
+    OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Updated {OUTPUT}")
+
+
+if __name__ == "__main__":
+    main()

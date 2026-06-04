@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07120f">
+  <title>学习进度公开看板</title>
+  <style>
+    :root {
+      --bg: #07120f;
+      --panel: #10211b;
+      --line: #294238;
+      --text: #f3f7f5;
+      --muted: #a8b8b0;
+      --green: #69e39d;
+      --cyan: #62d9de;
+      --yellow: #f5ce69;
+      --red: #ff8e7f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% -10%, rgba(105,227,157,.18), transparent 36rem),
+        radial-gradient(circle at 100% 0%, rgba(98,217,222,.13), transparent 30rem),
+        var(--bg);
+      font-family: Inter, "Segoe UI", "Microsoft YaHei", sans-serif;
+      letter-spacing: 0;
+    }
+    main { width: min(1100px, calc(100% - 28px)); margin: 0 auto; padding: 44px 0 70px; }
+    header { display: flex; justify-content: space-between; gap: 24px; align-items: end; margin-bottom: 32px; }
+    h1 { margin: 0 0 7px; font-size: clamp(27px, 5vw, 48px); line-height: 1; }
+    h2 { margin: 0; font-size: 18px; }
+    p { margin: 0; }
+    .muted { color: var(--muted); }
+    .date { text-align: right; font-variant-numeric: tabular-nums; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      min-width: 0;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: color-mix(in srgb, var(--panel) 92%, transparent);
+    }
+    .hero { grid-column: 1 / -1; display: grid; grid-template-columns: 1.2fr .8fr; align-items: end; gap: 20px; }
+    .heroValue, .big { font-variant-numeric: tabular-nums; font-weight: 800; }
+    .heroValue { margin-top: 14px; font-size: clamp(48px, 12vw, 100px); line-height: .85; color: var(--green); }
+    .big { margin-top: 18px; font-size: 36px; }
+    .unit { font-size: 15px; color: var(--muted); font-weight: 500; }
+    .bar { height: 9px; margin-top: 18px; overflow: hidden; background: #06100c; border-radius: 2px; }
+    .bar > i { display: block; height: 100%; width: var(--value); background: linear-gradient(90deg, var(--green), var(--cyan)); transition: width .6s ease; }
+    .stats { margin-top: 18px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .stat { padding-top: 10px; border-top: 1px solid var(--line); }
+    .stat b { display: block; font-size: 21px; font-variant-numeric: tabular-nums; }
+    .stat span { color: var(--muted); font-size: 12px; }
+    .wide { grid-column: span 2; }
+    .sectionHead { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+    .history { display: grid; grid-template-columns: repeat(14, 1fr); height: 100px; gap: 5px; align-items: end; }
+    .day { min-height: 3px; height: var(--height); background: linear-gradient(180deg, var(--cyan), var(--green)); border-radius: 2px 2px 0 0; position: relative; }
+    .day:hover::after { content: attr(data-tip); position: absolute; bottom: calc(100% + 5px); left: 50%; transform: translateX(-50%); padding: 5px 7px; white-space: nowrap; background: #000; font-size: 11px; z-index: 2; }
+    .courseRows { display: grid; gap: 12px; }
+    .courseRow { display: grid; grid-template-columns: 64px 1fr 62px; gap: 10px; align-items: center; }
+    .courseRow strong, .courseRow span { font-variant-numeric: tabular-nums; }
+    .courseRow span { text-align: right; color: var(--muted); }
+    .streak { color: var(--yellow); }
+    footer { margin-top: 22px; color: var(--muted); font-size: 12px; }
+    @media (max-width: 760px) {
+      main { padding-top: 26px; }
+      header { align-items: start; }
+      .grid { grid-template-columns: 1fr; }
+      .hero, .wide { grid-column: auto; }
+      .hero { grid-template-columns: 1fr; }
+      .date { font-size: 12px; }
+      .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .stat b { font-size: 17px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <h1>学习监督台</h1>
+        <p class="muted">把每天的投入变成看得见的证据。</p>
+      </div>
+      <p class="date muted" id="updated">读取中</p>
+    </header>
+    <section class="grid" id="dashboard"></section>
+    <footer>公开页面只展示统计数据，不包含 Anki 卡片内容、本地文件名或个人资料。</footer>
+  </main>
+  <script>
+    const n = (value, digits = 0) => Number(value || 0).toLocaleString("zh-CN", { maximumFractionDigits: digits, minimumFractionDigits: digits });
+    const pct = value => `${n(value, 2)}%`;
+    const bar = value => `<div class="bar"><i style="--value:${Math.max(0, Math.min(100, value || 0))}%"></i></div>`;
+    const stats = items => `<div class="stats">${items.map(([v, k]) => `<div class="stat"><b>${v}</b><span>${k}</span></div>`).join("")}</div>`;
+    const history = rows => {
+      const recent = (rows || []).slice(-14);
+      const max = Math.max(1, ...recent.map(x => x.value || 0));
+      return `<div class="history">${recent.map(x => `<i class="day" style="--height:${Math.max(3, (x.value || 0) / max * 100)}%" data-tip="${x.date}: ${n(x.value)}"></i>`).join("")}</div>`;
+    };
+    async function load() {
+      const data = await fetch(`data/progress.json?t=${Date.now()}`).then(r => r.json());
+      const a = data.anki, c = data.course, r = data.reading;
+      document.querySelector("#updated").textContent = `更新于 ${new Date(data.updatedAt).toLocaleString("zh-CN")}`;
+      document.querySelector("#dashboard").innerHTML = `
+        <article class="card hero">
+          <div><p class="muted">今日目标完成度</p><div class="heroValue">${pct(data.today.score)}</div>${bar(data.today.score)}</div>
+          <div>${stats([[n(data.today.focusMinutes), "专注分钟"], [n(a.today.reviews), "Anki 复习"], [n(r.today.questions), "阅读题目"]])}</div>
+        </article>
+        <article class="card">
+          <div class="sectionHead"><h2>Anki</h2><span class="streak">${n(a.streak)} 天连续</span></div>
+          <div class="big">${n(a.today.reviews)} <span class="unit">次复习</span></div>
+          ${stats([[n(a.today.new), "今日新卡"], [n(a.today.minutes, 1), "分钟"], [n(a.total.cards), "总卡片"]])}
+        </article>
+        <article class="card wide">
+          <div class="sectionHead"><h2>最近 14 天 Anki</h2><span class="muted">每日复习次数</span></div>
+          ${history(a.history.map(x => ({date:x.date, value:x.reviews})))}
+        </article>
+        <article class="card wide">
+          <div class="sectionHead"><h2>课程进度</h2><span class="muted">${pct(c.total.percent)}</span></div>
+          <div class="courseRows">${c.courses.map(x => `<div class="courseRow"><strong>${x.label}</strong>${bar(x.percent)}<span>${pct(x.percent)}</span></div>`).join("")}</div>
+        </article>
+        <article class="card">
+          <div class="sectionHead"><h2>阅读单项</h2><span class="muted">今日</span></div>
+          <div class="big">${pct(r.today.accuracy)}</div>
+          ${stats([[n(r.today.questions), "题目"], [n(r.today.correct), "答对"], [n(r.today.minutes), "分钟"]])}
+        </article>`;
+    }
+    load().catch(err => {
+      document.querySelector("#dashboard").innerHTML = `<article class="card hero"><h2>暂时没有进度数据</h2><p class="muted">${err.message}</p></article>`;
+    });
+  </script>
+</body>
+</html>
