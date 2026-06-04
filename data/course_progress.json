@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-06-04T05:42:05.194Z",
+  "updatedAt": "2026-06-04T08:43:44.189Z",
   "lastLesson": {
-    "id": "a1/3_1.mp4",
-    "title": "Ça va ? 与 aller / avoir",
+    "id": "a1/6_3.mp4",
+    "title": "6 3 · 形容词阴性变化",
     "course": "a1",
-    "time": 0
+    "time": 0.993392
   },
   "courses": [
     {
@@ -17,9 +17,9 @@
     {
       "id": "a1",
       "label": "A1",
-      "watchedSeconds": 0.0,
+      "watchedSeconds": 18936.1,
       "durationSeconds": 79062.89,
-      "percent": 0.0
+      "percent": 23.95
     },
     {
       "id": "a2",
@@ -44,8 +44,8 @@
     }
   ],
   "total": {
-    "watchedSeconds": 19072.65,
+    "watchedSeconds": 38008.75,
     "durationSeconds": 487318.95,
-    "percent": 3.91
+    "percent": 7.8
   }
 }

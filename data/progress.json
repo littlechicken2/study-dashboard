@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-04T04:19:46-04:00",
+  "updatedAt": "2026-06-04T14:39:12-04:00",
   "today": {
     "date": "2026-06-04",
     "focusMinutes": 52
@@ -199,12 +199,12 @@
     ]
   },
   "course": {
-    "updatedAt": "2026-06-04T05:42:05.194Z",
+    "updatedAt": "2026-06-04T08:43:44.189Z",
     "lastLesson": {
-      "id": "a1/3_1.mp4",
-      "title": "Ça va ? 与 aller / avoir",
+      "id": "a1/6_3.mp4",
+      "title": "6 3 · 形容词阴性变化",
       "course": "a1",
-      "time": 0
+      "time": 0.993392
     },
     "courses": [
       {
@@ -217,9 +217,9 @@
       {
         "id": "a1",
         "label": "A1",
-        "watchedSeconds": 0.0,
+        "watchedSeconds": 18936.1,
         "durationSeconds": 79062.89,
-        "percent": 0.0
+        "percent": 23.95
       },
       {
         "id": "a2",
@@ -244,33 +244,33 @@
       }
     ],
     "total": {
-      "watchedSeconds": 19072.65,
+      "watchedSeconds": 38008.75,
       "durationSeconds": 487318.95,
-      "percent": 3.91
+      "percent": 7.8
     },
     "today": {
-      "minutes": 0.0,
+      "minutes": 315.6,
       "goalMinutes": 60,
-      "goalPercent": 0.0
+      "goalPercent": 100
     }
   },
   "reading": {
     "today": {
       "date": "2026-06-04",
-      "sets": 0.10256410256410256,
-      "questions": 4,
-      "correct": 3,
+      "sets": 0.2564102564102564,
+      "questions": 10,
+      "correct": 9,
       "minutes": 25.2,
       "tests": [
         {
           "test": "test01",
-          "answered": 4,
-          "correct": 3,
+          "answered": 10,
+          "correct": 9,
           "total": 39
         }
       ],
-      "accuracy": 75.0,
-      "goalPercent": 10.26
+      "accuracy": 90.0,
+      "goalPercent": 25.64
     },
     "history": [
       {
@@ -565,20 +565,20 @@
       },
       {
         "date": "2026-06-04",
-        "sets": 0.10256410256410256,
-        "questions": 4,
-        "correct": 3,
+        "sets": 0.2564102564102564,
+        "questions": 10,
+        "correct": 9,
         "minutes": 25.2,
         "tests": [
           {
             "test": "test01",
-            "answered": 4,
-            "correct": 3,
+            "answered": 10,
+            "correct": 9,
             "total": 39
           }
         ],
-        "accuracy": 75.0,
-        "goalPercent": 10.26
+        "accuracy": 90.0,
+        "goalPercent": 25.64
       }
     ]
   }
