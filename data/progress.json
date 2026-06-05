@@ -1,27 +1,21 @@
 {
-  "updatedAt": "2026-06-04T23:39:36-04:00",
+  "updatedAt": "2026-06-05T00:39:38-04:00",
   "today": {
-    "date": "2026-06-04",
-    "focusMinutes": 68
+    "date": "2026-06-05",
+    "focusMinutes": 22
   },
   "anki": {
     "today": {
-      "reviews": 280,
-      "new": 78,
-      "minutes": 41.1
+      "reviews": 0,
+      "new": 0,
+      "minutes": 0
     },
     "total": {
       "cards": 35974,
       "mature": 97
     },
-    "streak": 2,
+    "streak": 0,
     "history": [
-      {
-        "date": "2025-06-05",
-        "reviews": 0,
-        "new": 0,
-        "minutes": 0
-      },
       {
         "date": "2025-06-06",
         "reviews": 0,
@@ -2205,6 +2199,12 @@
         "reviews": 280,
         "new": 78,
         "minutes": 41.1
+      },
+      {
+        "date": "2026-06-05",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
       }
     ]
   },
@@ -2264,11 +2264,6 @@
       "goalPercent": 0.0
     },
     "history": [
-      {
-        "date": "2025-06-05",
-        "minutes": 0.0,
-        "goalPercent": 0.0
-      },
       {
         "date": "2025-06-06",
         "minutes": 0.0,
@@ -4088,38 +4083,33 @@
         "date": "2026-06-04",
         "minutes": 0.0,
         "goalPercent": 0.0
+      },
+      {
+        "date": "2026-06-05",
+        "minutes": 0.0,
+        "goalPercent": 0.0
       }
     ]
   },
   "reading": {
     "today": {
-      "date": "2026-06-04",
-      "sets": 0.28205128205128205,
-      "questions": 11,
-      "correct": 10,
-      "minutes": 26.7,
+      "date": "2026-06-05",
+      "sets": 0.3333333333333333,
+      "questions": 13,
+      "correct": 12,
+      "minutes": 21.9,
       "tests": [
         {
           "test": "test01",
-          "answered": 11,
-          "correct": 10,
+          "answered": 13,
+          "correct": 12,
           "total": 39
         }
       ],
-      "accuracy": 90.91,
-      "goalPercent": 28.21
+      "accuracy": 92.31,
+      "goalPercent": 33.33
     },
     "history": [
-      {
-        "date": "2025-06-05",
-        "sets": 0,
-        "questions": 0,
-        "correct": 0,
-        "minutes": 0,
-        "tests": [],
-        "accuracy": 0,
-        "goalPercent": 0.0
-      },
       {
         "date": "2025-06-06",
         "sets": 0,
@@ -7766,6 +7756,23 @@
         ],
         "accuracy": 90.91,
         "goalPercent": 28.21
+      },
+      {
+        "date": "2026-06-05",
+        "sets": 0.3333333333333333,
+        "questions": 13,
+        "correct": 12,
+        "minutes": 21.9,
+        "tests": [
+          {
+            "test": "test01",
+            "answered": 13,
+            "correct": 12,
+            "total": 39
+          }
+        ],
+        "accuracy": 92.31,
+        "goalPercent": 33.33
       }
     ]
   }
