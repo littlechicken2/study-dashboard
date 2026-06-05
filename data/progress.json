@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-05T04:39:50-04:00",
+  "updatedAt": "2026-06-05T08:01:36-04:00",
   "today": {
     "date": "2026-06-05",
-    "focusMinutes": 51
+    "focusMinutes": 52
   },
   "anki": {
     "today": {
@@ -2209,7 +2209,7 @@
     ]
   },
   "course": {
-    "updatedAt": "2026-06-04T20:27:01.633Z",
+    "updatedAt": "2026-06-05T09:06:15.284Z",
     "lastLesson": {
       "id": "a1/6_3.mp4",
       "title": "6 3 · 形容词阴性变化",
@@ -4097,7 +4097,7 @@
       "sets": 0.4358974358974359,
       "questions": 17,
       "correct": 14,
-      "minutes": 51.3,
+      "minutes": 51.7,
       "tests": [
         {
           "test": "test01",
@@ -7762,7 +7762,7 @@
         "sets": 0.4358974358974359,
         "questions": 17,
         "correct": 14,
-        "minutes": 51.3,
+        "minutes": 51.7,
         "tests": [
           {
             "test": "test01",
