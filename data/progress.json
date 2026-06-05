@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-05T01:39:42-04:00",
+  "updatedAt": "2026-06-05T02:39:45-04:00",
   "today": {
     "date": "2026-06-05",
-    "focusMinutes": 23
+    "focusMinutes": 35
   },
   "anki": {
     "today": {
@@ -4094,20 +4094,20 @@
   "reading": {
     "today": {
       "date": "2026-06-05",
-      "sets": 0.3333333333333333,
-      "questions": 13,
+      "sets": 0.38461538461538464,
+      "questions": 15,
       "correct": 12,
-      "minutes": 22.9,
+      "minutes": 35.4,
       "tests": [
         {
           "test": "test01",
-          "answered": 13,
+          "answered": 15,
           "correct": 12,
           "total": 39
         }
       ],
-      "accuracy": 92.31,
-      "goalPercent": 33.33
+      "accuracy": 80.0,
+      "goalPercent": 38.46
     },
     "history": [
       {
@@ -7759,20 +7759,20 @@
       },
       {
         "date": "2026-06-05",
-        "sets": 0.3333333333333333,
-        "questions": 13,
+        "sets": 0.38461538461538464,
+        "questions": 15,
         "correct": 12,
-        "minutes": 22.9,
+        "minutes": 35.4,
         "tests": [
           {
             "test": "test01",
-            "answered": 13,
+            "answered": 15,
             "correct": 12,
             "total": 39
           }
         ],
-        "accuracy": 92.31,
-        "goalPercent": 33.33
+        "accuracy": 80.0,
+        "goalPercent": 38.46
       }
     ]
   }
