@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-05T00:39:38-04:00",
+  "updatedAt": "2026-06-05T01:39:42-04:00",
   "today": {
     "date": "2026-06-05",
-    "focusMinutes": 22
+    "focusMinutes": 23
   },
   "anki": {
     "today": {
@@ -4097,7 +4097,7 @@
       "sets": 0.3333333333333333,
       "questions": 13,
       "correct": 12,
-      "minutes": 21.9,
+      "minutes": 22.9,
       "tests": [
         {
           "test": "test01",
@@ -7762,7 +7762,7 @@
         "sets": 0.3333333333333333,
         "questions": 13,
         "correct": 12,
-        "minutes": 21.9,
+        "minutes": 22.9,
         "tests": [
           {
             "test": "test01",
