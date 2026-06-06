@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-06-06T03:02:29-04:00",
+  "updatedAt": "2026-06-06T04:02:31-04:00",
   "today": {
     "date": "2026-06-06",
-    "focusMinutes": 30
+    "focusMinutes": 32
   },
   "anki": {
     "today": {
-      "reviews": 0,
-      "new": 0,
-      "minutes": 0
+      "reviews": 5,
+      "new": 1,
+      "minutes": 0.6
     },
     "total": {
       "cards": 35974,
       "mature": 97
     },
-    "streak": 0,
+    "streak": 1,
     "history": [
       {
         "date": "2025-06-07",
@@ -2143,13 +2143,13 @@
       {
         "date": "2026-05-27",
         "reviews": 54,
-        "new": 91,
+        "new": 92,
         "minutes": 10.0
       },
       {
         "date": "2026-05-28",
         "reviews": 114,
-        "new": 91,
+        "new": 92,
         "minutes": 18.8
       },
       {
@@ -2161,13 +2161,13 @@
       {
         "date": "2026-05-30",
         "reviews": 86,
-        "new": 80,
+        "new": 81,
         "minutes": 11.2
       },
       {
         "date": "2026-05-31",
         "reviews": 75,
-        "new": 69,
+        "new": 70,
         "minutes": 15.3
       },
       {
@@ -2202,9 +2202,9 @@
       },
       {
         "date": "2026-06-06",
-        "reviews": 0,
-        "new": 0,
-        "minutes": 0
+        "reviews": 5,
+        "new": 1,
+        "minutes": 0.6
       }
     ]
   },
@@ -4097,7 +4097,7 @@
       "sets": 0.4358974358974359,
       "questions": 17,
       "correct": 14,
-      "minutes": 29.9,
+      "minutes": 30.9,
       "tests": [
         {
           "test": "test01",
@@ -7769,7 +7769,7 @@
         "sets": 0.4358974358974359,
         "questions": 17,
         "correct": 14,
-        "minutes": 29.9,
+        "minutes": 30.9,
         "tests": [
           {
             "test": "test01",
