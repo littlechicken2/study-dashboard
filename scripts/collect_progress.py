@@ -14,6 +14,7 @@ COURSE_PROGRESS = DATA / "course_progress.json"
 COURSE_HISTORY = DATA / "course_history.json"
 READING_LOG = DATA / "reading_log.json"
 READING_PROGRESS = DATA / "reading_progress.json"
+READING_SESSION = DATA / "reading_session.json"
 OUTPUT = DATA / "progress.json"
 COURSE_DURATIONS = Path(r"D:\WOK\POKESTOP\french_a1\data\video_durations.json")
 ANKI_ROOT = Path.home() / "AppData" / "Roaming" / "Anki2"
@@ -140,6 +141,7 @@ def collect_course(days=365):
 def collect_reading(days=30):
     raw = read_json(READING_LOG, {"entries": []})
     automatic = read_json(READING_PROGRESS, {"entries": []})
+    session = read_json(READING_SESSION, {"startedAt": None, "baselines": {}})
     today = datetime.now().date()
     start = today - timedelta(days=days - 1)
     daily = defaultdict(lambda: {"sets": 0, "questions": 0, "correct": 0, "minutes": 0})
@@ -150,22 +152,44 @@ def collect_reading(days=30):
         for field in ("sets", "questions", "correct", "minutes"):
             daily[key][field] += float(entry.get(field, 0) or 0)
     tests = defaultdict(list)
-    for entry in automatic.get("entries", []):
+    previous_by_test = {}
+    entries = sorted(automatic.get("entries", []), key=lambda row: str(row.get("capturedAt", "")))
+    session_day = str(session.get("startedAt") or "")[:10]
+    for entry in entries:
         key = entry.get("date", "")
         if key < start.isoformat():
             continue
-        answered = int(entry.get("answered", 0) or 0)
-        correct = int(entry.get("correct", 0) or 0)
+        test = str(entry.get("test", ""))
+        current = {
+            "answered": int(entry.get("answered", 0) or 0),
+            "correct": int(entry.get("correct", 0) or 0),
+            "seconds": int(entry.get("seconds", 0) or 0),
+        }
+        baseline = previous_by_test.get(test, {"answered": 0, "correct": 0, "seconds": 0})
+        if key == session_day:
+            baseline = session.get("baselines", {}).get(test, baseline)
+        answered = current["answered"] - int(baseline.get("answered", 0) or 0)
+        correct = current["correct"] - int(baseline.get("correct", 0) or 0)
+        seconds = current["seconds"] - int(baseline.get("seconds", 0) or 0)
+        if answered < 0:
+            answered = current["answered"]
+        if correct < 0:
+            correct = current["correct"]
+        if seconds < 0:
+            seconds = current["seconds"]
+        if answered == 0:
+            seconds = 0
         daily[key]["sets"] += answered / 39
         daily[key]["questions"] += answered
         daily[key]["correct"] += correct
-        daily[key]["minutes"] += round(int(entry.get("seconds", 0) or 0) / 60, 1)
+        daily[key]["minutes"] += round(seconds / 60, 1)
         tests[key].append({
-            "test": entry.get("test", ""),
+            "test": test,
             "answered": answered,
             "correct": correct,
             "total": 39,
         })
+        previous_by_test[test] = current
     history = []
     for offset in range(days):
         key = (start + timedelta(days=offset)).isoformat()

@@ -16,6 +16,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\install_daily_update.ps1
 ```
 
 安装器还会在登录 Windows 时恢复上次 Chrome 会话，并额外打开公开学习监督台。
+每次开机登录时，TCF 阅读会以关机前的累计题数建立新基线；监督台只统计本次开机后新增完成的题目。
 
 课程播放器在本地服务器运行时，会将浏览器中的观看进度同步到 `data/course_progress.json`。
 
