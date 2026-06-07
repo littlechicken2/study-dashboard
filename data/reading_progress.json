@@ -25,7 +25,16 @@
       "total": 39,
       "correct": 14,
       "seconds": 1912,
-      "capturedAt": "2026-06-06T23:02:11.176Z"
+      "capturedAt": "2026-06-06T23:59:11.178Z"
+    },
+    {
+      "date": "2026-06-07",
+      "test": "test01",
+      "answered": 17,
+      "total": 39,
+      "correct": 14,
+      "seconds": 258,
+      "capturedAt": "2026-06-07T00:02:11.173Z"
     }
   ]
 }
