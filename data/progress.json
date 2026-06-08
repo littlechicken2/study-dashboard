@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-07T22:30:09-04:00",
+  "updatedAt": "2026-06-07T23:30:11-04:00",
   "today": {
     "date": "2026-06-07",
     "focusMinutes": 0
@@ -2209,12 +2209,12 @@
     ]
   },
   "course": {
-    "updatedAt": "2026-06-08T02:08:13.251Z",
+    "updatedAt": "2026-06-08T02:57:54.769Z",
     "lastLesson": {
-      "id": "a1/6_3.mp4",
-      "title": "6 3 · 形容词阴性变化",
+      "id": "a1/1_1.mp4",
+      "title": "课程导论与 A1 学习路线",
       "course": "a1",
-      "time": 1.646047
+      "time": 0
     },
     "courses": [
       {
