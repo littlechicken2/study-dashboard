@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-09T04:51:33-04:00",
+  "updatedAt": "2026-06-09T05:51:36-04:00",
   "today": {
     "date": "2026-06-09",
     "focusMinutes": 0
@@ -2209,12 +2209,12 @@
     ]
   },
   "course": {
-    "updatedAt": "2026-06-08T14:56:05.910Z",
+    "updatedAt": "2026-06-09T09:50:25.274Z",
     "lastLesson": {
       "id": "a1/1_1.mp4",
       "title": "课程导论与 A1 学习路线",
       "course": "a1",
-      "time": 1.50471
+      "time": 1.059281
     },
     "courses": [
       {
