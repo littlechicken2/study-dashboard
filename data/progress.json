@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-10T12:21:15-04:00",
+  "updatedAt": "2026-06-10T13:21:18-04:00",
   "today": {
     "date": "2026-06-10",
     "focusMinutes": 6
@@ -2209,12 +2209,12 @@
     ]
   },
   "course": {
-    "updatedAt": "2026-06-10T16:21:07.005Z",
+    "updatedAt": "2026-06-10T16:26:53.758Z",
     "lastLesson": {
-      "id": "a1/6_3.mp4",
-      "title": "6 3 · 形容词阴性变化",
+      "id": "a1/6_4.mp4",
+      "title": "6 4 · 形容词特殊阴性变化",
       "course": "a1",
-      "time": 0
+      "time": 157.861603
     },
     "courses": [
       {
@@ -2227,9 +2227,9 @@
       {
         "id": "a1",
         "label": "A1",
-        "watchedSeconds": 18936.1,
+        "watchedSeconds": 19141.22,
         "durationSeconds": 79062.89,
-        "percent": 23.95
+        "percent": 24.21
       },
       {
         "id": "a2",
@@ -2254,14 +2254,14 @@
       }
     ],
     "total": {
-      "watchedSeconds": 38008.75,
+      "watchedSeconds": 38213.87,
       "durationSeconds": 487318.95,
-      "percent": 7.8
+      "percent": 7.84
     },
     "today": {
-      "minutes": 0.1,
+      "minutes": 5.4,
       "goalMinutes": 60,
-      "goalPercent": 0.17
+      "goalPercent": 9.0
     },
     "history": [
       {
@@ -4086,8 +4086,8 @@
       },
       {
         "date": "2026-06-10",
-        "minutes": 0.1,
-        "goalPercent": 0.17
+        "minutes": 5.4,
+        "goalPercent": 9.0
       }
     ]
   },
