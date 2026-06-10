@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-06-10T00:58:07-04:00",
+  "updatedAt": "2026-06-10T07:21:00-04:00",
   "today": {
     "date": "2026-06-10",
-    "focusMinutes": 3
+    "focusMinutes": 6
   },
   "anki": {
     "today": {
-      "reviews": 18,
-      "new": 18,
-      "minutes": 2.7
+      "reviews": 52,
+      "new": 52,
+      "minutes": 5.5
     },
     "total": {
       "cards": 35974,
@@ -2202,19 +2202,19 @@
       },
       {
         "date": "2026-06-10",
-        "reviews": 18,
-        "new": 18,
-        "minutes": 2.7
+        "reviews": 52,
+        "new": 52,
+        "minutes": 5.5
       }
     ]
   },
   "course": {
-    "updatedAt": "2026-06-10T00:55:30.687Z",
+    "updatedAt": "2026-06-10T05:31:18.229Z",
     "lastLesson": {
       "id": "a1/1_1.mp4",
       "title": "课程导论与 A1 学习路线",
       "course": "a1",
-      "time": 1.053642
+      "time": 1.50471
     },
     "courses": [
       {
