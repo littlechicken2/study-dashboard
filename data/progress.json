@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-11T02:05:23-04:00",
+  "updatedAt": "2026-06-11T03:05:26-04:00",
   "today": {
     "date": "2026-06-11",
     "focusMinutes": 0
@@ -4094,11 +4094,18 @@
   "reading": {
     "today": {
       "date": "2026-06-11",
-      "sets": 0,
+      "sets": 0.0,
       "questions": 0,
       "correct": 0,
-      "minutes": 0,
-      "tests": [],
+      "minutes": 0.0,
+      "tests": [
+        {
+          "test": "test01",
+          "answered": 0,
+          "correct": 0,
+          "total": 39
+        }
+      ],
       "accuracy": 0,
       "goalPercent": 0.0
     },
@@ -7794,11 +7801,18 @@
       },
       {
         "date": "2026-06-11",
-        "sets": 0,
+        "sets": 0.0,
         "questions": 0,
         "correct": 0,
-        "minutes": 0,
-        "tests": [],
+        "minutes": 0.0,
+        "tests": [
+          {
+            "test": "test01",
+            "answered": 0,
+            "correct": 0,
+            "total": 39
+          }
+        ],
         "accuracy": 0,
         "goalPercent": 0.0
       }
