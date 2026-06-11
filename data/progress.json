@@ -1,27 +1,21 @@
 {
-  "updatedAt": "2026-06-10T18:21:32-04:00",
+  "updatedAt": "2026-06-11T02:05:23-04:00",
   "today": {
-    "date": "2026-06-10",
-    "focusMinutes": 6
+    "date": "2026-06-11",
+    "focusMinutes": 0
   },
   "anki": {
     "today": {
-      "reviews": 52,
-      "new": 52,
-      "minutes": 5.5
+      "reviews": 0,
+      "new": 0,
+      "minutes": 0
     },
     "total": {
       "cards": 35974,
       "mature": 178
     },
-    "streak": 2,
+    "streak": 0,
     "history": [
-      {
-        "date": "2025-06-11",
-        "reviews": 0,
-        "new": 0,
-        "minutes": 0
-      },
       {
         "date": "2025-06-12",
         "reviews": 0,
@@ -2205,6 +2199,12 @@
         "reviews": 52,
         "new": 52,
         "minutes": 5.5
+      },
+      {
+        "date": "2026-06-11",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
       }
     ]
   },
@@ -2259,16 +2259,11 @@
       "percent": 7.84
     },
     "today": {
-      "minutes": 5.4,
+      "minutes": 0.0,
       "goalMinutes": 60,
-      "goalPercent": 9.0
+      "goalPercent": 0.0
     },
     "history": [
-      {
-        "date": "2025-06-11",
-        "minutes": 0.0,
-        "goalPercent": 0.0
-      },
       {
         "date": "2025-06-12",
         "minutes": 0.0,
@@ -4088,38 +4083,26 @@
         "date": "2026-06-10",
         "minutes": 5.4,
         "goalPercent": 9.0
+      },
+      {
+        "date": "2026-06-11",
+        "minutes": 0.0,
+        "goalPercent": 0.0
       }
     ]
   },
   "reading": {
     "today": {
-      "date": "2026-06-10",
-      "sets": 0.0,
+      "date": "2026-06-11",
+      "sets": 0,
       "questions": 0,
       "correct": 0,
-      "minutes": 0.0,
-      "tests": [
-        {
-          "test": "test01",
-          "answered": 0,
-          "correct": 0,
-          "total": 39
-        }
-      ],
+      "minutes": 0,
+      "tests": [],
       "accuracy": 0,
       "goalPercent": 0.0
     },
     "history": [
-      {
-        "date": "2025-06-11",
-        "sets": 0,
-        "questions": 0,
-        "correct": 0,
-        "minutes": 0,
-        "tests": [],
-        "accuracy": 0,
-        "goalPercent": 0.0
-      },
       {
         "date": "2025-06-12",
         "sets": 0,
@@ -7806,6 +7789,16 @@
             "total": 39
           }
         ],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-06-11",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
         "accuracy": 0,
         "goalPercent": 0.0
       }
