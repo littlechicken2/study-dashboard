@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-06-11T23:28:13-04:00",
+  "updatedAt": "2026-06-12T00:28:16-04:00",
   "today": {
-    "date": "2026-06-11",
+    "date": "2026-06-12",
     "focusMinutes": 0
   },
   "anki": {
@@ -16,12 +16,6 @@
     },
     "streak": 0,
     "history": [
-      {
-        "date": "2025-06-12",
-        "reviews": 0,
-        "new": 0,
-        "minutes": 0
-      },
       {
         "date": "2025-06-13",
         "reviews": 0,
@@ -2205,16 +2199,22 @@
         "reviews": 0,
         "new": 0,
         "minutes": 0
+      },
+      {
+        "date": "2026-06-12",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
       }
     ]
   },
   "course": {
-    "updatedAt": "2026-06-11T14:37:12.628Z",
+    "updatedAt": "2026-06-12T04:18:22.611Z",
     "lastLesson": {
       "id": "a1/6_4.mp4",
       "title": "6 4 · 形容词特殊阴性变化",
       "course": "a1",
-      "time": 205.123428
+      "time": 205.449745
     },
     "courses": [
       {
@@ -2227,7 +2227,7 @@
       {
         "id": "a1",
         "label": "A1",
-        "watchedSeconds": 19141.22,
+        "watchedSeconds": 19141.55,
         "durationSeconds": 79062.89,
         "percent": 24.21
       },
@@ -2254,7 +2254,7 @@
       }
     ],
     "total": {
-      "watchedSeconds": 38213.87,
+      "watchedSeconds": 38214.2,
       "durationSeconds": 487318.95,
       "percent": 7.84
     },
@@ -2264,11 +2264,6 @@
       "goalPercent": 0.0
     },
     "history": [
-      {
-        "date": "2025-06-12",
-        "minutes": 0.0,
-        "goalPercent": 0.0
-      },
       {
         "date": "2025-06-13",
         "minutes": 0.0,
@@ -4088,12 +4083,17 @@
         "date": "2026-06-11",
         "minutes": 0.0,
         "goalPercent": 0.0
+      },
+      {
+        "date": "2026-06-12",
+        "minutes": 0.0,
+        "goalPercent": 0.0
       }
     ]
   },
   "reading": {
     "today": {
-      "date": "2026-06-11",
+      "date": "2026-06-12",
       "sets": 0.0,
       "questions": 0,
       "correct": 0,
@@ -4110,16 +4110,6 @@
       "goalPercent": 0.0
     },
     "history": [
-      {
-        "date": "2025-06-12",
-        "sets": 0,
-        "questions": 0,
-        "correct": 0,
-        "minutes": 0,
-        "tests": [],
-        "accuracy": 0,
-        "goalPercent": 0.0
-      },
       {
         "date": "2025-06-13",
         "sets": 0,
@@ -7801,6 +7791,23 @@
       },
       {
         "date": "2026-06-11",
+        "sets": 0.0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0.0,
+        "tests": [
+          {
+            "test": "test01",
+            "answered": 0,
+            "correct": 0,
+            "total": 39
+          }
+        ],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-06-12",
         "sets": 0.0,
         "questions": 0,
         "correct": 0,
