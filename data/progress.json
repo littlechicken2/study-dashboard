@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-06-12T23:19:32-04:00",
+  "updatedAt": "2026-06-13T00:19:36-04:00",
   "today": {
-    "date": "2026-06-12",
+    "date": "2026-06-13",
     "focusMinutes": 0
   },
   "anki": {
@@ -16,12 +16,6 @@
     },
     "streak": 0,
     "history": [
-      {
-        "date": "2025-06-13",
-        "reviews": 0,
-        "new": 0,
-        "minutes": 0
-      },
       {
         "date": "2025-06-14",
         "reviews": 0,
@@ -2205,6 +2199,12 @@
         "reviews": 0,
         "new": 0,
         "minutes": 0
+      },
+      {
+        "date": "2026-06-13",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
       }
     ]
   },
@@ -2264,11 +2264,6 @@
       "goalPercent": 0.0
     },
     "history": [
-      {
-        "date": "2025-06-13",
-        "minutes": 0.0,
-        "goalPercent": 0.0
-      },
       {
         "date": "2025-06-14",
         "minutes": 0.0,
@@ -4088,12 +4083,17 @@
         "date": "2026-06-12",
         "minutes": 0.0,
         "goalPercent": 0.0
+      },
+      {
+        "date": "2026-06-13",
+        "minutes": 0.0,
+        "goalPercent": 0.0
       }
     ]
   },
   "reading": {
     "today": {
-      "date": "2026-06-12",
+      "date": "2026-06-13",
       "sets": 0.0,
       "questions": 0,
       "correct": 0,
@@ -4110,16 +4110,6 @@
       "goalPercent": 0.0
     },
     "history": [
-      {
-        "date": "2025-06-13",
-        "sets": 0,
-        "questions": 0,
-        "correct": 0,
-        "minutes": 0,
-        "tests": [],
-        "accuracy": 0,
-        "goalPercent": 0.0
-      },
       {
         "date": "2025-06-14",
         "sets": 0,
@@ -7808,6 +7798,23 @@
       },
       {
         "date": "2026-06-12",
+        "sets": 0.0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0.0,
+        "tests": [
+          {
+            "test": "test01",
+            "answered": 0,
+            "correct": 0,
+            "total": 39
+          }
+        ],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-06-13",
         "sets": 0.0,
         "questions": 0,
         "correct": 0,
