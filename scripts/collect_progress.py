@@ -1,5 +1,7 @@
 import argparse
+import calendar
 import json
+import math
 import shutil
 import sqlite3
 import tempfile
@@ -15,6 +17,7 @@ COURSE_HISTORY = DATA / "course_history.json"
 READING_LOG = DATA / "reading_log.json"
 READING_PROGRESS = DATA / "reading_progress.json"
 READING_SESSION = DATA / "reading_session.json"
+PDF_PROGRESS = DATA / "pdf_progress.json"
 OUTPUT = DATA / "progress.json"
 COURSE_DURATIONS = Path(r"D:\WOK\POKESTOP\french_a1\data\video_durations.json")
 ANKI_ROOT = Path.home() / "AppData" / "Roaming" / "Anki2"
@@ -77,6 +80,10 @@ def collect_anki(days=30):
         key = (start + timedelta(days=offset)).isoformat()
         result["history"].append({"date": key, **daily[key]})
     result["today"] = daily[today.isoformat()]
+    result["today"]["activityComplete"] = bool(
+        result["today"]["reviews"] or result["today"]["new"] or result["today"]["minutes"]
+    )
+    result["today"]["goalPercent"] = 100 if result["today"]["activityComplete"] else 0
     cursor = today
     while daily[cursor.isoformat()]["reviews"] > 0:
         result["streak"] += 1
@@ -90,17 +97,36 @@ def collect_course(days=365):
         for course in synced["courses"]:
             course["label"] = COURSE_LABELS.get(course.get("id"), course.get("label", "Course"))
         history = read_json(COURSE_HISTORY, {"entries": []})
+        pdf = read_json(PDF_PROGRESS, {"documents": {}, "daily": {}})
         today = datetime.now().date().isoformat()
         row = next((x for x in history.get("entries", []) if x.get("date") == today), {})
         total_watched = float(synced.get("total", {}).get("watchedSeconds", 0) or 0)
         baseline = float(row.get("baselineSeconds", total_watched) or 0)
         inferred_today = max(0, total_watched - baseline)
         watched_today = max(0, float(row.get("dailySeconds", 0) or 0), inferred_today)
-        minutes = round(watched_today / 60, 1)
+        video_minutes = round(watched_today / 60, 1)
+        pdf_minutes = round(float(pdf.get("daily", {}).get(today, 0) or 0) / 60, 1)
+        minutes = round(video_minutes + pdf_minutes, 1)
+        saved_docs = pdf.get("documents", {})
+        docs = [
+            saved_docs.get("cheatsheet", {"id": "cheatsheet", "title": "法语 Cheatsheet", "currentPage": 0, "totalPages": 25, "seconds": 0}),
+            saved_docs.get("a1-grammar", {"id": "a1-grammar", "title": "A1 语法讲义", "currentPage": 0, "totalPages": 88, "seconds": 0}),
+        ]
+        pdf_pages = sum(int(x.get("currentPage", 0) or 0) for x in docs)
+        pdf_total_pages = sum(int(x.get("totalPages", 0) or 0) for x in docs)
+        pdf_percent = round(pdf_pages / pdf_total_pages * 100, 2) if pdf_total_pages else 0
         synced["today"] = {
             "minutes": minutes,
-            "goalMinutes": 60,
-            "goalPercent": round(min(1, minutes / 60) * 100, 2),
+            "videoMinutes": video_minutes,
+            "pdfMinutes": pdf_minutes,
+            "activityComplete": minutes > 0,
+            "goalPercent": 100 if minutes > 0 else 0,
+        }
+        synced["pdf"] = {
+            "pages": pdf_pages,
+            "totalPages": pdf_total_pages,
+            "percent": pdf_percent,
+            "documents": docs,
         }
         start = datetime.now().date() - timedelta(days=days - 1)
         daily = {x.get("date"): x for x in history.get("entries", [])}
@@ -108,11 +134,16 @@ def collect_course(days=365):
         for offset in range(days):
             key = (start + timedelta(days=offset)).isoformat()
             item = daily.get(key, {})
-            minutes = round(max(0, float(item.get("dailySeconds", 0) or 0)) / 60, 1)
+            video_minutes = round(max(0, float(item.get("dailySeconds", 0) or 0)) / 60, 1)
+            pdf_minutes = round(float(pdf.get("daily", {}).get(key, 0) or 0) / 60, 1)
+            minutes = round(video_minutes + pdf_minutes, 1)
             synced["history"].append({
                 "date": key,
                 "minutes": minutes,
-                "goalPercent": round(min(1, minutes / 60) * 100, 2),
+                "videoMinutes": video_minutes,
+                "pdfMinutes": pdf_minutes,
+                "activityComplete": minutes > 0,
+                "goalPercent": 100 if minutes > 0 else 0,
             })
         return synced
     durations = read_json(COURSE_DURATIONS, {})
@@ -134,7 +165,11 @@ def collect_course(days=365):
         "lastLesson": None,
         "courses": courses,
         "total": {"watchedSeconds": 0, "durationSeconds": round(sum(totals.values()), 2), "percent": 0},
-        "today": {"minutes": 0, "goalMinutes": 60, "goalPercent": 0},
+        "today": {"minutes": 0, "videoMinutes": 0, "pdfMinutes": 0, "activityComplete": False, "goalPercent": 0},
+        "pdf": {"pages": 0, "totalPages": 113, "percent": 0, "documents": [
+            {"id": "cheatsheet", "title": "法语 Cheatsheet", "currentPage": 0, "totalPages": 25, "seconds": 0},
+            {"id": "a1-grammar", "title": "A1 语法讲义", "currentPage": 0, "totalPages": 88, "seconds": 0},
+        ]},
     }
 
 
@@ -197,8 +232,39 @@ def collect_reading(days=30):
         row["accuracy"] = round(row["correct"] / row["questions"] * 100, 2) if row["questions"] else 0
         row["goalPercent"] = round(min(1, row["questions"] / 39) * 100, 2)
         history.append(row)
+    month_start = today.replace(day=1)
+    month_end = today.replace(day=calendar.monthrange(today.year, today.month)[1])
+    days_remaining = (month_end - today).days + 1
+    month_rows = [x for x in history if x["date"] >= month_start.isoformat()]
+    month_completed = int(sum(x["questions"] for x in month_rows))
+    month_target = 20 * 39
+    remaining = max(0, month_target - month_completed)
+    recommended = math.ceil(remaining / days_remaining) if remaining else 0
+    yesterday_key = (today - timedelta(days=1)).isoformat()
+    yesterday = next((x for x in history if x["date"] == yesterday_key), {"questions": 0})
+    yesterday_pace = int(yesterday["questions"])
+    eta_days = math.ceil(remaining / yesterday_pace) if yesterday_pace > 0 and remaining else 0
+    eta_date = (today + timedelta(days=eta_days)).isoformat() if eta_days else None
     today_row = history[-1]
-    return {"today": today_row, "history": history}
+    today_row["activityComplete"] = today_row["questions"] > 0
+    today_row["recommendedQuestions"] = recommended
+    today_row["goalPercent"] = round(min(1, today_row["questions"] / recommended) * 100, 2) if recommended else 100
+    return {
+        "today": today_row,
+        "history": history,
+        "month": {
+            "target": month_target,
+            "completed": month_completed,
+            "remaining": remaining,
+            "percent": round(month_completed / month_target * 100, 2),
+            "daysRemaining": days_remaining,
+            "deadline": month_end.isoformat(),
+            "recommendedToday": recommended,
+            "yesterdayQuestions": yesterday_pace,
+            "etaDays": eta_days,
+            "etaDate": eta_date,
+        },
+    }
 
 
 def main():

@@ -4,246 +4,55 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#07120f">
-  <title>学习进度公开看板</title>
+  <title>学习监督台</title>
   <style>
-    :root {
-      --bg: #07120f;
-      --panel: #10211b;
-      --line: #294238;
-      --text: #f3f7f5;
-      --muted: #a8b8b0;
-      --green: #69e39d;
-      --cyan: #62d9de;
-      --yellow: #f5ce69;
-      --red: #ff8e7f;
-      --ms-blue: #00a4ef;
-      --ms-green: #7fba00;
-      --ms-yellow: #ffb900;
-      --ms-red: #f25022;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      color: var(--text);
-      background:
-        radial-gradient(circle at 12% -10%, rgba(105,227,157,.18), transparent 36rem),
-        radial-gradient(circle at 100% 0%, rgba(98,217,222,.13), transparent 30rem),
-        var(--bg);
-      font-family: Inter, "Segoe UI", "Microsoft YaHei", sans-serif;
-      letter-spacing: 0;
-    }
-    main { width: min(1100px, calc(100% - 28px)); margin: 0 auto; padding: 44px 0 70px; }
-    header { display: flex; justify-content: space-between; gap: 24px; align-items: end; margin-bottom: 32px; }
-    h1 { margin: 0 0 7px; font-size: clamp(27px, 5vw, 48px); line-height: 1; }
-    h2 { margin: 0; font-size: 18px; }
-    p { margin: 0; }
-    .muted { color: var(--muted); }
-    .date { text-align: right; font-variant-numeric: tabular-nums; }
-    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
-    .card {
-      min-width: 0;
-      padding: 20px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: color-mix(in srgb, var(--panel) 92%, transparent);
-    }
-    .hero { grid-column: 1 / -1; }
-    .goalGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
-    .dailyOverview { display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: end; margin-bottom: 22px; }
-    .dailyOverview .heroValue { min-width: 230px; }
-    .dailyOverviewText { padding-bottom: 5px; }
-    .goal { padding: 16px; border: 1px solid var(--line); background: rgba(3, 15, 11, .42); border-radius: 5px; }
-    .goalTop { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
-    .goalTop span { color: var(--muted); font-size: 12px; }
-    .goalValue { margin-top: 18px; font-size: 31px; line-height: 1; font-weight: 800; font-variant-numeric: tabular-nums; }
-    .heroValue, .big { font-variant-numeric: tabular-nums; font-weight: 800; }
-    .heroValue { margin-top: 14px; font-size: clamp(48px, 12vw, 100px); line-height: .85; color: var(--green); }
-    .big { margin-top: 18px; font-size: 36px; }
-    .unit { font-size: 15px; color: var(--muted); font-weight: 500; }
-    .bar { height: 9px; margin-top: 18px; overflow: hidden; background: #06100c; border-radius: 2px; }
-    .bar > i { display: block; height: 100%; width: var(--value); background: linear-gradient(90deg, var(--green), var(--cyan)); transition: width .6s ease; }
-    .stats { margin-top: 18px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
-    .stat { padding-top: 10px; border-top: 1px solid var(--line); }
-    .stat b { display: block; font-size: 21px; font-variant-numeric: tabular-nums; }
-    .stat span { color: var(--muted); font-size: 12px; }
-    .wide { grid-column: span 2; }
-    .sectionHead { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
-    .history { display: grid; grid-template-columns: repeat(14, 1fr); height: 100px; gap: 5px; align-items: end; }
-    .day { min-height: 3px; height: var(--height); background: linear-gradient(180deg, var(--cyan), var(--green)); border-radius: 2px 2px 0 0; position: relative; }
-    .day:hover::after { content: attr(data-tip); position: absolute; bottom: calc(100% + 5px); left: 50%; transform: translateX(-50%); padding: 5px 7px; white-space: nowrap; background: #000; font-size: 11px; z-index: 2; }
-    .courseRows { display: grid; gap: 12px; }
-    .courseRow { display: grid; grid-template-columns: 64px 1fr 62px; gap: 10px; align-items: center; }
-    .courseRow strong, .courseRow span { font-variant-numeric: tabular-nums; }
-    .courseRow span { text-align: right; color: var(--muted); }
-    .streak { color: var(--yellow); }
-    .calendarCard { grid-column: 1 / -1; overflow: hidden; }
-    .calendarLegend { display: flex; flex-wrap: wrap; gap: 14px; color: var(--muted); font-size: 12px; }
-    .calendarLegend span { display: inline-flex; align-items: center; gap: 5px; }
-    .legendDot { width: 9px; height: 9px; border-radius: 2px; }
-    .yearCalendarWrap { margin-top: 18px; overflow-x: auto; padding-bottom: 6px; }
-    .yearCalendar {
-      display: grid;
-      grid-template-rows: repeat(7, 13px);
-      grid-auto-flow: column;
-      grid-auto-columns: 13px;
-      gap: 4px;
-      min-width: max-content;
-    }
-    .calendarDay {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      gap: 1px;
-      width: 13px;
-      height: 13px;
-      padding: 1px;
-      border: 1px solid #284238;
-      border-radius: 2px;
-      background: #0a1713;
-      position: relative;
-    }
-    .calendarDay i { display: block; background: #1a2b25; }
-    .calendarDay .reading.done { background: var(--ms-blue); }
-    .calendarDay .anki.done { background: var(--ms-green); }
-    .calendarDay .course.done { background: var(--ms-yellow); }
-    .calendarDay .all.done { background: var(--ms-red); }
-    .calendarDay:hover::after {
-      content: attr(data-tip);
-      position: absolute;
-      bottom: calc(100% + 6px);
-      left: 50%;
-      transform: translateX(-50%);
-      padding: 6px 8px;
-      white-space: nowrap;
-      background: #000;
-      border-radius: 4px;
-      color: #fff;
-      font-size: 11px;
-      z-index: 5;
-    }
-    footer { margin-top: 22px; color: var(--muted); font-size: 12px; }
-    @media (max-width: 760px) {
-      main { padding-top: 26px; }
-      header { align-items: start; }
-      .grid { grid-template-columns: 1fr; }
-      .hero, .wide { grid-column: auto; }
-      .goalGrid { grid-template-columns: 1fr; }
-      .dailyOverview { grid-template-columns: 1fr; }
-      .date { font-size: 12px; }
-      .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-      .stat b { font-size: 17px; }
-    }
+    :root{--bg:#07120f;--panel:#10211b;--line:#294238;--text:#f3f7f5;--muted:#a8b8b0;--green:#69e39d;--cyan:#62d9de;--yellow:#f5ce69;--red:#ff8e7f}
+    *{box-sizing:border-box}body{margin:0;color:var(--text);background:radial-gradient(circle at 10% -10%,rgba(105,227,157,.17),transparent 36rem),radial-gradient(circle at 100% 0,rgba(98,217,222,.12),transparent 30rem),var(--bg);font-family:Inter,"Segoe UI","Microsoft YaHei",sans-serif}
+    main{width:min(1100px,calc(100% - 28px));margin:auto;padding:42px 0 70px}header,.sectionHead,.goalTop{display:flex;justify-content:space-between;gap:16px;align-items:flex-end}header{margin-bottom:28px}h1{margin:0 0 6px;font-size:clamp(30px,6vw,52px);line-height:1}h2{margin:0;font-size:18px}p{margin:0}.muted{color:var(--muted)}.date{text-align:right;font-variant-numeric:tabular-nums}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.card{min-width:0;padding:20px;border:1px solid var(--line);border-radius:8px;background:rgba(16,33,27,.94)}.hero,.calendarCard{grid-column:1/-1}.wide{grid-column:span 2}
+    .overview{display:grid;grid-template-columns:auto 1fr;gap:25px;align-items:end;margin:18px 0 22px}.heroValue{font-size:clamp(54px,11vw,96px);font-weight:800;line-height:.9;color:var(--green);font-variant-numeric:tabular-nums}.goalGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.goal{padding:16px;border:1px solid var(--line);border-radius:5px;background:rgba(3,15,11,.45)}.goalTop{align-items:baseline}.goalTop span{font-size:12px;color:var(--muted)}.goalValue,.big{margin-top:17px;font-size:32px;font-weight:800;font-variant-numeric:tabular-nums}.unit{font-size:14px;font-weight:500;color:var(--muted)}
+    .bar{height:9px;margin:16px 0;overflow:hidden;border-radius:2px;background:#06100c}.bar i{display:block;width:var(--value);height:100%;background:linear-gradient(90deg,var(--green),var(--cyan));transition:width .5s ease}.details{margin-top:12px;color:var(--muted);font-size:12px;line-height:1.7}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:17px}.stat{padding-top:10px;border-top:1px solid var(--line)}.stat b{display:block;font-size:20px;font-variant-numeric:tabular-nums}.stat span{font-size:12px;color:var(--muted)}
+    .courseRows{display:grid;gap:11px;margin-top:15px}.courseRow{display:grid;grid-template-columns:60px 1fr 68px;gap:10px;align-items:center}.courseRow span{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}a{color:var(--cyan)}.calendar{display:grid;grid-template-columns:repeat(31,1fr);gap:4px;margin-top:16px}.day{aspect-ratio:1;border:1px solid var(--line);background:#0a1713}.day.done{background:linear-gradient(135deg,var(--green),var(--cyan));border-color:transparent}.monthProgress{font-size:12px;color:var(--muted)}
+    footer{margin-top:22px;color:var(--muted);font-size:12px}@media(max-width:760px){main{padding-top:25px}.grid{grid-template-columns:1fr}.hero,.calendarCard,.wide{grid-column:auto}.goalGrid,.overview{grid-template-columns:1fr}.date{font-size:11px}.calendar{grid-template-columns:repeat(16,1fr)}}
   </style>
 </head>
 <body>
-  <main>
-    <header>
-      <div>
-        <h1>学习监督台</h1>
-        <p class="muted">把每天的投入变成看得见的证据。</p>
-      </div>
-      <p class="date muted" id="updated">读取中</p>
-    </header>
-    <section class="grid" id="dashboard"></section>
-    <footer>公开页面只展示统计数据，不包含 Anki 卡片内容、本地文件名或个人资料。</footer>
-  </main>
-  <script>
-    const n = (value, digits = 0) => Number(value || 0).toLocaleString("zh-CN", { maximumFractionDigits: digits, minimumFractionDigits: digits });
-    const pct = value => `${n(value, 2)}%`;
-    const bar = value => `<div class="bar"><i style="--value:${Math.max(0, Math.min(100, value || 0))}%"></i></div>`;
-    const stats = items => `<div class="stats">${items.map(([v, k]) => `<div class="stat"><b>${v}</b><span>${k}</span></div>`).join("")}</div>`;
-    const history = rows => {
-      const recent = (rows || []).slice(-14);
-      const max = Math.max(1, ...recent.map(x => x.value || 0));
-      return `<div class="history">${recent.map(x => `<i class="day" style="--height:${Math.max(3, (x.value || 0) / max * 100)}%" data-tip="${x.date}: ${n(x.value)}"></i>`).join("")}</div>`;
-    };
-    const yearCalendar = (ankiRows, readingRows, courseRows) => {
-      const byDate = rows => new Map((rows || []).map(x => [x.date, x]));
-      const anki = byDate(ankiRows), reading = byDate(readingRows), course = byDate(courseRows);
-      const end = new Date();
-      end.setHours(0, 0, 0, 0);
-      const start = new Date(end);
-      start.setDate(start.getDate() - 364 - start.getDay());
-      const cells = [];
-      for (const day = new Date(start); day <= end; day.setDate(day.getDate() + 1)) {
-        const date = day.toLocaleDateString("en-CA");
-        const r = (reading.get(date)?.goalPercent || 0) >= 100;
-        const a = (anki.get(date)?.new || 0) >= 20;
-        const c = (course.get(date)?.minutes || 0) >= 60;
-        const all = r && a && c;
-        cells.push(`<span class="calendarDay" data-tip="${date} · 阅读${r ? "完成" : "未完成"} · Anki${a ? "完成" : "未完成"} · 课程${c ? "完成" : "未完成"}">
-          <i class="reading ${r ? "done" : ""}"></i><i class="anki ${a ? "done" : ""}"></i>
-          <i class="course ${c ? "done" : ""}"></i><i class="all ${all ? "done" : ""}"></i>
-        </span>`);
-      }
-      return `<div class="yearCalendarWrap"><div class="yearCalendar">${cells.join("")}</div></div>`;
-    };
-    async function load() {
-      const data = await fetch(`data/progress.json?t=${Date.now()}`).then(r => r.json());
-      const a = data.anki, c = data.course, r = data.reading;
-      const ankiGoal = Math.min(100, a.today.new / 20 * 100);
-      const dailyScore = (r.today.goalPercent + ankiGoal + c.today.goalPercent) / 3;
-      document.querySelector("#updated").textContent = `更新于 ${new Date(data.updatedAt).toLocaleString("zh-CN")}`;
-      document.querySelector("#dashboard").innerHTML = `
-        <article class="card hero">
-          <div class="sectionHead"><h2>今日三个目标</h2><span class="muted">${n(data.today.focusMinutes)} 分钟已记录</span></div>
-          <div class="dailyOverview">
-            <div><p class="muted">三个目标平均完成度</p><div class="heroValue">${pct(dailyScore)}</div></div>
-            <div class="dailyOverviewText"><p class="muted">阅读 ${pct(r.today.goalPercent)} · Anki ${pct(ankiGoal)} · 课程 ${pct(c.today.goalPercent)}</p>${bar(dailyScore)}</div>
-          </div>
-          <div class="goalGrid">
-            <div class="goal">
-              <div class="goalTop"><h2>阅读单项</h2><span>每日 1 Test</span></div>
-              <div class="goalValue">${n(r.today.questions)} / 39 <span class="unit">题</span></div>
-              ${bar(r.today.goalPercent)}
-            </div>
-            <div class="goal">
-              <div class="goalTop"><h2>Anki 新词</h2><span>每日 20 个</span></div>
-              <div class="goalValue">${n(a.today.new)} / 20 <span class="unit">新卡</span></div>
-              ${bar(Math.min(100, a.today.new / 20 * 100))}
-            </div>
-            <div class="goal">
-              <div class="goalTop"><h2>课程观看</h2><span>每日 60 分钟</span></div>
-              <div class="goalValue">${n(c.today.minutes, 1)} / 60 <span class="unit">分钟</span></div>
-              ${bar(c.today.goalPercent)}
-            </div>
-          </div>
-        </article>
-        <article class="card calendarCard">
-          <div class="sectionHead">
-            <h2>年度学习日历</h2>
-            <div class="calendarLegend">
-              <span><i class="legendDot" style="background:var(--ms-blue)"></i>阅读</span>
-              <span><i class="legendDot" style="background:var(--ms-green)"></i>Anki</span>
-              <span><i class="legendDot" style="background:var(--ms-yellow)"></i>课程</span>
-              <span><i class="legendDot" style="background:var(--ms-red)"></i>三项完成</span>
-            </div>
-          </div>
-          ${yearCalendar(a.history, r.history, c.history)}
-        </article>
-        <article class="card">
-          <div class="sectionHead"><h2>Anki</h2><span class="streak">${n(a.streak)} 天连续</span></div>
-          <div class="big">${n(a.today.reviews)} <span class="unit">次复习</span></div>
-          ${stats([[n(a.today.new), "今日新卡"], [n(a.today.minutes, 1), "分钟"], [n(a.total.cards), "总卡片"]])}
-        </article>
-        <article class="card wide">
-          <div class="sectionHead"><h2>最近 14 天 Anki</h2><span class="muted">每日复习次数</span></div>
-          ${history(a.history.map(x => ({date:x.date, value:x.reviews})))}
-        </article>
-        <article class="card wide">
-          <div class="sectionHead"><h2>课程进度</h2><span class="muted">${pct(c.total.percent)}</span></div>
-          <div class="courseRows">${c.courses.map(x => `<div class="courseRow"><strong>${x.label}</strong>${bar(x.percent)}<span>${pct(x.percent)}</span></div>`).join("")}</div>
-        </article>
-        <article class="card">
-          <div class="sectionHead"><h2>阅读单项</h2><span class="muted">每日目标 1 Test</span></div>
-          <div class="big">${n(r.today.questions)} / 39 <span class="unit">题</span></div>
-          ${bar(r.today.goalPercent)}
-          ${stats([[pct(r.today.goalPercent), "目标完成"], [n(r.today.correct), "当前得分"], [n(r.today.minutes, 1), "分钟"]])}
-        </article>`;
-    }
-    load().catch(err => {
-      document.querySelector("#dashboard").innerHTML = `<article class="card hero"><h2>暂时没有进度数据</h2><p class="muted">${err.message}</p></article>`;
-    });
-  </script>
+<main>
+  <header><div><h1>学习监督台</h1><p class="muted">月底目标明确，每天只要求留下进度。</p></div><p class="date muted" id="updated">读取中</p></header>
+  <section class="grid" id="dashboard"></section>
+  <footer>公开页面只展示统计数字，不包含卡片、题目、PDF 内容或本地文件。</footer>
+</main>
+<script>
+const n=(v,d=0)=>Number(v||0).toLocaleString("zh-CN",{maximumFractionDigits:d,minimumFractionDigits:d});
+const pct=v=>`${n(v,2)}%`;
+const bar=v=>`<div class="bar"><i style="--value:${Math.max(0,Math.min(100,v||0))}%"></i></div>`;
+const stats=items=>`<div class="stats">${items.map(([v,k])=>`<div class="stat"><b>${v}</b><span>${k}</span></div>`).join("")}</div>`;
+const monthCalendar=(a,r,c)=>{
+  const map=rows=>new Map((rows||[]).map(x=>[x.date,x])),am=map(a),rm=map(r),cm=map(c),now=new Date(),year=now.getFullYear(),month=now.getMonth(),days=new Date(year,month+1,0).getDate(),cells=[];
+  for(let i=1;i<=days;i++){const key=`${year}-${String(month+1).padStart(2,"0")}-${String(i).padStart(2,"0")}`,done=(am.get(key)?.reviews||am.get(key)?.new||rm.get(key)?.questions||cm.get(key)?.minutes)>0;cells.push(`<i class="day ${done?"done":""}" title="${key}"></i>`)}
+  return `<div class="calendar">${cells.join("")}</div>`;
+};
+async function load(){
+  const data=await fetch(`data/progress.json?t=${Date.now()}`).then(r=>r.json()),a=data.anki,c=data.course,r=data.reading;
+  const readDone=r.today.activityComplete?100:0,ankiDone=a.today.activityComplete?100:0,courseDone=c.today.activityComplete?100:0,daily=(readDone+ankiDone+courseDone)/3;
+  document.querySelector("#updated").textContent=`更新于 ${new Date(data.updatedAt).toLocaleString("zh-CN")}`;
+  document.querySelector("#dashboard").innerHTML=`
+  <article class="card hero">
+    <div class="sectionHead"><h2>今日活动完成度</h2><span class="muted">${n(data.today.focusMinutes)} 分钟已记录</span></div>
+    <div class="overview"><div class="heroValue">${pct(daily)}</div><div><p class="muted">三项中任何一项留下记录即视为今日完成</p>${bar(daily)}<p class="details">阅读 ${pct(readDone)} · Anki ${pct(ankiDone)} · 课程/PDF ${pct(courseDone)}</p></div></div>
+    <div class="goalGrid">
+      <div class="goal"><div class="goalTop"><h2>阅读单项</h2><span>月底前完成 20 Test</span></div><div class="goalValue">${n(r.today.questions)} / ${n(r.month.recommendedToday)} <span class="unit">今日动态建议</span></div>${bar(r.today.goalPercent)}<p class="details">本月 ${n(r.month.completed)} / ${n(r.month.target)} 题 · 剩余 ${n(r.month.remaining)}<br>昨日 ${n(r.month.yesterdayQuestions)} 题 · ETA ${r.month.etaDate||"暂无速度"}</p></div>
+      <div class="goal"><div class="goalTop"><h2>Anki</h2><span>有记录即完成</span></div><div class="goalValue">${n(a.today.reviews)} <span class="unit">复习 · ${n(a.today.new)} 新卡</span></div>${bar(ankiDone)}<p class="details">今日 ${n(a.today.minutes,1)} 分钟 · 连续 ${n(a.streak)} 天</p></div>
+      <div class="goal"><div class="goalTop"><h2>课程与 PDF</h2><span>月底前持续推进</span></div><div class="goalValue">${n(c.today.minutes,1)} <span class="unit">今日分钟</span></div>${bar(courseDone)}<p class="details">视频 ${n(c.today.videoMinutes,1)} 分钟 · PDF ${n(c.today.pdfMinutes,1)} 分钟<br>PDF ${n(c.pdf.pages)} / ${n(c.pdf.totalPages)} 页</p></div>
+    </div>
+  </article>
+  <article class="card calendarCard"><div class="sectionHead"><h2>本月活动记录</h2><span class="monthProgress">任意学习记录即点亮</span></div>${monthCalendar(a.history,r.history,c.history)}</article>
+  <article class="card wide"><div class="sectionHead"><h2>阅读月底计划</h2><span class="muted">${r.month.deadline} 截止</span></div><div class="big">${n(r.month.completed)} / ${n(r.month.target)} <span class="unit">题</span></div>${bar(r.month.percent)}${stats([[n(r.month.recommendedToday),"今日建议"],[n(r.month.daysRemaining),"剩余天数"],[r.month.etaDays?`${n(r.month.etaDays)} 天`:"暂无","昨日速度 ETA"]])}</article>
+  <article class="card"><div class="sectionHead"><h2>Anki 具体记录</h2><span class="muted">无硬性配额</span></div><div class="big">${n(a.today.reviews)} <span class="unit">次复习</span></div>${stats([[n(a.today.new),"新卡"],[n(a.today.minutes,1),"分钟"],[n(a.total.cards),"总卡片"]])}</article>
+  <article class="card wide"><div class="sectionHead"><h2>视频课程累计</h2><span class="muted">${pct(c.total.percent)}</span></div><div class="courseRows">${c.courses.map(x=>`<div class="courseRow"><strong>${x.label}</strong>${bar(x.percent)}<span>${pct(x.percent)}</span></div>`).join("")}</div></article>
+  <article class="card"><div class="sectionHead"><h2>PDF 阅读</h2><span class="muted">${pct(c.pdf.percent)}</span></div><div class="big">${n(c.pdf.pages)} / ${n(c.pdf.totalPages)} <span class="unit">页</span></div>${bar(c.pdf.percent)}<p class="details"><a href="http://10.0.0.19:8765/pdf_reader.html">打开本地 PDF 阅读器</a></p></article>`;
+}
+load().catch(e=>document.querySelector("#dashboard").innerHTML=`<article class="card hero"><h2>暂时没有进度数据</h2><p class="muted">${e.message}</p></article>`);
+</script>
 </body>
 </html>
