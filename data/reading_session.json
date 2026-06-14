@@ -1,11 +1,11 @@
 {
-  "startedAt": "2026-06-12T22:19:28-04:00",
+  "startedAt": "2026-06-13T23:18:34-04:00",
   "baselines": {
     "test01": {
       "answered": 17,
       "correct": 14,
-      "seconds": 667,
-      "capturedAt": "2026-06-12T17:15:11.535Z"
+      "seconds": 1297,
+      "capturedAt": "2026-06-13T18:08:21.193Z"
     }
   }
 }
