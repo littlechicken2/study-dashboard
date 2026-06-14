@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-06-14T05:15:59.602Z",
+  "updatedAt": "2026-06-14T11:54:03.445Z",
   "lastLesson": {
     "id": "a1/6_4.mp4",
     "title": "6 4 · 形容词特殊阴性变化",
     "course": "a1",
-    "time": 205.449745
+    "time": 206.012752
   },
   "courses": [
     {
@@ -17,7 +17,7 @@
     {
       "id": "a1",
       "label": "A1",
-      "watchedSeconds": 19141.55,
+      "watchedSeconds": 19142.11,
       "durationSeconds": 79062.89,
       "percent": 24.21
     },
@@ -44,7 +44,7 @@
     }
   ],
   "total": {
-    "watchedSeconds": 38214.2,
+    "watchedSeconds": 38214.76,
     "durationSeconds": 487318.95,
     "percent": 7.84
   }
