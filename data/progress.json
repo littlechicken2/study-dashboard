@@ -1,27 +1,21 @@
 {
-  "updatedAt": "2026-06-13T23:18:34-04:00",
+  "updatedAt": "2026-06-14T00:18:37-04:00",
   "today": {
-    "date": "2026-06-13",
-    "focusMinutes": 35
+    "date": "2026-06-14",
+    "focusMinutes": 0
   },
   "anki": {
     "today": {
-      "reviews": 195,
-      "new": 44,
-      "minutes": 34.9
+      "reviews": 0,
+      "new": 0,
+      "minutes": 0
     },
     "total": {
       "cards": 35974,
       "mature": 187
     },
-    "streak": 1,
+    "streak": 0,
     "history": [
-      {
-        "date": "2025-06-14",
-        "reviews": 0,
-        "new": 0,
-        "minutes": 0
-      },
       {
         "date": "2025-06-15",
         "reviews": 0,
@@ -2205,6 +2199,12 @@
         "reviews": 195,
         "new": 44,
         "minutes": 34.9
+      },
+      {
+        "date": "2026-06-14",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
       }
     ]
   },
@@ -2264,11 +2264,6 @@
       "goalPercent": 0.0
     },
     "history": [
-      {
-        "date": "2025-06-14",
-        "minutes": 0.0,
-        "goalPercent": 0.0
-      },
       {
         "date": "2025-06-15",
         "minutes": 0.0,
@@ -4088,12 +4083,17 @@
         "date": "2026-06-13",
         "minutes": 0.0,
         "goalPercent": 0.0
+      },
+      {
+        "date": "2026-06-14",
+        "minutes": 0.0,
+        "goalPercent": 0.0
       }
     ]
   },
   "reading": {
     "today": {
-      "date": "2026-06-13",
+      "date": "2026-06-14",
       "sets": 0.0,
       "questions": 0,
       "correct": 0,
@@ -4110,16 +4110,6 @@
       "goalPercent": 0.0
     },
     "history": [
-      {
-        "date": "2025-06-14",
-        "sets": 0,
-        "questions": 0,
-        "correct": 0,
-        "minutes": 0,
-        "tests": [],
-        "accuracy": 0,
-        "goalPercent": 0.0
-      },
       {
         "date": "2025-06-15",
         "sets": 0,
@@ -7815,6 +7805,23 @@
       },
       {
         "date": "2026-06-13",
+        "sets": 0.0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0.0,
+        "tests": [
+          {
+            "test": "test01",
+            "answered": 0,
+            "correct": 0,
+            "total": 39
+          }
+        ],
+        "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-06-14",
         "sets": 0.0,
         "questions": 0,
         "correct": 0,
