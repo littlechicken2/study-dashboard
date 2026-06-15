@@ -1,29 +1,23 @@
 {
-  "updatedAt": "2026-06-14T16:19:21-04:00",
+  "updatedAt": "2026-06-15T00:56:02-04:00",
   "today": {
-    "date": "2026-06-14",
-    "focusMinutes": 8
+    "date": "2026-06-15",
+    "focusMinutes": 0
   },
   "anki": {
     "today": {
-      "reviews": 59,
-      "new": 43,
-      "minutes": 7.7,
-      "activityComplete": true,
-      "goalPercent": 100
+      "reviews": 0,
+      "new": 0,
+      "minutes": 0,
+      "activityComplete": false,
+      "goalPercent": 0
     },
     "total": {
       "cards": 35974,
       "mature": 188
     },
-    "streak": 2,
+    "streak": 0,
     "history": [
-      {
-        "date": "2025-06-15",
-        "reviews": 0,
-        "new": 0,
-        "minutes": 0
-      },
       {
         "date": "2025-06-16",
         "reviews": 0,
@@ -2207,16 +2201,22 @@
         "reviews": 59,
         "new": 43,
         "minutes": 7.7
+      },
+      {
+        "date": "2026-06-15",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
       }
     ]
   },
   "course": {
-    "updatedAt": "2026-06-14T18:47:01.522Z",
+    "updatedAt": "2026-06-14T20:25:39.994Z",
     "lastLesson": {
       "id": "a1/6_4.mp4",
       "title": "6 4 · 形容词特殊阴性变化",
       "course": "a1",
-      "time": 206.012752
+      "time": 204.974686
     },
     "courses": [
       {
@@ -2268,35 +2268,21 @@
       "goalPercent": 0
     },
     "pdf": {
-      "pages": 0,
-      "totalPages": 113,
-      "percent": 0.0,
+      "pages": 1,
+      "totalPages": 88,
+      "percent": 1.14,
       "documents": [
-        {
-          "id": "cheatsheet",
-          "title": "法语 Cheatsheet",
-          "currentPage": 0,
-          "totalPages": 25,
-          "seconds": 0
-        },
         {
           "id": "a1-grammar",
           "title": "A1 语法讲义",
-          "currentPage": 0,
+          "currentPage": 1,
           "totalPages": 88,
-          "seconds": 0
+          "seconds": 16.035000000000004,
+          "updatedAt": "2026-06-14T20:24:54.961Z"
         }
       ]
     },
     "history": [
-      {
-        "date": "2025-06-15",
-        "minutes": 0.0,
-        "videoMinutes": 0.0,
-        "pdfMinutes": 0.0,
-        "activityComplete": false,
-        "goalPercent": 0
-      },
       {
         "date": "2025-06-16",
         "minutes": 0.0,
@@ -5203,6 +5189,14 @@
       },
       {
         "date": "2026-06-14",
+        "minutes": 0.4,
+        "videoMinutes": 0.1,
+        "pdfMinutes": 0.3,
+        "activityComplete": true,
+        "goalPercent": 100
+      },
+      {
+        "date": "2026-06-15",
         "minutes": 0.0,
         "videoMinutes": 0.0,
         "pdfMinutes": 0.0,
@@ -5213,7 +5207,7 @@
   },
   "reading": {
     "today": {
-      "date": "2026-06-14",
+      "date": "2026-06-15",
       "sets": 0.0,
       "questions": 0,
       "correct": 0,
@@ -5229,19 +5223,9 @@
       "accuracy": 0,
       "goalPercent": 0.0,
       "activityComplete": false,
-      "recommendedQuestions": 45
+      "recommendedQuestions": 48
     },
     "history": [
-      {
-        "date": "2025-06-15",
-        "sets": 0,
-        "questions": 0,
-        "correct": 0,
-        "minutes": 0,
-        "tests": [],
-        "accuracy": 0,
-        "goalPercent": 0.0
-      },
       {
         "date": "2025-06-16",
         "sets": 0,
@@ -8957,9 +8941,26 @@
           }
         ],
         "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-06-15",
+        "sets": 0.0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0.0,
+        "tests": [
+          {
+            "test": "test01",
+            "answered": 0,
+            "correct": 0,
+            "total": 39
+          }
+        ],
+        "accuracy": 0,
         "goalPercent": 0.0,
         "activityComplete": false,
-        "recommendedQuestions": 45
+        "recommendedQuestions": 48
       }
     ],
     "month": {
@@ -8967,9 +8968,9 @@
       "completed": 17,
       "remaining": 763,
       "percent": 2.18,
-      "daysRemaining": 17,
+      "daysRemaining": 16,
       "deadline": "2026-06-30",
-      "recommendedToday": 45,
+      "recommendedToday": 48,
       "yesterdayQuestions": 0,
       "etaDays": 0,
       "etaDate": null

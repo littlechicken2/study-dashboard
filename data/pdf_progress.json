@@ -1,4 +1,23 @@
 {
-  "documents": {},
-  "daily": {}
+  "documents": {
+    "cheatsheet": {
+      "id": "cheatsheet",
+      "title": "法语 Cheatsheet",
+      "currentPage": 1,
+      "totalPages": 25,
+      "seconds": 0.0,
+      "updatedAt": "2026-06-14T20:24:38.833Z"
+    },
+    "a1-grammar": {
+      "id": "a1-grammar",
+      "title": "A1 语法讲义",
+      "currentPage": 1,
+      "totalPages": 88,
+      "seconds": 16.035000000000004,
+      "updatedAt": "2026-06-14T20:24:54.961Z"
+    }
+  },
+  "daily": {
+    "2026-06-14": 16.035000000000004
+  }
 }
