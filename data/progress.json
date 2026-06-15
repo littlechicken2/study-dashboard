@@ -1,22 +1,22 @@
 {
-  "updatedAt": "2026-06-15T07:55:52-04:00",
+  "updatedAt": "2026-06-15T08:55:55-04:00",
   "today": {
     "date": "2026-06-15",
-    "focusMinutes": 0
+    "focusMinutes": 12
   },
   "anki": {
     "today": {
-      "reviews": 0,
-      "new": 0,
-      "minutes": 0,
-      "activityComplete": false,
-      "goalPercent": 0
+      "reviews": 87,
+      "new": 35,
+      "minutes": 12.3,
+      "activityComplete": true,
+      "goalPercent": 100
     },
     "total": {
       "cards": 35974,
       "mature": 188
     },
-    "streak": 0,
+    "streak": 3,
     "history": [
       {
         "date": "2025-06-16",
@@ -1779,7 +1779,7 @@
       {
         "date": "2026-04-05",
         "reviews": 29,
-        "new": 173,
+        "new": 174,
         "minutes": 3.0
       },
       {
@@ -1977,7 +1977,7 @@
       {
         "date": "2026-05-08",
         "reviews": 111,
-        "new": 145,
+        "new": 146,
         "minutes": 23.9
       },
       {
@@ -2085,7 +2085,7 @@
       {
         "date": "2026-05-26",
         "reviews": 153,
-        "new": 84,
+        "new": 87,
         "minutes": 17.6
       },
       {
@@ -2097,25 +2097,25 @@
       {
         "date": "2026-05-28",
         "reviews": 114,
-        "new": 132,
+        "new": 133,
         "minutes": 18.8
       },
       {
         "date": "2026-05-29",
         "reviews": 43,
-        "new": 102,
+        "new": 105,
         "minutes": 6.6
       },
       {
         "date": "2026-05-30",
         "reviews": 86,
-        "new": 134,
+        "new": 137,
         "minutes": 11.2
       },
       {
         "date": "2026-05-31",
         "reviews": 75,
-        "new": 137,
+        "new": 143,
         "minutes": 15.3
       },
       {
@@ -2139,7 +2139,7 @@
       {
         "date": "2026-06-04",
         "reviews": 280,
-        "new": 208,
+        "new": 226,
         "minutes": 41.1
       },
       {
@@ -2151,7 +2151,7 @@
       {
         "date": "2026-06-06",
         "reviews": 8,
-        "new": 8,
+        "new": 9,
         "minutes": 1.8
       },
       {
@@ -2169,7 +2169,7 @@
       {
         "date": "2026-06-09",
         "reviews": 179,
-        "new": 66,
+        "new": 77,
         "minutes": 22.4
       },
       {
@@ -2193,7 +2193,7 @@
       {
         "date": "2026-06-13",
         "reviews": 195,
-        "new": 44,
+        "new": 48,
         "minutes": 34.9
       },
       {
@@ -2204,19 +2204,19 @@
       },
       {
         "date": "2026-06-15",
-        "reviews": 0,
-        "new": 0,
-        "minutes": 0
+        "reviews": 87,
+        "new": 35,
+        "minutes": 12.3
       }
     ]
   },
   "course": {
-    "updatedAt": "2026-06-15T09:08:46.094Z",
+    "updatedAt": "2026-06-15T11:58:20.394Z",
     "lastLesson": {
       "id": "a1/6_4.mp4",
       "title": "6 4 · 形容词特殊阴性变化",
       "course": "a1",
-      "time": 204.618328
+      "time": 204.871161
     },
     "courses": [
       {
