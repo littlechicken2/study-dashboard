@@ -3,10 +3,10 @@
     "a1-grammar": {
       "id": "a1-grammar",
       "title": "A1 语法讲义",
-      "currentPage": 24,
+      "currentPage": 25,
       "totalPages": 88,
       "seconds": 21.058000000000003,
-      "updatedAt": "2026-06-16T08:00:51.770Z"
+      "updatedAt": "2026-06-16T08:11:19.808Z"
     }
   },
   "daily": {
@@ -14,7 +14,7 @@
     "2026-06-16": 5.023
   },
   "dailyPages": {
-    "2026-06-16": 4
+    "2026-06-16": 5
   },
   "dailyPageBaselines": {
     "2026-06-16": 20

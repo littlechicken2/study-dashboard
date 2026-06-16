@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-16T04:05:05-04:00",
+  "updatedAt": "2026-06-16T04:10:54-04:00",
   "today": {
     "date": "2026-06-16",
     "focusMinutes": 22
@@ -2268,26 +2268,26 @@
       "goalPercent": 100
     },
     "pdf": {
-      "pages": 24,
+      "pages": 25,
       "totalPages": 88,
-      "percent": 27.27,
+      "percent": 28.41,
       "documents": [
         {
           "id": "a1-grammar",
           "title": "A1 语法讲义",
-          "currentPage": 24,
+          "currentPage": 25,
           "totalPages": 88,
           "seconds": 21.058000000000003,
           "updatedAt": "2026-06-16T08:00:51.770Z"
         }
       ],
-      "todayPages": 4,
+      "todayPages": 5,
       "month": {
         "unit": "pages",
         "target": 88,
-        "completed": 24,
-        "remaining": 64,
-        "percent": 27.27,
+        "completed": 25,
+        "remaining": 63,
+        "percent": 28.41,
         "daysRemaining": 15,
         "deadline": "2026-06-30",
         "recommendedToday": 5,
