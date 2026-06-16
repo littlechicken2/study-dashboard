@@ -1,6 +1,7 @@
 (() => {
   let lastPayload = "";
   let lastActivity = 0;
+  let focusBlocker = null;
 
   function classify() {
     const host = location.hostname;
@@ -14,26 +15,79 @@
     return null;
   }
 
+  async function dailyTasksComplete() {
+    try {
+      const data = await fetch("http://127.0.0.1:8765/data/progress.json?t=" + Date.now()).then(r => r.json());
+      const reading = Boolean(data.reading?.today?.activityComplete || data.activity?.today?.readingMinutes > 0);
+      const grammar = Boolean(data.course?.today?.activityComplete || data.activity?.today?.grammarMinutes > 0);
+      const verb = Boolean(data.anki?.today?.activityComplete || data.activity?.today?.verbMinutes > 0);
+      return reading && grammar && verb;
+    } catch (_) {
+      return false;
+    }
+  }
+
+  function suppressMedia() {
+    document.querySelectorAll("video, audio").forEach(media => {
+      media.muted = true;
+      media.volume = 0;
+      media.pause?.();
+      media.style.filter = "blur(18px) grayscale(1) brightness(.2)";
+    });
+  }
+
+  function restoreMedia() {
+    document.querySelectorAll("video, audio").forEach(media => {
+      media.style.filter = "";
+    });
+  }
+
   function showWarning() {
-    if (document.getElementById("study-focus-warning")) return;
+    suppressMedia();
+    if (focusBlocker) return;
     const box = document.createElement("div");
+    focusBlocker = box;
     box.id = "study-focus-warning";
-    box.textContent = "学习计时已暂停：关闭娱乐页面即可继续计时。";
+    box.innerHTML = `
+      <div style="font-size:42px;font-weight:900;line-height:1.05;margin-bottom:18px">今天的学习任务还没完成</div>
+      <div style="font-size:20px;line-height:1.55;max-width:760px;margin:0 auto 22px">
+        Bilibili / YouTube / 抖音已暂停。先完成 Reading、Grammar、Verb 三项记录，再回来放松。
+      </div>
+      <div id="study-focus-status" style="font-size:16px;opacity:.9">正在检查监督台进度...</div>
+    `;
     Object.assign(box.style, {
       position: "fixed",
       zIndex: "2147483647",
-      top: "18px",
-      left: "50%",
-      transform: "translateX(-50%)",
-      padding: "14px 18px",
-      background: "#f25022",
+      inset: "0",
+      display: "grid",
+      placeItems: "center",
+      textAlign: "center",
+      padding: "34px",
+      background: "rgba(7,18,15,.96)",
       color: "#fff",
-      fontSize: "18px",
-      fontWeight: "700",
-      borderRadius: "8px",
-      boxShadow: "0 12px 40px rgba(0,0,0,.35)"
+      fontFamily: "Inter, system-ui, sans-serif",
+      boxShadow: "inset 0 0 0 10px #f25022"
     });
     document.documentElement.appendChild(box);
+  }
+
+  function hideWarning() {
+    focusBlocker?.remove();
+    focusBlocker = null;
+    restoreMedia();
+  }
+
+  async function enforceDistractionBlock() {
+    const info = classify();
+    if (!info || info.category !== "distraction") return;
+    const complete = await dailyTasksComplete();
+    if (complete) {
+      hideWarning();
+      return;
+    }
+    showWarning();
+    const status = document.getElementById("study-focus-status");
+    if (status) status.textContent = "未完成：娱乐视频已静音并暂停。关闭此页面，完成任务后会自动解锁。";
   }
 
   function sendActivity(force = false) {
@@ -43,7 +97,7 @@
     const info = classify();
     if (!info) return;
     lastActivity = now;
-    if (info.category === "distraction") showWarning();
+    if (info.category === "distraction") enforceDistractionBlock();
     fetch("http://127.0.0.1:8765/api/activity-ping", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -94,8 +148,10 @@
 
   sync();
   sendActivity(true);
+  enforceDistractionBlock();
   setInterval(sync, 10000);
   setInterval(sendActivity, 10000);
+  setInterval(enforceDistractionBlock, 3000);
   document.addEventListener("click", () => setTimeout(sync, 800), true);
   document.addEventListener("click", () => setTimeout(() => sendActivity(true), 800), true);
   window.addEventListener("focus", () => { sync(); sendActivity(true); });
