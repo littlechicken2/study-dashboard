@@ -2,18 +2,27 @@
   "days": {
     "2026-06-16": {
       "reading": 0,
-      "grammar": 0,
+      "grammar": 690.0,
       "verb": 0,
-      "warnings": [],
-      "sources": {}
+      "warnings": [
+        {
+          "source": "www.bilibili.com",
+          "title": "压力完发现自己没有傻子厉害 直接破防挂机_游戏热门视频",
+          "capturedAt": "2026-06-16T06:13:03.987Z"
+        }
+      ],
+      "sources": {
+        "adobe-acrobat": 690.0
+      }
     }
   },
-  "lastContext": "verb",
+  "lastContext": "grammar",
   "lastPing": {
-    "title": "YouTube",
-    "category": "distraction",
-    "source": "youtube.com",
-    "seconds": 0,
-    "capturedAt": "2026-06-16T01:57:52.1429558-04:00"
+    "category": "grammar",
+    "source": "adobe-acrobat",
+    "seconds": 5,
+    "title": "【新东方在线诚意出品】法语欧标A1语法大全电子讲义.pdf.pdf (SECURED) - Adobe Acrobat Reader (64-bit)",
+    "idleSeconds": 60.0,
+    "capturedAt": "2026-06-16T02:53:58-0400"
   }
 }

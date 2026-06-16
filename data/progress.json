@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-16T02:05:00-04:00",
+  "updatedAt": "2026-06-16T02:57:34-04:00",
   "today": {
     "date": "2026-06-16",
-    "focusMinutes": 6
+    "focusMinutes": 12
   },
   "anki": {
     "today": {
@@ -8987,10 +8987,16 @@
     "today": {
       "date": "2026-06-16",
       "readingMinutes": 0.0,
-      "grammarMinutes": 0.0,
+      "grammarMinutes": 11.5,
       "verbMinutes": 0.0,
-      "totalMinutes": 0.0,
-      "warnings": []
+      "totalMinutes": 11.5,
+      "warnings": [
+        {
+          "source": "www.bilibili.com",
+          "title": "压力完发现自己没有傻子厉害 直接破防挂机_游戏热门视频",
+          "capturedAt": "2026-06-16T06:13:03.987Z"
+        }
+      ]
     },
     "history": [
       {
@@ -11908,12 +11914,18 @@
       {
         "date": "2026-06-16",
         "readingMinutes": 0.0,
-        "grammarMinutes": 0.0,
+        "grammarMinutes": 11.5,
         "verbMinutes": 0.0,
-        "totalMinutes": 0.0,
-        "warnings": []
+        "totalMinutes": 11.5,
+        "warnings": [
+          {
+            "source": "www.bilibili.com",
+            "title": "压力完发现自己没有傻子厉害 直接破防挂机_游戏热门视频",
+            "capturedAt": "2026-06-16T06:13:03.987Z"
+          }
+        ]
       }
     ],
-    "lastContext": "verb"
+    "lastContext": "grammar"
   }
 }
