@@ -1,8 +1,8 @@
 {
   "days": {
     "2026-06-16": {
-      "reading": 0,
-      "grammar": 1655.0,
+      "reading": 610.0,
+      "grammar": 1735.0,
       "verb": 0,
       "warnings": [
         {
@@ -22,17 +22,20 @@
         }
       ],
       "sources": {
-        "adobe-acrobat": 1655.0
+        "adobe-acrobat": 1655.0,
+        "tcf-reading": 360.0,
+        "local-french": 80.0,
+        "chatgpt": 250.0
       }
     }
   },
-  "lastContext": "grammar",
+  "lastContext": "reading",
   "lastPing": {
     "category": "distraction",
     "source": "www.bilibili.com",
     "seconds": 0,
-    "title": "“我以为你cos减速带呢”",
-    "url": "https://www.bilibili.com/video/BV1eY3yzZEBk/?spm_id_from=333.788.player.player_end_recommend&vd_source=af1f5c7cace3a370b57a585619471fbb&trackid=web_related_0.router-related-2589621-btjjl.1781624838402.639",
-    "capturedAt": "2026-06-16T16:40:22.404Z"
+    "title": "【自学法语干货】超全的自学法语经验分享(中字)_哔哩哔哩_bilibili",
+    "url": "https://www.bilibili.com/video/BV1Lt411K7t1/?spm_id_from=333.337.search-card.all.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
+    "capturedAt": "2026-06-16T18:58:03.168Z"
   }
 }
