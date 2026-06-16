@@ -1,8 +1,8 @@
 {
   "days": {
     "2026-06-16": {
-      "reading": 820.0,
-      "grammar": 1735.0,
+      "reading": 880.0,
+      "grammar": 1745.0,
       "verb": 0,
       "warnings": [
         {
@@ -24,18 +24,18 @@
       "sources": {
         "adobe-acrobat": 1655.0,
         "tcf-reading": 360.0,
-        "local-french": 80.0,
-        "chatgpt": 460.0
+        "local-french": 90.0,
+        "chatgpt": 520.0
       }
     }
   },
-  "lastContext": "reading",
+  "lastContext": "grammar",
   "lastPing": {
-    "category": "contextual",
-    "source": "chatgpt",
-    "seconds": 10,
-    "title": "最小化音乐播放器",
-    "url": "https://chatgpt.com/c/6a30f8b7-64f8-83ea-96e1-a2546be9a023",
-    "capturedAt": "2026-06-16T19:05:26.147Z"
+    "category": "distraction",
+    "source": "www.bilibili.com",
+    "seconds": 0,
+    "title": "【法语单词】7天背完3000+法语词汇量，你的法语水平飞速暴涨！全程干货/无废话（附法语图解词典+词汇漫画书）_哔哩哔哩_bilibili",
+    "url": "https://www.bilibili.com/video/BV1S1421z7Bs/?vd_source=af1f5c7cace3a370b57a585619471fbb",
+    "capturedAt": "2026-06-16T19:11:53.402Z"
   }
 }
