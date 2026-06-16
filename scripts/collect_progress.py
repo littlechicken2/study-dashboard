@@ -109,7 +109,6 @@ def collect_course(days=365):
         minutes = round(video_minutes + pdf_minutes, 1)
         saved_docs = pdf.get("documents", {})
         docs = [
-            saved_docs.get("cheatsheet", {"id": "cheatsheet", "title": "法语 Cheatsheet", "currentPage": 0, "totalPages": 25, "seconds": 0}),
             saved_docs.get("a1-grammar", {"id": "a1-grammar", "title": "A1 语法讲义", "currentPage": 0, "totalPages": 88, "seconds": 0}),
         ]
         pdf_pages = sum(int(x.get("currentPage", 0) or 0) for x in docs)
@@ -166,8 +165,7 @@ def collect_course(days=365):
         "courses": courses,
         "total": {"watchedSeconds": 0, "durationSeconds": round(sum(totals.values()), 2), "percent": 0},
         "today": {"minutes": 0, "videoMinutes": 0, "pdfMinutes": 0, "activityComplete": False, "goalPercent": 0},
-        "pdf": {"pages": 0, "totalPages": 113, "percent": 0, "documents": [
-            {"id": "cheatsheet", "title": "法语 Cheatsheet", "currentPage": 0, "totalPages": 25, "seconds": 0},
+        "pdf": {"pages": 0, "totalPages": 88, "percent": 0, "documents": [
             {"id": "a1-grammar", "title": "A1 语法讲义", "currentPage": 0, "totalPages": 88, "seconds": 0},
         ]},
     }

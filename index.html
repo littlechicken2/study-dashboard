@@ -6,14 +6,15 @@
   <meta name="theme-color" content="#07120f">
   <title>学习监督台</title>
   <style>
-    :root{--bg:#07120f;--panel:#10211b;--line:#294238;--text:#f3f7f5;--muted:#a8b8b0;--green:#69e39d;--cyan:#62d9de;--yellow:#f5ce69;--red:#ff8e7f}
+    :root{--bg:#07120f;--panel:#10211b;--line:#294238;--text:#f3f7f5;--muted:#a8b8b0;--green:#69e39d;--cyan:#62d9de}
     *{box-sizing:border-box}body{margin:0;color:var(--text);background:radial-gradient(circle at 10% -10%,rgba(105,227,157,.17),transparent 36rem),radial-gradient(circle at 100% 0,rgba(98,217,222,.12),transparent 30rem),var(--bg);font-family:Inter,"Segoe UI","Microsoft YaHei",sans-serif}
     main{width:min(1100px,calc(100% - 28px));margin:auto;padding:42px 0 70px}header,.sectionHead,.goalTop{display:flex;justify-content:space-between;gap:16px;align-items:flex-end}header{margin-bottom:28px}h1{margin:0 0 6px;font-size:clamp(30px,6vw,52px);line-height:1}h2{margin:0;font-size:18px}p{margin:0}.muted{color:var(--muted)}.date{text-align:right;font-variant-numeric:tabular-nums}
-    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.card{min-width:0;padding:20px;border:1px solid var(--line);border-radius:8px;background:rgba(16,33,27,.94)}.hero,.calendarCard{grid-column:1/-1}.wide{grid-column:span 2}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.card{min-width:0;padding:20px;border:1px solid var(--line);border-radius:8px;background:rgba(16,33,27,.94)}.hero,.trackerCard{grid-column:1/-1}.wide{grid-column:span 2}
     .overview{display:grid;grid-template-columns:auto 1fr;gap:25px;align-items:end;margin:18px 0 22px}.heroValue{font-size:clamp(54px,11vw,96px);font-weight:800;line-height:.9;color:var(--green);font-variant-numeric:tabular-nums}.goalGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.goal{padding:16px;border:1px solid var(--line);border-radius:5px;background:rgba(3,15,11,.45)}.goalTop{align-items:baseline}.goalTop span{font-size:12px;color:var(--muted)}.goalValue,.big{margin-top:17px;font-size:32px;font-weight:800;font-variant-numeric:tabular-nums}.unit{font-size:14px;font-weight:500;color:var(--muted)}
     .bar{height:9px;margin:16px 0;overflow:hidden;border-radius:2px;background:#06100c}.bar i{display:block;width:var(--value);height:100%;background:linear-gradient(90deg,var(--green),var(--cyan));transition:width .5s ease}.details{margin-top:12px;color:var(--muted);font-size:12px;line-height:1.7}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:17px}.stat{padding-top:10px;border-top:1px solid var(--line)}.stat b{display:block;font-size:20px;font-variant-numeric:tabular-nums}.stat span{font-size:12px;color:var(--muted)}
-    .courseRows{display:grid;gap:11px;margin-top:15px}.courseRow{display:grid;grid-template-columns:60px 1fr 68px;gap:10px;align-items:center}.courseRow span{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}a{color:var(--cyan)}.calendar{display:grid;grid-template-columns:repeat(31,1fr);gap:4px;margin-top:16px}.day{aspect-ratio:1;border:1px solid var(--line);background:#0a1713}.day.done{background:linear-gradient(135deg,var(--green),var(--cyan));border-color:transparent}.monthProgress{font-size:12px;color:var(--muted)}
-    footer{margin-top:22px;color:var(--muted);font-size:12px}@media(max-width:760px){main{padding-top:25px}.grid{grid-template-columns:1fr}.hero,.calendarCard,.wide{grid-column:auto}.goalGrid,.overview{grid-template-columns:1fr}.date{font-size:11px}.calendar{grid-template-columns:repeat(16,1fr)}}
+    .courseRows{display:grid;gap:11px;margin-top:15px}.courseRow{display:grid;grid-template-columns:60px 1fr 68px;gap:10px;align-items:center}.courseRow span{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}a{color:var(--cyan)}
+    .legend{display:flex;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:12px}.legend i{display:inline-block;width:10px;height:10px;margin-right:5px;border-radius:2px}.rgbCalendar{display:grid;grid-template-rows:repeat(7,34px);grid-auto-flow:column;grid-auto-columns:34px;gap:5px;overflow-x:auto;padding:17px 2px 5px}.rgbDay{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:2px;padding:2px;border:1px solid #253e35;border-radius:4px;background:#081510}.rgbDay b{display:grid;place-items:center;background:#0e211a;color:#b8c9c0;font-size:10px;font-weight:700;font-variant-numeric:tabular-nums}.rgbDay span{border-radius:1px}.rgbDay .r{background:rgb(var(--r),0,0)}.rgbDay .g{background:rgb(0,var(--g),0)}.rgbDay .b{background:rgb(0,0,var(--b))}
+    footer{margin-top:22px;color:var(--muted);font-size:12px}@media(max-width:760px){main{padding-top:25px}.grid{grid-template-columns:1fr}.hero,.trackerCard,.wide{grid-column:auto}.goalGrid,.overview{grid-template-columns:1fr}.date{font-size:11px}}
   </style>
 </head>
 <body>
@@ -27,30 +28,41 @@ const n=(v,d=0)=>Number(v||0).toLocaleString("zh-CN",{maximumFractionDigits:d,mi
 const pct=v=>`${n(v,2)}%`;
 const bar=v=>`<div class="bar"><i style="--value:${Math.max(0,Math.min(100,v||0))}%"></i></div>`;
 const stats=items=>`<div class="stats">${items.map(([v,k])=>`<div class="stat"><b>${v}</b><span>${k}</span></div>`).join("")}</div>`;
-const monthCalendar=(a,r,c)=>{
-  const map=rows=>new Map((rows||[]).map(x=>[x.date,x])),am=map(a),rm=map(r),cm=map(c),now=new Date(),year=now.getFullYear(),month=now.getMonth(),days=new Date(year,month+1,0).getDate(),cells=[];
-  for(let i=1;i<=days;i++){const key=`${year}-${String(month+1).padStart(2,"0")}-${String(i).padStart(2,"0")}`,done=(am.get(key)?.reviews||am.get(key)?.new||rm.get(key)?.questions||cm.get(key)?.minutes)>0;cells.push(`<i class="day ${done?"done":""}" title="${key}"></i>`)}
-  return `<div class="calendar">${cells.join("")}</div>`;
+const level=(value,target)=>Math.max(0,Math.min(255,Math.round((Number(value||0)/Math.max(1,target))*255)));
+const rgbTracker=(a,r,c)=>{
+  const map=rows=>new Map((rows||[]).map(x=>[x.date,x])),am=map(a),rm=map(r),cm=map(c);
+  const now=new Date(),year=now.getFullYear(),month=now.getMonth(),days=new Date(year,month+1,0).getDate();
+  const readingDailyTarget=780/days;
+  const cells=[];
+  for(let i=1;i<=days;i++){
+    const key=`${year}-${String(month+1).padStart(2,"0")}-${String(i).padStart(2,"0")}`;
+    const rr=rm.get(key)||{}, aa=am.get(key)||{}, cc=cm.get(key)||{};
+    const red=level(rr.questions,readingDailyTarget);
+    const green=level(cc.minutes,30);
+    const blue=level((aa.reviews||0)+(aa.new||0),20);
+    cells.push(`<span class="rgbDay" style="--r:${red};--g:${green};--b:${blue}" title="${key} · Reading ${rr.questions||0}题 · Grammar ${n(cc.minutes||0,1)}分钟 · Verb ${Number(aa.reviews||0)+Number(aa.new||0)}次"><span class="r"></span><span class="g"></span><span class="b"></span><b>${i}</b></span>`);
+  }
+  return `<div class="rgbCalendar">${cells.join("")}</div>`;
 };
 async function load(){
   const data=await fetch(`data/progress.json?t=${Date.now()}`).then(r=>r.json()),a=data.anki,c=data.course,r=data.reading;
-  const readDone=r.today.activityComplete?100:0,ankiDone=a.today.activityComplete?100:0,courseDone=c.today.activityComplete?100:0,daily=(readDone+ankiDone+courseDone)/3;
+  const readDone=r.today.activityComplete?100:0,verbDone=a.today.activityComplete?100:0,grammarDone=c.today.activityComplete?100:0,daily=(readDone+verbDone+grammarDone)/3;
   document.querySelector("#updated").textContent=`更新于 ${new Date(data.updatedAt).toLocaleString("zh-CN")}`;
   document.querySelector("#dashboard").innerHTML=`
   <article class="card hero">
     <div class="sectionHead"><h2>今日活动完成度</h2><span class="muted">${n(data.today.focusMinutes)} 分钟已记录</span></div>
-    <div class="overview"><div class="heroValue">${pct(daily)}</div><div><p class="muted">三项中任何一项留下记录即视为今日完成</p>${bar(daily)}<p class="details">阅读 ${pct(readDone)} · Anki ${pct(ankiDone)} · 课程/PDF ${pct(courseDone)}</p></div></div>
+    <div class="overview"><div class="heroValue">${pct(daily)}</div><div><p class="muted">三项中任意一项留下记录即视为今日完成</p>${bar(daily)}<p class="details">Reading ${pct(readDone)} · Grammar ${pct(grammarDone)} · Verb ${pct(verbDone)}</p></div></div>
     <div class="goalGrid">
-      <div class="goal"><div class="goalTop"><h2>阅读单项</h2><span>月底前完成 20 Test</span></div><div class="goalValue">${n(r.today.questions)} / ${n(r.month.recommendedToday)} <span class="unit">今日动态建议</span></div>${bar(r.today.goalPercent)}<p class="details">本月 ${n(r.month.completed)} / ${n(r.month.target)} 题 · 剩余 ${n(r.month.remaining)}<br>昨日 ${n(r.month.yesterdayQuestions)} 题 · ETA ${r.month.etaDate||"暂无速度"}</p></div>
-      <div class="goal"><div class="goalTop"><h2>Anki</h2><span>有记录即完成</span></div><div class="goalValue">${n(a.today.reviews)} <span class="unit">复习 · ${n(a.today.new)} 新卡</span></div>${bar(ankiDone)}<p class="details">今日 ${n(a.today.minutes,1)} 分钟 · 连续 ${n(a.streak)} 天</p></div>
-      <div class="goal"><div class="goalTop"><h2>课程与 PDF</h2><span>月底前持续推进</span></div><div class="goalValue">${n(c.today.minutes,1)} <span class="unit">今日分钟</span></div>${bar(courseDone)}<p class="details">视频 ${n(c.today.videoMinutes,1)} 分钟 · PDF ${n(c.today.pdfMinutes,1)} 分钟<br>PDF ${n(c.pdf.pages)} / ${n(c.pdf.totalPages)} 页</p></div>
+      <div class="goal"><div class="goalTop"><h2>Reading</h2><span>月底前完成 20 Test</span></div><div class="goalValue">${n(r.today.questions)} / ${n(r.month.recommendedToday)} <span class="unit">今日动态建议</span></div>${bar(r.today.goalPercent)}<p class="details">本月 ${n(r.month.completed)} / ${n(r.month.target)} 题 · 剩余 ${n(r.month.remaining)}<br>昨日 ${n(r.month.yesterdayQuestions)} 题 · ETA ${r.month.etaDate||"暂无速度"}</p></div>
+      <div class="goal"><div class="goalTop"><h2>Grammar</h2><span>视频或 A1 讲义均可</span></div><div class="goalValue">${n(c.today.minutes,1)} <span class="unit">今日分钟</span></div>${bar(grammarDone)}<p class="details">视频 ${n(c.today.videoMinutes,1)} 分钟 · PDF ${n(c.today.pdfMinutes,1)} 分钟<br>A1 讲义 ${n(c.pdf.pages)} / ${n(c.pdf.totalPages)} 页</p></div>
+      <div class="goal"><div class="goalTop"><h2>Verb</h2><span>Anki 有记录即完成</span></div><div class="goalValue">${n(a.today.reviews)} <span class="unit">复习 · ${n(a.today.new)} 新卡</span></div>${bar(verbDone)}<p class="details">今日 ${n(a.today.minutes,1)} 分钟 · 连续 ${n(a.streak)} 天</p></div>
     </div>
   </article>
-  <article class="card calendarCard"><div class="sectionHead"><h2>本月活动记录</h2><span class="monthProgress">任意学习记录即点亮</span></div>${monthCalendar(a.history,r.history,c.history)}</article>
+  <article class="card trackerCard"><div class="sectionHead"><h2>RGB Tracker</h2><div class="legend"><span><i style="background:#f00"></i>Reading</span><span><i style="background:#0f0"></i>Grammar</span><span><i style="background:#00f"></i>Verb</span><span>右下角为日期</span></div></div>${rgbTracker(a.history,r.history,c.history)}</article>
   <article class="card wide"><div class="sectionHead"><h2>阅读月底计划</h2><span class="muted">${r.month.deadline} 截止</span></div><div class="big">${n(r.month.completed)} / ${n(r.month.target)} <span class="unit">题</span></div>${bar(r.month.percent)}${stats([[n(r.month.recommendedToday),"今日建议"],[n(r.month.daysRemaining),"剩余天数"],[r.month.etaDays?`${n(r.month.etaDays)} 天`:"暂无","昨日速度 ETA"]])}</article>
-  <article class="card"><div class="sectionHead"><h2>Anki 具体记录</h2><span class="muted">无硬性配额</span></div><div class="big">${n(a.today.reviews)} <span class="unit">次复习</span></div>${stats([[n(a.today.new),"新卡"],[n(a.today.minutes,1),"分钟"],[n(a.total.cards),"总卡片"]])}</article>
+  <article class="card"><div class="sectionHead"><h2>Verb 具体记录</h2><span class="muted">Anki</span></div><div class="big">${n(a.today.reviews)} <span class="unit">次复习</span></div>${stats([[n(a.today.new),"新卡"],[n(a.today.minutes,1),"分钟"],[n(a.total.cards),"总卡片"]])}</article>
   <article class="card wide"><div class="sectionHead"><h2>视频课程累计</h2><span class="muted">${pct(c.total.percent)}</span></div><div class="courseRows">${c.courses.map(x=>`<div class="courseRow"><strong>${x.label}</strong>${bar(x.percent)}<span>${pct(x.percent)}</span></div>`).join("")}</div></article>
-  <article class="card"><div class="sectionHead"><h2>PDF 阅读</h2><span class="muted">${pct(c.pdf.percent)}</span></div><div class="big">${n(c.pdf.pages)} / ${n(c.pdf.totalPages)} <span class="unit">页</span></div>${bar(c.pdf.percent)}<p class="details"><a href="http://10.0.0.19:8765/pdf_reader.html">打开本地 PDF 阅读器</a></p></article>`;
+  <article class="card"><div class="sectionHead"><h2>A1 讲义</h2><span class="muted">${pct(c.pdf.percent)}</span></div><div class="big">${n(c.pdf.pages)} / ${n(c.pdf.totalPages)} <span class="unit">页</span></div>${bar(c.pdf.percent)}<p class="details"><a href="http://10.0.0.19:8765/pdf_reader.html">打开本地 PDF 阅读器</a></p></article>`;
 }
 load().catch(e=>document.querySelector("#dashboard").innerHTML=`<article class="card hero"><h2>暂时没有进度数据</h2><p class="muted">${e.message}</p></article>`);
 </script>
