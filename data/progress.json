@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-16T04:10:54-04:00",
+  "updatedAt": "2026-06-16T04:57:40-04:00",
   "today": {
     "date": "2026-06-16",
-    "focusMinutes": 22
+    "focusMinutes": 27
   },
   "anki": {
     "today": {
@@ -2261,9 +2261,9 @@
       "percent": 7.84
     },
     "today": {
-      "minutes": 0.1,
+      "minutes": 0.7,
       "videoMinutes": 0.0,
-      "pdfMinutes": 0.1,
+      "pdfMinutes": 0.7,
       "activityComplete": true,
       "goalPercent": 100
     },
@@ -2277,8 +2277,8 @@
           "title": "A1 语法讲义",
           "currentPage": 25,
           "totalPages": 88,
-          "seconds": 21.058000000000003,
-          "updatedAt": "2026-06-16T08:00:51.770Z"
+          "seconds": 38.02500000000001,
+          "updatedAt": "2026-06-16T08:56:46.025Z"
         }
       ],
       "todayPages": 5,
@@ -5211,9 +5211,9 @@
       },
       {
         "date": "2026-06-16",
-        "minutes": 0.1,
+        "minutes": 0.7,
         "videoMinutes": 0.0,
-        "pdfMinutes": 0.1,
+        "pdfMinutes": 0.7,
         "activityComplete": true,
         "goalPercent": 100
       }
@@ -9001,9 +9001,9 @@
     "today": {
       "date": "2026-06-16",
       "readingMinutes": 0.0,
-      "grammarMinutes": 22.0,
+      "grammarMinutes": 27.2,
       "verbMinutes": 0.0,
-      "totalMinutes": 22.0,
+      "totalMinutes": 27.2,
       "warnings": [
         {
           "source": "www.bilibili.com",
@@ -11928,9 +11928,9 @@
       {
         "date": "2026-06-16",
         "readingMinutes": 0.0,
-        "grammarMinutes": 22.0,
+        "grammarMinutes": 27.2,
         "verbMinutes": 0.0,
-        "totalMinutes": 22.0,
+        "totalMinutes": 27.2,
         "warnings": [
           {
             "source": "www.bilibili.com",
