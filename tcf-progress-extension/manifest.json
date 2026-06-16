@@ -1,15 +1,25 @@
 {
   "manifest_version": 3,
-  "name": "TCF Reading Progress Sync",
+  "name": "Study Progress and Focus Sync",
   "version": "1.0.0",
-  "description": "Syncs only the visible test name, answered count, score and timer to the local study dashboard.",
+  "description": "Syncs study activity, TCF progress and distraction warnings to the local study dashboard.",
   "host_permissions": [
     "http://127.0.0.1:8765/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://tcfca.cn/reading/test*"
+        "https://tcfca.cn/reading/test*",
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*",
+        "http://127.0.0.1:8765/*",
+        "http://10.0.0.19:8765/*",
+        "https://www.bilibili.com/*",
+        "https://bilibili.com/*",
+        "https://www.youtube.com/*",
+        "https://youtube.com/*",
+        "https://www.douyin.com/*",
+        "https://douyin.com/*"
       ],
       "js": [
         "sync.js"

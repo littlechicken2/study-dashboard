@@ -18,6 +18,7 @@ READING_LOG = DATA / "reading_log.json"
 READING_PROGRESS = DATA / "reading_progress.json"
 READING_SESSION = DATA / "reading_session.json"
 PDF_PROGRESS = DATA / "pdf_progress.json"
+ACTIVITY_LOG = DATA / "activity_log.json"
 OUTPUT = DATA / "progress.json"
 COURSE_DURATIONS = Path(r"D:\WOK\POKESTOP\french_a1\data\video_durations.json")
 ANKI_ROOT = Path.home() / "AppData" / "Roaming" / "Anki2"
@@ -265,6 +266,32 @@ def collect_reading(days=30):
     }
 
 
+def collect_activity(days=365):
+    raw = read_json(ACTIVITY_LOG, {"days": {}, "lastContext": "grammar"})
+    today = datetime.now().date()
+    start = today - timedelta(days=days - 1)
+    history = []
+    for offset in range(days):
+        key = (start + timedelta(days=offset)).isoformat()
+        row = raw.get("days", {}).get(key, {})
+        reading = round(float(row.get("reading", 0) or 0) / 60, 1)
+        grammar = round(float(row.get("grammar", 0) or 0) / 60, 1)
+        verb = round(float(row.get("verb", 0) or 0) / 60, 1)
+        history.append({
+            "date": key,
+            "readingMinutes": reading,
+            "grammarMinutes": grammar,
+            "verbMinutes": verb,
+            "totalMinutes": round(reading + grammar + verb, 1),
+            "warnings": row.get("warnings", []),
+        })
+    return {
+        "today": history[-1],
+        "history": history,
+        "lastContext": raw.get("lastContext", "grammar"),
+    }
+
+
 def main():
     parser = argparse.ArgumentParser(description="Collect local study stats for the public dashboard.")
     parser.add_argument("--days", type=int, default=365)
@@ -272,13 +299,16 @@ def main():
     anki = collect_anki(args.days)
     course = collect_course(args.days)
     reading = collect_reading(args.days)
-    focus = round(anki["today"]["minutes"] + reading["today"]["minutes"])
+    activity = collect_activity(args.days)
+    fallback_focus = anki["today"]["minutes"] + reading["today"]["minutes"] + course["today"]["minutes"]
+    focus = round(activity["today"]["totalMinutes"] or fallback_focus)
     payload = {
         "updatedAt": datetime.now().astimezone().isoformat(timespec="seconds"),
         "today": {"date": datetime.now().date().isoformat(), "focusMinutes": focus},
         "anki": anki,
         "course": course,
         "reading": reading,
+        "activity": activity,
     }
     OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Updated {OUTPUT}")
