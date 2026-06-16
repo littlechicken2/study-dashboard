@@ -1,29 +1,23 @@
 {
-  "updatedAt": "2026-06-15T11:56:02-04:00",
+  "updatedAt": "2026-06-16T01:04:57-04:00",
   "today": {
-    "date": "2026-06-15",
-    "focusMinutes": 12
+    "date": "2026-06-16",
+    "focusMinutes": 0
   },
   "anki": {
     "today": {
-      "reviews": 87,
-      "new": 35,
-      "minutes": 12.3,
-      "activityComplete": true,
-      "goalPercent": 100
+      "reviews": 0,
+      "new": 0,
+      "minutes": 0,
+      "activityComplete": false,
+      "goalPercent": 0
     },
     "total": {
       "cards": 35974,
       "mature": 188
     },
-    "streak": 3,
+    "streak": 0,
     "history": [
-      {
-        "date": "2025-06-16",
-        "reviews": 0,
-        "new": 0,
-        "minutes": 0
-      },
       {
         "date": "2025-06-17",
         "reviews": 0,
@@ -2207,11 +2201,17 @@
         "reviews": 87,
         "new": 35,
         "minutes": 12.3
+      },
+      {
+        "date": "2026-06-16",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
       }
     ]
   },
   "course": {
-    "updatedAt": "2026-06-15T11:58:20.394Z",
+    "updatedAt": "2026-06-15T16:03:04.877Z",
     "lastLesson": {
       "id": "a1/6_4.mp4",
       "title": "6 4 · 形容词特殊阴性变化",
@@ -2283,14 +2283,6 @@
       ]
     },
     "history": [
-      {
-        "date": "2025-06-16",
-        "minutes": 0.0,
-        "videoMinutes": 0.0,
-        "pdfMinutes": 0.0,
-        "activityComplete": false,
-        "goalPercent": 0
-      },
       {
         "date": "2025-06-17",
         "minutes": 0.0,
@@ -5202,40 +5194,31 @@
         "pdfMinutes": 0.0,
         "activityComplete": false,
         "goalPercent": 0
+      },
+      {
+        "date": "2026-06-16",
+        "minutes": 0.0,
+        "videoMinutes": 0.0,
+        "pdfMinutes": 0.0,
+        "activityComplete": false,
+        "goalPercent": 0
       }
     ]
   },
   "reading": {
     "today": {
-      "date": "2026-06-15",
-      "sets": 0.0,
+      "date": "2026-06-16",
+      "sets": 0,
       "questions": 0,
       "correct": 0,
-      "minutes": 0.0,
-      "tests": [
-        {
-          "test": "test01",
-          "answered": 0,
-          "correct": 0,
-          "total": 39
-        }
-      ],
+      "minutes": 0,
+      "tests": [],
       "accuracy": 0,
       "goalPercent": 0.0,
       "activityComplete": false,
-      "recommendedQuestions": 48
+      "recommendedQuestions": 51
     },
     "history": [
-      {
-        "date": "2025-06-16",
-        "sets": 0,
-        "questions": 0,
-        "correct": 0,
-        "minutes": 0,
-        "tests": [],
-        "accuracy": 0,
-        "goalPercent": 0.0
-      },
       {
         "date": "2025-06-17",
         "sets": 0,
@@ -8958,9 +8941,19 @@
           }
         ],
         "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-06-16",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
         "goalPercent": 0.0,
         "activityComplete": false,
-        "recommendedQuestions": 48
+        "recommendedQuestions": 51
       }
     ],
     "month": {
@@ -8968,9 +8961,9 @@
       "completed": 17,
       "remaining": 763,
       "percent": 2.18,
-      "daysRemaining": 16,
+      "daysRemaining": 15,
       "deadline": "2026-06-30",
-      "recommendedToday": 48,
+      "recommendedToday": 51,
       "yesterdayQuestions": 0,
       "etaDays": 0,
       "etaDate": null
