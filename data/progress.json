@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-16T02:57:34-04:00",
+  "updatedAt": "2026-06-16T03:05:03-04:00",
   "today": {
     "date": "2026-06-16",
-    "focusMinutes": 12
+    "focusMinutes": 13
   },
   "anki": {
     "today": {
@@ -2211,12 +2211,12 @@
     ]
   },
   "course": {
-    "updatedAt": "2026-06-15T16:03:04.877Z",
+    "updatedAt": "2026-06-16T07:02:28.770Z",
     "lastLesson": {
       "id": "a1/6_4.mp4",
       "title": "6 4 · 形容词特殊阴性变化",
       "course": "a1",
-      "time": 204.871161
+      "time": 205.342153
     },
     "courses": [
       {
@@ -8987,9 +8987,9 @@
     "today": {
       "date": "2026-06-16",
       "readingMinutes": 0.0,
-      "grammarMinutes": 11.5,
+      "grammarMinutes": 13.4,
       "verbMinutes": 0.0,
-      "totalMinutes": 11.5,
+      "totalMinutes": 13.4,
       "warnings": [
         {
           "source": "www.bilibili.com",
@@ -11914,9 +11914,9 @@
       {
         "date": "2026-06-16",
         "readingMinutes": 0.0,
-        "grammarMinutes": 11.5,
+        "grammarMinutes": 13.4,
         "verbMinutes": 0.0,
-        "totalMinutes": 11.5,
+        "totalMinutes": 13.4,
         "warnings": [
           {
             "source": "www.bilibili.com",
