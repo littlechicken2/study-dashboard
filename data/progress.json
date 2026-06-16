@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-16T09:57:54-04:00",
+  "updatedAt": "2026-06-16T10:05:22-04:00",
   "today": {
     "date": "2026-06-16",
     "focusMinutes": 28
@@ -5222,21 +5222,21 @@
   "reading": {
     "today": {
       "date": "2026-06-16",
-      "sets": 0.0,
-      "questions": 0,
+      "sets": 0.02564102564102564,
+      "questions": 1,
       "correct": 0,
-      "minutes": 0.0,
+      "minutes": 37.5,
       "tests": [
         {
           "test": "test01",
-          "answered": 0,
+          "answered": 1,
           "correct": 0,
           "total": 39
         }
       ],
-      "accuracy": 0,
-      "goalPercent": 0.0,
-      "activityComplete": false,
+      "accuracy": 0.0,
+      "goalPercent": 1.96,
+      "activityComplete": true,
       "recommendedQuestions": 51
     },
     "history": [
@@ -8966,29 +8966,29 @@
       },
       {
         "date": "2026-06-16",
-        "sets": 0.0,
-        "questions": 0,
+        "sets": 0.02564102564102564,
+        "questions": 1,
         "correct": 0,
-        "minutes": 0.0,
+        "minutes": 37.5,
         "tests": [
           {
             "test": "test01",
-            "answered": 0,
+            "answered": 1,
             "correct": 0,
             "total": 39
           }
         ],
-        "accuracy": 0,
-        "goalPercent": 0.0,
-        "activityComplete": false,
+        "accuracy": 0.0,
+        "goalPercent": 1.96,
+        "activityComplete": true,
         "recommendedQuestions": 51
       }
     ],
     "month": {
       "target": 780,
-      "completed": 17,
-      "remaining": 763,
-      "percent": 2.18,
+      "completed": 18,
+      "remaining": 762,
+      "percent": 2.31,
       "daysRemaining": 15,
       "deadline": "2026-06-30",
       "recommendedToday": 51,
