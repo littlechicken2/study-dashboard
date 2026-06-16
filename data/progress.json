@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-16T01:57:32-04:00",
+  "updatedAt": "2026-06-16T01:59:48-04:00",
   "today": {
     "date": "2026-06-16",
-    "focusMinutes": 5
+    "focusMinutes": 6
   },
   "anki": {
     "today": {
@@ -2261,11 +2261,11 @@
       "percent": 7.84
     },
     "today": {
-      "minutes": 0.0,
+      "minutes": 0.1,
       "videoMinutes": 0.0,
-      "pdfMinutes": 0.0,
-      "activityComplete": false,
-      "goalPercent": 0
+      "pdfMinutes": 0.1,
+      "activityComplete": true,
+      "goalPercent": 100
     },
     "pdf": {
       "pages": 1,
@@ -2277,8 +2277,8 @@
           "title": "A1 语法讲义",
           "currentPage": 1,
           "totalPages": 88,
-          "seconds": 16.035000000000004,
-          "updatedAt": "2026-06-14T20:24:54.961Z"
+          "seconds": 21.058000000000003,
+          "updatedAt": "2026-06-16T05:59:04.255Z"
         }
       ]
     },
@@ -5197,11 +5197,11 @@
       },
       {
         "date": "2026-06-16",
-        "minutes": 0.0,
+        "minutes": 0.1,
         "videoMinutes": 0.0,
-        "pdfMinutes": 0.0,
-        "activityComplete": false,
-        "goalPercent": 0
+        "pdfMinutes": 0.1,
+        "activityComplete": true,
+        "goalPercent": 100
       }
     ]
   },
@@ -11914,6 +11914,6 @@
         "warnings": []
       }
     ],
-    "lastContext": "grammar"
+    "lastContext": "verb"
   }
 }

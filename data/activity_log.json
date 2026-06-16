@@ -1,5 +1,19 @@
 {
-  "days": {},
-  "lastContext": "grammar",
-  "lastPing": null
+  "days": {
+    "2026-06-16": {
+      "reading": 0,
+      "grammar": 0,
+      "verb": 0,
+      "warnings": [],
+      "sources": {}
+    }
+  },
+  "lastContext": "verb",
+  "lastPing": {
+    "title": "YouTube",
+    "category": "distraction",
+    "source": "youtube.com",
+    "seconds": 0,
+    "capturedAt": "2026-06-16T01:57:52.1429558-04:00"
+  }
 }
