@@ -2,27 +2,32 @@
   "days": {
     "2026-06-16": {
       "reading": 0,
-      "grammar": 1640.0,
+      "grammar": 1655.0,
       "verb": 0,
       "warnings": [
         {
           "source": "www.bilibili.com",
           "title": "压力完发现自己没有傻子厉害 直接破防挂机_游戏热门视频",
           "capturedAt": "2026-06-16T06:13:03.987Z"
+        },
+        {
+          "source": "www.youtube.com",
+          "title": "Phoenix (ft. Cailin Russo and Chrissy Costanza) | Worlds 2019 - League of Legends - YouTube",
+          "capturedAt": "2026-06-16T13:39:22.563Z"
         }
       ],
       "sources": {
-        "adobe-acrobat": 1640.0
+        "adobe-acrobat": 1655.0
       }
     }
   },
   "lastContext": "grammar",
   "lastPing": {
-    "category": "grammar",
-    "source": "adobe-acrobat",
-    "seconds": 5,
-    "title": "【新东方在线诚意出品】法语欧标A1语法大全电子讲义.pdf.pdf (SECURED) - Adobe Acrobat Reader (64-bit)",
-    "idleSeconds": 0,
-    "capturedAt": "2026-06-16T05:50:24-0400"
+    "category": "distraction",
+    "source": "www.youtube.com",
+    "seconds": 0,
+    "title": "Phoenix (ft. Cailin Russo and Chrissy Costanza) | Worlds 2019 - League of Legends - YouTube",
+    "url": "https://www.youtube.com/watch?v=i1IKnWDecwA&list=RDj_xfVJseUA4&index=4",
+    "capturedAt": "2026-06-16T13:39:24.893Z"
   }
 }
