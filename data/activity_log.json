@@ -14,6 +14,11 @@
           "source": "www.youtube.com",
           "title": "Phoenix (ft. Cailin Russo and Chrissy Costanza) | Worlds 2019 - League of Legends - YouTube",
           "capturedAt": "2026-06-16T13:39:22.563Z"
+        },
+        {
+          "source": "www.bilibili.com",
+          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+          "capturedAt": "2026-06-16T14:37:56.438Z"
         }
       ],
       "sources": {
@@ -24,10 +29,10 @@
   "lastContext": "grammar",
   "lastPing": {
     "category": "distraction",
-    "source": "www.youtube.com",
+    "source": "www.bilibili.com",
     "seconds": 0,
-    "title": "Phoenix (ft. Cailin Russo and Chrissy Costanza) | Worlds 2019 - League of Legends - YouTube",
-    "url": "https://www.youtube.com/watch?v=i1IKnWDecwA&list=RDj_xfVJseUA4&index=4",
-    "capturedAt": "2026-06-16T13:39:24.893Z"
+    "title": "【EDG】我从《半山腰》中来_哔哩哔哩bilibili",
+    "url": "https://www.bilibili.com/video/BV1SAVe6LESJ?spm_id_from=333.788.player.switch&vd_source=af1f5c7cace3a370b57a585619471fbb&trackid=web_related_0.router-related-2589621-n4rxt.1781621041130.770",
+    "capturedAt": "2026-06-16T14:46:35.515Z"
   }
 }
