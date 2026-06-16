@@ -1,7 +1,7 @@
 {
   "days": {
     "2026-06-16": {
-      "reading": 610.0,
+      "reading": 820.0,
       "grammar": 1735.0,
       "verb": 0,
       "warnings": [
@@ -25,17 +25,17 @@
         "adobe-acrobat": 1655.0,
         "tcf-reading": 360.0,
         "local-french": 80.0,
-        "chatgpt": 250.0
+        "chatgpt": 460.0
       }
     }
   },
   "lastContext": "reading",
   "lastPing": {
-    "category": "distraction",
-    "source": "www.bilibili.com",
-    "seconds": 0,
-    "title": "【自学法语干货】超全的自学法语经验分享(中字)_哔哩哔哩_bilibili",
-    "url": "https://www.bilibili.com/video/BV1Lt411K7t1/?spm_id_from=333.337.search-card.all.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
-    "capturedAt": "2026-06-16T18:58:03.168Z"
+    "category": "contextual",
+    "source": "chatgpt",
+    "seconds": 10,
+    "title": "最小化音乐播放器",
+    "url": "https://chatgpt.com/c/6a30f8b7-64f8-83ea-96e1-a2546be9a023",
+    "capturedAt": "2026-06-16T19:05:26.147Z"
   }
 }
