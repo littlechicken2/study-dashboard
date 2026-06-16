@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-16T11:05:25-04:00",
+  "updatedAt": "2026-06-16T11:58:00-04:00",
   "today": {
     "date": "2026-06-16",
     "focusMinutes": 28
@@ -2211,12 +2211,12 @@
     ]
   },
   "course": {
-    "updatedAt": "2026-06-16T07:02:28.770Z",
+    "updatedAt": "2026-06-16T15:52:26.049Z",
     "lastLesson": {
       "id": "a1/6_4.mp4",
       "title": "6 4 · 形容词特殊阴性变化",
       "course": "a1",
-      "time": 205.342153
+      "time": 206.012752
     },
     "courses": [
       {
@@ -5225,7 +5225,7 @@
       "sets": 0.02564102564102564,
       "questions": 1,
       "correct": 0,
-      "minutes": 48.4,
+      "minutes": 49.1,
       "tests": [
         {
           "test": "test01",
@@ -8969,7 +8969,7 @@
         "sets": 0.02564102564102564,
         "questions": 1,
         "correct": 0,
-        "minutes": 48.4,
+        "minutes": 49.1,
         "tests": [
           {
             "test": "test01",
