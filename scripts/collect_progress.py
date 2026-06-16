@@ -25,6 +25,33 @@ ANKI_ROOT = Path.home() / "AppData" / "Roaming" / "Anki2"
 COURSE_LABELS = {"phonetics": "A0", "a1": "A1", "a2": "A2", "b1": "B1", "b2": "B2"}
 
 
+def month_plan(completed, target, history_values, unit):
+    today = datetime.now().date()
+    month_end = today.replace(day=calendar.monthrange(today.year, today.month)[1])
+    days_remaining = (month_end - today).days + 1
+    completed = int(completed or 0)
+    target = int(target or 0)
+    remaining = max(0, target - completed)
+    recommended = math.ceil(remaining / days_remaining) if remaining else 0
+    yesterday_key = (today - timedelta(days=1)).isoformat()
+    yesterday_done = int(history_values.get(yesterday_key, 0) or 0)
+    eta_days = math.ceil(remaining / yesterday_done) if yesterday_done > 0 and remaining else 0
+    eta_date = (today + timedelta(days=eta_days)).isoformat() if eta_days else None
+    return {
+        "unit": unit,
+        "target": target,
+        "completed": completed,
+        "remaining": remaining,
+        "percent": round(completed / target * 100, 2) if target else 0,
+        "daysRemaining": days_remaining,
+        "deadline": month_end.isoformat(),
+        "recommendedToday": recommended,
+        "yesterdayDone": yesterday_done,
+        "etaDays": eta_days,
+        "etaDate": eta_date,
+    }
+
+
 def read_json(path, default):
     try:
         return json.loads(path.read_text(encoding="utf-8"))
@@ -115,6 +142,7 @@ def collect_course(days=365):
         pdf_pages = sum(int(x.get("currentPage", 0) or 0) for x in docs)
         pdf_total_pages = sum(int(x.get("totalPages", 0) or 0) for x in docs)
         pdf_percent = round(pdf_pages / pdf_total_pages * 100, 2) if pdf_total_pages else 0
+        pdf_daily_pages = {k: int(v or 0) for k, v in pdf.get("dailyPages", {}).items()}
         synced["today"] = {
             "minutes": minutes,
             "videoMinutes": video_minutes,
@@ -127,6 +155,8 @@ def collect_course(days=365):
             "totalPages": pdf_total_pages,
             "percent": pdf_percent,
             "documents": docs,
+            "todayPages": int(pdf_daily_pages.get(today, 0) or 0),
+            "month": month_plan(pdf_pages, pdf_total_pages, pdf_daily_pages, "pages"),
         }
         start = datetime.now().date() - timedelta(days=days - 1)
         daily = {x.get("date"): x for x in history.get("entries", [])}
