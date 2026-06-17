@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-17T12:14:26-04:00",
+  "updatedAt": "2026-06-17T13:14:29-04:00",
   "today": {
     "date": "2026-06-17",
     "focusMinutes": 95
@@ -2261,9 +2261,9 @@
       "percent": 7.84
     },
     "today": {
-      "minutes": 84.7,
+      "minutes": 84.8,
       "videoMinutes": 0.0,
-      "pdfMinutes": 84.7,
+      "pdfMinutes": 84.8,
       "activityComplete": true,
       "goalPercent": 100
     },
@@ -2277,8 +2277,8 @@
           "title": "A1 语法讲义",
           "currentPage": 33,
           "totalPages": 88,
-          "seconds": 5030.698000000017,
-          "updatedAt": "2026-06-17T16:13:37.019Z"
+          "seconds": 5034.092000000016,
+          "updatedAt": "2026-06-17T17:13:37.019Z"
         }
       ],
       "todayPages": 8,
@@ -5211,9 +5211,9 @@
       },
       {
         "date": "2026-06-17",
-        "minutes": 84.7,
+        "minutes": 84.8,
         "videoMinutes": 0.0,
-        "pdfMinutes": 84.7,
+        "pdfMinutes": 84.8,
         "activityComplete": true,
         "goalPercent": 100
       }
@@ -5225,7 +5225,7 @@
       "sets": 0.02564102564102564,
       "questions": 1,
       "correct": 1,
-      "minutes": 37.1,
+      "minutes": 38.1,
       "tests": [
         {
           "test": "test01",
@@ -8976,7 +8976,7 @@
         "sets": 0.02564102564102564,
         "questions": 1,
         "correct": 1,
-        "minutes": 37.1,
+        "minutes": 38.1,
         "tests": [
           {
             "test": "test01",
