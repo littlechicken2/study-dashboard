@@ -29,8 +29,8 @@
       }
     },
     "2026-06-17": {
-      "reading": 960.0,
-      "grammar": 990.0,
+      "reading": 980.0,
+      "grammar": 2870.0,
       "verb": 0,
       "warnings": [
         {
@@ -40,19 +40,19 @@
         }
       ],
       "sources": {
-        "tcf-reading": 810.0,
-        "local-french": 970.0,
-        "chatgpt": 170.0
+        "tcf-reading": 820.0,
+        "local-french": 2720.0,
+        "chatgpt": 310.0
       }
     }
   },
   "lastContext": "grammar",
   "lastPing": {
-    "category": "distraction",
-    "source": "www.bilibili.com",
-    "seconds": 0,
-    "title": "被交警拦下，被高温热倒，但我们仍然在隧道里高歌一曲向前跑，带着赤子的骄傲！_哔哩哔哩_bilibili",
-    "url": "https://www.bilibili.com/video/BV1GbLQ6uENk/?spm_id_from=333.1387.homepage.video_card.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
-    "capturedAt": "2026-06-17T13:14:13.056Z"
+    "category": "grammar",
+    "source": "local-french",
+    "seconds": 10,
+    "title": "法语 PDF 阅读器",
+    "url": "http://10.0.0.19:8765/pdf_reader.html",
+    "capturedAt": "2026-06-17T14:14:06.955Z"
   }
 }
