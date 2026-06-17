@@ -29,30 +29,60 @@
       }
     },
     "2026-06-17": {
-      "reading": 980.0,
-      "grammar": 2870.0,
+      "reading": 1050.0,
+      "grammar": 4060.0,
       "verb": 0,
       "warnings": [
         {
           "source": "www.bilibili.com",
           "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
           "capturedAt": "2026-06-17T07:31:41.251Z"
+        },
+        {
+          "source": "www.youtube.com",
+          "title": "Press Claims Image Reveals Quantum Entanglement as Yin and Yang. Does It Though? - YouTube",
+          "capturedAt": "2026-06-17T14:29:11.064Z"
+        },
+        {
+          "source": "www.bilibili.com",
+          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+          "capturedAt": "2026-06-17T14:45:10.277Z"
+        },
+        {
+          "source": "www.youtube.com",
+          "title": "(1) Press Claims Image Reveals Quantum Entanglement as Yin and Yang. Does It Though? - YouTube",
+          "capturedAt": "2026-06-17T15:07:00.194Z"
+        },
+        {
+          "source": "www.bilibili.com",
+          "title": "【双语渣翻】「为什么圣安地列斯玩起来感觉比GTA5还要大？」_GTASA",
+          "capturedAt": "2026-06-17T15:07:02.725Z"
+        },
+        {
+          "source": "www.youtube.com",
+          "title": "(1) Press Claims Image Reveals Quantum Entanglement as Yin and Yang. Does It Though? - YouTube",
+          "capturedAt": "2026-06-17T15:11:08.424Z"
+        },
+        {
+          "source": "www.bilibili.com",
+          "title": "【双语渣翻】「为什么圣安地列斯玩起来感觉比GTA5还要大？」_GTASA",
+          "capturedAt": "2026-06-17T15:11:10.409Z"
         }
       ],
       "sources": {
-        "tcf-reading": 820.0,
-        "local-french": 2720.0,
-        "chatgpt": 310.0
+        "tcf-reading": 840.0,
+        "local-french": 3120.0,
+        "chatgpt": 1150.0
       }
     }
   },
-  "lastContext": "grammar",
+  "lastContext": "reading",
   "lastPing": {
-    "category": "grammar",
-    "source": "local-french",
+    "category": "contextual",
+    "source": "chatgpt",
     "seconds": 10,
-    "title": "法语 PDF 阅读器",
-    "url": "http://10.0.0.19:8765/pdf_reader.html",
-    "capturedAt": "2026-06-17T14:14:06.955Z"
+    "title": "最小化音乐播放器",
+    "url": "https://chatgpt.com/c/6a30f8b7-64f8-83ea-96e1-a2546be9a023",
+    "capturedAt": "2026-06-17T15:14:06.480Z"
   }
 }
