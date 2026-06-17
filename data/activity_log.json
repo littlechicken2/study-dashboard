@@ -29,8 +29,8 @@
       }
     },
     "2026-06-17": {
-      "reading": 1050.0,
-      "grammar": 4060.0,
+      "reading": 1060.0,
+      "grammar": 4660.0,
       "verb": 0,
       "warnings": [
         {
@@ -71,18 +71,18 @@
       ],
       "sources": {
         "tcf-reading": 840.0,
-        "local-french": 3120.0,
-        "chatgpt": 1150.0
+        "local-french": 3720.0,
+        "chatgpt": 1160.0
       }
     }
   },
-  "lastContext": "reading",
+  "lastContext": "grammar",
   "lastPing": {
-    "category": "contextual",
-    "source": "chatgpt",
+    "category": "grammar",
+    "source": "local-french",
     "seconds": 10,
-    "title": "最小化音乐播放器",
-    "url": "https://chatgpt.com/c/6a30f8b7-64f8-83ea-96e1-a2546be9a023",
-    "capturedAt": "2026-06-17T15:14:06.480Z"
+    "title": "法语 PDF 阅读器",
+    "url": "http://10.0.0.19:8765/pdf_reader.html",
+    "capturedAt": "2026-06-17T15:26:56.944Z"
   }
 }

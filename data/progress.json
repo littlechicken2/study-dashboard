@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-17T11:14:23-04:00",
+  "updatedAt": "2026-06-17T12:14:26-04:00",
   "today": {
     "date": "2026-06-17",
-    "focusMinutes": 85
+    "focusMinutes": 95
   },
   "anki": {
     "today": {
@@ -2261,39 +2261,39 @@
       "percent": 7.84
     },
     "today": {
-      "minutes": 72.1,
+      "minutes": 84.7,
       "videoMinutes": 0.0,
-      "pdfMinutes": 72.1,
+      "pdfMinutes": 84.7,
       "activityComplete": true,
       "goalPercent": 100
     },
     "pdf": {
-      "pages": 30,
+      "pages": 33,
       "totalPages": 88,
-      "percent": 34.09,
+      "percent": 37.5,
       "documents": [
         {
           "id": "a1-grammar",
           "title": "A1 语法讲义",
-          "currentPage": 30,
+          "currentPage": 33,
           "totalPages": 88,
-          "seconds": 4274.7990000000045,
-          "updatedAt": "2026-06-17T15:14:12.023Z"
+          "seconds": 5030.698000000017,
+          "updatedAt": "2026-06-17T16:13:37.019Z"
         }
       ],
-      "todayPages": 5,
+      "todayPages": 8,
       "month": {
         "unit": "pages",
         "target": 88,
-        "completed": 30,
-        "remaining": 58,
-        "percent": 34.09,
+        "completed": 33,
+        "remaining": 55,
+        "percent": 37.5,
         "daysRemaining": 14,
         "deadline": "2026-06-30",
-        "recommendedToday": 5,
+        "recommendedToday": 4,
         "yesterdayDone": 5,
-        "etaDays": 12,
-        "etaDate": "2026-06-29"
+        "etaDays": 11,
+        "etaDate": "2026-06-28"
       }
     },
     "history": [
@@ -5211,9 +5211,9 @@
       },
       {
         "date": "2026-06-17",
-        "minutes": 72.1,
+        "minutes": 84.7,
         "videoMinutes": 0.0,
-        "pdfMinutes": 72.1,
+        "pdfMinutes": 84.7,
         "activityComplete": true,
         "goalPercent": 100
       }
@@ -5225,7 +5225,7 @@
       "sets": 0.02564102564102564,
       "questions": 1,
       "correct": 1,
-      "minutes": 31.9,
+      "minutes": 37.1,
       "tests": [
         {
           "test": "test01",
@@ -8976,7 +8976,7 @@
         "sets": 0.02564102564102564,
         "questions": 1,
         "correct": 1,
-        "minutes": 31.9,
+        "minutes": 37.1,
         "tests": [
           {
             "test": "test01",
@@ -9007,10 +9007,10 @@
   "activity": {
     "today": {
       "date": "2026-06-17",
-      "readingMinutes": 17.5,
-      "grammarMinutes": 67.7,
+      "readingMinutes": 17.7,
+      "grammarMinutes": 77.7,
       "verbMinutes": 0.0,
-      "totalMinutes": 85.2,
+      "totalMinutes": 95.4,
       "warnings": [
         {
           "source": "www.bilibili.com",
@@ -11980,10 +11980,10 @@
       },
       {
         "date": "2026-06-17",
-        "readingMinutes": 17.5,
-        "grammarMinutes": 67.7,
+        "readingMinutes": 17.7,
+        "grammarMinutes": 77.7,
         "verbMinutes": 0.0,
-        "totalMinutes": 85.2,
+        "totalMinutes": 95.4,
         "warnings": [
           {
             "source": "www.bilibili.com",
@@ -12023,6 +12023,6 @@
         ]
       }
     ],
-    "lastContext": "reading"
+    "lastContext": "grammar"
   }
 }
