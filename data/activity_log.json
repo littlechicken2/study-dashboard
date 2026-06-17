@@ -30,7 +30,7 @@
     },
     "2026-06-17": {
       "reading": 1060.0,
-      "grammar": 4660.0,
+      "grammar": 4790.0,
       "verb": 0,
       "warnings": [
         {
@@ -71,18 +71,18 @@
       ],
       "sources": {
         "tcf-reading": 840.0,
-        "local-french": 3720.0,
-        "chatgpt": 1160.0
+        "local-french": 3840.0,
+        "chatgpt": 1170.0
       }
     }
   },
   "lastContext": "grammar",
   "lastPing": {
-    "category": "distraction",
-    "source": "www.bilibili.com",
-    "seconds": 0,
-    "title": "尝试评一个圈内很难评的新鲜事，结果是真的很难评，我都冒汗了_万智牌_游戏资讯",
-    "url": "https://www.bilibili.com/video/BV1mnLR63ErN/?spm_id_from=333.1007.tianma.7-4-26.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
-    "capturedAt": "2026-06-17T20:07:07.717Z"
+    "category": "grammar",
+    "source": "local-french",
+    "seconds": 10,
+    "title": "法语 PDF 阅读器",
+    "url": "http://10.0.0.19:8765/pdf_reader.html",
+    "capturedAt": "2026-06-17T21:46:18.478Z"
   }
 }
