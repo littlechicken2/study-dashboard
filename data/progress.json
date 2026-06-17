@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-17T06:14:10-04:00",
+  "updatedAt": "2026-06-17T07:14:12-04:00",
   "today": {
     "date": "2026-06-17",
-    "focusMinutes": 9
+    "focusMinutes": 18
   },
   "anki": {
     "today": {
@@ -2211,12 +2211,12 @@
     ]
   },
   "course": {
-    "updatedAt": "2026-06-16T21:02:12.272Z",
+    "updatedAt": "2026-06-17T10:26:04.088Z",
     "lastLesson": {
       "id": "a1/6_4.mp4",
       "title": "6 4 · 形容词特殊阴性变化",
       "course": "a1",
-      "time": 204.780641
+      "time": 206.986576
     },
     "courses": [
       {
@@ -2229,7 +2229,7 @@
       {
         "id": "a1",
         "label": "A1",
-        "watchedSeconds": 19142.11,
+        "watchedSeconds": 19143.09,
         "durationSeconds": 79062.89,
         "percent": 24.21
       },
@@ -2256,16 +2256,16 @@
       }
     ],
     "total": {
-      "watchedSeconds": 38214.76,
+      "watchedSeconds": 38215.74,
       "durationSeconds": 487318.95,
       "percent": 7.84
     },
     "today": {
-      "minutes": 0.0,
+      "minutes": 0.9,
       "videoMinutes": 0.0,
-      "pdfMinutes": 0.0,
-      "activityComplete": false,
-      "goalPercent": 0
+      "pdfMinutes": 0.9,
+      "activityComplete": true,
+      "goalPercent": 100
     },
     "pdf": {
       "pages": 25,
@@ -2277,8 +2277,8 @@
           "title": "A1 语法讲义",
           "currentPage": 25,
           "totalPages": 88,
-          "seconds": 38.02500000000001,
-          "updatedAt": "2026-06-16T09:41:33.401Z"
+          "seconds": 52.067000000000014,
+          "updatedAt": "2026-06-17T10:38:36.048Z"
         }
       ],
       "todayPages": 0,
@@ -5211,32 +5211,32 @@
       },
       {
         "date": "2026-06-17",
-        "minutes": 0.0,
+        "minutes": 0.9,
         "videoMinutes": 0.0,
-        "pdfMinutes": 0.0,
-        "activityComplete": false,
-        "goalPercent": 0
+        "pdfMinutes": 0.9,
+        "activityComplete": true,
+        "goalPercent": 100
       }
     ]
   },
   "reading": {
     "today": {
       "date": "2026-06-17",
-      "sets": 0.0,
-      "questions": 0,
-      "correct": 0,
-      "minutes": 0.0,
+      "sets": 0.02564102564102564,
+      "questions": 1,
+      "correct": 1,
+      "minutes": 22.2,
       "tests": [
         {
           "test": "test01",
-          "answered": 0,
-          "correct": 0,
+          "answered": 1,
+          "correct": 1,
           "total": 39
         }
       ],
-      "accuracy": 0,
-      "goalPercent": 0.0,
-      "activityComplete": false,
+      "accuracy": 100.0,
+      "goalPercent": 1.82,
+      "activityComplete": true,
       "recommendedQuestions": 55
     },
     "history": [
@@ -8973,44 +8973,44 @@
       },
       {
         "date": "2026-06-17",
-        "sets": 0.0,
-        "questions": 0,
-        "correct": 0,
-        "minutes": 0.0,
+        "sets": 0.02564102564102564,
+        "questions": 1,
+        "correct": 1,
+        "minutes": 22.2,
         "tests": [
           {
             "test": "test01",
-            "answered": 0,
-            "correct": 0,
+            "answered": 1,
+            "correct": 1,
             "total": 39
           }
         ],
-        "accuracy": 0,
-        "goalPercent": 0.0,
-        "activityComplete": false,
+        "accuracy": 100.0,
+        "goalPercent": 1.82,
+        "activityComplete": true,
         "recommendedQuestions": 55
       }
     ],
     "month": {
       "target": 780,
-      "completed": 18,
-      "remaining": 762,
-      "percent": 2.31,
+      "completed": 19,
+      "remaining": 761,
+      "percent": 2.44,
       "daysRemaining": 14,
       "deadline": "2026-06-30",
       "recommendedToday": 55,
       "yesterdayQuestions": 1,
-      "etaDays": 762,
-      "etaDate": "2028-07-18"
+      "etaDays": 761,
+      "etaDate": "2028-07-17"
     }
   },
   "activity": {
     "today": {
       "date": "2026-06-17",
-      "readingMinutes": 0.0,
-      "grammarMinutes": 0.0,
+      "readingMinutes": 16.0,
+      "grammarMinutes": 2.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 0.0,
+      "totalMinutes": 18.0,
       "warnings": [
         {
           "source": "www.bilibili.com",
@@ -11950,10 +11950,10 @@
       },
       {
         "date": "2026-06-17",
-        "readingMinutes": 0.0,
-        "grammarMinutes": 0.0,
+        "readingMinutes": 16.0,
+        "grammarMinutes": 2.0,
         "verbMinutes": 0.0,
-        "totalMinutes": 0.0,
+        "totalMinutes": 18.0,
         "warnings": [
           {
             "source": "www.bilibili.com",

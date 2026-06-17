@@ -29,8 +29,8 @@
       }
     },
     "2026-06-17": {
-      "reading": 0,
-      "grammar": 0,
+      "reading": 960.0,
+      "grammar": 120.0,
       "verb": 0,
       "warnings": [
         {
@@ -39,16 +39,20 @@
           "capturedAt": "2026-06-17T07:31:41.251Z"
         }
       ],
-      "sources": {}
+      "sources": {
+        "tcf-reading": 810.0,
+        "local-french": 100.0,
+        "chatgpt": 170.0
+      }
     }
   },
   "lastContext": "grammar",
   "lastPing": {
-    "category": "distraction",
-    "source": "www.bilibili.com",
-    "seconds": 0,
-    "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
-    "url": "https://www.bilibili.com/",
-    "capturedAt": "2026-06-17T07:31:41.251Z"
+    "category": "contextual",
+    "source": "chatgpt",
+    "seconds": 10,
+    "title": "最小化音乐播放器",
+    "url": "https://chatgpt.com/c/6a30f8b7-64f8-83ea-96e1-a2546be9a023",
+    "capturedAt": "2026-06-17T10:38:48.954Z"
   }
 }
