@@ -2,7 +2,7 @@
   "days": {
     "2026-06-16": {
       "reading": 880.0,
-      "grammar": 1745.0,
+      "grammar": 1755.0,
       "verb": 0,
       "warnings": [
         {
@@ -25,17 +25,17 @@
         "adobe-acrobat": 1655.0,
         "tcf-reading": 360.0,
         "local-french": 90.0,
-        "chatgpt": 520.0
+        "chatgpt": 530.0
       }
     }
   },
   "lastContext": "grammar",
   "lastPing": {
-    "category": "distraction",
-    "source": "www.bilibili.com",
-    "seconds": 0,
-    "title": "XLG淘汰群访出事故！教练气炸了！谁再找借口说心态问题！等着我的怒火吧_哔哩哔哩bilibili",
-    "url": "https://www.bilibili.com/video/BV1xBjG6XE35/?spm_id_from=333.337.search-card.all.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
-    "capturedAt": "2026-06-16T20:55:24.337Z"
+    "category": "contextual",
+    "source": "chatgpt",
+    "seconds": 10,
+    "title": "最小化音乐播放器",
+    "url": "https://chatgpt.com/c/6a30f8b7-64f8-83ea-96e1-a2546be9a023",
+    "capturedAt": "2026-06-16T21:01:06.175Z"
   }
 }
