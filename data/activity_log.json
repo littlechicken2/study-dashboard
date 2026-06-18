@@ -30,7 +30,7 @@
     },
     "2026-06-17": {
       "reading": 1060.0,
-      "grammar": 5240.0,
+      "grammar": 5250.0,
       "verb": 0,
       "warnings": [
         {
@@ -71,7 +71,7 @@
       ],
       "sources": {
         "tcf-reading": 840.0,
-        "local-french": 4130.0,
+        "local-french": 4140.0,
         "chatgpt": 1330.0
       }
     }
@@ -81,8 +81,8 @@
     "category": "distraction",
     "source": "www.bilibili.com",
     "seconds": 0,
-    "title": "大疆的全景无人机？！Avata360上手_哔哩哔哩_bilibili",
-    "url": "https://www.bilibili.com/video/BV1UzXsB7ELa/?spm_id_from=333.1387.search.video_card.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
-    "capturedAt": "2026-06-18T00:14:47.908Z"
+    "title": "【war宗】PTCG简中SV9.5太晶盛聚产品分析（宝可梦卡牌）_哔哩哔哩_bilibili",
+    "url": "https://www.bilibili.com/video/BV1wwE165EpD?spm_id_from=333.788.playrecommendByOp.0&vd_source=af1f5c7cace3a370b57a585619471fbb",
+    "capturedAt": "2026-06-18T01:14:40.042Z"
   }
 }
