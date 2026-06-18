@@ -30,7 +30,7 @@
     },
     "2026-06-17": {
       "reading": 1060.0,
-      "grammar": 5250.0,
+      "grammar": 5270.0,
       "verb": 0,
       "warnings": [
         {
@@ -71,18 +71,18 @@
       ],
       "sources": {
         "tcf-reading": 840.0,
-        "local-french": 4140.0,
+        "local-french": 4160.0,
         "chatgpt": 1330.0
       }
     }
   },
   "lastContext": "grammar",
   "lastPing": {
-    "category": "distraction",
-    "source": "www.bilibili.com",
-    "seconds": 0,
-    "title": "【war宗】PTCG简中SV9.5太晶盛聚产品分析（宝可梦卡牌）_哔哩哔哩_bilibili",
-    "url": "https://www.bilibili.com/video/BV1wwE165EpD?spm_id_from=333.788.playrecommendByOp.0&vd_source=af1f5c7cace3a370b57a585619471fbb",
-    "capturedAt": "2026-06-18T01:14:40.042Z"
+    "category": "grammar",
+    "source": "local-french",
+    "seconds": 10,
+    "title": "法语 PDF 阅读器",
+    "url": "http://10.0.0.19:8765/pdf_reader.html",
+    "capturedAt": "2026-06-18T01:28:20.395Z"
   }
 }

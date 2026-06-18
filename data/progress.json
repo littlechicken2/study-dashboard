@@ -1,29 +1,23 @@
 {
-  "updatedAt": "2026-06-17T21:14:53-04:00",
+  "updatedAt": "2026-06-18T06:49:50-04:00",
   "today": {
-    "date": "2026-06-17",
-    "focusMinutes": 105
+    "date": "2026-06-18",
+    "focusMinutes": 0
   },
   "anki": {
     "today": {
-      "reviews": 71,
-      "new": 42,
-      "minutes": 9.3,
-      "activityComplete": true,
-      "goalPercent": 100
+      "reviews": 0,
+      "new": 0,
+      "minutes": 0,
+      "activityComplete": false,
+      "goalPercent": 0
     },
     "total": {
       "cards": 35974,
       "mature": 203
     },
-    "streak": 5,
+    "streak": 0,
     "history": [
-      {
-        "date": "2025-06-18",
-        "reviews": 0,
-        "new": 0,
-        "minutes": 0
-      },
       {
         "date": "2025-06-19",
         "reviews": 0,
@@ -2207,11 +2201,17 @@
         "reviews": 71,
         "new": 42,
         "minutes": 9.3
+      },
+      {
+        "date": "2026-06-18",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
       }
     ]
   },
   "course": {
-    "updatedAt": "2026-06-17T20:07:08.705Z",
+    "updatedAt": "2026-06-18T01:28:26.142Z",
     "lastLesson": {
       "id": "a1/6_4.mp4",
       "title": "6 4 · 形容词特殊阴性变化",
@@ -2261,11 +2261,11 @@
       "percent": 7.84
     },
     "today": {
-      "minutes": 91.0,
+      "minutes": 0.0,
       "videoMinutes": 0.0,
-      "pdfMinutes": 91.0,
-      "activityComplete": true,
-      "goalPercent": 100
+      "pdfMinutes": 0.0,
+      "activityComplete": false,
+      "goalPercent": 0
     },
     "pdf": {
       "pages": 33,
@@ -2278,33 +2278,25 @@
           "currentPage": 33,
           "totalPages": 88,
           "seconds": 5034.092000000016,
-          "updatedAt": "2026-06-18T01:14:38.763Z"
+          "updatedAt": "2026-06-18T01:28:26.161Z"
         }
       ],
-      "todayPages": 8,
+      "todayPages": 0,
       "month": {
         "unit": "pages",
         "target": 88,
         "completed": 33,
         "remaining": 55,
         "percent": 37.5,
-        "daysRemaining": 14,
+        "daysRemaining": 13,
         "deadline": "2026-06-30",
-        "recommendedToday": 4,
-        "yesterdayDone": 5,
-        "etaDays": 11,
-        "etaDate": "2026-06-28"
+        "recommendedToday": 5,
+        "yesterdayDone": 8,
+        "etaDays": 7,
+        "etaDate": "2026-06-25"
       }
     },
     "history": [
-      {
-        "date": "2025-06-18",
-        "minutes": 0.0,
-        "videoMinutes": 0.0,
-        "pdfMinutes": 0.0,
-        "activityComplete": false,
-        "goalPercent": 0
-      },
       {
         "date": "2025-06-19",
         "minutes": 0.0,
@@ -5211,45 +5203,36 @@
       },
       {
         "date": "2026-06-17",
-        "minutes": 91.0,
+        "minutes": 91.1,
         "videoMinutes": 0.0,
-        "pdfMinutes": 91.0,
+        "pdfMinutes": 91.1,
         "activityComplete": true,
         "goalPercent": 100
+      },
+      {
+        "date": "2026-06-18",
+        "minutes": 0.0,
+        "videoMinutes": 0.0,
+        "pdfMinutes": 0.0,
+        "activityComplete": false,
+        "goalPercent": 0
       }
     ]
   },
   "reading": {
     "today": {
-      "date": "2026-06-17",
-      "sets": 0.02564102564102564,
-      "questions": 1,
-      "correct": 1,
-      "minutes": 45.9,
-      "tests": [
-        {
-          "test": "test01",
-          "answered": 1,
-          "correct": 1,
-          "total": 39
-        }
-      ],
-      "accuracy": 100.0,
-      "goalPercent": 1.82,
-      "activityComplete": true,
-      "recommendedQuestions": 55
+      "date": "2026-06-18",
+      "sets": 0,
+      "questions": 0,
+      "correct": 0,
+      "minutes": 0,
+      "tests": [],
+      "accuracy": 0,
+      "goalPercent": 0.0,
+      "activityComplete": false,
+      "recommendedQuestions": 59
     },
     "history": [
-      {
-        "date": "2025-06-18",
-        "sets": 0,
-        "questions": 0,
-        "correct": 0,
-        "minutes": 0,
-        "tests": [],
-        "accuracy": 0,
-        "goalPercent": 0.0
-      },
       {
         "date": "2025-06-19",
         "sets": 0,
@@ -8986,9 +8969,19 @@
           }
         ],
         "accuracy": 100.0,
-        "goalPercent": 1.82,
-        "activityComplete": true,
-        "recommendedQuestions": 55
+        "goalPercent": 2.56
+      },
+      {
+        "date": "2026-06-18",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0,
+        "activityComplete": false,
+        "recommendedQuestions": 59
       }
     ],
     "month": {
@@ -8996,68 +8989,24 @@
       "completed": 19,
       "remaining": 761,
       "percent": 2.44,
-      "daysRemaining": 14,
+      "daysRemaining": 13,
       "deadline": "2026-06-30",
-      "recommendedToday": 55,
+      "recommendedToday": 59,
       "yesterdayQuestions": 1,
       "etaDays": 761,
-      "etaDate": "2028-07-17"
+      "etaDate": "2028-07-18"
     }
   },
   "activity": {
     "today": {
-      "date": "2026-06-17",
-      "readingMinutes": 17.7,
-      "grammarMinutes": 87.5,
+      "date": "2026-06-18",
+      "readingMinutes": 0.0,
+      "grammarMinutes": 0.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 105.2,
-      "warnings": [
-        {
-          "source": "www.bilibili.com",
-          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
-          "capturedAt": "2026-06-17T07:31:41.251Z"
-        },
-        {
-          "source": "www.youtube.com",
-          "title": "Press Claims Image Reveals Quantum Entanglement as Yin and Yang. Does It Though? - YouTube",
-          "capturedAt": "2026-06-17T14:29:11.064Z"
-        },
-        {
-          "source": "www.bilibili.com",
-          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
-          "capturedAt": "2026-06-17T14:45:10.277Z"
-        },
-        {
-          "source": "www.youtube.com",
-          "title": "(1) Press Claims Image Reveals Quantum Entanglement as Yin and Yang. Does It Though? - YouTube",
-          "capturedAt": "2026-06-17T15:07:00.194Z"
-        },
-        {
-          "source": "www.bilibili.com",
-          "title": "【双语渣翻】「为什么圣安地列斯玩起来感觉比GTA5还要大？」_GTASA",
-          "capturedAt": "2026-06-17T15:07:02.725Z"
-        },
-        {
-          "source": "www.youtube.com",
-          "title": "(1) Press Claims Image Reveals Quantum Entanglement as Yin and Yang. Does It Though? - YouTube",
-          "capturedAt": "2026-06-17T15:11:08.424Z"
-        },
-        {
-          "source": "www.bilibili.com",
-          "title": "【双语渣翻】「为什么圣安地列斯玩起来感觉比GTA5还要大？」_GTASA",
-          "capturedAt": "2026-06-17T15:11:10.409Z"
-        }
-      ]
+      "totalMinutes": 0.0,
+      "warnings": []
     },
     "history": [
-      {
-        "date": "2025-06-18",
-        "readingMinutes": 0.0,
-        "grammarMinutes": 0.0,
-        "verbMinutes": 0.0,
-        "totalMinutes": 0.0,
-        "warnings": []
-      },
       {
         "date": "2025-06-19",
         "readingMinutes": 0.0,
@@ -11981,9 +11930,9 @@
       {
         "date": "2026-06-17",
         "readingMinutes": 17.7,
-        "grammarMinutes": 87.5,
+        "grammarMinutes": 87.8,
         "verbMinutes": 0.0,
-        "totalMinutes": 105.2,
+        "totalMinutes": 105.5,
         "warnings": [
           {
             "source": "www.bilibili.com",
@@ -12021,6 +11970,14 @@
             "capturedAt": "2026-06-17T15:11:10.409Z"
           }
         ]
+      },
+      {
+        "date": "2026-06-18",
+        "readingMinutes": 0.0,
+        "grammarMinutes": 0.0,
+        "verbMinutes": 0.0,
+        "totalMinutes": 0.0,
+        "warnings": []
       }
     ],
     "lastContext": "grammar"
