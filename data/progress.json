@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-06-18T07:49:53-04:00",
+  "updatedAt": "2026-06-18T08:49:55-04:00",
   "today": {
     "date": "2026-06-18",
-    "focusMinutes": 4
+    "focusMinutes": 21
   },
   "anki": {
     "today": {
-      "reviews": 38,
-      "new": 12,
-      "minutes": 4.5,
+      "reviews": 149,
+      "new": 36,
+      "minutes": 16.2,
       "activityComplete": true,
       "goalPercent": 100
     },
     "total": {
       "cards": 35974,
-      "mature": 206
+      "mature": 208
     },
     "streak": 6,
     "history": [
@@ -1761,7 +1761,7 @@
       {
         "date": "2026-04-05",
         "reviews": 29,
-        "new": 176,
+        "new": 177,
         "minutes": 3.0
       },
       {
@@ -2067,31 +2067,31 @@
       {
         "date": "2026-05-26",
         "reviews": 153,
-        "new": 88,
+        "new": 90,
         "minutes": 17.6
       },
       {
         "date": "2026-05-27",
         "reviews": 54,
-        "new": 132,
+        "new": 136,
         "minutes": 10.0
       },
       {
         "date": "2026-05-28",
         "reviews": 114,
-        "new": 135,
+        "new": 136,
         "minutes": 18.8
       },
       {
         "date": "2026-05-29",
         "reviews": 43,
-        "new": 106,
+        "new": 108,
         "minutes": 6.6
       },
       {
         "date": "2026-05-30",
         "reviews": 86,
-        "new": 138,
+        "new": 140,
         "minutes": 11.2
       },
       {
@@ -2151,7 +2151,7 @@
       {
         "date": "2026-06-09",
         "reviews": 179,
-        "new": 82,
+        "new": 83,
         "minutes": 22.4
       },
       {
@@ -2175,19 +2175,19 @@
       {
         "date": "2026-06-13",
         "reviews": 195,
-        "new": 79,
+        "new": 99,
         "minutes": 34.9
       },
       {
         "date": "2026-06-14",
         "reviews": 59,
-        "new": 49,
+        "new": 94,
         "minutes": 7.7
       },
       {
         "date": "2026-06-15",
         "reviews": 87,
-        "new": 35,
+        "new": 44,
         "minutes": 12.3
       },
       {
@@ -2204,9 +2204,9 @@
       },
       {
         "date": "2026-06-18",
-        "reviews": 38,
-        "new": 12,
-        "minutes": 4.5
+        "reviews": 149,
+        "new": 36,
+        "minutes": 16.2
       }
     ]
   },
@@ -2261,11 +2261,11 @@
       "percent": 7.84
     },
     "today": {
-      "minutes": 0.0,
+      "minutes": 19.2,
       "videoMinutes": 0.0,
-      "pdfMinutes": 0.0,
-      "activityComplete": false,
-      "goalPercent": 0
+      "pdfMinutes": 19.2,
+      "activityComplete": true,
+      "goalPercent": 100
     },
     "pdf": {
       "pages": 33,
@@ -2278,7 +2278,7 @@
           "currentPage": 33,
           "totalPages": 88,
           "seconds": 5034.092000000016,
-          "updatedAt": "2026-06-18T11:49:36.034Z"
+          "updatedAt": "2026-06-18T12:49:55.328Z"
         }
       ],
       "todayPages": 0,
@@ -5211,32 +5211,32 @@
       },
       {
         "date": "2026-06-18",
-        "minutes": 0.0,
+        "minutes": 19.2,
         "videoMinutes": 0.0,
-        "pdfMinutes": 0.0,
-        "activityComplete": false,
-        "goalPercent": 0
+        "pdfMinutes": 19.2,
+        "activityComplete": true,
+        "goalPercent": 100
       }
     ]
   },
   "reading": {
     "today": {
       "date": "2026-06-18",
-      "sets": 0.0,
-      "questions": 0,
+      "sets": 0.02564102564102564,
+      "questions": 1,
       "correct": 0,
-      "minutes": 0.0,
+      "minutes": 35.3,
       "tests": [
         {
           "test": "test01",
-          "answered": 0,
+          "answered": 1,
           "correct": 0,
           "total": 39
         }
       ],
-      "accuracy": 0,
-      "goalPercent": 0.0,
-      "activityComplete": false,
+      "accuracy": 0.0,
+      "goalPercent": 1.69,
+      "activityComplete": true,
       "recommendedQuestions": 59
     },
     "history": [
@@ -8980,45 +8980,51 @@
       },
       {
         "date": "2026-06-18",
-        "sets": 0.0,
-        "questions": 0,
+        "sets": 0.02564102564102564,
+        "questions": 1,
         "correct": 0,
-        "minutes": 0.0,
+        "minutes": 35.3,
         "tests": [
           {
             "test": "test01",
-            "answered": 0,
+            "answered": 1,
             "correct": 0,
             "total": 39
           }
         ],
-        "accuracy": 0,
-        "goalPercent": 0.0,
-        "activityComplete": false,
+        "accuracy": 0.0,
+        "goalPercent": 1.69,
+        "activityComplete": true,
         "recommendedQuestions": 59
       }
     ],
     "month": {
       "target": 780,
-      "completed": 19,
-      "remaining": 761,
-      "percent": 2.44,
+      "completed": 20,
+      "remaining": 760,
+      "percent": 2.56,
       "daysRemaining": 13,
       "deadline": "2026-06-30",
       "recommendedToday": 59,
       "yesterdayQuestions": 1,
-      "etaDays": 761,
-      "etaDate": "2028-07-18"
+      "etaDays": 760,
+      "etaDate": "2028-07-17"
     }
   },
   "activity": {
     "today": {
       "date": "2026-06-18",
-      "readingMinutes": 0.0,
-      "grammarMinutes": 0.0,
+      "readingMinutes": 7.0,
+      "grammarMinutes": 14.3,
       "verbMinutes": 0.0,
-      "totalMinutes": 0.0,
-      "warnings": []
+      "totalMinutes": 21.3,
+      "warnings": [
+        {
+          "source": "www.bilibili.com",
+          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+          "capturedAt": "2026-06-18T12:06:01.938Z"
+        }
+      ]
     },
     "history": [
       {
@@ -11987,11 +11993,17 @@
       },
       {
         "date": "2026-06-18",
-        "readingMinutes": 0.0,
-        "grammarMinutes": 0.0,
+        "readingMinutes": 7.0,
+        "grammarMinutes": 14.3,
         "verbMinutes": 0.0,
-        "totalMinutes": 0.0,
-        "warnings": []
+        "totalMinutes": 21.3,
+        "warnings": [
+          {
+            "source": "www.bilibili.com",
+            "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+            "capturedAt": "2026-06-18T12:06:01.938Z"
+          }
+        ]
       }
     ],
     "lastContext": "grammar"

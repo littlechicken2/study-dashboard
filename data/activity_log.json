@@ -74,6 +74,23 @@
         "local-french": 4160.0,
         "chatgpt": 1330.0
       }
+    },
+    "2026-06-18": {
+      "reading": 420.0,
+      "grammar": 860.0,
+      "verb": 0,
+      "warnings": [
+        {
+          "source": "www.bilibili.com",
+          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+          "capturedAt": "2026-06-18T12:06:01.938Z"
+        }
+      ],
+      "sources": {
+        "local-french": 850.0,
+        "tcf-reading": 420.0,
+        "chatgpt": 10.0
+      }
     }
   },
   "lastContext": "grammar",
@@ -83,6 +100,6 @@
     "seconds": 10,
     "title": "法语 PDF 阅读器",
     "url": "http://10.0.0.19:8765/pdf_reader.html",
-    "capturedAt": "2026-06-18T01:28:20.395Z"
+    "capturedAt": "2026-06-18T12:49:55.358Z"
   }
 }
