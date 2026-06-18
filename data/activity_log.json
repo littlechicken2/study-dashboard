@@ -76,8 +76,8 @@
       }
     },
     "2026-06-18": {
-      "reading": 450.0,
-      "grammar": 2800.0,
+      "reading": 500.0,
+      "grammar": 4670.0,
       "verb": 0,
       "warnings": [
         {
@@ -87,19 +87,19 @@
         }
       ],
       "sources": {
-        "local-french": 2190.0,
-        "tcf-reading": 450.0,
-        "chatgpt": 610.0
+        "local-french": 3940.0,
+        "tcf-reading": 500.0,
+        "chatgpt": 730.0
       }
     }
   },
-  "lastContext": "reading",
+  "lastContext": "grammar",
   "lastPing": {
-    "category": "reading",
-    "source": "tcf-reading",
-    "seconds": 10,
-    "title": "TCF Canada 阅读练习 TEST01 | TCF Canada 备考平台",
-    "url": "https://tcfca.cn/reading/test01",
-    "capturedAt": "2026-06-18T13:49:54.552Z"
+    "category": "distraction",
+    "source": "www.bilibili.com",
+    "seconds": 0,
+    "title": "单日单飞130公里！6点起床开干！越南骑行最长最久的一天，我做到了！懂我意思？_哔哩哔哩_bilibili",
+    "url": "https://www.bilibili.com/video/BV1LijF6iE4r/?spm_id_from=333.1387.homepage.video_card.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
+    "capturedAt": "2026-06-18T14:49:43.056Z"
   }
 }
