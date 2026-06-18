@@ -83,6 +83,12 @@
       "baselineSeconds": 38214.76,
       "watchedSeconds": 38215.74,
       "dailySeconds": 2.86
+    },
+    {
+      "date": "2026-06-18",
+      "baselineSeconds": 38215.74,
+      "watchedSeconds": 38215.74,
+      "dailySeconds": 0.75
     }
   ]
 }

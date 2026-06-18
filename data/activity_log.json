@@ -76,8 +76,8 @@
       }
     },
     "2026-06-18": {
-      "reading": 420.0,
-      "grammar": 860.0,
+      "reading": 450.0,
+      "grammar": 2800.0,
       "verb": 0,
       "warnings": [
         {
@@ -87,19 +87,19 @@
         }
       ],
       "sources": {
-        "local-french": 850.0,
-        "tcf-reading": 420.0,
-        "chatgpt": 10.0
+        "local-french": 2190.0,
+        "tcf-reading": 450.0,
+        "chatgpt": 610.0
       }
     }
   },
-  "lastContext": "grammar",
+  "lastContext": "reading",
   "lastPing": {
-    "category": "grammar",
-    "source": "local-french",
+    "category": "reading",
+    "source": "tcf-reading",
     "seconds": 10,
-    "title": "法语 PDF 阅读器",
-    "url": "http://10.0.0.19:8765/pdf_reader.html",
-    "capturedAt": "2026-06-18T12:49:55.358Z"
+    "title": "TCF Canada 阅读练习 TEST01 | TCF Canada 备考平台",
+    "url": "https://tcfca.cn/reading/test01",
+    "capturedAt": "2026-06-18T13:49:54.552Z"
   }
 }

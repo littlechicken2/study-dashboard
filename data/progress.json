@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-18T08:49:55-04:00",
+  "updatedAt": "2026-06-18T09:49:58-04:00",
   "today": {
     "date": "2026-06-18",
-    "focusMinutes": 21
+    "focusMinutes": 54
   },
   "anki": {
     "today": {
@@ -2211,12 +2211,12 @@
     ]
   },
   "course": {
-    "updatedAt": "2026-06-18T01:28:26.142Z",
+    "updatedAt": "2026-06-18T13:32:17.418Z",
     "lastLesson": {
       "id": "a1/6_4.mp4",
       "title": "6 4 · 形容词特殊阴性变化",
       "course": "a1",
-      "time": 206.986576
+      "time": 205.876122
     },
     "courses": [
       {
@@ -2261,9 +2261,9 @@
       "percent": 7.84
     },
     "today": {
-      "minutes": 19.2,
+      "minutes": 48.3,
       "videoMinutes": 0.0,
-      "pdfMinutes": 19.2,
+      "pdfMinutes": 48.3,
       "activityComplete": true,
       "goalPercent": 100
     },
@@ -2278,7 +2278,7 @@
           "currentPage": 33,
           "totalPages": 88,
           "seconds": 5034.092000000016,
-          "updatedAt": "2026-06-18T12:49:55.328Z"
+          "updatedAt": "2026-06-18T13:49:26.028Z"
         }
       ],
       "todayPages": 0,
@@ -5211,9 +5211,9 @@
       },
       {
         "date": "2026-06-18",
-        "minutes": 19.2,
+        "minutes": 48.3,
         "videoMinutes": 0.0,
-        "pdfMinutes": 19.2,
+        "pdfMinutes": 48.3,
         "activityComplete": true,
         "goalPercent": 100
       }
@@ -5225,7 +5225,7 @@
       "sets": 0.02564102564102564,
       "questions": 1,
       "correct": 0,
-      "minutes": 35.3,
+      "minutes": 41.2,
       "tests": [
         {
           "test": "test01",
@@ -8983,7 +8983,7 @@
         "sets": 0.02564102564102564,
         "questions": 1,
         "correct": 0,
-        "minutes": 35.3,
+        "minutes": 41.2,
         "tests": [
           {
             "test": "test01",
@@ -9014,10 +9014,10 @@
   "activity": {
     "today": {
       "date": "2026-06-18",
-      "readingMinutes": 7.0,
-      "grammarMinutes": 14.3,
+      "readingMinutes": 7.5,
+      "grammarMinutes": 46.7,
       "verbMinutes": 0.0,
-      "totalMinutes": 21.3,
+      "totalMinutes": 54.2,
       "warnings": [
         {
           "source": "www.bilibili.com",
@@ -11993,10 +11993,10 @@
       },
       {
         "date": "2026-06-18",
-        "readingMinutes": 7.0,
-        "grammarMinutes": 14.3,
+        "readingMinutes": 7.5,
+        "grammarMinutes": 46.7,
         "verbMinutes": 0.0,
-        "totalMinutes": 21.3,
+        "totalMinutes": 54.2,
         "warnings": [
           {
             "source": "www.bilibili.com",
@@ -12006,6 +12006,6 @@
         ]
       }
     ],
-    "lastContext": "grammar"
+    "lastContext": "reading"
   }
 }
