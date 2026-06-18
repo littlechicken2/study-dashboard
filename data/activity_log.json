@@ -77,7 +77,7 @@
     },
     "2026-06-18": {
       "reading": 500.0,
-      "grammar": 4680.0,
+      "grammar": 4750.0,
       "verb": 0,
       "warnings": [
         {
@@ -89,7 +89,7 @@
       "sources": {
         "local-french": 3950.0,
         "tcf-reading": 500.0,
-        "chatgpt": 730.0
+        "chatgpt": 800.0
       }
     }
   },
@@ -100,6 +100,6 @@
     "seconds": 0,
     "title": "越南居然还有我们国内淘汰的卧铺大巴？——到达河内第一天_哔哩哔哩_bilibili",
     "url": "https://www.bilibili.com/video/BV1pEEy6CEu2?spm_id_from=333.788.videopod.sections&vd_source=af1f5c7cace3a370b57a585619471fbb",
-    "capturedAt": "2026-06-18T15:49:56.778Z"
+    "capturedAt": "2026-06-18T16:50:06.784Z"
   }
 }
