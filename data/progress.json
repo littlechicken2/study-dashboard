@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-19T12:01:33-04:00",
+  "updatedAt": "2026-06-19T13:01:36-04:00",
   "today": {
     "date": "2026-06-19",
-    "focusMinutes": 31
+    "focusMinutes": 52
   },
   "anki": {
     "today": {
@@ -2268,29 +2268,29 @@
       "goalPercent": 100
     },
     "pdf": {
-      "pages": 39,
+      "pages": 40,
       "totalPages": 88,
-      "percent": 44.32,
+      "percent": 45.45,
       "documents": [
         {
           "id": "a1-grammar",
           "title": "A1 语法讲义",
-          "currentPage": 39,
+          "currentPage": 40,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-19T12:01:32-0400"
+          "updatedAt": "2026-06-19T13:01:32-0400"
         }
       ],
-      "todayPages": 1,
+      "todayPages": 2,
       "month": {
         "unit": "pages",
         "target": 88,
-        "completed": 39,
-        "remaining": 49,
-        "percent": 44.32,
+        "completed": 40,
+        "remaining": 48,
+        "percent": 45.45,
         "daysRemaining": 12,
         "deadline": "2026-06-30",
-        "recommendedToday": 5,
+        "recommendedToday": 4,
         "yesterdayDone": 5,
         "etaDays": 10,
         "etaDate": "2026-06-29"
@@ -5225,7 +5225,7 @@
       "sets": 0.07692307692307693,
       "questions": 3,
       "correct": 1,
-      "minutes": 29.4,
+      "minutes": 0.5,
       "tests": [
         {
           "test": "test01",
@@ -8990,7 +8990,7 @@
         "sets": 0.07692307692307693,
         "questions": 3,
         "correct": 1,
-        "minutes": 29.4,
+        "minutes": 0.5,
         "tests": [
           {
             "test": "test01",
@@ -9021,10 +9021,10 @@
   "activity": {
     "today": {
       "date": "2026-06-19",
-      "readingMinutes": 23.5,
-      "grammarMinutes": 7.6,
+      "readingMinutes": 26.7,
+      "grammarMinutes": 25.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 31.1,
+      "totalMinutes": 51.7,
       "warnings": [
         {
           "source": "www.bilibili.com",
@@ -12006,10 +12006,10 @@
       },
       {
         "date": "2026-06-19",
-        "readingMinutes": 23.5,
-        "grammarMinutes": 7.6,
+        "readingMinutes": 26.7,
+        "grammarMinutes": 25.0,
         "verbMinutes": 0.0,
-        "totalMinutes": 31.1,
+        "totalMinutes": 51.7,
         "warnings": [
           {
             "source": "www.bilibili.com",
