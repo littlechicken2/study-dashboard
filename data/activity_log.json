@@ -92,6 +92,22 @@
         "chatgpt": 2510.0,
         "adobe-acrobat": 1545.0
       }
+    },
+    "2026-06-19": {
+      "reading": 0,
+      "grammar": 60.0,
+      "verb": 0,
+      "warnings": [
+        {
+          "source": "www.bilibili.com",
+          "title": "【军火黑市demo】我在暗网赌箱子 直接把系统干崩了？！",
+          "capturedAt": "2026-06-19T12:04:51.018Z"
+        }
+      ],
+      "sources": {
+        "chatgpt": 10.0,
+        "adobe-acrobat": 50.0
+      }
     }
   },
   "lastContext": "grammar",
@@ -100,7 +116,7 @@
     "source": "adobe-acrobat",
     "seconds": 5,
     "title": "【新东方在线诚意出品】法语欧标A1语法大全电子讲义.pdf.pdf (SECURED) - Adobe Acrobat Reader (64-bit)",
-    "idleSeconds": 0,
-    "capturedAt": "2026-06-18T22:54:09-0400"
+    "idleSeconds": 0.1,
+    "capturedAt": "2026-06-19T08:10:17-0400"
   }
 }

@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-19T08:01:22-04:00",
+  "updatedAt": "2026-06-19T08:15:00-04:00",
   "today": {
     "date": "2026-06-19",
-    "focusMinutes": 0
+    "focusMinutes": 1
   },
   "anki": {
     "today": {
@@ -2268,32 +2268,32 @@
       "goalPercent": 0
     },
     "pdf": {
-      "pages": 38,
+      "pages": 47,
       "totalPages": 88,
-      "percent": 43.18,
+      "percent": 53.41,
       "documents": [
         {
           "id": "a1-grammar",
           "title": "A1 语法讲义",
-          "currentPage": 38,
+          "currentPage": 47,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-19T02:53:36.024Z"
+          "updatedAt": "2026-06-19T08:20:00-04:00"
         }
       ],
-      "todayPages": 0,
+      "todayPages": 9,
       "month": {
         "unit": "pages",
         "target": 88,
-        "completed": 38,
-        "remaining": 50,
-        "percent": 43.18,
+        "completed": 47,
+        "remaining": 41,
+        "percent": 53.41,
         "daysRemaining": 12,
         "deadline": "2026-06-30",
-        "recommendedToday": 5,
+        "recommendedToday": 4,
         "yesterdayDone": 5,
-        "etaDays": 10,
-        "etaDate": "2026-06-29"
+        "etaDays": 9,
+        "etaDate": "2026-06-28"
       }
     },
     "history": [
@@ -5222,11 +5222,18 @@
   "reading": {
     "today": {
       "date": "2026-06-19",
-      "sets": 0,
+      "sets": 0.0,
       "questions": 0,
       "correct": 0,
-      "minutes": 0,
-      "tests": [],
+      "minutes": 0.0,
+      "tests": [
+        {
+          "test": "test01",
+          "answered": 0,
+          "correct": 0,
+          "total": 39
+        }
+      ],
       "accuracy": 0,
       "goalPercent": 0.0,
       "activityComplete": false,
@@ -8980,11 +8987,18 @@
       },
       {
         "date": "2026-06-19",
-        "sets": 0,
+        "sets": 0.0,
         "questions": 0,
         "correct": 0,
-        "minutes": 0,
-        "tests": [],
+        "minutes": 0.0,
+        "tests": [
+          {
+            "test": "test01",
+            "answered": 0,
+            "correct": 0,
+            "total": 39
+          }
+        ],
         "accuracy": 0,
         "goalPercent": 0.0,
         "activityComplete": false,
@@ -9008,10 +9022,16 @@
     "today": {
       "date": "2026-06-19",
       "readingMinutes": 0.0,
-      "grammarMinutes": 0.0,
+      "grammarMinutes": 1.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 0.0,
-      "warnings": []
+      "totalMinutes": 1.0,
+      "warnings": [
+        {
+          "source": "www.bilibili.com",
+          "title": "【军火黑市demo】我在暗网赌箱子 直接把系统干崩了？！",
+          "capturedAt": "2026-06-19T12:04:51.018Z"
+        }
+      ]
     },
     "history": [
       {
@@ -11987,10 +12007,16 @@
       {
         "date": "2026-06-19",
         "readingMinutes": 0.0,
-        "grammarMinutes": 0.0,
+        "grammarMinutes": 1.0,
         "verbMinutes": 0.0,
-        "totalMinutes": 0.0,
-        "warnings": []
+        "totalMinutes": 1.0,
+        "warnings": [
+          {
+            "source": "www.bilibili.com",
+            "title": "【军火黑市demo】我在暗网赌箱子 直接把系统干崩了？！",
+            "capturedAt": "2026-06-19T12:04:51.018Z"
+          }
+        ]
       }
     ],
     "lastContext": "grammar"

@@ -2,11 +2,15 @@ import ctypes
 import json
 import time
 import urllib.request
+import winreg
 from ctypes import wintypes
 
 
 API = "http://127.0.0.1:8765/api/activity-ping"
+PDF_API = "http://127.0.0.1:8765/api/pdf-progress"
 POLL_SECONDS = 5
+ACROBAT_VIEW_KEY = r"Software\Adobe\Adobe Acrobat\DC\RememberedViews\cNoCategoryFiles\c1\cViewDef"
+ACROBAT_TITLE_MARKER = "法语欧标A1语法大全电子讲义"
 
 user32 = ctypes.WinDLL("user32", use_last_error=True)
 kernel32 = ctypes.WinDLL("kernel32", use_last_error=True)
@@ -51,13 +55,22 @@ def classify(exe, title, idle):
     return None
 
 
-def post(payload):
+def post(payload, api=API):
     data = json.dumps(payload).encode("utf-8")
-    req = urllib.request.Request(API, data=data, headers={"Content-Type": "application/json"}, method="POST")
+    req = urllib.request.Request(api, data=data, headers={"Content-Type": "application/json"}, method="POST")
     try:
         urllib.request.urlopen(req, timeout=2).read()
     except OSError:
         pass
+
+
+def acrobat_page():
+    try:
+        with winreg.OpenKey(winreg.HKEY_CURRENT_USER, ACROBAT_VIEW_KEY) as key:
+            page_zero_based, _ = winreg.QueryValueEx(key, "ipageViewPageNum")
+        return max(1, int(page_zero_based) + 1)
+    except (OSError, TypeError, ValueError):
+        return None
 
 
 def main():
@@ -76,6 +89,19 @@ def main():
                 "idleSeconds": round(idle, 1),
                 "capturedAt": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
             })
+            if source == "adobe-acrobat" and ACROBAT_TITLE_MARKER in title:
+                page = acrobat_page()
+                if page:
+                    post({
+                        "id": "a1-grammar",
+                        "title": "A1 语法讲义",
+                        "currentPage": page,
+                        "totalPages": 88,
+                        "seconds": 0,
+                        "dailySeconds": 0,
+                        "establishDailyBaseline": True,
+                        "updatedAt": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
+                    }, PDF_API)
         time.sleep(max(1, POLL_SECONDS - (time.time() - start)))
 
 

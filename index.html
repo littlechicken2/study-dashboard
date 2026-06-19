@@ -8,50 +8,54 @@
   <style>
     :root{--bg:#07120f;--panel:#10211b;--line:#294238;--text:#f3f7f5;--muted:#a8b8b0;--green:#69e39d;--cyan:#62d9de}
     *{box-sizing:border-box}
-    body{margin:0;color:var(--text);background:radial-gradient(circle at 10% -10%,rgba(105,227,157,.17),transparent 36rem),radial-gradient(circle at 100% 0,rgba(98,217,222,.12),transparent 30rem),var(--bg);font-family:Inter,"Segoe UI","Microsoft YaHei",sans-serif}
-    main{width:min(1100px,calc(100% - 28px));margin:auto;padding:42px 0 70px}
+    body{margin:0;color:var(--text);background:radial-gradient(circle at 10% -10%,rgba(105,227,157,.17),transparent 36rem),radial-gradient(circle at 100% 0,rgba(98,217,222,.12),transparent 30rem),var(--bg);font-family:Inter,"Segoe UI","Microsoft YaHei",sans-serif;overflow:hidden}
+    main{width:min(1180px,calc(100% - 20px));height:100vh;margin:auto;padding:10px 0;display:grid;grid-template-rows:auto 1fr;gap:8px}
     header,.sectionHead,.goalTop{display:flex;justify-content:space-between;gap:16px;align-items:flex-end}
-    header{margin-bottom:28px}
-    h1{margin:0 0 6px;font-size:clamp(30px,6vw,52px);line-height:1}
-    h2{margin:0;font-size:18px}
+    header{margin-bottom:0}
+    h1{margin:0 0 3px;font-size:26px;line-height:1}
+    h2{margin:0;font-size:15px}
     p{margin:0}
     a{color:var(--cyan)}
     .muted{color:var(--muted)}
     .date{text-align:right;font-variant-numeric:tabular-nums}
-    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-    .card{min-width:0;padding:20px;border:1px solid var(--line);border-radius:8px;background:rgba(16,33,27,.94)}
-    .hero{grid-column:1/-1}
-    .wide{grid-column:span 2}
-    .overview{display:grid;grid-template-columns:auto 1fr;gap:25px;align-items:end;margin:18px 0 22px}
-    .heroValue{font-size:clamp(54px,11vw,96px);font-weight:800;line-height:.9;color:var(--green);font-variant-numeric:tabular-nums}
-    .goalGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-    .goal{padding:16px;border:1px solid var(--line);border-radius:5px;background:rgba(3,15,11,.45)}
+    .grid{min-height:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:auto 1fr 1fr;gap:8px}
+    .card{min-width:0;min-height:0;padding:10px;border:1px solid var(--line);border-radius:7px;background:rgba(16,33,27,.94);overflow:hidden}
+    .hero{grid-column:1/-1;display:grid;grid-template-columns:190px 1fr;grid-template-rows:auto 1fr;gap:8px 14px}
+    .hero>.sectionHead{grid-column:1/-1}
+    .wide{grid-column:auto}
+    .overview{display:grid;grid-template-columns:1fr;gap:8px;align-items:center;margin:0}
+    .heroValue{font-size:64px;font-weight:800;line-height:.9;color:var(--green);font-variant-numeric:tabular-nums}
+    .goalGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+    .goal{padding:10px;border:1px solid var(--line);border-radius:5px;background:rgba(3,15,11,.45)}
     .goalTop{align-items:baseline}
     .goalTop span{font-size:12px;color:var(--muted)}
-    .goalValue,.big{margin-top:17px;font-size:32px;font-weight:800;font-variant-numeric:tabular-nums}
-    .unit{font-size:14px;font-weight:500;color:var(--muted)}
-    .bar{height:9px;margin:16px 0;overflow:hidden;border-radius:2px;background:#06100c}
+    .goalValue,.big{margin-top:6px;font-size:22px;font-weight:800;font-variant-numeric:tabular-nums}
+    .unit{font-size:12px;font-weight:500;color:var(--muted)}
+    .bar{height:7px;margin:8px 0;overflow:hidden;border-radius:2px;background:#06100c}
     .bar i{display:block;width:var(--value);height:100%;background:linear-gradient(90deg,var(--green),var(--cyan));transition:width .5s ease}
-    .details{margin-top:12px;color:var(--muted);font-size:12px;line-height:1.7}
-    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:17px}
-    .stat{padding-top:10px;border-top:1px solid var(--line)}
-    .stat b{display:block;font-size:20px;font-variant-numeric:tabular-nums}
-    .stat span{font-size:12px;color:var(--muted)}
-    .courseRows{display:grid;gap:11px;margin-top:15px}
-    .courseRow{display:grid;grid-template-columns:60px 1fr 68px;gap:10px;align-items:center}
+    .details{margin-top:5px;color:var(--muted);font-size:10px;line-height:1.35}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:8px}
+    .stat{padding-top:6px;border-top:1px solid var(--line)}
+    .stat b{display:block;font-size:16px;font-variant-numeric:tabular-nums}
+    .stat span{font-size:10px;color:var(--muted)}
+    .courseRows{display:grid;gap:5px;margin-top:7px}
+    .courseRow{display:grid;grid-template-columns:42px 1fr 56px;gap:7px;align-items:center;font-size:11px}
     .courseRow span{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
-    .trackerCard{padding:16px}
+    .trackerCard{padding:10px}
     .legend{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:11px}
     .legend i{display:inline-block;width:9px;height:9px;margin-right:4px;border-radius:2px}
-    .rgbCalendar{display:grid;grid-template-rows:repeat(7,24px);grid-auto-flow:column;grid-auto-columns:24px;gap:4px;overflow-x:auto;padding:12px 2px 2px}
+    .monthLabel{margin-top:4px;color:var(--text);font-size:11px;font-weight:700}
+    .rgbCalendar{display:grid;grid-template-columns:repeat(7,18px);grid-auto-rows:18px;gap:2px;padding:4px 0 0}
+    .weekday{display:grid;place-items:center;color:var(--muted);font-size:9px}
+    .rgbDay.empty{opacity:.18}
     .rgbDay{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:2px;padding:2px;border:1px solid #253e35;border-radius:4px;background:#081510}
     .rgbDay b{display:grid;place-items:center;background:#0e211a;color:#b8c9c0;font-size:9px;font-weight:700;font-variant-numeric:tabular-nums}
     .rgbDay span{border-radius:1px}
     .rgbDay .r{background:rgb(var(--r),0,0)}
     .rgbDay .g{background:rgb(0,var(--g),0)}
     .rgbDay .b{background:rgb(0,0,var(--b))}
-    footer{margin-top:22px;color:var(--muted);font-size:12px}
-    @media(max-width:760px){main{padding-top:25px}.grid{grid-template-columns:1fr}.hero,.trackerCard,.wide{grid-column:auto}.goalGrid,.overview{grid-template-columns:1fr}.date{font-size:11px}}
+    footer{display:none}
+    @media(max-width:760px){body{overflow:auto}main{height:auto;padding:18px 0;display:block}.grid{display:grid;grid-template-columns:1fr;grid-template-rows:none}.hero{display:block}.hero,.trackerCard,.wide{grid-column:auto}.goalGrid,.overview{grid-template-columns:1fr}.goalGrid{margin-top:10px}.date{font-size:11px}}
   </style>
 </head>
 <body>
@@ -73,8 +77,10 @@ const eta=x=>x?.etaDate?`${x.etaDate}（${n(x.etaDays)} 天）`:"暂无速度";
 const rgbTracker=(a,r,c,act)=>{
   const map=rows=>new Map((rows||[]).map(x=>[x.date,x])),am=map(a),rm=map(r),cm=map(c),tm=map(act);
   const now=new Date(),year=now.getFullYear(),month=now.getMonth(),days=new Date(year,month+1,0).getDate();
+  const firstDay=(new Date(year,month,1).getDay()+6)%7;
   const readingDailyTarget=780/days;
-  const cells=[];
+  const cells=[...['一','二','三','四','五','六','日'].map(x=>`<span class="weekday">${x}</span>`)];
+  for(let i=0;i<firstDay;i++) cells.push('<span class="rgbDay empty"></span>');
   for(let i=1;i<=days;i++){
     const key=`${year}-${String(month+1).padStart(2,"0")}-${String(i).padStart(2,"0")}`;
     const rr=rm.get(key)||{}, aa=am.get(key)||{}, cc=cm.get(key)||{}, tt=tm.get(key)||{};
@@ -83,7 +89,7 @@ const rgbTracker=(a,r,c,act)=>{
     const blue=Math.max(level((aa.reviews||0)+(aa.new||0),20),level(tt.verbMinutes,20));
     cells.push(`<span class="rgbDay" style="--r:${red};--g:${green};--b:${blue}" title="${key} | Reading ${rr.questions||0} 题 / ${n(tt.readingMinutes||0,1)} 分钟 | Grammar ${n(cc.minutes||0,1)} 分钟 / ${n(tt.grammarMinutes||0,1)} 有效分钟 | Verb ${Number(aa.reviews||0)+Number(aa.new||0)} 次 / ${n(tt.verbMinutes||0,1)} 分钟"><span class="r"></span><span class="g"></span><span class="b"></span><b>${i}</b></span>`);
   }
-  return `<div class="rgbCalendar">${cells.join("")}</div>`;
+  return `<div class="monthLabel">${year} 年 ${month+1} 月</div><div class="rgbCalendar">${cells.join("")}</div>`;
 };
 async function load(){
   const data=await fetch(`data/progress.json?t=${Date.now()}`).then(r=>r.json());
@@ -110,7 +116,7 @@ async function load(){
   <article class="card"><div class="sectionHead"><h2>有效学习时长</h2><span class="muted">娱乐网站自动暂停</span></div><div class="big">${n(act.today.totalMinutes,1)} <span class="unit">分钟</span></div>${stats([[n(act.today.readingMinutes,1),"Reading"],[n(act.today.grammarMinutes,1),"Grammar"],[n(act.today.verbMinutes,1),"Verb"]])}<p class="details">Bilibili / YouTube / 抖音警告：${n((act.today.warnings||[]).length)} 次</p></article>
   <article class="card"><div class="sectionHead"><h2>Verb 具体记录</h2><span class="muted">Anki</span></div><div class="big">${n(a.today.reviews)} <span class="unit">次复习</span></div>${stats([[n(a.today.new),"新卡"],[n(a.today.minutes,1),"分钟"],[n(a.total.cards),"总卡片"]])}</article>
   <article class="card wide"><div class="sectionHead"><h2>视频课程累计</h2><span class="muted">${pct(c.total.percent)}</span></div><div class="courseRows">${c.courses.map(x=>`<div class="courseRow"><strong>${x.label}</strong>${bar(x.percent)}<span>${pct(x.percent)}</span></div>`).join("")}</div></article>
-  <article class="card wide"><div class="sectionHead"><h2>A1 讲义月底计划</h2><span class="muted">${pdfMonth.deadline||""} 截止</span></div><div class="big">${n(pdf.pages)} / ${n(pdf.totalPages)} <span class="unit">页</span></div>${bar(pdf.percent)}${stats([[`${n(pdf.todayPages)} / ${n(pdfMonth.recommendedToday)}`,"今日推进 / 建议"],[n(pdfMonth.remaining),"剩余页数"],[eta(pdfMonth),"按昨日速度 ETA"]])}<p class="details"><a href="http://10.0.0.19:8765/pdf_reader.html">打开本地 PDF 阅读器</a></p></article>`;
+  <article class="card wide"><div class="sectionHead"><h2>A1 讲义月底计划</h2><span class="muted">Acrobat 自动同步</span></div><div class="big">${n(pdf.pages)} / ${n(pdf.totalPages)} <span class="unit">页</span></div>${bar(pdf.percent)}${stats([[`${n(pdf.todayPages)} / ${n(pdfMonth.recommendedToday)}`,"今日推进 / 建议"],[n(pdfMonth.remaining),"剩余页数"],[eta(pdfMonth),"按昨日速度 ETA"]])}<p class="details">${pdfMonth.deadline||""} 前完成；关闭或翻页后由 Acrobat 恢复位置更新</p></article>`;
 }
 load().catch(e=>document.querySelector("#dashboard").innerHTML=`<article class="card hero"><h2>暂时没有进度数据</h2><p class="muted">${e.message}</p></article>`);
 </script>
