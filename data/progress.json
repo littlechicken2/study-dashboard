@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-19T17:01:46-04:00",
+  "updatedAt": "2026-06-19T18:01:49-04:00",
   "today": {
     "date": "2026-06-19",
     "focusMinutes": 68
@@ -5225,7 +5225,7 @@
       "sets": 0.07692307692307693,
       "questions": 3,
       "correct": 1,
-      "minutes": 4.5,
+      "minutes": 5.5,
       "tests": [
         {
           "test": "test01",
@@ -8990,7 +8990,7 @@
         "sets": 0.07692307692307693,
         "questions": 3,
         "correct": 1,
-        "minutes": 4.5,
+        "minutes": 5.5,
         "tests": [
           {
             "test": "test01",
@@ -9035,6 +9035,11 @@
           "source": "www.youtube.com",
           "title": "Craziest Soviet Machines You Won't Believe Exist - Part 1 - YouTube",
           "capturedAt": "2026-06-19T20:31:04.748Z"
+        },
+        {
+          "source": "www.bilibili.com",
+          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+          "capturedAt": "2026-06-19T21:54:15.005Z"
         }
       ]
     },
@@ -12025,6 +12030,11 @@
             "source": "www.youtube.com",
             "title": "Craziest Soviet Machines You Won't Believe Exist - Part 1 - YouTube",
             "capturedAt": "2026-06-19T20:31:04.748Z"
+          },
+          {
+            "source": "www.bilibili.com",
+            "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+            "capturedAt": "2026-06-19T21:54:15.005Z"
           }
         ]
       }

@@ -107,6 +107,11 @@
           "source": "www.youtube.com",
           "title": "Craziest Soviet Machines You Won't Believe Exist - Part 1 - YouTube",
           "capturedAt": "2026-06-19T20:31:04.748Z"
+        },
+        {
+          "source": "www.bilibili.com",
+          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+          "capturedAt": "2026-06-19T21:54:15.005Z"
         }
       ],
       "sources": {
@@ -120,10 +125,10 @@
   "lastContext": "grammar",
   "lastPing": {
     "category": "distraction",
-    "source": "www.youtube.com",
+    "source": "www.bilibili.com",
     "seconds": 0,
-    "title": "(1) i tried to beat minecraft without knowing how to play - YouTube",
-    "url": "https://www.youtube.com/watch?v=fijq0UXjBmE&t=559s",
-    "capturedAt": "2026-06-19T21:01:44.315Z"
+    "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+    "url": "https://www.bilibili.com/?spm_id_from=333.1007.0.0",
+    "capturedAt": "2026-06-19T21:59:58.218Z"
   }
 }
