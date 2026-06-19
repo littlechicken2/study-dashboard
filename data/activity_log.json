@@ -77,7 +77,7 @@
     },
     "2026-06-18": {
       "reading": 630.0,
-      "grammar": 7500.0,
+      "grammar": 8220.0,
       "verb": 0,
       "warnings": [
         {
@@ -87,20 +87,20 @@
         }
       ],
       "sources": {
-        "local-french": 4230.0,
+        "local-french": 4240.0,
         "tcf-reading": 560.0,
-        "chatgpt": 2140.0,
-        "adobe-acrobat": 1200.0
+        "chatgpt": 2510.0,
+        "adobe-acrobat": 1540.0
       }
     }
   },
   "lastContext": "grammar",
   "lastPing": {
-    "category": "grammar",
-    "source": "adobe-acrobat",
-    "seconds": 5,
-    "title": "【新东方在线诚意出品】法语欧标A1语法大全电子讲义.pdf.pdf (SECURED) - Adobe Acrobat Reader (64-bit)",
-    "idleSeconds": 56.0,
-    "capturedAt": "2026-06-18T20:44:09-0400"
+    "category": "contextual",
+    "source": "chatgpt",
+    "seconds": 10,
+    "title": "最小化音乐播放器",
+    "url": "https://chatgpt.com/c/6a30f8b7-64f8-83ea-96e1-a2546be9a023",
+    "capturedAt": "2026-06-19T01:14:15.537Z"
   }
 }
