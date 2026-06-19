@@ -138,11 +138,11 @@
     {
       "date": "2026-06-19",
       "test": "test01",
-      "answered": 20,
+      "answered": 22,
       "total": 39,
       "correct": 15,
-      "seconds": 74,
-      "capturedAt": "2026-06-19T12:19:11.037Z"
+      "seconds": 1143,
+      "capturedAt": "2026-06-19T13:01:21.056Z"
     }
   ]
 }

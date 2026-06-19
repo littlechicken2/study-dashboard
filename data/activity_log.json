@@ -94,8 +94,8 @@
       }
     },
     "2026-06-19": {
-      "reading": 0,
-      "grammar": 60.0,
+      "reading": 1260.0,
+      "grammar": 420.0,
       "verb": 0,
       "warnings": [
         {
@@ -105,18 +105,20 @@
         }
       ],
       "sources": {
-        "chatgpt": 10.0,
-        "adobe-acrobat": 50.0
+        "chatgpt": 370.0,
+        "adobe-acrobat": 50.0,
+        "local-french": 80.0,
+        "tcf-reading": 1180.0
       }
     }
   },
-  "lastContext": "grammar",
+  "lastContext": "reading",
   "lastPing": {
-    "category": "grammar",
-    "source": "adobe-acrobat",
-    "seconds": 5,
-    "title": "【新东方在线诚意出品】法语欧标A1语法大全电子讲义.pdf.pdf (SECURED) - Adobe Acrobat Reader (64-bit)",
-    "idleSeconds": 0.1,
-    "capturedAt": "2026-06-19T08:10:17-0400"
+    "category": "reading",
+    "source": "tcf-reading",
+    "seconds": 10,
+    "title": "TCF Canada 阅读练习 TEST01 | TCF Canada 备考平台",
+    "url": "https://tcfca.cn/reading/test01",
+    "capturedAt": "2026-06-19T13:01:11.064Z"
   }
 }
