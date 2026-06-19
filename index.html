@@ -13,47 +13,54 @@
     header,.sectionHead,.goalTop{display:flex;justify-content:space-between;gap:16px;align-items:flex-end}
     header{margin-bottom:0}
     h1{margin:0 0 3px;font-size:26px;line-height:1}
-    h2{margin:0;font-size:15px}
+    h2{margin:0;font-size:16px}
     p{margin:0}
     a{color:var(--cyan)}
     .muted{color:var(--muted)}
     .date{text-align:right;font-variant-numeric:tabular-nums}
     .grid{min-height:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:auto 1fr 1fr;gap:8px}
-    .card{min-width:0;min-height:0;padding:10px;border:1px solid var(--line);border-radius:7px;background:rgba(16,33,27,.94);overflow:hidden}
+    .card{min-width:0;min-height:0;padding:14px;border:1px solid var(--line);border-radius:7px;background:rgba(16,33,27,.94);overflow:hidden}
+    .card:not(.hero):not(.trackerCard){display:flex;flex-direction:column}
     .hero{grid-column:1/-1;display:grid;grid-template-columns:190px 1fr;grid-template-rows:auto 1fr;gap:8px 14px}
     .hero>.sectionHead{grid-column:1/-1}
     .wide{grid-column:auto}
     .overview{display:grid;grid-template-columns:1fr;gap:8px;align-items:center;margin:0}
-    .heroValue{font-size:64px;font-weight:800;line-height:.9;color:var(--green);font-variant-numeric:tabular-nums}
+    .heroValue{font-size:72px;font-weight:800;line-height:.9;color:var(--green);font-variant-numeric:tabular-nums}
     .goalGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-    .goal{padding:10px;border:1px solid var(--line);border-radius:5px;background:rgba(3,15,11,.45)}
+    .goal{padding:12px;border:1px solid var(--line);border-radius:5px;background:rgba(3,15,11,.45)}
     .goalTop{align-items:baseline}
     .goalTop span{font-size:12px;color:var(--muted)}
-    .goalValue,.big{margin-top:6px;font-size:22px;font-weight:800;font-variant-numeric:tabular-nums}
+    .goalValue,.big{margin-top:8px;font-size:27px;font-weight:800;font-variant-numeric:tabular-nums}
     .unit{font-size:12px;font-weight:500;color:var(--muted)}
-    .bar{height:7px;margin:8px 0;overflow:hidden;border-radius:2px;background:#06100c}
+    .bar{height:8px;margin:9px 0;overflow:hidden;border-radius:2px;background:#06100c}
     .bar i{display:block;width:var(--value);height:100%;background:linear-gradient(90deg,var(--green),var(--cyan));transition:width .5s ease}
-    .details{margin-top:5px;color:var(--muted);font-size:10px;line-height:1.35}
-    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:8px}
+    .details{margin-top:6px;color:var(--muted);font-size:11px;line-height:1.4}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:auto}
     .stat{padding-top:6px;border-top:1px solid var(--line)}
-    .stat b{display:block;font-size:16px;font-variant-numeric:tabular-nums}
-    .stat span{font-size:10px;color:var(--muted)}
-    .courseRows{display:grid;gap:5px;margin-top:7px}
-    .courseRow{display:grid;grid-template-columns:42px 1fr 56px;gap:7px;align-items:center;font-size:11px}
+    .stat b{display:block;font-size:18px;font-variant-numeric:tabular-nums}
+    .stat span{font-size:11px;color:var(--muted)}
+    .courseRows{flex:1;display:grid;align-content:space-evenly;gap:5px;margin-top:5px}
+    .courseRow{display:grid;grid-template-columns:42px 1fr 56px;gap:7px;align-items:center;font-size:12px}
     .courseRow span{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
     .trackerCard{padding:10px}
     .legend{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:11px}
     .legend i{display:inline-block;width:9px;height:9px;margin-right:4px;border-radius:2px}
-    .monthLabel{margin-top:4px;color:var(--text);font-size:11px;font-weight:700}
-    .rgbCalendar{display:grid;grid-template-columns:repeat(7,18px);grid-auto-rows:18px;gap:2px;padding:4px 0 0}
-    .weekday{display:grid;place-items:center;color:var(--muted);font-size:9px}
+    .monthLabel{margin-top:5px;color:var(--text);font-size:12px;font-weight:700}
+    .rgbCalendar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));grid-auto-rows:17px;gap:3px;padding:4px 0 0}
+    .weekday{display:grid;place-items:center;color:var(--muted);font-size:10px}
     .rgbDay.empty{opacity:.18}
     .rgbDay{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:2px;padding:2px;border:1px solid #253e35;border-radius:4px;background:#081510}
-    .rgbDay b{display:grid;place-items:center;background:#0e211a;color:#b8c9c0;font-size:9px;font-weight:700;font-variant-numeric:tabular-nums}
+    .rgbDay b{display:grid;place-items:center;background:#0e211a;color:#d5e2dc;font-size:10px;font-weight:700;font-variant-numeric:tabular-nums}
     .rgbDay span{border-radius:1px}
     .rgbDay .r{background:rgb(var(--r),0,0)}
     .rgbDay .g{background:rgb(0,var(--g),0)}
     .rgbDay .b{background:rgb(0,0,var(--b))}
+    .courseCard .bar{margin:0}
+    .pdfCard{padding:10px}
+    .pdfCard .big{font-size:24px;margin-top:5px}
+    .pdfCard>.bar{margin:6px 0}
+    .pdfCard .stat b{font-size:16px}
+    .pdfCard .details{font-size:10px;margin-top:3px}
     footer{display:none}
     @media(max-width:760px){body{overflow:auto}main{height:auto;padding:18px 0;display:block}.grid{display:grid;grid-template-columns:1fr;grid-template-rows:none}.hero{display:block}.hero,.trackerCard,.wide{grid-column:auto}.goalGrid,.overview{grid-template-columns:1fr}.goalGrid{margin-top:10px}.date{font-size:11px}}
   </style>
@@ -115,8 +122,8 @@ async function load(){
   <article class="card wide"><div class="sectionHead"><h2>阅读月底计划</h2><span class="muted">${r.month.deadline} 截止</span></div><div class="big">${n(r.month.completed)} / ${n(r.month.target)} <span class="unit">题</span></div>${bar(r.month.percent)}${stats([[n(r.month.recommendedToday),"今日建议"],[n(r.month.daysRemaining),"剩余天数"],[eta({etaDate:r.month.etaDate,etaDays:r.month.etaDays}),"按昨日速度 ETA"]])}</article>
   <article class="card"><div class="sectionHead"><h2>有效学习时长</h2><span class="muted">娱乐网站自动暂停</span></div><div class="big">${n(act.today.totalMinutes,1)} <span class="unit">分钟</span></div>${stats([[n(act.today.readingMinutes,1),"Reading"],[n(act.today.grammarMinutes,1),"Grammar"],[n(act.today.verbMinutes,1),"Verb"]])}<p class="details">Bilibili / YouTube / 抖音警告：${n((act.today.warnings||[]).length)} 次</p></article>
   <article class="card"><div class="sectionHead"><h2>Verb 具体记录</h2><span class="muted">Anki</span></div><div class="big">${n(a.today.reviews)} <span class="unit">次复习</span></div>${stats([[n(a.today.new),"新卡"],[n(a.today.minutes,1),"分钟"],[n(a.total.cards),"总卡片"]])}</article>
-  <article class="card wide"><div class="sectionHead"><h2>视频课程累计</h2><span class="muted">${pct(c.total.percent)}</span></div><div class="courseRows">${c.courses.map(x=>`<div class="courseRow"><strong>${x.label}</strong>${bar(x.percent)}<span>${pct(x.percent)}</span></div>`).join("")}</div></article>
-  <article class="card wide"><div class="sectionHead"><h2>A1 讲义月底计划</h2><span class="muted">Acrobat 自动同步</span></div><div class="big">${n(pdf.pages)} / ${n(pdf.totalPages)} <span class="unit">页</span></div>${bar(pdf.percent)}${stats([[`${n(pdf.todayPages)} / ${n(pdfMonth.recommendedToday)}`,"今日推进 / 建议"],[n(pdfMonth.remaining),"剩余页数"],[eta(pdfMonth),"按昨日速度 ETA"]])}<p class="details">${pdfMonth.deadline||""} 前完成；关闭或翻页后由 Acrobat 恢复位置更新</p></article>`;
+  <article class="card wide courseCard"><div class="sectionHead"><h2>视频课程累计</h2><span class="muted">${pct(c.total.percent)}</span></div><div class="courseRows">${c.courses.map(x=>`<div class="courseRow"><strong>${x.label}</strong>${bar(x.percent)}<span>${pct(x.percent)}</span></div>`).join("")}</div></article>
+  <article class="card wide pdfCard"><div class="sectionHead"><h2>A1 讲义月底计划</h2><span class="muted">Acrobat 自动同步</span></div><div class="big">${n(pdf.pages)} / ${n(pdf.totalPages)} <span class="unit">页</span></div>${bar(pdf.percent)}${stats([[`${n(pdf.todayPages)} / ${n(pdfMonth.recommendedToday)}`,"今日推进 / 建议"],[n(pdfMonth.remaining),"剩余页数"],[eta(pdfMonth),"按昨日速度 ETA"]])}<p class="details">${pdfMonth.deadline||""} 前完成；关闭或翻页后由 Acrobat 恢复位置更新</p></article>`;
 }
 load().catch(e=>document.querySelector("#dashboard").innerHTML=`<article class="card hero"><h2>暂时没有进度数据</h2><p class="muted">${e.message}</p></article>`);
 </script>
