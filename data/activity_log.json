@@ -95,7 +95,7 @@
     },
     "2026-06-19": {
       "reading": 1600.0,
-      "grammar": 2430.0,
+      "grammar": 2460.0,
       "verb": 0,
       "warnings": [
         {
@@ -105,8 +105,8 @@
         }
       ],
       "sources": {
-        "chatgpt": 1500.0,
-        "adobe-acrobat": 1040.0,
+        "chatgpt": 1510.0,
+        "adobe-acrobat": 1060.0,
         "local-french": 110.0,
         "tcf-reading": 1380.0
       }
@@ -114,11 +114,11 @@
   },
   "lastContext": "grammar",
   "lastPing": {
-    "category": "contextual",
-    "source": "chatgpt",
-    "seconds": 10,
-    "title": "复合过去时代词",
-    "url": "https://chatgpt.com/c/6a356ccb-9464-83ea-80d4-23bd8c370609",
-    "capturedAt": "2026-06-19T17:34:08.672Z"
+    "category": "grammar",
+    "source": "adobe-acrobat",
+    "seconds": 5,
+    "title": "【新东方在线诚意出品】法语欧标A1语法大全电子讲义.pdf.pdf (SECURED) - Adobe Acrobat Reader (64-bit)",
+    "idleSeconds": 0.7,
+    "capturedAt": "2026-06-19T14:40:32-0400"
   }
 }

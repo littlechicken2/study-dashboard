@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-19T14:01:39-04:00",
+  "updatedAt": "2026-06-19T15:01:41-04:00",
   "today": {
     "date": "2026-06-19",
-    "focusMinutes": 67
+    "focusMinutes": 68
   },
   "anki": {
     "today": {
@@ -2268,26 +2268,26 @@
       "goalPercent": 100
     },
     "pdf": {
-      "pages": 43,
+      "pages": 44,
       "totalPages": 88,
-      "percent": 48.86,
+      "percent": 50.0,
       "documents": [
         {
           "id": "a1-grammar",
           "title": "A1 语法讲义",
-          "currentPage": 43,
+          "currentPage": 44,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-19T14:01:37-0400"
+          "updatedAt": "2026-06-19T14:40:32-0400"
         }
       ],
-      "todayPages": 5,
+      "todayPages": 6,
       "month": {
         "unit": "pages",
         "target": 88,
-        "completed": 43,
-        "remaining": 45,
-        "percent": 48.86,
+        "completed": 44,
+        "remaining": 44,
+        "percent": 50.0,
         "daysRemaining": 12,
         "deadline": "2026-06-30",
         "recommendedToday": 4,
@@ -5225,7 +5225,7 @@
       "sets": 0.07692307692307693,
       "questions": 3,
       "correct": 1,
-      "minutes": 1.4,
+      "minutes": 2.5,
       "tests": [
         {
           "test": "test01",
@@ -8990,7 +8990,7 @@
         "sets": 0.07692307692307693,
         "questions": 3,
         "correct": 1,
-        "minutes": 1.4,
+        "minutes": 2.5,
         "tests": [
           {
             "test": "test01",
@@ -9022,9 +9022,9 @@
     "today": {
       "date": "2026-06-19",
       "readingMinutes": 26.7,
-      "grammarMinutes": 40.5,
+      "grammarMinutes": 41.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 67.2,
+      "totalMinutes": 67.7,
       "warnings": [
         {
           "source": "www.bilibili.com",
@@ -12007,9 +12007,9 @@
       {
         "date": "2026-06-19",
         "readingMinutes": 26.7,
-        "grammarMinutes": 40.5,
+        "grammarMinutes": 41.0,
         "verbMinutes": 0.0,
-        "totalMinutes": 67.2,
+        "totalMinutes": 67.7,
         "warnings": [
           {
             "source": "www.bilibili.com",
