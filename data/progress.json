@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-18T19:50:26-04:00",
+  "updatedAt": "2026-06-18T20:50:29-04:00",
   "today": {
     "date": "2026-06-18",
-    "focusMinutes": 114
+    "focusMinutes": 136
   },
   "anki": {
     "today": {
@@ -2261,36 +2261,36 @@
       "percent": 7.84
     },
     "today": {
-      "minutes": 95.2,
+      "minutes": 95.8,
       "videoMinutes": 0.0,
-      "pdfMinutes": 95.2,
+      "pdfMinutes": 95.8,
       "activityComplete": true,
       "goalPercent": 100
     },
     "pdf": {
-      "pages": 33,
+      "pages": 38,
       "totalPages": 88,
-      "percent": 37.5,
+      "percent": 43.18,
       "documents": [
         {
           "id": "a1-grammar",
           "title": "A1 语法讲义",
-          "currentPage": 33,
+          "currentPage": 38,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-18T18:44:29.378Z"
+          "updatedAt": "2026-06-19T00:49:36.035Z"
         }
       ],
-      "todayPages": 0,
+      "todayPages": 5,
       "month": {
         "unit": "pages",
         "target": 88,
-        "completed": 33,
-        "remaining": 55,
-        "percent": 37.5,
+        "completed": 38,
+        "remaining": 50,
+        "percent": 43.18,
         "daysRemaining": 13,
         "deadline": "2026-06-30",
-        "recommendedToday": 5,
+        "recommendedToday": 4,
         "yesterdayDone": 8,
         "etaDays": 7,
         "etaDate": "2026-06-25"
@@ -5211,9 +5211,9 @@
       },
       {
         "date": "2026-06-18",
-        "minutes": 95.2,
+        "minutes": 95.8,
         "videoMinutes": 0.0,
-        "pdfMinutes": 95.2,
+        "pdfMinutes": 95.8,
         "activityComplete": true,
         "goalPercent": 100
       }
@@ -9014,10 +9014,10 @@
   "activity": {
     "today": {
       "date": "2026-06-18",
-      "readingMinutes": 8.3,
-      "grammarMinutes": 105.2,
+      "readingMinutes": 10.5,
+      "grammarMinutes": 125.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 113.5,
+      "totalMinutes": 135.5,
       "warnings": [
         {
           "source": "www.bilibili.com",
@@ -11993,10 +11993,10 @@
       },
       {
         "date": "2026-06-18",
-        "readingMinutes": 8.3,
-        "grammarMinutes": 105.2,
+        "readingMinutes": 10.5,
+        "grammarMinutes": 125.0,
         "verbMinutes": 0.0,
-        "totalMinutes": 113.5,
+        "totalMinutes": 135.5,
         "warnings": [
           {
             "source": "www.bilibili.com",
