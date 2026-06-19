@@ -10,6 +10,7 @@ API = "http://127.0.0.1:8765/api/activity-ping"
 PDF_API = "http://127.0.0.1:8765/api/pdf-progress"
 POLL_SECONDS = 5
 ACROBAT_VIEW_KEY = r"Software\Adobe\Adobe Acrobat\DC\RememberedViews\cNoCategoryFiles\c1\cViewDef"
+ACROBAT_RECENT_KEY = r"Software\Adobe\Adobe Acrobat\DC\AVGeneral\cRecentFiles\c1"
 ACROBAT_TITLE_MARKER = "法语欧标A1语法大全电子讲义"
 
 user32 = ctypes.WinDLL("user32", use_last_error=True)
@@ -73,6 +74,33 @@ def acrobat_page():
         return None
 
 
+def a1_is_latest_acrobat_document():
+    try:
+        with winreg.OpenKey(winreg.HKEY_CURRENT_USER, ACROBAT_RECENT_KEY) as key:
+            path, _ = winreg.QueryValueEx(key, "tDIText")
+        return ACROBAT_TITLE_MARKER in str(path)
+    except OSError:
+        return False
+
+
+def sync_acrobat_page():
+    if not a1_is_latest_acrobat_document():
+        return
+    page = acrobat_page()
+    if not page:
+        return
+    post({
+        "id": "a1-grammar",
+        "title": "A1 语法讲义",
+        "currentPage": page,
+        "totalPages": 88,
+        "seconds": 0,
+        "dailySeconds": 0,
+        "establishDailyBaseline": True,
+        "updatedAt": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
+    }, PDF_API)
+
+
 def main():
     while True:
         start = time.time()
@@ -89,19 +117,7 @@ def main():
                 "idleSeconds": round(idle, 1),
                 "capturedAt": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
             })
-            if source == "adobe-acrobat" and ACROBAT_TITLE_MARKER in title:
-                page = acrobat_page()
-                if page:
-                    post({
-                        "id": "a1-grammar",
-                        "title": "A1 语法讲义",
-                        "currentPage": page,
-                        "totalPages": 88,
-                        "seconds": 0,
-                        "dailySeconds": 0,
-                        "establishDailyBaseline": True,
-                        "updatedAt": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
-                    }, PDF_API)
+        sync_acrobat_page()
         time.sleep(max(1, POLL_SECONDS - (time.time() - start)))
 
 
