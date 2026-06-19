@@ -2,15 +2,12 @@ import ctypes
 import json
 import time
 import urllib.request
-import winreg
 from ctypes import wintypes
 
 
 API = "http://127.0.0.1:8765/api/activity-ping"
 PDF_API = "http://127.0.0.1:8765/api/pdf-progress"
 POLL_SECONDS = 5
-ACROBAT_VIEW_KEY = r"Software\Adobe\Adobe Acrobat\DC\RememberedViews\cNoCategoryFiles\c1\cViewDef"
-ACROBAT_RECENT_KEY = r"Software\Adobe\Adobe Acrobat\DC\AVGeneral\cRecentFiles\c1"
 ACROBAT_TITLE_MARKER = "法语欧标A1语法大全电子讲义"
 
 user32 = ctypes.WinDLL("user32", use_last_error=True)
@@ -67,25 +64,21 @@ def post(payload, api=API):
 
 def acrobat_page():
     try:
-        with winreg.OpenKey(winreg.HKEY_CURRENT_USER, ACROBAT_VIEW_KEY) as key:
-            page_zero_based, _ = winreg.QueryValueEx(key, "ipageViewPageNum")
-        return max(1, int(page_zero_based) + 1)
-    except (OSError, TypeError, ValueError):
+        from pywinauto import Desktop
+
+        for window in Desktop(backend="win32").windows():
+            if ACROBAT_TITLE_MARKER not in window.window_text():
+                continue
+            for field in window.descendants(class_name="Edit"):
+                value = field.window_text().strip()
+                if value.isdigit() and 1 <= int(value) <= 88:
+                    return int(value)
+    except Exception:
         return None
-
-
-def a1_is_latest_acrobat_document():
-    try:
-        with winreg.OpenKey(winreg.HKEY_CURRENT_USER, ACROBAT_RECENT_KEY) as key:
-            path, _ = winreg.QueryValueEx(key, "tDIText")
-        return ACROBAT_TITLE_MARKER in str(path)
-    except OSError:
-        return False
+    return None
 
 
 def sync_acrobat_page():
-    if not a1_is_latest_acrobat_document():
-        return
     page = acrobat_page()
     if not page:
         return
@@ -97,6 +90,7 @@ def sync_acrobat_page():
         "seconds": 0,
         "dailySeconds": 0,
         "establishDailyBaseline": True,
+        "authoritativePage": True,
         "updatedAt": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
     }, PDF_API)
 
