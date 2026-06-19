@@ -1,29 +1,23 @@
 {
-  "updatedAt": "2026-06-18T22:50:34-04:00",
+  "updatedAt": "2026-06-19T08:01:22-04:00",
   "today": {
-    "date": "2026-06-18",
-    "focusMinutes": 148
+    "date": "2026-06-19",
+    "focusMinutes": 0
   },
   "anki": {
     "today": {
-      "reviews": 149,
-      "new": 36,
-      "minutes": 16.2,
-      "activityComplete": true,
-      "goalPercent": 100
+      "reviews": 0,
+      "new": 0,
+      "minutes": 0,
+      "activityComplete": false,
+      "goalPercent": 0
     },
     "total": {
       "cards": 35974,
       "mature": 208
     },
-    "streak": 6,
+    "streak": 0,
     "history": [
-      {
-        "date": "2025-06-19",
-        "reviews": 0,
-        "new": 0,
-        "minutes": 0
-      },
       {
         "date": "2025-06-20",
         "reviews": 0,
@@ -2207,6 +2201,12 @@
         "reviews": 149,
         "new": 36,
         "minutes": 16.2
+      },
+      {
+        "date": "2026-06-19",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
       }
     ]
   },
@@ -2261,11 +2261,11 @@
       "percent": 7.84
     },
     "today": {
-      "minutes": 95.9,
+      "minutes": 0.0,
       "videoMinutes": 0.0,
-      "pdfMinutes": 95.9,
-      "activityComplete": true,
-      "goalPercent": 100
+      "pdfMinutes": 0.0,
+      "activityComplete": false,
+      "goalPercent": 0
     },
     "pdf": {
       "pages": 38,
@@ -2278,33 +2278,25 @@
           "currentPage": 38,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-19T02:49:36.033Z"
+          "updatedAt": "2026-06-19T02:53:36.024Z"
         }
       ],
-      "todayPages": 5,
+      "todayPages": 0,
       "month": {
         "unit": "pages",
         "target": 88,
         "completed": 38,
         "remaining": 50,
         "percent": 43.18,
-        "daysRemaining": 13,
+        "daysRemaining": 12,
         "deadline": "2026-06-30",
-        "recommendedToday": 4,
-        "yesterdayDone": 8,
-        "etaDays": 7,
-        "etaDate": "2026-06-25"
+        "recommendedToday": 5,
+        "yesterdayDone": 5,
+        "etaDays": 10,
+        "etaDate": "2026-06-29"
       }
     },
     "history": [
-      {
-        "date": "2025-06-19",
-        "minutes": 0.0,
-        "videoMinutes": 0.0,
-        "pdfMinutes": 0.0,
-        "activityComplete": false,
-        "goalPercent": 0
-      },
       {
         "date": "2025-06-20",
         "minutes": 0.0,
@@ -5216,40 +5208,31 @@
         "pdfMinutes": 95.9,
         "activityComplete": true,
         "goalPercent": 100
+      },
+      {
+        "date": "2026-06-19",
+        "minutes": 0.0,
+        "videoMinutes": 0.0,
+        "pdfMinutes": 0.0,
+        "activityComplete": false,
+        "goalPercent": 0
       }
     ]
   },
   "reading": {
     "today": {
-      "date": "2026-06-18",
-      "sets": 0.02564102564102564,
-      "questions": 1,
+      "date": "2026-06-19",
+      "sets": 0,
+      "questions": 0,
       "correct": 0,
-      "minutes": 41.2,
-      "tests": [
-        {
-          "test": "test01",
-          "answered": 1,
-          "correct": 0,
-          "total": 39
-        }
-      ],
-      "accuracy": 0.0,
-      "goalPercent": 1.69,
-      "activityComplete": true,
-      "recommendedQuestions": 59
+      "minutes": 0,
+      "tests": [],
+      "accuracy": 0,
+      "goalPercent": 0.0,
+      "activityComplete": false,
+      "recommendedQuestions": 64
     },
     "history": [
-      {
-        "date": "2025-06-19",
-        "sets": 0,
-        "questions": 0,
-        "correct": 0,
-        "minutes": 0,
-        "tests": [],
-        "accuracy": 0,
-        "goalPercent": 0.0
-      },
       {
         "date": "2025-06-20",
         "sets": 0,
@@ -8993,9 +8976,19 @@
           }
         ],
         "accuracy": 0.0,
-        "goalPercent": 1.69,
-        "activityComplete": true,
-        "recommendedQuestions": 59
+        "goalPercent": 2.56
+      },
+      {
+        "date": "2026-06-19",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0,
+        "activityComplete": false,
+        "recommendedQuestions": 64
       }
     ],
     "month": {
@@ -9003,38 +8996,24 @@
       "completed": 20,
       "remaining": 760,
       "percent": 2.56,
-      "daysRemaining": 13,
+      "daysRemaining": 12,
       "deadline": "2026-06-30",
-      "recommendedToday": 59,
+      "recommendedToday": 64,
       "yesterdayQuestions": 1,
       "etaDays": 760,
-      "etaDate": "2028-07-17"
+      "etaDate": "2028-07-18"
     }
   },
   "activity": {
     "today": {
-      "date": "2026-06-18",
-      "readingMinutes": 10.5,
-      "grammarMinutes": 137.0,
+      "date": "2026-06-19",
+      "readingMinutes": 0.0,
+      "grammarMinutes": 0.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 147.5,
-      "warnings": [
-        {
-          "source": "www.bilibili.com",
-          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
-          "capturedAt": "2026-06-18T12:06:01.938Z"
-        }
-      ]
+      "totalMinutes": 0.0,
+      "warnings": []
     },
     "history": [
-      {
-        "date": "2025-06-19",
-        "readingMinutes": 0.0,
-        "grammarMinutes": 0.0,
-        "verbMinutes": 0.0,
-        "totalMinutes": 0.0,
-        "warnings": []
-      },
       {
         "date": "2025-06-20",
         "readingMinutes": 0.0,
@@ -11994,9 +11973,9 @@
       {
         "date": "2026-06-18",
         "readingMinutes": 10.5,
-        "grammarMinutes": 137.0,
+        "grammarMinutes": 137.1,
         "verbMinutes": 0.0,
-        "totalMinutes": 147.5,
+        "totalMinutes": 147.6,
         "warnings": [
           {
             "source": "www.bilibili.com",
@@ -12004,6 +11983,14 @@
             "capturedAt": "2026-06-18T12:06:01.938Z"
           }
         ]
+      },
+      {
+        "date": "2026-06-19",
+        "readingMinutes": 0.0,
+        "grammarMinutes": 0.0,
+        "verbMinutes": 0.0,
+        "totalMinutes": 0.0,
+        "warnings": []
       }
     ],
     "lastContext": "grammar"
