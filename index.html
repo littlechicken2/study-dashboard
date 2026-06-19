@@ -9,7 +9,7 @@
     :root{--bg:#07120f;--panel:#10211b;--line:#294238;--text:#f3f7f5;--muted:#a8b8b0;--green:#69e39d;--cyan:#62d9de}
     *{box-sizing:border-box}
     body{margin:0;color:var(--text);background:radial-gradient(circle at 10% -10%,rgba(105,227,157,.17),transparent 36rem),radial-gradient(circle at 100% 0,rgba(98,217,222,.12),transparent 30rem),var(--bg);font-family:Inter,"Segoe UI","Microsoft YaHei",sans-serif}
-    main{width:min(1040px,calc(100% - 20px));margin:auto;padding:8px 0 0}
+    main{width:1040px;max-width:calc(100% - 20px);margin:auto;padding:8px 0 0;zoom:var(--ui-scale,1)}
     header,.sectionHead,.goalTop{display:flex;justify-content:space-between;gap:16px;align-items:flex-end}
     header{margin-bottom:0}
     h1{margin:0 0 3px;font-size:26px;line-height:1}
@@ -54,9 +54,9 @@
     .weekday{display:grid;place-items:center;color:var(--muted);font-size:10px}
     .rgbDay.empty{opacity:.18}
     .rgbDay.future{opacity:.3}
-    .rgbDay{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:2px;padding:2px;border:1px solid #253e35;border-radius:4px;background:#081510}
-    .rgbDay b{display:grid;place-items:center;background:#0e211a;color:#d5e2dc;font-size:10px;font-weight:700;font-variant-numeric:tabular-nums}
-    .rgbDay span{border-radius:1px}
+    .rgbDay{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:1fr;gap:1px;padding:2px;border:1px solid #253e35;border-radius:4px;background:#081510;overflow:hidden}
+    .rgbDay b{position:absolute;inset:0;z-index:2;display:grid;place-items:center;min-width:0;background:transparent;color:#fff;font-size:9px;font-weight:800;font-variant-numeric:tabular-nums;text-shadow:0 1px 2px #000,0 0 3px #000;pointer-events:none}
+    .rgbDay span{min-width:0;border-radius:1px}
     .rgbDay .r{background:rgb(var(--r),0,0)}
     .rgbDay .g{background:rgb(0,var(--g),0)}
     .rgbDay .b{background:rgb(0,0,var(--b))}
@@ -85,6 +85,14 @@ const n=(v,d=0)=>Number(v||0).toLocaleString("zh-CN",{maximumFractionDigits:d,mi
 const pct=v=>`${n(v,2)}%`;
 const bar=v=>`<div class="bar"><i style="--value:${Math.max(0,Math.min(100,v||0))}%"></i></div>`;
 const stats=items=>`<div class="stats">${items.map(([v,k])=>`<div class="stat"><b>${v}</b><span>${k}</span></div>`).join("")}</div>`;
+const fitDashboard=()=>{
+  const widthFit=(window.innerWidth-24)/1040;
+  const heightFit=(window.innerHeight-24)/720;
+  const scale=Math.max(1,Math.min(2,widthFit,heightFit));
+  document.documentElement.style.setProperty("--ui-scale",scale.toFixed(3));
+};
+fitDashboard();
+addEventListener("resize",fitDashboard);
 const level=(value,target)=>Number(value||0)<=0?56:Math.max(72,Math.min(255,Math.round((Number(value||0)/Math.max(1,target))*255)));
 const eta=x=>x?.etaDate?`${x.etaDate}（${n(x.etaDays)} 天）`:"暂无速度";
 const rgbTracker=(a,r,c,act)=>{
