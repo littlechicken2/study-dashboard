@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-19T15:01:41-04:00",
+  "updatedAt": "2026-06-19T16:01:44-04:00",
   "today": {
     "date": "2026-06-19",
     "focusMinutes": 68
@@ -5225,7 +5225,7 @@
       "sets": 0.07692307692307693,
       "questions": 3,
       "correct": 1,
-      "minutes": 2.5,
+      "minutes": 3.5,
       "tests": [
         {
           "test": "test01",
@@ -8990,7 +8990,7 @@
         "sets": 0.07692307692307693,
         "questions": 3,
         "correct": 1,
-        "minutes": 2.5,
+        "minutes": 3.5,
         "tests": [
           {
             "test": "test01",
