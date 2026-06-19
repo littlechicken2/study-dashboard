@@ -95,7 +95,7 @@
     },
     "2026-06-19": {
       "reading": 1600.0,
-      "grammar": 2480.0,
+      "grammar": 2500.0,
       "verb": 0,
       "warnings": [
         {
@@ -115,7 +115,7 @@
         }
       ],
       "sources": {
-        "chatgpt": 1530.0,
+        "chatgpt": 1550.0,
         "adobe-acrobat": 1060.0,
         "local-french": 110.0,
         "tcf-reading": 1380.0
@@ -127,8 +127,8 @@
     "category": "distraction",
     "source": "www.bilibili.com",
     "seconds": 0,
-    "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
-    "url": "https://www.bilibili.com/?spm_id_from=333.1007.0.0",
-    "capturedAt": "2026-06-19T21:59:58.218Z"
+    "title": "跟小秦在一起以前我笑点一直挺高的...",
+    "url": "https://www.bilibili.com/video/BV1jgJK6bENk/?spm_id_from=333.1007.tianma.2-3-6.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
+    "capturedAt": "2026-06-19T22:56:35.669Z"
   }
 }
