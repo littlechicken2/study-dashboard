@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-19T16:01:44-04:00",
+  "updatedAt": "2026-06-19T17:01:46-04:00",
   "today": {
     "date": "2026-06-19",
     "focusMinutes": 68
@@ -5225,7 +5225,7 @@
       "sets": 0.07692307692307693,
       "questions": 3,
       "correct": 1,
-      "minutes": 3.5,
+      "minutes": 4.5,
       "tests": [
         {
           "test": "test01",
@@ -8990,7 +8990,7 @@
         "sets": 0.07692307692307693,
         "questions": 3,
         "correct": 1,
-        "minutes": 3.5,
+        "minutes": 4.5,
         "tests": [
           {
             "test": "test01",
@@ -9022,14 +9022,19 @@
     "today": {
       "date": "2026-06-19",
       "readingMinutes": 26.7,
-      "grammarMinutes": 41.0,
+      "grammarMinutes": 41.3,
       "verbMinutes": 0.0,
-      "totalMinutes": 67.7,
+      "totalMinutes": 68.0,
       "warnings": [
         {
           "source": "www.bilibili.com",
           "title": "【军火黑市demo】我在暗网赌箱子 直接把系统干崩了？！",
           "capturedAt": "2026-06-19T12:04:51.018Z"
+        },
+        {
+          "source": "www.youtube.com",
+          "title": "Craziest Soviet Machines You Won't Believe Exist - Part 1 - YouTube",
+          "capturedAt": "2026-06-19T20:31:04.748Z"
         }
       ]
     },
@@ -12007,14 +12012,19 @@
       {
         "date": "2026-06-19",
         "readingMinutes": 26.7,
-        "grammarMinutes": 41.0,
+        "grammarMinutes": 41.3,
         "verbMinutes": 0.0,
-        "totalMinutes": 67.7,
+        "totalMinutes": 68.0,
         "warnings": [
           {
             "source": "www.bilibili.com",
             "title": "【军火黑市demo】我在暗网赌箱子 直接把系统干崩了？！",
             "capturedAt": "2026-06-19T12:04:51.018Z"
+          },
+          {
+            "source": "www.youtube.com",
+            "title": "Craziest Soviet Machines You Won't Believe Exist - Part 1 - YouTube",
+            "capturedAt": "2026-06-19T20:31:04.748Z"
           }
         ]
       }
