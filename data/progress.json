@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-20T12:01:36-04:00",
+  "updatedAt": "2026-06-20T13:01:38-04:00",
   "today": {
     "date": "2026-06-20",
-    "focusMinutes": 38
+    "focusMinutes": 65
   },
   "anki": {
     "today": {
@@ -2268,32 +2268,32 @@
       "goalPercent": 0
     },
     "pdf": {
-      "pages": 44,
+      "pages": 47,
       "totalPages": 88,
-      "percent": 50.0,
+      "percent": 53.41,
       "documents": [
         {
           "id": "a1-grammar",
           "title": "A1 语法讲义",
-          "currentPage": 44,
+          "currentPage": 47,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-20T12:01:31-0400"
+          "updatedAt": "2026-06-20T13:01:36-0400"
         }
       ],
       "todayPages": 0,
       "month": {
         "unit": "pages",
         "target": 88,
-        "completed": 44,
-        "remaining": 44,
-        "percent": 50.0,
+        "completed": 47,
+        "remaining": 41,
+        "percent": 53.41,
         "daysRemaining": 11,
         "deadline": "2026-06-30",
         "recommendedToday": 4,
         "yesterdayDone": 6,
-        "etaDays": 8,
-        "etaDate": "2026-06-28"
+        "etaDays": 7,
+        "etaDate": "2026-06-27"
       }
     },
     "history": [
@@ -5225,7 +5225,7 @@
       "sets": 0.05128205128205128,
       "questions": 2,
       "correct": 1,
-      "minutes": 36.1,
+      "minutes": 42.3,
       "tests": [
         {
           "test": "test01",
@@ -8997,7 +8997,7 @@
         "sets": 0.05128205128205128,
         "questions": 2,
         "correct": 1,
-        "minutes": 36.1,
+        "minutes": 42.3,
         "tests": [
           {
             "test": "test01",
@@ -9028,10 +9028,10 @@
   "activity": {
     "today": {
       "date": "2026-06-20",
-      "readingMinutes": 21.8,
-      "grammarMinutes": 15.9,
+      "readingMinutes": 23.8,
+      "grammarMinutes": 41.1,
       "verbMinutes": 0.0,
-      "totalMinutes": 37.7,
+      "totalMinutes": 64.9,
       "warnings": [
         {
           "source": "www.youtube.com",
@@ -12034,10 +12034,10 @@
       },
       {
         "date": "2026-06-20",
-        "readingMinutes": 21.8,
-        "grammarMinutes": 15.9,
+        "readingMinutes": 23.8,
+        "grammarMinutes": 41.1,
         "verbMinutes": 0.0,
-        "totalMinutes": 37.7,
+        "totalMinutes": 64.9,
         "warnings": [
           {
             "source": "www.youtube.com",
