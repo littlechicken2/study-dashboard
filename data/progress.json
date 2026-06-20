@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-20T15:01:43-04:00",
+  "updatedAt": "2026-06-20T16:01:45-04:00",
   "today": {
     "date": "2026-06-20",
-    "focusMinutes": 68
+    "focusMinutes": 69
   },
   "anki": {
     "today": {
@@ -2278,7 +2278,7 @@
           "currentPage": 47,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-20T15:01:41-0400"
+          "updatedAt": "2026-06-20T16:01:42-0400"
         }
       ],
       "todayPages": 0,
@@ -5225,7 +5225,7 @@
       "sets": 0.05128205128205128,
       "questions": 2,
       "correct": 1,
-      "minutes": 44.3,
+      "minutes": 45.3,
       "tests": [
         {
           "test": "test01",
@@ -8997,7 +8997,7 @@
         "sets": 0.05128205128205128,
         "questions": 2,
         "correct": 1,
-        "minutes": 44.3,
+        "minutes": 45.3,
         "tests": [
           {
             "test": "test01",
@@ -9029,9 +9029,9 @@
     "today": {
       "date": "2026-06-20",
       "readingMinutes": 23.8,
-      "grammarMinutes": 43.8,
+      "grammarMinutes": 44.9,
       "verbMinutes": 0.0,
-      "totalMinutes": 67.6,
+      "totalMinutes": 68.7,
       "warnings": [
         {
           "source": "www.youtube.com",
@@ -12035,9 +12035,9 @@
       {
         "date": "2026-06-20",
         "readingMinutes": 23.8,
-        "grammarMinutes": 43.8,
+        "grammarMinutes": 44.9,
         "verbMinutes": 0.0,
-        "totalMinutes": 67.6,
+        "totalMinutes": 68.7,
         "warnings": [
           {
             "source": "www.youtube.com",
