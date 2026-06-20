@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-20T17:01:48-04:00",
+  "updatedAt": "2026-06-20T18:01:50-04:00",
   "today": {
     "date": "2026-06-20",
     "focusMinutes": 69
@@ -2278,7 +2278,7 @@
           "currentPage": 47,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-20T17:01:47-0400"
+          "updatedAt": "2026-06-20T18:01:48-0400"
         }
       ],
       "todayPages": 0,
@@ -5225,7 +5225,7 @@
       "sets": 0.05128205128205128,
       "questions": 2,
       "correct": 1,
-      "minutes": 46.3,
+      "minutes": 47.3,
       "tests": [
         {
           "test": "test01",
@@ -8997,7 +8997,7 @@
         "sets": 0.05128205128205128,
         "questions": 2,
         "correct": 1,
-        "minutes": 46.3,
+        "minutes": 47.3,
         "tests": [
           {
             "test": "test01",
