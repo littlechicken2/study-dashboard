@@ -1,22 +1,22 @@
 {
-  "updatedAt": "2026-06-20T10:01:30-04:00",
+  "updatedAt": "2026-06-20T11:01:33-04:00",
   "today": {
     "date": "2026-06-20",
-    "focusMinutes": 0
+    "focusMinutes": 1
   },
   "anki": {
     "today": {
-      "reviews": 0,
-      "new": 0,
-      "minutes": 0,
-      "activityComplete": false,
-      "goalPercent": 0
+      "reviews": 38,
+      "new": 15,
+      "minutes": 4.4,
+      "activityComplete": true,
+      "goalPercent": 100
     },
     "total": {
       "cards": 35974,
       "mature": 208
     },
-    "streak": 0,
+    "streak": 8,
     "history": [
       {
         "date": "2025-06-21",
@@ -1947,7 +1947,7 @@
       {
         "date": "2026-05-08",
         "reviews": 111,
-        "new": 146,
+        "new": 147,
         "minutes": 23.9
       },
       {
@@ -2055,7 +2055,7 @@
       {
         "date": "2026-05-26",
         "reviews": 153,
-        "new": 90,
+        "new": 91,
         "minutes": 17.6
       },
       {
@@ -2073,19 +2073,19 @@
       {
         "date": "2026-05-29",
         "reviews": 43,
-        "new": 108,
+        "new": 109,
         "minutes": 6.6
       },
       {
         "date": "2026-05-30",
         "reviews": 86,
-        "new": 143,
+        "new": 144,
         "minutes": 11.2
       },
       {
         "date": "2026-05-31",
         "reviews": 75,
-        "new": 143,
+        "new": 145,
         "minutes": 15.3
       },
       {
@@ -2109,7 +2109,7 @@
       {
         "date": "2026-06-04",
         "reviews": 280,
-        "new": 229,
+        "new": 231,
         "minutes": 41.1
       },
       {
@@ -2163,19 +2163,19 @@
       {
         "date": "2026-06-13",
         "reviews": 195,
-        "new": 99,
+        "new": 103,
         "minutes": 34.9
       },
       {
         "date": "2026-06-14",
         "reviews": 59,
-        "new": 105,
+        "new": 106,
         "minutes": 7.7
       },
       {
         "date": "2026-06-15",
         "reviews": 87,
-        "new": 59,
+        "new": 65,
         "minutes": 12.3
       },
       {
@@ -2187,7 +2187,7 @@
       {
         "date": "2026-06-17",
         "reviews": 71,
-        "new": 55,
+        "new": 59,
         "minutes": 9.3
       },
       {
@@ -2204,9 +2204,9 @@
       },
       {
         "date": "2026-06-20",
-        "reviews": 0,
-        "new": 0,
-        "minutes": 0
+        "reviews": 38,
+        "new": 15,
+        "minutes": 4.4
       }
     ]
   },
@@ -9028,15 +9028,20 @@
   "activity": {
     "today": {
       "date": "2026-06-20",
-      "readingMinutes": 0.0,
+      "readingMinutes": 1.2,
       "grammarMinutes": 0.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 0.0,
+      "totalMinutes": 1.2,
       "warnings": [
         {
           "source": "www.youtube.com",
           "title": "Fix MECCHA CHAMELEON Connection Error/Can't Join Server/Cloud Save Error On PC - YouTube",
           "capturedAt": "2026-06-20T12:23:56.308Z"
+        },
+        {
+          "source": "www.bilibili.com",
+          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+          "capturedAt": "2026-06-20T14:45:38.473Z"
         }
       ]
     },
@@ -12029,15 +12034,20 @@
       },
       {
         "date": "2026-06-20",
-        "readingMinutes": 0.0,
+        "readingMinutes": 1.2,
         "grammarMinutes": 0.0,
         "verbMinutes": 0.0,
-        "totalMinutes": 0.0,
+        "totalMinutes": 1.2,
         "warnings": [
           {
             "source": "www.youtube.com",
             "title": "Fix MECCHA CHAMELEON Connection Error/Can't Join Server/Cloud Save Error On PC - YouTube",
             "capturedAt": "2026-06-20T12:23:56.308Z"
+          },
+          {
+            "source": "www.bilibili.com",
+            "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+            "capturedAt": "2026-06-20T14:45:38.473Z"
           }
         ]
       }
