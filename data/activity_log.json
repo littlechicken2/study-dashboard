@@ -94,8 +94,8 @@
       }
     },
     "2026-06-19": {
-      "reading": 1600.0,
-      "grammar": 2500.0,
+      "reading": 1620.0,
+      "grammar": 2740.0,
       "verb": 0,
       "warnings": [
         {
@@ -115,20 +115,20 @@
         }
       ],
       "sources": {
-        "chatgpt": 1550.0,
+        "chatgpt": 1790.0,
         "adobe-acrobat": 1060.0,
         "local-french": 110.0,
-        "tcf-reading": 1380.0
+        "tcf-reading": 1400.0
       }
     }
   },
-  "lastContext": "grammar",
+  "lastContext": "reading",
   "lastPing": {
-    "category": "distraction",
-    "source": "www.bilibili.com",
-    "seconds": 0,
-    "title": "跟小秦在一起以前我笑点一直挺高的...",
-    "url": "https://www.bilibili.com/video/BV1jgJK6bENk/?spm_id_from=333.1007.tianma.2-3-6.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
-    "capturedAt": "2026-06-20T00:36:26.186Z"
+    "category": "reading",
+    "source": "tcf-reading",
+    "seconds": 10,
+    "title": "TCF Canada 阅读练习 TEST01 | TCF Canada 备考平台",
+    "url": "https://tcfca.cn/reading/test01",
+    "capturedAt": "2026-06-20T01:57:27.759Z"
   }
 }
