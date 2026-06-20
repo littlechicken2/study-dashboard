@@ -122,8 +122,8 @@
       }
     },
     "2026-06-20": {
-      "reading": 70.0,
-      "grammar": 0,
+      "reading": 1310.0,
+      "grammar": 955.0,
       "verb": 0,
       "warnings": [
         {
@@ -138,18 +138,20 @@
         }
       ],
       "sources": {
-        "tcf-reading": 20.0,
-        "chatgpt": 50.0
+        "tcf-reading": 1110.0,
+        "chatgpt": 610.0,
+        "local-french": 20.0,
+        "adobe-acrobat": 525.0
       }
     }
   },
-  "lastContext": "reading",
+  "lastContext": "grammar",
   "lastPing": {
-    "category": "reading",
-    "source": "tcf-reading",
-    "seconds": 10,
-    "title": "TCF Canada 阅读练习 TEST01 | TCF Canada 备考平台",
-    "url": "https://tcfca.cn/reading/test01",
-    "capturedAt": "2026-06-20T15:01:27.550Z"
+    "category": "grammar",
+    "source": "adobe-acrobat",
+    "seconds": 5,
+    "title": "",
+    "idleSeconds": 21.1,
+    "capturedAt": "2026-06-20T12:01:31-0400"
   }
 }
