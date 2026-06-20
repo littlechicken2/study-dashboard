@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-20T00:21:37-04:00",
+  "updatedAt": "2026-06-20T08:01:20-04:00",
   "today": {
     "date": "2026-06-20",
     "focusMinutes": 0
@@ -5224,20 +5224,20 @@
       "date": "2026-06-20",
       "sets": 0.0,
       "questions": 0,
-      "correct": 15,
+      "correct": 0,
       "minutes": 0.0,
       "tests": [
         {
           "test": "test01",
           "answered": 0,
-          "correct": 15,
+          "correct": 0,
           "total": 39
         }
       ],
       "accuracy": 0,
       "goalPercent": 0.0,
       "activityComplete": false,
-      "recommendedQuestions": 70
+      "recommendedQuestions": 69
     },
     "history": [
       {
@@ -8977,6 +8977,23 @@
       },
       {
         "date": "2026-06-19",
+        "sets": 0.07692307692307693,
+        "questions": 3,
+        "correct": 1,
+        "minutes": 6.4,
+        "tests": [
+          {
+            "test": "test01",
+            "answered": 3,
+            "correct": 1,
+            "total": 39
+          }
+        ],
+        "accuracy": 33.33,
+        "goalPercent": 7.69
+      },
+      {
+        "date": "2026-06-20",
         "sets": 0.0,
         "questions": 0,
         "correct": 0,
@@ -8990,39 +9007,22 @@
           }
         ],
         "accuracy": 0,
-        "goalPercent": 0.0
-      },
-      {
-        "date": "2026-06-20",
-        "sets": 0.0,
-        "questions": 0,
-        "correct": 15,
-        "minutes": 0.0,
-        "tests": [
-          {
-            "test": "test01",
-            "answered": 0,
-            "correct": 15,
-            "total": 39
-          }
-        ],
-        "accuracy": 0,
         "goalPercent": 0.0,
         "activityComplete": false,
-        "recommendedQuestions": 70
+        "recommendedQuestions": 69
       }
     ],
     "month": {
       "target": 780,
-      "completed": 20,
-      "remaining": 760,
-      "percent": 2.56,
+      "completed": 23,
+      "remaining": 757,
+      "percent": 2.95,
       "daysRemaining": 11,
       "deadline": "2026-06-30",
-      "recommendedToday": 70,
-      "yesterdayQuestions": 0,
-      "etaDays": 0,
-      "etaDate": null
+      "recommendedToday": 69,
+      "yesterdayQuestions": 3,
+      "etaDays": 253,
+      "etaDate": "2027-02-28"
     }
   },
   "activity": {
