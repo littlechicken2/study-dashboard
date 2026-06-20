@@ -120,15 +120,28 @@
         "local-french": 110.0,
         "tcf-reading": 1400.0
       }
+    },
+    "2026-06-20": {
+      "reading": 0,
+      "grammar": 0,
+      "verb": 0,
+      "warnings": [
+        {
+          "source": "www.youtube.com",
+          "title": "Fix MECCHA CHAMELEON Connection Error/Can't Join Server/Cloud Save Error On PC - YouTube",
+          "capturedAt": "2026-06-20T12:23:56.308Z"
+        }
+      ],
+      "sources": {}
     }
   },
   "lastContext": "reading",
   "lastPing": {
-    "category": "reading",
-    "source": "tcf-reading",
-    "seconds": 10,
-    "title": "TCF Canada 阅读练习 TEST01 | TCF Canada 备考平台",
-    "url": "https://tcfca.cn/reading/test01",
-    "capturedAt": "2026-06-20T01:57:27.759Z"
+    "category": "distraction",
+    "source": "www.youtube.com",
+    "seconds": 0,
+    "title": "Fix MECCHA CHAMELEON Connection Error/Can't Join Server/Cloud Save Error On PC - YouTube",
+    "url": "https://www.youtube.com/watch?v=s7mRR_2SJ3k",
+    "capturedAt": "2026-06-20T12:23:56.310Z"
   }
 }

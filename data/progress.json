@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-20T08:01:20-04:00",
+  "updatedAt": "2026-06-20T09:01:25-04:00",
   "today": {
     "date": "2026-06-20",
     "focusMinutes": 0
@@ -2211,7 +2211,7 @@
     ]
   },
   "course": {
-    "updatedAt": "2026-06-20T01:57:28.602Z",
+    "updatedAt": "2026-06-20T12:15:18.790Z",
     "lastLesson": {
       "id": "a1/6_4.mp4",
       "title": "6 4 · 形容词特殊阴性变化",
@@ -9032,7 +9032,13 @@
       "grammarMinutes": 0.0,
       "verbMinutes": 0.0,
       "totalMinutes": 0.0,
-      "warnings": []
+      "warnings": [
+        {
+          "source": "www.youtube.com",
+          "title": "Fix MECCHA CHAMELEON Connection Error/Can't Join Server/Cloud Save Error On PC - YouTube",
+          "capturedAt": "2026-06-20T12:23:56.308Z"
+        }
+      ]
     },
     "history": [
       {
@@ -12027,7 +12033,13 @@
         "grammarMinutes": 0.0,
         "verbMinutes": 0.0,
         "totalMinutes": 0.0,
-        "warnings": []
+        "warnings": [
+          {
+            "source": "www.youtube.com",
+            "title": "Fix MECCHA CHAMELEON Connection Error/Can't Join Server/Cloud Save Error On PC - YouTube",
+            "capturedAt": "2026-06-20T12:23:56.308Z"
+          }
+        ]
       }
     ],
     "lastContext": "reading"
