@@ -1,29 +1,23 @@
 {
-  "updatedAt": "2026-06-19T23:21:32-04:00",
+  "updatedAt": "2026-06-20T00:21:37-04:00",
   "today": {
-    "date": "2026-06-19",
-    "focusMinutes": 73
+    "date": "2026-06-20",
+    "focusMinutes": 0
   },
   "anki": {
     "today": {
-      "reviews": 70,
-      "new": 27,
-      "minutes": 12.3,
-      "activityComplete": true,
-      "goalPercent": 100
+      "reviews": 0,
+      "new": 0,
+      "minutes": 0,
+      "activityComplete": false,
+      "goalPercent": 0
     },
     "total": {
       "cards": 35974,
       "mature": 208
     },
-    "streak": 7,
+    "streak": 0,
     "history": [
-      {
-        "date": "2025-06-20",
-        "reviews": 0,
-        "new": 0,
-        "minutes": 0
-      },
       {
         "date": "2025-06-21",
         "reviews": 0,
@@ -2207,6 +2201,12 @@
         "reviews": 70,
         "new": 27,
         "minutes": 12.3
+      },
+      {
+        "date": "2026-06-20",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
       }
     ]
   },
@@ -2261,11 +2261,11 @@
       "percent": 7.84
     },
     "today": {
-      "minutes": 0.4,
+      "minutes": 0.0,
       "videoMinutes": 0.0,
-      "pdfMinutes": 0.4,
-      "activityComplete": true,
-      "goalPercent": 100
+      "pdfMinutes": 0.0,
+      "activityComplete": false,
+      "goalPercent": 0
     },
     "pdf": {
       "pages": 44,
@@ -2281,30 +2281,22 @@
           "updatedAt": "2026-06-19T14:40:32-0400"
         }
       ],
-      "todayPages": 6,
+      "todayPages": 0,
       "month": {
         "unit": "pages",
         "target": 88,
         "completed": 44,
         "remaining": 44,
         "percent": 50.0,
-        "daysRemaining": 12,
+        "daysRemaining": 11,
         "deadline": "2026-06-30",
         "recommendedToday": 4,
-        "yesterdayDone": 5,
-        "etaDays": 9,
+        "yesterdayDone": 6,
+        "etaDays": 8,
         "etaDate": "2026-06-28"
       }
     },
     "history": [
-      {
-        "date": "2025-06-20",
-        "minutes": 0.0,
-        "videoMinutes": 0.0,
-        "pdfMinutes": 0.0,
-        "activityComplete": false,
-        "goalPercent": 0
-      },
       {
         "date": "2025-06-21",
         "minutes": 0.0,
@@ -5216,40 +5208,38 @@
         "pdfMinutes": 0.4,
         "activityComplete": true,
         "goalPercent": 100
+      },
+      {
+        "date": "2026-06-20",
+        "minutes": 0.0,
+        "videoMinutes": 0.0,
+        "pdfMinutes": 0.0,
+        "activityComplete": false,
+        "goalPercent": 0
       }
     ]
   },
   "reading": {
     "today": {
-      "date": "2026-06-19",
+      "date": "2026-06-20",
       "sets": 0.0,
       "questions": 0,
-      "correct": 0,
+      "correct": 15,
       "minutes": 0.0,
       "tests": [
         {
           "test": "test01",
           "answered": 0,
-          "correct": 0,
+          "correct": 15,
           "total": 39
         }
       ],
       "accuracy": 0,
       "goalPercent": 0.0,
       "activityComplete": false,
-      "recommendedQuestions": 64
+      "recommendedQuestions": 70
     },
     "history": [
-      {
-        "date": "2025-06-20",
-        "sets": 0,
-        "questions": 0,
-        "correct": 0,
-        "minutes": 0,
-        "tests": [],
-        "accuracy": 0,
-        "goalPercent": 0.0
-      },
       {
         "date": "2025-06-21",
         "sets": 0,
@@ -9000,9 +8990,26 @@
           }
         ],
         "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-06-20",
+        "sets": 0.0,
+        "questions": 0,
+        "correct": 15,
+        "minutes": 0.0,
+        "tests": [
+          {
+            "test": "test01",
+            "answered": 0,
+            "correct": 15,
+            "total": 39
+          }
+        ],
+        "accuracy": 0,
         "goalPercent": 0.0,
         "activityComplete": false,
-        "recommendedQuestions": 64
+        "recommendedQuestions": 70
       }
     ],
     "month": {
@@ -9010,48 +9017,24 @@
       "completed": 20,
       "remaining": 760,
       "percent": 2.56,
-      "daysRemaining": 12,
+      "daysRemaining": 11,
       "deadline": "2026-06-30",
-      "recommendedToday": 64,
-      "yesterdayQuestions": 1,
-      "etaDays": 760,
-      "etaDate": "2028-07-18"
+      "recommendedToday": 70,
+      "yesterdayQuestions": 0,
+      "etaDays": 0,
+      "etaDate": null
     }
   },
   "activity": {
     "today": {
-      "date": "2026-06-19",
-      "readingMinutes": 27.0,
-      "grammarMinutes": 45.7,
+      "date": "2026-06-20",
+      "readingMinutes": 0.0,
+      "grammarMinutes": 0.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 72.7,
-      "warnings": [
-        {
-          "source": "www.bilibili.com",
-          "title": "【军火黑市demo】我在暗网赌箱子 直接把系统干崩了？！",
-          "capturedAt": "2026-06-19T12:04:51.018Z"
-        },
-        {
-          "source": "www.youtube.com",
-          "title": "Craziest Soviet Machines You Won't Believe Exist - Part 1 - YouTube",
-          "capturedAt": "2026-06-19T20:31:04.748Z"
-        },
-        {
-          "source": "www.bilibili.com",
-          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
-          "capturedAt": "2026-06-19T21:54:15.005Z"
-        }
-      ]
+      "totalMinutes": 0.0,
+      "warnings": []
     },
     "history": [
-      {
-        "date": "2025-06-20",
-        "readingMinutes": 0.0,
-        "grammarMinutes": 0.0,
-        "verbMinutes": 0.0,
-        "totalMinutes": 0.0,
-        "warnings": []
-      },
       {
         "date": "2025-06-21",
         "readingMinutes": 0.0,
@@ -12037,6 +12020,14 @@
             "capturedAt": "2026-06-19T21:54:15.005Z"
           }
         ]
+      },
+      {
+        "date": "2026-06-20",
+        "readingMinutes": 0.0,
+        "grammarMinutes": 0.0,
+        "verbMinutes": 0.0,
+        "totalMinutes": 0.0,
+        "warnings": []
       }
     ],
     "lastContext": "reading"
