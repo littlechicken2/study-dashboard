@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-21T14:01:38-04:00",
+  "updatedAt": "2026-06-21T15:01:41-04:00",
   "today": {
     "date": "2026-06-21",
-    "focusMinutes": 83
+    "focusMinutes": 87
   },
   "anki": {
     "today": {
@@ -2211,7 +2211,7 @@
     ]
   },
   "course": {
-    "updatedAt": "2026-06-21T15:33:17.753Z",
+    "updatedAt": "2026-06-21T18:09:31.780Z",
     "lastLesson": {
       "id": "a1/6_4.mp4",
       "title": "6 4 · 形容词特殊阴性变化",
@@ -2268,32 +2268,32 @@
       "goalPercent": 0
     },
     "pdf": {
-      "pages": 53,
+      "pages": 54,
       "totalPages": 88,
-      "percent": 60.23,
+      "percent": 61.36,
       "documents": [
         {
           "id": "a1-grammar",
           "title": "A1 语法讲义",
-          "currentPage": 53,
+          "currentPage": 54,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-21T14:01:36-0400"
+          "updatedAt": "2026-06-21T15:01:37-0400"
         }
       ],
-      "todayPages": 5,
+      "todayPages": 6,
       "month": {
         "unit": "pages",
         "target": 88,
-        "completed": 53,
-        "remaining": 35,
-        "percent": 60.23,
+        "completed": 54,
+        "remaining": 34,
+        "percent": 61.36,
         "daysRemaining": 10,
         "deadline": "2026-06-30",
         "recommendedToday": 4,
         "yesterdayDone": 2,
-        "etaDays": 18,
-        "etaDate": "2026-07-09"
+        "etaDays": 17,
+        "etaDate": "2026-07-08"
       }
     },
     "history": [
@@ -5225,7 +5225,7 @@
       "sets": 0.02564102564102564,
       "questions": 1,
       "correct": 1,
-      "minutes": 39.8,
+      "minutes": 39.9,
       "tests": [
         {
           "test": "test01",
@@ -9004,7 +9004,7 @@
         "sets": 0.02564102564102564,
         "questions": 1,
         "correct": 1,
-        "minutes": 39.8,
+        "minutes": 39.9,
         "tests": [
           {
             "test": "test01",
@@ -9036,9 +9036,9 @@
     "today": {
       "date": "2026-06-21",
       "readingMinutes": 38.8,
-      "grammarMinutes": 44.3,
+      "grammarMinutes": 48.5,
       "verbMinutes": 0.0,
-      "totalMinutes": 83.1,
+      "totalMinutes": 87.3,
       "warnings": []
     },
     "history": [
@@ -12042,9 +12042,9 @@
       {
         "date": "2026-06-21",
         "readingMinutes": 38.8,
-        "grammarMinutes": 44.3,
+        "grammarMinutes": 48.5,
         "verbMinutes": 0.0,
-        "totalMinutes": 83.1,
+        "totalMinutes": 87.3,
         "warnings": []
       }
     ],
