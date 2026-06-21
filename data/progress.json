@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-20T19:01:53-04:00",
+  "updatedAt": "2026-06-20T20:01:56-04:00",
   "today": {
     "date": "2026-06-20",
-    "focusMinutes": 69
+    "focusMinutes": 71
   },
   "anki": {
     "today": {
@@ -2278,7 +2278,7 @@
           "currentPage": 47,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-20T19:01:48-0400"
+          "updatedAt": "2026-06-20T20:01:53-0400"
         }
       ],
       "todayPages": 0,
@@ -5225,7 +5225,7 @@
       "sets": 0.05128205128205128,
       "questions": 2,
       "correct": 1,
-      "minutes": 48.3,
+      "minutes": 56.4,
       "tests": [
         {
           "test": "test01",
@@ -8997,7 +8997,7 @@
         "sets": 0.05128205128205128,
         "questions": 2,
         "correct": 1,
-        "minutes": 48.3,
+        "minutes": 56.4,
         "tests": [
           {
             "test": "test01",
@@ -9028,10 +9028,10 @@
   "activity": {
     "today": {
       "date": "2026-06-20",
-      "readingMinutes": 23.8,
-      "grammarMinutes": 44.9,
+      "readingMinutes": 25.8,
+      "grammarMinutes": 45.6,
       "verbMinutes": 0.0,
-      "totalMinutes": 68.7,
+      "totalMinutes": 71.4,
       "warnings": [
         {
           "source": "www.youtube.com",
@@ -12034,10 +12034,10 @@
       },
       {
         "date": "2026-06-20",
-        "readingMinutes": 23.8,
-        "grammarMinutes": 44.9,
+        "readingMinutes": 25.8,
+        "grammarMinutes": 45.6,
         "verbMinutes": 0.0,
-        "totalMinutes": 68.7,
+        "totalMinutes": 71.4,
         "warnings": [
           {
             "source": "www.youtube.com",
@@ -12052,6 +12052,6 @@
         ]
       }
     ],
-    "lastContext": "grammar"
+    "lastContext": "reading"
   }
 }
