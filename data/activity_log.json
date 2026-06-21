@@ -122,8 +122,8 @@
       }
     },
     "2026-06-20": {
-      "reading": 1550.0,
-      "grammar": 2735.0,
+      "reading": 1580.0,
+      "grammar": 2785.0,
       "verb": 0,
       "warnings": [
         {
@@ -139,19 +139,19 @@
       ],
       "sources": {
         "tcf-reading": 1160.0,
-        "chatgpt": 1480.0,
+        "chatgpt": 1520.0,
         "local-french": 30.0,
-        "adobe-acrobat": 1615.0
+        "adobe-acrobat": 1655.0
       }
     }
   },
-  "lastContext": "reading",
+  "lastContext": "grammar",
   "lastPing": {
     "category": "distraction",
     "source": "www.bilibili.com",
     "seconds": 0,
-    "title": "你无法需要 离火刃「真金评测222」_游戏热门视频",
-    "url": "https://www.bilibili.com/video/BV1xbj66YEhB/?spm_id_from=333.1007.tianma.1-2-2.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
-    "capturedAt": "2026-06-21T00:00:37.038Z"
+    "title": "给大家一份1小时20分钟的攻略，以防止有一天你也来到越南的《顺化》这座城市！_哔哩哔哩_bilibili",
+    "url": "https://www.bilibili.com/video/BV1mNjE6zE4i?spm_id_from=333.788.player.switch&vd_source=af1f5c7cace3a370b57a585619471fbb&trackid=web_related_0.router-related-2589621-cb5r7.1782001474581.460",
+    "capturedAt": "2026-06-21T01:01:45.381Z"
   }
 }
