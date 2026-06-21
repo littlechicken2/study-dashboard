@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-20T21:01:59-04:00",
+  "updatedAt": "2026-06-20T22:02:02-04:00",
   "today": {
     "date": "2026-06-20",
-    "focusMinutes": 73
+    "focusMinutes": 96
   },
   "anki": {
     "today": {
@@ -2268,26 +2268,26 @@
       "goalPercent": 0
     },
     "pdf": {
-      "pages": 47,
+      "pages": 48,
       "totalPages": 88,
-      "percent": 53.41,
+      "percent": 54.55,
       "documents": [
         {
           "id": "a1-grammar",
           "title": "A1 语法讲义",
-          "currentPage": 47,
+          "currentPage": 48,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-20T21:01:58-0400"
+          "updatedAt": "2026-06-20T22:01:58-0400"
         }
       ],
-      "todayPages": 0,
+      "todayPages": 1,
       "month": {
         "unit": "pages",
         "target": 88,
-        "completed": 47,
-        "remaining": 41,
-        "percent": 53.41,
+        "completed": 48,
+        "remaining": 40,
+        "percent": 54.55,
         "daysRemaining": 11,
         "deadline": "2026-06-30",
         "recommendedToday": 4,
@@ -5225,7 +5225,7 @@
       "sets": 0.05128205128205128,
       "questions": 2,
       "correct": 1,
-      "minutes": 58.5,
+      "minutes": 64.9,
       "tests": [
         {
           "test": "test01",
@@ -8997,7 +8997,7 @@
         "sets": 0.05128205128205128,
         "questions": 2,
         "correct": 1,
-        "minutes": 58.5,
+        "minutes": 64.9,
         "tests": [
           {
             "test": "test01",
@@ -9028,10 +9028,10 @@
   "activity": {
     "today": {
       "date": "2026-06-20",
-      "readingMinutes": 26.3,
-      "grammarMinutes": 46.4,
+      "readingMinutes": 28.8,
+      "grammarMinutes": 67.5,
       "verbMinutes": 0.0,
-      "totalMinutes": 72.7,
+      "totalMinutes": 96.3,
       "warnings": [
         {
           "source": "www.youtube.com",
@@ -12034,10 +12034,10 @@
       },
       {
         "date": "2026-06-20",
-        "readingMinutes": 26.3,
-        "grammarMinutes": 46.4,
+        "readingMinutes": 28.8,
+        "grammarMinutes": 67.5,
         "verbMinutes": 0.0,
-        "totalMinutes": 72.7,
+        "totalMinutes": 96.3,
         "warnings": [
           {
             "source": "www.youtube.com",
