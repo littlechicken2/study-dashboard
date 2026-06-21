@@ -122,8 +122,8 @@
       }
     },
     "2026-06-20": {
-      "reading": 1730.0,
-      "grammar": 4050.0,
+      "reading": 1740.0,
+      "grammar": 5225.0,
       "verb": 0,
       "warnings": [
         {
@@ -138,20 +138,20 @@
         }
       ],
       "sources": {
-        "tcf-reading": 1310.0,
-        "chatgpt": 2350.0,
+        "tcf-reading": 1320.0,
+        "chatgpt": 3310.0,
         "local-french": 30.0,
-        "adobe-acrobat": 2090.0
+        "adobe-acrobat": 2305.0
       }
     }
   },
-  "lastContext": "grammar",
+  "lastContext": "reading",
   "lastPing": {
-    "category": "contextual",
-    "source": "chatgpt",
+    "category": "reading",
+    "source": "tcf-reading",
     "seconds": 10,
-    "title": "法语句子解析",
-    "url": "https://chatgpt.com/c/6a36aede-97e4-83ea-8e15-40de6d1f4c48",
-    "capturedAt": "2026-06-21T02:01:55.246Z"
+    "title": "TCF Canada 阅读练习 TEST01 | TCF Canada 备考平台",
+    "url": "https://tcfca.cn/reading/test01",
+    "capturedAt": "2026-06-21T02:26:55.017Z"
   }
 }

@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-20T22:02:02-04:00",
+  "updatedAt": "2026-06-20T23:02:05-04:00",
   "today": {
     "date": "2026-06-20",
-    "focusMinutes": 96
+    "focusMinutes": 116
   },
   "anki": {
     "today": {
@@ -2211,7 +2211,7 @@
     ]
   },
   "course": {
-    "updatedAt": "2026-06-20T15:02:16.306Z",
+    "updatedAt": "2026-06-21T02:30:13.790Z",
     "lastLesson": {
       "id": "a1/6_4.mp4",
       "title": "6 4 · 形容词特殊阴性变化",
@@ -2268,26 +2268,26 @@
       "goalPercent": 0
     },
     "pdf": {
-      "pages": 48,
+      "pages": 49,
       "totalPages": 88,
-      "percent": 54.55,
+      "percent": 55.68,
       "documents": [
         {
           "id": "a1-grammar",
           "title": "A1 语法讲义",
-          "currentPage": 48,
+          "currentPage": 49,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-20T22:01:58-0400"
+          "updatedAt": "2026-06-20T22:26:48-0400"
         }
       ],
-      "todayPages": 1,
+      "todayPages": 2,
       "month": {
         "unit": "pages",
         "target": 88,
-        "completed": 48,
-        "remaining": 40,
-        "percent": 54.55,
+        "completed": 49,
+        "remaining": 39,
+        "percent": 55.68,
         "daysRemaining": 11,
         "deadline": "2026-06-30",
         "recommendedToday": 4,
@@ -5225,7 +5225,7 @@
       "sets": 0.05128205128205128,
       "questions": 2,
       "correct": 1,
-      "minutes": 64.9,
+      "minutes": 68.5,
       "tests": [
         {
           "test": "test01",
@@ -8997,7 +8997,7 @@
         "sets": 0.05128205128205128,
         "questions": 2,
         "correct": 1,
-        "minutes": 64.9,
+        "minutes": 68.5,
         "tests": [
           {
             "test": "test01",
@@ -9028,10 +9028,10 @@
   "activity": {
     "today": {
       "date": "2026-06-20",
-      "readingMinutes": 28.8,
-      "grammarMinutes": 67.5,
+      "readingMinutes": 29.0,
+      "grammarMinutes": 87.1,
       "verbMinutes": 0.0,
-      "totalMinutes": 96.3,
+      "totalMinutes": 116.1,
       "warnings": [
         {
           "source": "www.youtube.com",
@@ -12034,10 +12034,10 @@
       },
       {
         "date": "2026-06-20",
-        "readingMinutes": 28.8,
-        "grammarMinutes": 67.5,
+        "readingMinutes": 29.0,
+        "grammarMinutes": 87.1,
         "verbMinutes": 0.0,
-        "totalMinutes": 96.3,
+        "totalMinutes": 116.1,
         "warnings": [
           {
             "source": "www.youtube.com",
@@ -12052,6 +12052,6 @@
         ]
       }
     ],
-    "lastContext": "grammar"
+    "lastContext": "reading"
   }
 }
