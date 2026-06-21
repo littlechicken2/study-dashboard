@@ -146,11 +146,11 @@
     },
     "2026-06-21": {
       "reading": 2330.0,
-      "grammar": 2910.0,
+      "grammar": 2920.0,
       "verb": 0,
       "warnings": [],
       "sources": {
-        "chatgpt": 2370.0,
+        "chatgpt": 2380.0,
         "tcf-reading": 1010.0,
         "local-french": 40.0,
         "adobe-acrobat": 1820.0
@@ -162,8 +162,8 @@
     "category": "contextual",
     "source": "chatgpt",
     "seconds": 10,
-    "title": "打字练习网页推荐",
+    "title": "ChatGPT",
     "url": "https://chatgpt.com/c/6a35e918-7150-83ea-bcf9-5a35e93bc158",
-    "capturedAt": "2026-06-21T18:09:31.691Z"
+    "capturedAt": "2026-06-21T21:07:30.692Z"
   }
 }
