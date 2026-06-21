@@ -145,24 +145,25 @@
       }
     },
     "2026-06-21": {
-      "reading": 2190.0,
-      "grammar": 30.0,
+      "reading": 2330.0,
+      "grammar": 470.0,
       "verb": 0,
       "warnings": [],
       "sources": {
-        "chatgpt": 1230.0,
-        "tcf-reading": 960.0,
-        "local-french": 30.0
+        "chatgpt": 1450.0,
+        "tcf-reading": 1010.0,
+        "local-french": 40.0,
+        "adobe-acrobat": 300.0
       }
     }
   },
-  "lastContext": "reading",
+  "lastContext": "grammar",
   "lastPing": {
-    "category": "contextual",
-    "source": "chatgpt",
-    "seconds": 10,
-    "title": "法语句子解析",
-    "url": "https://chatgpt.com/c/6a36aede-97e4-83ea-8e15-40de6d1f4c48",
-    "capturedAt": "2026-06-21T16:01:25.156Z"
+    "category": "grammar",
+    "source": "adobe-acrobat",
+    "seconds": 5,
+    "title": "",
+    "idleSeconds": 0.1,
+    "capturedAt": "2026-06-21T13:00:30-0400"
   }
 }
