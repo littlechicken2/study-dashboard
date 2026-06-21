@@ -1,22 +1,22 @@
 {
-  "updatedAt": "2026-06-21T10:01:26-04:00",
+  "updatedAt": "2026-06-21T11:01:31-04:00",
   "today": {
     "date": "2026-06-21",
     "focusMinutes": 0
   },
   "anki": {
     "today": {
-      "reviews": 0,
-      "new": 0,
-      "minutes": 0,
-      "activityComplete": false,
-      "goalPercent": 0
+      "reviews": 13,
+      "new": 4,
+      "minutes": 1.5,
+      "activityComplete": true,
+      "goalPercent": 100
     },
     "total": {
       "cards": 35974,
-      "mature": 208
+      "mature": 209
     },
-    "streak": 0,
+    "streak": 9,
     "history": [
       {
         "date": "2025-06-22",
@@ -1935,7 +1935,7 @@
       {
         "date": "2026-05-07",
         "reviews": 142,
-        "new": 238,
+        "new": 239,
         "minutes": 28.4
       },
       {
@@ -2115,7 +2115,7 @@
       {
         "date": "2026-06-06",
         "reviews": 8,
-        "new": 9,
+        "new": 10,
         "minutes": 1.8
       },
       {
@@ -2133,7 +2133,7 @@
       {
         "date": "2026-06-09",
         "reviews": 179,
-        "new": 83,
+        "new": 84,
         "minutes": 22.4
       },
       {
@@ -2163,13 +2163,13 @@
       {
         "date": "2026-06-14",
         "reviews": 59,
-        "new": 122,
+        "new": 123,
         "minutes": 7.7
       },
       {
         "date": "2026-06-15",
         "reviews": 87,
-        "new": 74,
+        "new": 75,
         "minutes": 12.3
       },
       {
@@ -2181,13 +2181,13 @@
       {
         "date": "2026-06-17",
         "reviews": 71,
-        "new": 65,
+        "new": 67,
         "minutes": 9.3
       },
       {
         "date": "2026-06-18",
         "reviews": 149,
-        "new": 36,
+        "new": 38,
         "minutes": 16.2
       },
       {
@@ -2204,9 +2204,9 @@
       },
       {
         "date": "2026-06-21",
-        "reviews": 0,
-        "new": 0,
-        "minutes": 0
+        "reviews": 13,
+        "new": 4,
+        "minutes": 1.5
       }
     ]
   },
