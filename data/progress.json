@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-21T00:02:07-04:00",
+  "updatedAt": "2026-06-21T08:01:21-04:00",
   "today": {
     "date": "2026-06-21",
     "focusMinutes": 0
@@ -8979,17 +8979,17 @@
         "date": "2026-06-20",
         "sets": 0.05128205128205128,
         "questions": 2,
-        "correct": 1,
-        "minutes": 68.5,
+        "correct": 0,
+        "minutes": 24.2,
         "tests": [
           {
             "test": "test01",
             "answered": 2,
-            "correct": 1,
+            "correct": 0,
             "total": 39
           }
         ],
-        "accuracy": 50.0,
+        "accuracy": 0.0,
         "goalPercent": 5.13
       },
       {
