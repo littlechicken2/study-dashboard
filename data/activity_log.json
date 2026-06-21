@@ -146,14 +146,14 @@
     },
     "2026-06-21": {
       "reading": 2330.0,
-      "grammar": 470.0,
+      "grammar": 2660.0,
       "verb": 0,
       "warnings": [],
       "sources": {
-        "chatgpt": 1450.0,
+        "chatgpt": 2290.0,
         "tcf-reading": 1010.0,
         "local-french": 40.0,
-        "adobe-acrobat": 300.0
+        "adobe-acrobat": 1650.0
       }
     }
   },
@@ -162,8 +162,8 @@
     "category": "grammar",
     "source": "adobe-acrobat",
     "seconds": 5,
-    "title": "",
-    "idleSeconds": 0.1,
-    "capturedAt": "2026-06-21T13:00:30-0400"
+    "title": "【新东方在线诚意出品】法语欧标A1语法大全电子讲义.pdf.pdf (SECURED) - Adobe Acrobat Reader (64-bit)",
+    "idleSeconds": 60.0,
+    "capturedAt": "2026-06-21T14:01:31-0400"
   }
 }

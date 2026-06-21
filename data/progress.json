@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-21T13:01:36-04:00",
+  "updatedAt": "2026-06-21T14:01:38-04:00",
   "today": {
     "date": "2026-06-21",
-    "focusMinutes": 47
+    "focusMinutes": 83
   },
   "anki": {
     "today": {
@@ -2268,32 +2268,32 @@
       "goalPercent": 0
     },
     "pdf": {
-      "pages": 49,
+      "pages": 53,
       "totalPages": 88,
-      "percent": 55.68,
+      "percent": 60.23,
       "documents": [
         {
           "id": "a1-grammar",
           "title": "A1 语法讲义",
-          "currentPage": 49,
+          "currentPage": 53,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-21T13:01:35-0400"
+          "updatedAt": "2026-06-21T14:01:36-0400"
         }
       ],
-      "todayPages": 1,
+      "todayPages": 5,
       "month": {
         "unit": "pages",
         "target": 88,
-        "completed": 49,
-        "remaining": 39,
-        "percent": 55.68,
+        "completed": 53,
+        "remaining": 35,
+        "percent": 60.23,
         "daysRemaining": 10,
         "deadline": "2026-06-30",
         "recommendedToday": 4,
         "yesterdayDone": 2,
-        "etaDays": 20,
-        "etaDate": "2026-07-11"
+        "etaDays": 18,
+        "etaDate": "2026-07-09"
       }
     },
     "history": [
@@ -5225,7 +5225,7 @@
       "sets": 0.02564102564102564,
       "questions": 1,
       "correct": 1,
-      "minutes": 38.8,
+      "minutes": 39.8,
       "tests": [
         {
           "test": "test01",
@@ -9004,7 +9004,7 @@
         "sets": 0.02564102564102564,
         "questions": 1,
         "correct": 1,
-        "minutes": 38.8,
+        "minutes": 39.8,
         "tests": [
           {
             "test": "test01",
@@ -9036,9 +9036,9 @@
     "today": {
       "date": "2026-06-21",
       "readingMinutes": 38.8,
-      "grammarMinutes": 7.8,
+      "grammarMinutes": 44.3,
       "verbMinutes": 0.0,
-      "totalMinutes": 46.6,
+      "totalMinutes": 83.1,
       "warnings": []
     },
     "history": [
@@ -12042,9 +12042,9 @@
       {
         "date": "2026-06-21",
         "readingMinutes": 38.8,
-        "grammarMinutes": 7.8,
+        "grammarMinutes": 44.3,
         "verbMinutes": 0.0,
-        "totalMinutes": 46.6,
+        "totalMinutes": 83.1,
         "warnings": []
       }
     ],
