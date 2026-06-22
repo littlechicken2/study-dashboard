@@ -164,11 +164,11 @@
     },
     "2026-06-22": {
       "reading": 110.0,
-      "grammar": 450.0,
+      "grammar": 470.0,
       "verb": 0,
       "warnings": [],
       "sources": {
-        "chatgpt": 500.0,
+        "chatgpt": 520.0,
         "tcf-reading": 30.0,
         "local-french": 30.0
       }
@@ -181,6 +181,6 @@
     "seconds": 10,
     "title": "搜狗跨设备复制粘贴",
     "url": "https://chatgpt.com/c/6a3952a6-6cac-83ea-9bbe-1fa11ca8e631",
-    "capturedAt": "2026-06-22T15:46:52.099Z"
+    "capturedAt": "2026-06-22T16:16:15.378Z"
   }
 }
