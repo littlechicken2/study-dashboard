@@ -146,7 +146,7 @@
     },
     "2026-06-21": {
       "reading": 2330.0,
-      "grammar": 2955.0,
+      "grammar": 3045.0,
       "verb": 0,
       "warnings": [
         {
@@ -156,7 +156,7 @@
         }
       ],
       "sources": {
-        "chatgpt": 2410.0,
+        "chatgpt": 2500.0,
         "tcf-reading": 1010.0,
         "local-french": 40.0,
         "adobe-acrobat": 1825.0
@@ -165,11 +165,11 @@
   },
   "lastContext": "grammar",
   "lastPing": {
-    "category": "distraction",
-    "source": "www.bilibili.com",
-    "seconds": 0,
-    "title": "328元一只虾！本想要锐评，结果全程好评？【凭啥这么贵ep108-花椒树西式川菜】_哔哩哔哩_bilibili",
-    "url": "https://www.bilibili.com/video/BV1nhjB6WEkH/?spm_id_from=333.1007.tianma.1-2-2.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
-    "capturedAt": "2026-06-21T23:43:35.005Z"
+    "category": "contextual",
+    "source": "chatgpt",
+    "seconds": 10,
+    "title": "提升数学思考能力",
+    "url": "https://chatgpt.com/c/6a384e60-2874-83ea-ac66-84b9e5e54ec1",
+    "capturedAt": "2026-06-22T01:16:52.388Z"
   }
 }
