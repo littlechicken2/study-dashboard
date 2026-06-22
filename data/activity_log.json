@@ -164,11 +164,11 @@
     },
     "2026-06-22": {
       "reading": 110.0,
-      "grammar": 30.0,
+      "grammar": 450.0,
       "verb": 0,
       "warnings": [],
       "sources": {
-        "chatgpt": 80.0,
+        "chatgpt": 500.0,
         "tcf-reading": 30.0,
         "local-french": 30.0
       }
@@ -176,11 +176,11 @@
   },
   "lastContext": "grammar",
   "lastPing": {
-    "category": "grammar",
-    "source": "local-french",
+    "category": "contextual",
+    "source": "chatgpt",
     "seconds": 10,
-    "title": "法语课程学习台",
-    "url": "http://127.0.0.1:8765/a1_player.html",
-    "capturedAt": "2026-06-22T13:59:34.919Z"
+    "title": "搜狗跨设备复制粘贴",
+    "url": "https://chatgpt.com/c/6a3952a6-6cac-83ea-9bbe-1fa11ca8e631",
+    "capturedAt": "2026-06-22T15:46:52.099Z"
   }
 }

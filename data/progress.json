@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-06-22T11:01:24-04:00",
+  "updatedAt": "2026-06-22T12:01:27-04:00",
   "today": {
     "date": "2026-06-22",
-    "focusMinutes": 2
+    "focusMinutes": 9
   },
   "anki": {
     "today": {
-      "reviews": 70,
-      "new": 25,
-      "minutes": 13.5,
+      "reviews": 93,
+      "new": 31,
+      "minutes": 18.6,
       "activityComplete": true,
       "goalPercent": 100
     },
@@ -2067,13 +2067,13 @@
       {
         "date": "2026-05-30",
         "reviews": 86,
-        "new": 147,
+        "new": 148,
         "minutes": 11.2
       },
       {
         "date": "2026-05-31",
         "reviews": 75,
-        "new": 149,
+        "new": 150,
         "minutes": 15.3
       },
       {
@@ -2097,7 +2097,7 @@
       {
         "date": "2026-06-04",
         "reviews": 280,
-        "new": 241,
+        "new": 243,
         "minutes": 41.1
       },
       {
@@ -2151,19 +2151,19 @@
       {
         "date": "2026-06-13",
         "reviews": 195,
-        "new": 121,
+        "new": 122,
         "minutes": 34.9
       },
       {
         "date": "2026-06-14",
         "reviews": 59,
-        "new": 129,
+        "new": 131,
         "minutes": 7.7
       },
       {
         "date": "2026-06-15",
         "reviews": 87,
-        "new": 86,
+        "new": 89,
         "minutes": 12.3
       },
       {
@@ -2181,13 +2181,13 @@
       {
         "date": "2026-06-18",
         "reviews": 149,
-        "new": 57,
+        "new": 62,
         "minutes": 16.2
       },
       {
         "date": "2026-06-19",
         "reviews": 70,
-        "new": 36,
+        "new": 38,
         "minutes": 12.3
       },
       {
@@ -2204,9 +2204,9 @@
       },
       {
         "date": "2026-06-22",
-        "reviews": 70,
-        "new": 25,
-        "minutes": 13.5
+        "reviews": 93,
+        "new": 31,
+        "minutes": 18.6
       }
     ]
   },
@@ -9043,9 +9043,9 @@
     "today": {
       "date": "2026-06-22",
       "readingMinutes": 1.8,
-      "grammarMinutes": 0.5,
+      "grammarMinutes": 7.5,
       "verbMinutes": 0.0,
-      "totalMinutes": 2.3,
+      "totalMinutes": 9.3,
       "warnings": []
     },
     "history": [
@@ -12055,9 +12055,9 @@
       {
         "date": "2026-06-22",
         "readingMinutes": 1.8,
-        "grammarMinutes": 0.5,
+        "grammarMinutes": 7.5,
         "verbMinutes": 0.0,
-        "totalMinutes": 2.3,
+        "totalMinutes": 9.3,
         "warnings": []
       }
     ],
