@@ -26,7 +26,7 @@
     .wide{grid-column:auto}
     .overview{display:grid;grid-template-columns:1fr;gap:8px;align-items:center;margin:0}
     .heroValue{font-size:64px;font-weight:800;line-height:.9;color:var(--green);font-variant-numeric:tabular-nums}
-    .goalGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+    .goalGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
     .goal{padding:12px;border:1px solid var(--line);border-radius:5px;background:rgba(3,15,11,.45)}
     .goalTop{align-items:baseline}
     .goalTop span{font-size:12px;color:var(--muted)}
@@ -40,6 +40,7 @@
     .stat b{display:block;font-size:18px;font-variant-numeric:tabular-nums}
     .stat span{font-size:11px;color:var(--muted)}
     .courseCard{display:flex;flex-direction:column}
+    .courseCard{grid-column:span 2}
     .courseRows{flex:1;display:grid;align-content:space-evenly;gap:6px;margin-top:6px}
     .courseRow{display:grid;grid-template-columns:42px 1fr 56px;gap:7px;align-items:center;font-size:12px}
     .courseRow span{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
@@ -117,23 +118,22 @@ async function load(){
   const a=data.anki,c=data.course,r=data.reading,act=data.activity||{today:{readingMinutes:0,grammarMinutes:0,verbMinutes:0,totalMinutes:0,warnings:[]},history:[]};
   const pdf=c.pdf||{pages:0,totalPages:88,percent:0,todayPages:0,month:{recommendedToday:0,remaining:88,daysRemaining:0}};
   const pdfMonth=pdf.month||{};
-  const readDone=(r.today.activityComplete||act.today.readingMinutes>0)?100:0;
-  const verbDone=(a.today.activityComplete||act.today.verbMinutes>0)?100:0;
-  const grammarDone=(c.today.activityComplete||act.today.grammarMinutes>0)?100:0;
-  const daily=(readDone+verbDone+grammarDone)/3;
+  const grammarTarget=Number(pdfMonth.recommendedToday||0);
+  const grammarDone=grammarTarget>0?Math.min(100,Number(pdf.todayPages||0)/grammarTarget*100):100;
+  const verbTarget=1;
+  const verbDone=Math.min(100,Number(a.today.new||0)/verbTarget*100);
+  const daily=(grammarDone+verbDone)/2;
   document.querySelector("#updated").textContent=`更新于 ${new Date(data.updatedAt).toLocaleString("zh-CN")}`;
   document.querySelector("#dashboard").innerHTML=`
   <article class="card hero">
     <div class="sectionHead"><h2>今日活动完成度</h2><span class="muted">${n(data.today.focusMinutes)} 分钟已记录</span></div>
-    <div class="overview"><div class="heroValue">${pct(daily)}</div><div><p class="muted">三项中任意一项留下记录即视为今日完成</p>${bar(daily)}<p class="details">Reading ${pct(readDone)} · Grammar ${pct(grammarDone)} · Verb ${pct(verbDone)}<br>有效时长：Reading ${n(act.today.readingMinutes,1)} 分钟 · Grammar ${n(act.today.grammarMinutes,1)} 分钟 · Verb ${n(act.today.verbMinutes,1)} 分钟 · 警告 ${n((act.today.warnings||[]).length)} 次</p></div></div>
+    <div class="overview"><div class="heroValue">${pct(daily)}</div><div><p class="muted">按今日目标实际进度计算，两项均达标才是 100%</p>${bar(daily)}<p class="details">Grammar ${pct(grammarDone)} · Verb ${pct(verbDone)}<br>有效时长：Grammar ${n(act.today.grammarMinutes,1)} 分钟 · Verb ${n(act.today.verbMinutes,1)} 分钟 · 警告 ${n((act.today.warnings||[]).length)} 次</p></div></div>
     <div class="goalGrid">
-      <div class="goal"><div class="goalTop"><h2>Reading</h2><span>月底前完成 20 Test</span></div><div class="goalValue">${n(r.today.questions)} / ${n(r.month.recommendedToday)} <span class="unit">今日动态建议</span></div>${bar(r.today.goalPercent)}<p class="details">本月 ${n(r.month.completed)} / ${n(r.month.target)} 题 · 剩余 ${n(r.month.remaining)}<br>昨日 ${n(r.month.yesterdayQuestions)} 题 · ETA ${eta({etaDate:r.month.etaDate,etaDays:r.month.etaDays})}</p></div>
-      <div class="goal"><div class="goalTop"><h2>Grammar</h2><span>视频或 A1 讲义均可</span></div><div class="goalValue">${n(c.today.minutes,1)} <span class="unit">今日分钟</span></div>${bar(grammarDone)}<p class="details">视频 ${n(c.today.videoMinutes,1)} 分钟 · PDF ${n(c.today.pdfMinutes,1)} 分钟<br>A1 讲义今日 ${n(pdf.todayPages)} / ${n(pdfMonth.recommendedToday)} 页</p></div>
-      <div class="goal"><div class="goalTop"><h2>Verb</h2><span>Anki 有记录即完成</span></div><div class="goalValue">${n(a.today.reviews)} <span class="unit">复习 · ${n(a.today.new)} 新卡</span></div>${bar(verbDone)}<p class="details">今日 ${n(a.today.minutes,1)} 分钟 · 连续 ${n(a.streak)} 天</p></div>
+      <div class="goal"><div class="goalTop"><h2>Grammar</h2><span>完成今日建议页数</span></div><div class="goalValue">${n(pdf.todayPages)} / ${n(grammarTarget)} <span class="unit">页</span></div>${bar(grammarDone)}<p class="details">A1 讲义 ${n(pdf.pages)} / ${n(pdf.totalPages)} 页 · 今日建议推进 ${n(grammarTarget)} 页<br>视频 ${n(c.today.videoMinutes,1)} 分钟仅记录时长，不计任务完成</p></div>
+      <div class="goal"><div class="goalTop"><h2>Verb</h2><span>每日目标 1 张新卡</span></div><div class="goalValue">${n(a.today.new)} / ${n(verbTarget)} <span class="unit">新卡</span></div>${bar(verbDone)}<p class="details">复习 ${n(a.today.reviews)} 次 · 今日 ${n(a.today.minutes,1)} 分钟 · 连续 ${n(a.streak)} 天</p></div>
     </div>
   </article>
   <article class="card trackerCard"><div class="sectionHead"><h2>${new Date().getMonth()+1}月 RGB</h2><div class="legend"><span><i style="background:#f00"></i>阅读</span><span><i style="background:#0f0"></i>语法</span><span><i style="background:#00f"></i>动词</span></div></div>${rgbTracker(a.history,r.history,c.history,act.history||[])}</article>
-  <article class="card wide readingPlan"><div class="sectionHead"><h2>阅读月底计划</h2><span class="muted">${r.month.deadline} 截止</span></div><div class="big">${n(r.month.completed)} / ${n(r.month.target)} <span class="unit">题</span></div>${bar(r.month.percent)}${stats([[n(r.month.recommendedToday),"今日建议"],[n(r.month.daysRemaining),"剩余天数"],[eta({etaDate:r.month.etaDate,etaDays:r.month.etaDays}),"按昨日速度 ETA"]])}</article>
   <article class="card"><div class="sectionHead"><h2>有效学习时长</h2><span class="muted">娱乐网站自动暂停</span></div><div class="big">${n(act.today.totalMinutes,1)} <span class="unit">分钟</span></div>${stats([[n(act.today.readingMinutes,1),"Reading"],[n(act.today.grammarMinutes,1),"Grammar"],[n(act.today.verbMinutes,1),"Verb"]])}<p class="details">Bilibili / YouTube / 抖音警告：${n((act.today.warnings||[]).length)} 次</p></article>
   <article class="card"><div class="sectionHead"><h2>Verb 具体记录</h2><span class="muted">Anki</span></div><div class="big">${n(a.today.reviews)} <span class="unit">次复习</span></div>${stats([[n(a.today.new),"新卡"],[n(a.today.minutes,1),"分钟"],[n(a.total.cards),"总卡片"]])}</article>
   <article class="card wide courseCard"><div class="sectionHead"><h2>视频课程累计</h2><span class="muted">${pct(c.total.percent)}</span></div><div class="courseRows">${c.courses.map(x=>`<div class="courseRow"><strong>${x.label}</strong>${bar(x.percent)}<span>${pct(x.percent)}</span></div>`).join("")}</div></article>

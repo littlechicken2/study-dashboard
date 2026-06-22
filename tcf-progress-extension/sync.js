@@ -18,10 +18,11 @@
   async function dailyTasksComplete() {
     try {
       const data = await fetch("http://127.0.0.1:8765/data/progress.json?t=" + Date.now()).then(r => r.json());
-      const reading = Boolean(data.reading?.today?.activityComplete || data.activity?.today?.readingMinutes > 0);
-      const grammar = Boolean(data.course?.today?.activityComplete || data.activity?.today?.grammarMinutes > 0);
-      const verb = Boolean(data.anki?.today?.activityComplete || data.activity?.today?.verbMinutes > 0);
-      return reading && grammar && verb;
+      const pdf = data.course?.pdf || {};
+      const grammarTarget = Number(pdf.month?.recommendedToday || 0);
+      const grammar = grammarTarget <= 0 || Number(pdf.todayPages || 0) >= grammarTarget;
+      const verb = Number(data.anki?.today?.new || 0) >= 1;
+      return grammar && verb;
     } catch (_) {
       return false;
     }
