@@ -161,15 +161,24 @@
         "local-french": 70.0,
         "adobe-acrobat": 1825.0
       }
+    },
+    "2026-06-22": {
+      "reading": 80.0,
+      "grammar": 0,
+      "verb": 0,
+      "warnings": [],
+      "sources": {
+        "chatgpt": 80.0
+      }
     }
   },
   "lastContext": "reading",
   "lastPing": {
-    "category": "distraction",
-    "source": "www.bilibili.com",
-    "seconds": 0,
-    "title": "又是130公里！爬山加速降，走夜路遇到电闪雷鸣，但我们还是成功到了岘港！_哔哩哔哩_bilibili",
-    "url": "https://www.bilibili.com/video/BV1rYj46pEuA/?spm_id_from=333.1007.top_right_bar_window_dynamic.content.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
-    "capturedAt": "2026-06-22T03:25:32.868Z"
+    "category": "contextual",
+    "source": "chatgpt",
+    "seconds": 10,
+    "title": "提升数学思考能力",
+    "url": "https://chatgpt.com/c/6a384e60-2874-83ea-ac66-84b9e5e54ec1",
+    "capturedAt": "2026-06-22T04:18:13.293Z"
   }
 }
