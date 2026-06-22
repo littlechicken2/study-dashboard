@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-21T19:01:53-04:00",
+  "updatedAt": "2026-06-21T20:01:56-04:00",
   "today": {
     "date": "2026-06-21",
     "focusMinutes": 88
@@ -2211,12 +2211,12 @@
     ]
   },
   "course": {
-    "updatedAt": "2026-06-21T18:09:31.780Z",
+    "updatedAt": "2026-06-21T23:44:33.379Z",
     "lastLesson": {
       "id": "a1/6_4.mp4",
       "title": "6 4 · 形容词特殊阴性变化",
       "course": "a1",
-      "time": 205.685528
+      "time": 206.986576
     },
     "courses": [
       {
@@ -2278,7 +2278,7 @@
           "currentPage": 54,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-21T19:01:50-0400"
+          "updatedAt": "2026-06-21T19:42:31-0400"
         }
       ],
       "todayPages": 6,
@@ -9036,10 +9036,16 @@
     "today": {
       "date": "2026-06-21",
       "readingMinutes": 38.8,
-      "grammarMinutes": 48.7,
+      "grammarMinutes": 49.2,
       "verbMinutes": 0.0,
-      "totalMinutes": 87.5,
-      "warnings": []
+      "totalMinutes": 88.0,
+      "warnings": [
+        {
+          "source": "www.bilibili.com",
+          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+          "capturedAt": "2026-06-21T23:28:45.128Z"
+        }
+      ]
     },
     "history": [
       {
@@ -12042,10 +12048,16 @@
       {
         "date": "2026-06-21",
         "readingMinutes": 38.8,
-        "grammarMinutes": 48.7,
+        "grammarMinutes": 49.2,
         "verbMinutes": 0.0,
-        "totalMinutes": 87.5,
-        "warnings": []
+        "totalMinutes": 88.0,
+        "warnings": [
+          {
+            "source": "www.bilibili.com",
+            "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+            "capturedAt": "2026-06-21T23:28:45.128Z"
+          }
+        ]
       }
     ],
     "lastContext": "grammar"
