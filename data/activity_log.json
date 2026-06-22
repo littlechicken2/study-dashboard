@@ -163,24 +163,25 @@
       }
     },
     "2026-06-22": {
-      "reading": 110.0,
-      "grammar": 470.0,
+      "reading": 990.0,
+      "grammar": 800.0,
       "verb": 0,
       "warnings": [],
       "sources": {
         "chatgpt": 520.0,
-        "tcf-reading": 30.0,
-        "local-french": 30.0
+        "tcf-reading": 910.0,
+        "local-french": 60.0,
+        "adobe-acrobat": 300.0
       }
     }
   },
   "lastContext": "grammar",
   "lastPing": {
-    "category": "contextual",
-    "source": "chatgpt",
-    "seconds": 10,
-    "title": "搜狗跨设备复制粘贴",
-    "url": "https://chatgpt.com/c/6a3952a6-6cac-83ea-9bbe-1fa11ca8e631",
-    "capturedAt": "2026-06-22T16:16:15.378Z"
+    "category": "grammar",
+    "source": "adobe-acrobat",
+    "seconds": 5,
+    "title": "【新东方在线诚意出品】法语欧标A1语法大全电子讲义.pdf.pdf (SECURED) - Adobe Acrobat Reader (64-bit)",
+    "idleSeconds": 0.0,
+    "capturedAt": "2026-06-22T13:50:56-0400"
   }
 }

@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-22T13:01:30-04:00",
+  "updatedAt": "2026-06-22T14:01:33-04:00",
   "today": {
     "date": "2026-06-22",
-    "focusMinutes": 10
+    "focusMinutes": 30
   },
   "anki": {
     "today": {
@@ -2278,7 +2278,7 @@
           "currentPage": 54,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-21T19:42:31-0400"
+          "updatedAt": "2026-06-22T14:01:31-0400"
         }
       ],
       "todayPages": 0,
@@ -5222,21 +5222,21 @@
   "reading": {
     "today": {
       "date": "2026-06-22",
-      "sets": 0.0,
-      "questions": 0,
-      "correct": 0,
-      "minutes": 0.0,
+      "sets": 0.05128205128205128,
+      "questions": 2,
+      "correct": 1,
+      "minutes": 32.8,
       "tests": [
         {
           "test": "test01",
-          "answered": 0,
-          "correct": 0,
+          "answered": 2,
+          "correct": 1,
           "total": 39
         }
       ],
-      "accuracy": 0,
-      "goalPercent": 0.0,
-      "activityComplete": false,
+      "accuracy": 50.0,
+      "goalPercent": 2.38,
+      "activityComplete": true,
       "recommendedQuestions": 84
     },
     "history": [
@@ -9008,44 +9008,44 @@
       },
       {
         "date": "2026-06-22",
-        "sets": 0.0,
-        "questions": 0,
-        "correct": 0,
-        "minutes": 0.0,
+        "sets": 0.05128205128205128,
+        "questions": 2,
+        "correct": 1,
+        "minutes": 32.8,
         "tests": [
           {
             "test": "test01",
-            "answered": 0,
-            "correct": 0,
+            "answered": 2,
+            "correct": 1,
             "total": 39
           }
         ],
-        "accuracy": 0,
-        "goalPercent": 0.0,
-        "activityComplete": false,
+        "accuracy": 50.0,
+        "goalPercent": 2.38,
+        "activityComplete": true,
         "recommendedQuestions": 84
       }
     ],
     "month": {
       "target": 780,
-      "completed": 26,
-      "remaining": 754,
-      "percent": 3.33,
+      "completed": 28,
+      "remaining": 752,
+      "percent": 3.59,
       "daysRemaining": 9,
       "deadline": "2026-06-30",
       "recommendedToday": 84,
       "yesterdayQuestions": 1,
-      "etaDays": 754,
-      "etaDate": "2028-07-15"
+      "etaDays": 752,
+      "etaDate": "2028-07-13"
     }
   },
   "activity": {
     "today": {
       "date": "2026-06-22",
-      "readingMinutes": 1.8,
-      "grammarMinutes": 7.8,
+      "readingMinutes": 16.5,
+      "grammarMinutes": 13.3,
       "verbMinutes": 0.0,
-      "totalMinutes": 9.6,
+      "totalMinutes": 29.8,
       "warnings": []
     },
     "history": [
@@ -12054,10 +12054,10 @@
       },
       {
         "date": "2026-06-22",
-        "readingMinutes": 1.8,
-        "grammarMinutes": 7.8,
+        "readingMinutes": 16.5,
+        "grammarMinutes": 13.3,
         "verbMinutes": 0.0,
-        "totalMinutes": 9.6,
+        "totalMinutes": 29.8,
         "warnings": []
       }
     ],
