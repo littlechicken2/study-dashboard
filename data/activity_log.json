@@ -163,8 +163,8 @@
       }
     },
     "2026-06-22": {
-      "reading": 990.0,
-      "grammar": 800.0,
+      "reading": 1010.0,
+      "grammar": 1080.0,
       "verb": 0,
       "warnings": [
         {
@@ -175,19 +175,19 @@
       ],
       "sources": {
         "chatgpt": 520.0,
-        "tcf-reading": 910.0,
-        "local-french": 60.0,
-        "adobe-acrobat": 300.0
+        "tcf-reading": 930.0,
+        "local-french": 70.0,
+        "adobe-acrobat": 570.0
       }
     }
   },
   "lastContext": "grammar",
   "lastPing": {
-    "category": "distraction",
-    "source": "www.bilibili.com",
-    "seconds": 0,
-    "title": "这是皮克斯有史以来最恶心的电影。_哔哩哔哩_bilibili",
-    "url": "https://www.bilibili.com/video/BV1Dtjv6ZER2/?spm_id_from=333.1007.tianma.1-3-3.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
-    "capturedAt": "2026-06-22T20:01:22.622Z"
+    "category": "grammar",
+    "source": "adobe-acrobat",
+    "seconds": 5,
+    "title": "",
+    "idleSeconds": 10.9,
+    "capturedAt": "2026-06-22T17:01:37-0400"
   }
 }
