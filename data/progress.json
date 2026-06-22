@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-22T18:01:45-04:00",
+  "updatedAt": "2026-06-22T19:01:48-04:00",
   "today": {
     "date": "2026-06-22",
-    "focusMinutes": 47
+    "focusMinutes": 55
   },
   "anki": {
     "today": {
@@ -2268,26 +2268,26 @@
       "goalPercent": 0
     },
     "pdf": {
-      "pages": 55,
+      "pages": 54,
       "totalPages": 88,
-      "percent": 62.5,
+      "percent": 61.36,
       "documents": [
         {
           "id": "a1-grammar",
           "title": "A1 语法讲义",
-          "currentPage": 55,
+          "currentPage": 54,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-22T18:01:44-0400"
+          "updatedAt": "2026-06-22T19:01:44-0400"
         }
       ],
-      "todayPages": 1,
+      "todayPages": 0,
       "month": {
         "unit": "pages",
         "target": 88,
-        "completed": 55,
-        "remaining": 33,
-        "percent": 62.5,
+        "completed": 54,
+        "remaining": 34,
+        "percent": 61.36,
         "daysRemaining": 9,
         "deadline": "2026-06-30",
         "recommendedToday": 4,
@@ -5225,7 +5225,7 @@
       "sets": 0.05128205128205128,
       "questions": 2,
       "correct": 1,
-      "minutes": 46.7,
+      "minutes": 52.6,
       "tests": [
         {
           "test": "test01",
@@ -9011,7 +9011,7 @@
         "sets": 0.05128205128205128,
         "questions": 2,
         "correct": 1,
-        "minutes": 46.7,
+        "minutes": 52.6,
         "tests": [
           {
             "test": "test01",
@@ -9043,14 +9043,24 @@
     "today": {
       "date": "2026-06-22",
       "readingMinutes": 17.7,
-      "grammarMinutes": 29.7,
+      "grammarMinutes": 37.1,
       "verbMinutes": 0.0,
-      "totalMinutes": 47.4,
+      "totalMinutes": 54.8,
       "warnings": [
         {
           "source": "www.bilibili.com",
           "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
           "capturedAt": "2026-06-22T19:16:39.702Z"
+        },
+        {
+          "source": "www.youtube.com",
+          "title": "Apple Back to School Offers 2026 | Why You Should WAIT! - YouTube",
+          "capturedAt": "2026-06-22T22:21:19.264Z"
+        },
+        {
+          "source": "www.bilibili.com",
+          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+          "capturedAt": "2026-06-22T22:32:59.000Z"
         }
       ]
     },
@@ -12061,14 +12071,24 @@
       {
         "date": "2026-06-22",
         "readingMinutes": 17.7,
-        "grammarMinutes": 29.7,
+        "grammarMinutes": 37.1,
         "verbMinutes": 0.0,
-        "totalMinutes": 47.4,
+        "totalMinutes": 54.8,
         "warnings": [
           {
             "source": "www.bilibili.com",
             "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
             "capturedAt": "2026-06-22T19:16:39.702Z"
+          },
+          {
+            "source": "www.youtube.com",
+            "title": "Apple Back to School Offers 2026 | Why You Should WAIT! - YouTube",
+            "capturedAt": "2026-06-22T22:21:19.264Z"
+          },
+          {
+            "source": "www.bilibili.com",
+            "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+            "capturedAt": "2026-06-22T22:32:59.000Z"
           }
         ]
       }

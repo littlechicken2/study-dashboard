@@ -164,30 +164,40 @@
     },
     "2026-06-22": {
       "reading": 1060.0,
-      "grammar": 1780.0,
+      "grammar": 2225.0,
       "verb": 0,
       "warnings": [
         {
           "source": "www.bilibili.com",
           "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
           "capturedAt": "2026-06-22T19:16:39.702Z"
+        },
+        {
+          "source": "www.youtube.com",
+          "title": "Apple Back to School Offers 2026 | Why You Should WAIT! - YouTube",
+          "capturedAt": "2026-06-22T22:21:19.264Z"
+        },
+        {
+          "source": "www.bilibili.com",
+          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+          "capturedAt": "2026-06-22T22:32:59.000Z"
         }
       ],
       "sources": {
-        "chatgpt": 900.0,
+        "chatgpt": 960.0,
         "tcf-reading": 940.0,
         "local-french": 70.0,
-        "adobe-acrobat": 930.0
+        "adobe-acrobat": 1315.0
       }
     }
   },
   "lastContext": "grammar",
   "lastPing": {
-    "category": "grammar",
-    "source": "adobe-acrobat",
-    "seconds": 5,
-    "title": "【新东方在线诚意出品】法语欧标A1语法大全电子讲义.pdf.pdf (SECURED) - Adobe Acrobat Reader (64-bit)",
-    "idleSeconds": 51.2,
-    "capturedAt": "2026-06-22T17:58:54-0400"
+    "category": "distraction",
+    "source": "www.bilibili.com",
+    "seconds": 0,
+    "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+    "url": "https://www.bilibili.com/",
+    "capturedAt": "2026-06-22T22:53:57.555Z"
   }
 }
