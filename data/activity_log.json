@@ -166,7 +166,13 @@
       "reading": 990.0,
       "grammar": 800.0,
       "verb": 0,
-      "warnings": [],
+      "warnings": [
+        {
+          "source": "www.bilibili.com",
+          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+          "capturedAt": "2026-06-22T19:16:39.702Z"
+        }
+      ],
       "sources": {
         "chatgpt": 520.0,
         "tcf-reading": 910.0,
@@ -177,11 +183,11 @@
   },
   "lastContext": "grammar",
   "lastPing": {
-    "category": "grammar",
-    "source": "adobe-acrobat",
-    "seconds": 5,
-    "title": "【新东方在线诚意出品】法语欧标A1语法大全电子讲义.pdf.pdf (SECURED) - Adobe Acrobat Reader (64-bit)",
-    "idleSeconds": 0.0,
-    "capturedAt": "2026-06-22T13:50:56-0400"
+    "category": "distraction",
+    "source": "www.bilibili.com",
+    "seconds": 0,
+    "title": "这是皮克斯有史以来最恶心的电影。_哔哩哔哩_bilibili",
+    "url": "https://www.bilibili.com/video/BV1Dtjv6ZER2/?spm_id_from=333.1007.tianma.1-3-3.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
+    "capturedAt": "2026-06-22T20:01:22.622Z"
   }
 }
