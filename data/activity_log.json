@@ -191,8 +191,8 @@
       }
     },
     "2026-06-23": {
-      "reading": 20.0,
-      "grammar": 1890.0,
+      "reading": 50.0,
+      "grammar": 1950.0,
       "verb": 0,
       "warnings": [
         {
@@ -202,9 +202,10 @@
         }
       ],
       "sources": {
-        "chatgpt": 1880.0,
-        "tcf-reading": 20.0,
-        "local-french": 10.0
+        "chatgpt": 1920.0,
+        "tcf-reading": 50.0,
+        "local-french": 20.0,
+        "adobe-acrobat": 10.0
       }
     }
   },
@@ -215,6 +216,6 @@
     "seconds": 10,
     "title": "Adobe PDF 暗色模式",
     "url": "https://chatgpt.com/c/6a39a3c3-b14c-83ea-a5ee-ebf6cf78e588",
-    "capturedAt": "2026-06-23T18:49:24.016Z"
+    "capturedAt": "2026-06-23T19:52:38.996Z"
   }
 }
