@@ -1,22 +1,22 @@
 {
-  "updatedAt": "2026-06-23T13:03:09-04:00",
+  "updatedAt": "2026-06-23T14:03:12-04:00",
   "today": {
     "date": "2026-06-23",
-    "focusMinutes": 22
+    "focusMinutes": 32
   },
   "anki": {
     "today": {
-      "reviews": 0,
-      "new": 0,
-      "minutes": 0,
-      "activityComplete": false,
-      "goalPercent": 0
+      "reviews": 95,
+      "new": 23,
+      "minutes": 11.1,
+      "activityComplete": true,
+      "goalPercent": 100
     },
     "total": {
-      "cards": 35974,
-      "mature": 215
+      "cards": 25974,
+      "mature": 223
     },
-    "streak": 0,
+    "streak": 11,
     "history": [
       {
         "date": "2025-06-24",
@@ -1923,7 +1923,7 @@
       {
         "date": "2026-05-07",
         "reviews": 142,
-        "new": 240,
+        "new": 242,
         "minutes": 28.4
       },
       {
@@ -2037,13 +2037,13 @@
       {
         "date": "2026-05-26",
         "reviews": 153,
-        "new": 91,
+        "new": 93,
         "minutes": 17.6
       },
       {
         "date": "2026-05-27",
         "reviews": 54,
-        "new": 138,
+        "new": 140,
         "minutes": 10.0
       },
       {
@@ -2061,13 +2061,13 @@
       {
         "date": "2026-05-30",
         "reviews": 86,
-        "new": 148,
+        "new": 153,
         "minutes": 11.2
       },
       {
         "date": "2026-05-31",
         "reviews": 75,
-        "new": 151,
+        "new": 152,
         "minutes": 15.3
       },
       {
@@ -2091,7 +2091,7 @@
       {
         "date": "2026-06-04",
         "reviews": 280,
-        "new": 247,
+        "new": 263,
         "minutes": 41.1
       },
       {
@@ -2103,7 +2103,7 @@
       {
         "date": "2026-06-06",
         "reviews": 8,
-        "new": 11,
+        "new": 12,
         "minutes": 1.8
       },
       {
@@ -2121,7 +2121,7 @@
       {
         "date": "2026-06-09",
         "reviews": 179,
-        "new": 92,
+        "new": 100,
         "minutes": 22.4
       },
       {
@@ -2145,19 +2145,19 @@
       {
         "date": "2026-06-13",
         "reviews": 195,
-        "new": 123,
+        "new": 124,
         "minutes": 34.9
       },
       {
         "date": "2026-06-14",
         "reviews": 59,
-        "new": 138,
+        "new": 140,
         "minutes": 7.7
       },
       {
         "date": "2026-06-15",
         "reviews": 87,
-        "new": 89,
+        "new": 92,
         "minutes": 12.3
       },
       {
@@ -2169,25 +2169,25 @@
       {
         "date": "2026-06-17",
         "reviews": 71,
-        "new": 94,
+        "new": 105,
         "minutes": 9.3
       },
       {
         "date": "2026-06-18",
         "reviews": 149,
-        "new": 67,
+        "new": 74,
         "minutes": 16.2
       },
       {
         "date": "2026-06-19",
         "reviews": 70,
-        "new": 41,
+        "new": 47,
         "minutes": 12.3
       },
       {
         "date": "2026-06-20",
         "reviews": 109,
-        "new": 34,
+        "new": 39,
         "minutes": 18.6
       },
       {
@@ -2204,19 +2204,19 @@
       },
       {
         "date": "2026-06-23",
-        "reviews": 0,
-        "new": 0,
-        "minutes": 0
+        "reviews": 95,
+        "new": 23,
+        "minutes": 11.1
       }
     ]
   },
   "course": {
-    "updatedAt": "2026-06-23T05:24:38.178Z",
+    "updatedAt": "2026-06-23T17:52:07.021Z",
     "lastLesson": {
       "id": "a1/6_4.mp4",
       "title": "6 4 · 形容词特殊阴性变化",
       "course": "a1",
-      "time": 206.986576
+      "time": 206.101298
     },
     "courses": [
       {
@@ -9049,10 +9049,10 @@
   "activity": {
     "today": {
       "date": "2026-06-23",
-      "readingMinutes": 0.0,
-      "grammarMinutes": 22.5,
+      "readingMinutes": 0.3,
+      "grammarMinutes": 31.2,
       "verbMinutes": 0.0,
-      "totalMinutes": 22.5,
+      "totalMinutes": 31.5,
       "warnings": [
         {
           "source": "www.bilibili.com",
@@ -12083,10 +12083,10 @@
       },
       {
         "date": "2026-06-23",
-        "readingMinutes": 0.0,
-        "grammarMinutes": 22.5,
+        "readingMinutes": 0.3,
+        "grammarMinutes": 31.2,
         "verbMinutes": 0.0,
-        "totalMinutes": 22.5,
+        "totalMinutes": 31.5,
         "warnings": [
           {
             "source": "www.bilibili.com",
