@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-22T20:01:50-04:00",
+  "updatedAt": "2026-06-22T21:01:53-04:00",
   "today": {
     "date": "2026-06-22",
-    "focusMinutes": 55
+    "focusMinutes": 64
   },
   "anki": {
     "today": {
@@ -2268,32 +2268,32 @@
       "goalPercent": 0
     },
     "pdf": {
-      "pages": 54,
+      "pages": 58,
       "totalPages": 88,
-      "percent": 61.36,
+      "percent": 65.91,
       "documents": [
         {
           "id": "a1-grammar",
           "title": "A1 语法讲义",
-          "currentPage": 54,
+          "currentPage": 58,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-22T20:01:50-0400"
+          "updatedAt": "2026-06-22T21:01:50-0400"
         }
       ],
-      "todayPages": 0,
+      "todayPages": 4,
       "month": {
         "unit": "pages",
         "target": 88,
-        "completed": 54,
-        "remaining": 34,
-        "percent": 61.36,
+        "completed": 58,
+        "remaining": 30,
+        "percent": 65.91,
         "daysRemaining": 9,
         "deadline": "2026-06-30",
         "recommendedToday": 4,
         "yesterdayDone": 6,
-        "etaDays": 6,
-        "etaDate": "2026-06-28"
+        "etaDays": 5,
+        "etaDate": "2026-06-27"
       }
     },
     "history": [
@@ -5225,7 +5225,7 @@
       "sets": 0.05128205128205128,
       "questions": 2,
       "correct": 1,
-      "minutes": 53.6,
+      "minutes": 54.6,
       "tests": [
         {
           "test": "test01",
@@ -9011,7 +9011,7 @@
         "sets": 0.05128205128205128,
         "questions": 2,
         "correct": 1,
-        "minutes": 53.6,
+        "minutes": 54.6,
         "tests": [
           {
             "test": "test01",
@@ -9043,9 +9043,9 @@
     "today": {
       "date": "2026-06-22",
       "readingMinutes": 17.7,
-      "grammarMinutes": 37.1,
+      "grammarMinutes": 46.5,
       "verbMinutes": 0.0,
-      "totalMinutes": 54.8,
+      "totalMinutes": 64.2,
       "warnings": [
         {
           "source": "www.bilibili.com",
@@ -12071,9 +12071,9 @@
       {
         "date": "2026-06-22",
         "readingMinutes": 17.7,
-        "grammarMinutes": 37.1,
+        "grammarMinutes": 46.5,
         "verbMinutes": 0.0,
-        "totalMinutes": 54.8,
+        "totalMinutes": 64.2,
         "warnings": [
           {
             "source": "www.bilibili.com",

@@ -164,7 +164,7 @@
     },
     "2026-06-22": {
       "reading": 1060.0,
-      "grammar": 2225.0,
+      "grammar": 2790.0,
       "verb": 0,
       "warnings": [
         {
@@ -184,20 +184,20 @@
         }
       ],
       "sources": {
-        "chatgpt": 960.0,
+        "chatgpt": 970.0,
         "tcf-reading": 940.0,
         "local-french": 70.0,
-        "adobe-acrobat": 1315.0
+        "adobe-acrobat": 1870.0
       }
     }
   },
   "lastContext": "grammar",
   "lastPing": {
-    "category": "distraction",
-    "source": "www.bilibili.com",
-    "seconds": 0,
-    "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
-    "url": "https://www.bilibili.com/",
-    "capturedAt": "2026-06-22T22:53:57.555Z"
+    "category": "grammar",
+    "source": "adobe-acrobat",
+    "seconds": 5,
+    "title": "【新东方在线诚意出品】法语欧标A1语法大全电子讲义.pdf.pdf (SECURED) - Adobe Acrobat Reader (64-bit)",
+    "idleSeconds": 47.5,
+    "capturedAt": "2026-06-22T21:01:50-0400"
   }
 }
