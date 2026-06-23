@@ -192,7 +192,7 @@
     },
     "2026-06-23": {
       "reading": 0,
-      "grammar": 0,
+      "grammar": 1350.0,
       "verb": 0,
       "warnings": [
         {
@@ -201,16 +201,18 @@
           "capturedAt": "2026-06-23T05:11:03.996Z"
         }
       ],
-      "sources": {}
+      "sources": {
+        "chatgpt": 1350.0
+      }
     }
   },
   "lastContext": "grammar",
   "lastPing": {
-    "category": "distraction",
-    "source": "www.bilibili.com",
-    "seconds": 0,
-    "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
-    "url": "https://www.bilibili.com/?spm_id_from=333.788.0.0",
-    "capturedAt": "2026-06-23T05:24:35.760Z"
+    "category": "contextual",
+    "source": "chatgpt",
+    "seconds": 10,
+    "title": "Adobe PDF 暗色模式",
+    "url": "https://chatgpt.com/c/6a39a3c3-b14c-83ea-a5ee-ebf6cf78e588",
+    "capturedAt": "2026-06-23T17:03:07.210Z"
   }
 }
