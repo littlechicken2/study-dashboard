@@ -1,29 +1,23 @@
 {
-  "updatedAt": "2026-06-22T23:02:00-04:00",
+  "updatedAt": "2026-06-23T00:02:04-04:00",
   "today": {
-    "date": "2026-06-22",
-    "focusMinutes": 74
+    "date": "2026-06-23",
+    "focusMinutes": 0
   },
   "anki": {
     "today": {
-      "reviews": 124,
-      "new": 40,
-      "minutes": 22.9,
-      "activityComplete": true,
-      "goalPercent": 100
+      "reviews": 0,
+      "new": 0,
+      "minutes": 0,
+      "activityComplete": false,
+      "goalPercent": 0
     },
     "total": {
       "cards": 35974,
       "mature": 215
     },
-    "streak": 10,
+    "streak": 0,
     "history": [
-      {
-        "date": "2025-06-23",
-        "reviews": 0,
-        "new": 0,
-        "minutes": 0
-      },
       {
         "date": "2025-06-24",
         "reviews": 0,
@@ -2207,11 +2201,17 @@
         "reviews": 124,
         "new": 40,
         "minutes": 22.9
+      },
+      {
+        "date": "2026-06-23",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
       }
     ]
   },
   "course": {
-    "updatedAt": "2026-06-22T13:59:35.368Z",
+    "updatedAt": "2026-06-23T03:33:43.939Z",
     "lastLesson": {
       "id": "a1/6_4.mp4",
       "title": "6 4 · 形容词特殊阴性变化",
@@ -2278,33 +2278,25 @@
           "currentPage": 59,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-22T23:01:57-0400"
+          "updatedAt": "2026-06-22T23:50:27-0400"
         }
       ],
-      "todayPages": 5,
+      "todayPages": 0,
       "month": {
         "unit": "pages",
         "target": 88,
         "completed": 59,
         "remaining": 29,
         "percent": 67.05,
-        "daysRemaining": 9,
+        "daysRemaining": 8,
         "deadline": "2026-06-30",
         "recommendedToday": 4,
-        "yesterdayDone": 6,
-        "etaDays": 5,
-        "etaDate": "2026-06-27"
+        "yesterdayDone": 5,
+        "etaDays": 6,
+        "etaDate": "2026-06-29"
       }
     },
     "history": [
-      {
-        "date": "2025-06-23",
-        "minutes": 0.0,
-        "videoMinutes": 0.0,
-        "pdfMinutes": 0.0,
-        "activityComplete": false,
-        "goalPercent": 0
-      },
       {
         "date": "2025-06-24",
         "minutes": 0.0,
@@ -5216,40 +5208,31 @@
         "pdfMinutes": 0.0,
         "activityComplete": false,
         "goalPercent": 0
+      },
+      {
+        "date": "2026-06-23",
+        "minutes": 0.0,
+        "videoMinutes": 0.0,
+        "pdfMinutes": 0.0,
+        "activityComplete": false,
+        "goalPercent": 0
       }
     ]
   },
   "reading": {
     "today": {
-      "date": "2026-06-22",
-      "sets": 0.05128205128205128,
-      "questions": 2,
-      "correct": 1,
-      "minutes": 56.6,
-      "tests": [
-        {
-          "test": "test01",
-          "answered": 2,
-          "correct": 1,
-          "total": 39
-        }
-      ],
-      "accuracy": 50.0,
-      "goalPercent": 2.38,
-      "activityComplete": true,
-      "recommendedQuestions": 84
+      "date": "2026-06-23",
+      "sets": 0,
+      "questions": 0,
+      "correct": 0,
+      "minutes": 0,
+      "tests": [],
+      "accuracy": 0,
+      "goalPercent": 0.0,
+      "activityComplete": false,
+      "recommendedQuestions": 94
     },
     "history": [
-      {
-        "date": "2025-06-23",
-        "sets": 0,
-        "questions": 0,
-        "correct": 0,
-        "minutes": 0,
-        "tests": [],
-        "accuracy": 0,
-        "goalPercent": 0.0
-      },
       {
         "date": "2025-06-24",
         "sets": 0,
@@ -9011,7 +8994,7 @@
         "sets": 0.05128205128205128,
         "questions": 2,
         "correct": 1,
-        "minutes": 56.6,
+        "minutes": 57.1,
         "tests": [
           {
             "test": "test01",
@@ -9021,9 +9004,19 @@
           }
         ],
         "accuracy": 50.0,
-        "goalPercent": 2.38,
-        "activityComplete": true,
-        "recommendedQuestions": 84
+        "goalPercent": 5.13
+      },
+      {
+        "date": "2026-06-23",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
+        "goalPercent": 0.0,
+        "activityComplete": false,
+        "recommendedQuestions": 94
       }
     ],
     "month": {
@@ -9031,48 +9024,24 @@
       "completed": 28,
       "remaining": 752,
       "percent": 3.59,
-      "daysRemaining": 9,
+      "daysRemaining": 8,
       "deadline": "2026-06-30",
-      "recommendedToday": 84,
-      "yesterdayQuestions": 1,
-      "etaDays": 752,
-      "etaDate": "2028-07-13"
+      "recommendedToday": 94,
+      "yesterdayQuestions": 2,
+      "etaDays": 376,
+      "etaDate": "2027-07-04"
     }
   },
   "activity": {
     "today": {
-      "date": "2026-06-22",
-      "readingMinutes": 17.7,
-      "grammarMinutes": 56.7,
+      "date": "2026-06-23",
+      "readingMinutes": 0.0,
+      "grammarMinutes": 0.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 74.4,
-      "warnings": [
-        {
-          "source": "www.bilibili.com",
-          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
-          "capturedAt": "2026-06-22T19:16:39.702Z"
-        },
-        {
-          "source": "www.youtube.com",
-          "title": "Apple Back to School Offers 2026 | Why You Should WAIT! - YouTube",
-          "capturedAt": "2026-06-22T22:21:19.264Z"
-        },
-        {
-          "source": "www.bilibili.com",
-          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
-          "capturedAt": "2026-06-22T22:32:59.000Z"
-        }
-      ]
+      "totalMinutes": 0.0,
+      "warnings": []
     },
     "history": [
-      {
-        "date": "2025-06-23",
-        "readingMinutes": 0.0,
-        "grammarMinutes": 0.0,
-        "verbMinutes": 0.0,
-        "totalMinutes": 0.0,
-        "warnings": []
-      },
       {
         "date": "2025-06-24",
         "readingMinutes": 0.0,
@@ -12091,6 +12060,14 @@
             "capturedAt": "2026-06-22T22:32:59.000Z"
           }
         ]
+      },
+      {
+        "date": "2026-06-23",
+        "readingMinutes": 0.0,
+        "grammarMinutes": 0.0,
+        "verbMinutes": 0.0,
+        "totalMinutes": 0.0,
+        "warnings": []
       }
     ],
     "lastContext": "grammar"
