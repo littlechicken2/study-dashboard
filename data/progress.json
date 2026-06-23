@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23T00:02:04-04:00",
+  "updatedAt": "2026-06-23T01:02:08-04:00",
   "today": {
     "date": "2026-06-23",
     "focusMinutes": 0
@@ -5222,11 +5222,18 @@
   "reading": {
     "today": {
       "date": "2026-06-23",
-      "sets": 0,
+      "sets": 0.0,
       "questions": 0,
-      "correct": 0,
-      "minutes": 0,
-      "tests": [],
+      "correct": 17,
+      "minutes": 0.0,
+      "tests": [
+        {
+          "test": "test01",
+          "answered": 0,
+          "correct": 17,
+          "total": 39
+        }
+      ],
       "accuracy": 0,
       "goalPercent": 0.0,
       "activityComplete": false,
@@ -9008,11 +9015,18 @@
       },
       {
         "date": "2026-06-23",
-        "sets": 0,
+        "sets": 0.0,
         "questions": 0,
-        "correct": 0,
-        "minutes": 0,
-        "tests": [],
+        "correct": 17,
+        "minutes": 0.0,
+        "tests": [
+          {
+            "test": "test01",
+            "answered": 0,
+            "correct": 17,
+            "total": 39
+          }
+        ],
         "accuracy": 0,
         "goalPercent": 0.0,
         "activityComplete": false,
