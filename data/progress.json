@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23T22:03:35-04:00",
+  "updatedAt": "2026-06-23T22:23:06-04:00",
   "today": {
     "date": "2026-06-23",
     "focusMinutes": 85
@@ -5224,13 +5224,13 @@
       "date": "2026-06-23",
       "sets": 0.0,
       "questions": 0,
-      "correct": 17,
+      "correct": 0,
       "minutes": 0.0,
       "tests": [
         {
           "test": "test01",
           "answered": 0,
-          "correct": 17,
+          "correct": 0,
           "total": 39
         }
       ],
@@ -9001,7 +9001,7 @@
         "sets": 0.05128205128205128,
         "questions": 2,
         "correct": 1,
-        "minutes": 57.1,
+        "minutes": 18.1,
         "tests": [
           {
             "test": "test01",
@@ -9017,13 +9017,13 @@
         "date": "2026-06-23",
         "sets": 0.0,
         "questions": 0,
-        "correct": 17,
+        "correct": 0,
         "minutes": 0.0,
         "tests": [
           {
             "test": "test01",
             "answered": 0,
-            "correct": 17,
+            "correct": 0,
             "total": 39
           }
         ],
