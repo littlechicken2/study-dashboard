@@ -207,15 +207,24 @@
         "local-french": 20.0,
         "adobe-acrobat": 1995.0
       }
+    },
+    "2026-06-24": {
+      "reading": 50.0,
+      "grammar": 0,
+      "verb": 0,
+      "warnings": [],
+      "sources": {
+        "tcf-reading": 50.0
+      }
     }
   },
-  "lastContext": "grammar",
+  "lastContext": "reading",
   "lastPing": {
-    "category": "contextual",
-    "source": "chatgpt",
+    "category": "reading",
+    "source": "tcf-reading",
     "seconds": 10,
-    "title": "法语数量副词用法",
-    "url": "https://chatgpt.com/c/6a3b2bd1-8f74-83ea-aa92-8d56def7bb4a",
-    "capturedAt": "2026-06-24T03:53:25.087Z"
+    "title": "TCF Canada 阅读练习 TEST01 | TCF Canada 备考平台",
+    "url": "https://tcfca.cn/reading/test01",
+    "capturedAt": "2026-06-24T17:14:40.705Z"
   }
 }
