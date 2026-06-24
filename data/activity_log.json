@@ -192,7 +192,7 @@
     },
     "2026-06-23": {
       "reading": 70.0,
-      "grammar": 5005.0,
+      "grammar": 5025.0,
       "verb": 0,
       "warnings": [
         {
@@ -202,7 +202,7 @@
         }
       ],
       "sources": {
-        "chatgpt": 2990.0,
+        "chatgpt": 3010.0,
         "tcf-reading": 70.0,
         "local-french": 20.0,
         "adobe-acrobat": 1995.0
@@ -211,11 +211,11 @@
   },
   "lastContext": "grammar",
   "lastPing": {
-    "category": "grammar",
-    "source": "adobe-acrobat",
-    "seconds": 5,
-    "title": "【新东方在线诚意出品】法语欧标A1语法大全电子讲义.pdf.pdf (SECURED) - Adobe Acrobat Reader (64-bit)",
-    "idleSeconds": 0.8,
-    "capturedAt": "2026-06-23T21:43:39-0400"
+    "category": "contextual",
+    "source": "chatgpt",
+    "seconds": 10,
+    "title": "法语数量副词用法",
+    "url": "https://chatgpt.com/c/6a3b2bd1-8f74-83ea-aa92-8d56def7bb4a",
+    "capturedAt": "2026-06-24T03:00:16.922Z"
   }
 }
