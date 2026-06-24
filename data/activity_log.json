@@ -209,22 +209,28 @@
       }
     },
     "2026-06-24": {
-      "reading": 50.0,
+      "reading": 90.0,
       "grammar": 0,
       "verb": 0,
-      "warnings": [],
+      "warnings": [
+        {
+          "source": "www.bilibili.com",
+          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+          "capturedAt": "2026-06-24T18:10:53.976Z"
+        }
+      ],
       "sources": {
-        "tcf-reading": 50.0
+        "tcf-reading": 90.0
       }
     }
   },
   "lastContext": "reading",
   "lastPing": {
-    "category": "reading",
-    "source": "tcf-reading",
-    "seconds": 10,
-    "title": "TCF Canada 阅读练习 TEST01 | TCF Canada 备考平台",
-    "url": "https://tcfca.cn/reading/test01",
-    "capturedAt": "2026-06-24T17:14:40.705Z"
+    "category": "distraction",
+    "source": "www.bilibili.com",
+    "seconds": 0,
+    "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+    "url": "https://www.bilibili.com/",
+    "capturedAt": "2026-06-24T18:11:42.681Z"
   }
 }
