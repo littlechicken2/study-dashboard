@@ -191,8 +191,8 @@
       }
     },
     "2026-06-23": {
-      "reading": 50.0,
-      "grammar": 2710.0,
+      "reading": 70.0,
+      "grammar": 3930.0,
       "verb": 0,
       "warnings": [
         {
@@ -202,20 +202,20 @@
         }
       ],
       "sources": {
-        "chatgpt": 2170.0,
-        "tcf-reading": 50.0,
+        "chatgpt": 2630.0,
+        "tcf-reading": 70.0,
         "local-french": 20.0,
-        "adobe-acrobat": 520.0
+        "adobe-acrobat": 1280.0
       }
     }
   },
   "lastContext": "grammar",
   "lastPing": {
-    "category": "contextual",
-    "source": "chatgpt",
-    "seconds": 10,
-    "title": "Adobe PDF 暗色模式",
-    "url": "https://chatgpt.com/c/6a39a3c3-b14c-83ea-a5ee-ebf6cf78e588",
-    "capturedAt": "2026-06-23T22:45:12.124Z"
+    "category": "grammar",
+    "source": "adobe-acrobat",
+    "seconds": 5,
+    "title": "【新东方在线诚意出品】法语欧标A1语法大全电子讲义.pdf.pdf (SECURED) - Adobe Acrobat Reader (64-bit)",
+    "idleSeconds": 56.1,
+    "capturedAt": "2026-06-23T20:00:23-0400"
   }
 }
