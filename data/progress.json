@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T20:02:00-04:00",
+  "updatedAt": "2026-06-24T21:02:03-04:00",
   "today": {
     "date": "2026-06-24",
     "focusMinutes": 24
@@ -9057,9 +9057,9 @@
     "today": {
       "date": "2026-06-24",
       "readingMinutes": 1.5,
-      "grammarMinutes": 22.5,
+      "grammarMinutes": 22.7,
       "verbMinutes": 0.0,
-      "totalMinutes": 24.0,
+      "totalMinutes": 24.2,
       "warnings": [
         {
           "source": "www.bilibili.com",
@@ -12097,9 +12097,9 @@
       {
         "date": "2026-06-24",
         "readingMinutes": 1.5,
-        "grammarMinutes": 22.5,
+        "grammarMinutes": 22.7,
         "verbMinutes": 0.0,
-        "totalMinutes": 24.0,
+        "totalMinutes": 24.2,
         "warnings": [
           {
             "source": "www.bilibili.com",
