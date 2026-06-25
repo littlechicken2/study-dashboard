@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-24T19:01:57-04:00",
+  "updatedAt": "2026-06-24T20:02:00-04:00",
   "today": {
     "date": "2026-06-24",
-    "focusMinutes": 10
+    "focusMinutes": 24
   },
   "anki": {
     "today": {
@@ -2211,7 +2211,7 @@
     ]
   },
   "course": {
-    "updatedAt": "2026-06-24T06:23:31.772Z",
+    "updatedAt": "2026-06-24T23:31:04.502Z",
     "lastLesson": {
       "id": "a1/6_4.mp4",
       "title": "6 4 · 形容词特殊阴性变化",
@@ -2268,32 +2268,32 @@
       "goalPercent": 0
     },
     "pdf": {
-      "pages": 65,
+      "pages": 69,
       "totalPages": 88,
-      "percent": 73.86,
+      "percent": 78.41,
       "documents": [
         {
           "id": "a1-grammar",
           "title": "A1 语法讲义",
-          "currentPage": 65,
+          "currentPage": 69,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-24T19:01:53-0400"
+          "updatedAt": "2026-06-24T19:30:53-0400"
         }
       ],
-      "todayPages": 1,
+      "todayPages": 5,
       "month": {
         "unit": "pages",
         "target": 88,
-        "completed": 65,
-        "remaining": 23,
-        "percent": 73.86,
+        "completed": 69,
+        "remaining": 19,
+        "percent": 78.41,
         "daysRemaining": 7,
         "deadline": "2026-06-30",
-        "recommendedToday": 4,
+        "recommendedToday": 3,
         "yesterdayDone": 5,
-        "etaDays": 5,
-        "etaDate": "2026-06-29"
+        "etaDays": 4,
+        "etaDate": "2026-06-28"
       }
     },
     "history": [
@@ -9057,9 +9057,9 @@
     "today": {
       "date": "2026-06-24",
       "readingMinutes": 1.5,
-      "grammarMinutes": 8.6,
+      "grammarMinutes": 22.5,
       "verbMinutes": 0.0,
-      "totalMinutes": 10.1,
+      "totalMinutes": 24.0,
       "warnings": [
         {
           "source": "www.bilibili.com",
@@ -12097,9 +12097,9 @@
       {
         "date": "2026-06-24",
         "readingMinutes": 1.5,
-        "grammarMinutes": 8.6,
+        "grammarMinutes": 22.5,
         "verbMinutes": 0.0,
-        "totalMinutes": 10.1,
+        "totalMinutes": 24.0,
         "warnings": [
           {
             "source": "www.bilibili.com",
