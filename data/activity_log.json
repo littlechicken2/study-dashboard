@@ -210,7 +210,7 @@
     },
     "2026-06-24": {
       "reading": 90.0,
-      "grammar": 1360.0,
+      "grammar": 1410.0,
       "verb": 0,
       "warnings": [
         {
@@ -222,17 +222,17 @@
       "sources": {
         "tcf-reading": 90.0,
         "adobe-acrobat": 1350.0,
-        "chatgpt": 10.0
+        "chatgpt": 60.0
       }
     }
   },
   "lastContext": "grammar",
   "lastPing": {
-    "category": "distraction",
-    "source": "www.bilibili.com",
-    "seconds": 0,
-    "title": "我们99%确认这个猜想是正确的，不过没人能证明_哔哩哔哩_bilibili",
-    "url": "https://www.bilibili.com/video/BV1Td7M6UE2b/?spm_id_from=333.1007.tianma.1-3-3.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
-    "capturedAt": "2026-06-25T01:01:56.940Z"
+    "category": "contextual",
+    "source": "chatgpt",
+    "seconds": 10,
+    "title": "法语数量副词用法",
+    "url": "https://chatgpt.com/c/6a3b2bd1-8f74-83ea-aa92-8d56def7bb4a",
+    "capturedAt": "2026-06-25T01:45:22.567Z"
   }
 }
