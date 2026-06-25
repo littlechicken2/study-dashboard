@@ -227,7 +227,7 @@
     },
     "2026-06-25": {
       "reading": 0,
-      "grammar": 10.0,
+      "grammar": 310.0,
       "verb": 0,
       "warnings": [
         {
@@ -237,7 +237,7 @@
         }
       ],
       "sources": {
-        "chatgpt": 10.0
+        "chatgpt": 310.0
       }
     }
   },
@@ -248,6 +248,6 @@
     "seconds": 10,
     "title": "法语数量副词用法",
     "url": "https://chatgpt.com/c/6a3b2bd1-8f74-83ea-aa92-8d56def7bb4a",
-    "capturedAt": "2026-06-25T17:57:59.686Z"
+    "capturedAt": "2026-06-25T19:00:11.310Z"
   }
 }
