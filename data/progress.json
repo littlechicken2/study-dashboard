@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-25T13:01:39-04:00",
+  "updatedAt": "2026-06-25T14:01:41-04:00",
   "today": {
     "date": "2026-06-25",
     "focusMinutes": 0
@@ -9064,10 +9064,16 @@
     "today": {
       "date": "2026-06-25",
       "readingMinutes": 0.0,
-      "grammarMinutes": 0.0,
+      "grammarMinutes": 0.2,
       "verbMinutes": 0.0,
-      "totalMinutes": 0.0,
-      "warnings": []
+      "totalMinutes": 0.2,
+      "warnings": [
+        {
+          "source": "www.bilibili.com",
+          "title": "越南烤肉…和国内有什么差别？？？大鼎鼎吃播版_哔哩哔哩_bilibili",
+          "capturedAt": "2026-06-25T17:57:57.726Z"
+        }
+      ]
     },
     "history": [
       {
@@ -12104,10 +12110,16 @@
       {
         "date": "2026-06-25",
         "readingMinutes": 0.0,
-        "grammarMinutes": 0.0,
+        "grammarMinutes": 0.2,
         "verbMinutes": 0.0,
-        "totalMinutes": 0.0,
-        "warnings": []
+        "totalMinutes": 0.2,
+        "warnings": [
+          {
+            "source": "www.bilibili.com",
+            "title": "越南烤肉…和国内有什么差别？？？大鼎鼎吃播版_哔哩哔哩_bilibili",
+            "capturedAt": "2026-06-25T17:57:57.726Z"
+          }
+        ]
       }
     ],
     "lastContext": "grammar"
