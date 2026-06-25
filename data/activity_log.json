@@ -227,28 +227,38 @@
     },
     "2026-06-25": {
       "reading": 0,
-      "grammar": 535.0,
+      "grammar": 640.0,
       "verb": 0,
       "warnings": [
         {
           "source": "www.bilibili.com",
           "title": "越南烤肉…和国内有什么差别？？？大鼎鼎吃播版_哔哩哔哩_bilibili",
           "capturedAt": "2026-06-25T17:57:57.726Z"
+        },
+        {
+          "source": "www.youtube.com",
+          "title": "The Best of Prince of Persia: The Lost Crown OST - YouTube",
+          "capturedAt": "2026-06-25T20:13:55.914Z"
+        },
+        {
+          "source": "www.bilibili.com",
+          "title": "越南烤肉…和国内有什么差别？？？大鼎鼎吃播版_哔哩哔哩_bilibili",
+          "capturedAt": "2026-06-25T20:44:46.084Z"
         }
       ],
       "sources": {
         "chatgpt": 430.0,
-        "adobe-acrobat": 105.0
+        "adobe-acrobat": 210.0
       }
     }
   },
   "lastContext": "grammar",
   "lastPing": {
-    "category": "grammar",
-    "source": "adobe-acrobat",
-    "seconds": 5,
-    "title": "【新东方在线诚意出品】法语欧标A1语法大全电子讲义.pdf.pdf (SECURED) - Adobe Acrobat Reader (64-bit)",
-    "idleSeconds": 25.9,
-    "capturedAt": "2026-06-25T16:01:43-0400"
+    "category": "distraction",
+    "source": "www.bilibili.com",
+    "seconds": 0,
+    "title": "越南烤肉…和国内有什么差别？？？大鼎鼎吃播版_哔哩哔哩_bilibili",
+    "url": "https://www.bilibili.com/video/BV19dj96HEff/?spm_id_from=333.788.top_right_bar_window_dynamic.content.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
+    "capturedAt": "2026-06-25T20:44:51.634Z"
   }
 }

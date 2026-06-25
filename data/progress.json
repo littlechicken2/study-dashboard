@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-25T16:01:46-04:00",
+  "updatedAt": "2026-06-25T17:01:49-04:00",
   "today": {
     "date": "2026-06-25",
-    "focusMinutes": 9
+    "focusMinutes": 11
   },
   "anki": {
     "today": {
@@ -2268,26 +2268,26 @@
       "goalPercent": 0
     },
     "pdf": {
-      "pages": 68,
+      "pages": 69,
       "totalPages": 88,
-      "percent": 77.27,
+      "percent": 78.41,
       "documents": [
         {
           "id": "a1-grammar",
           "title": "A1 语法讲义",
-          "currentPage": 68,
+          "currentPage": 69,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-25T16:01:43-0400"
+          "updatedAt": "2026-06-25T17:01:49-0400"
         }
       ],
       "todayPages": 0,
       "month": {
         "unit": "pages",
         "target": 88,
-        "completed": 68,
-        "remaining": 20,
-        "percent": 77.27,
+        "completed": 69,
+        "remaining": 19,
+        "percent": 78.41,
         "daysRemaining": 6,
         "deadline": "2026-06-30",
         "recommendedToday": 4,
@@ -9064,14 +9064,24 @@
     "today": {
       "date": "2026-06-25",
       "readingMinutes": 0.0,
-      "grammarMinutes": 8.9,
+      "grammarMinutes": 10.7,
       "verbMinutes": 0.0,
-      "totalMinutes": 8.9,
+      "totalMinutes": 10.7,
       "warnings": [
         {
           "source": "www.bilibili.com",
           "title": "越南烤肉…和国内有什么差别？？？大鼎鼎吃播版_哔哩哔哩_bilibili",
           "capturedAt": "2026-06-25T17:57:57.726Z"
+        },
+        {
+          "source": "www.youtube.com",
+          "title": "The Best of Prince of Persia: The Lost Crown OST - YouTube",
+          "capturedAt": "2026-06-25T20:13:55.914Z"
+        },
+        {
+          "source": "www.bilibili.com",
+          "title": "越南烤肉…和国内有什么差别？？？大鼎鼎吃播版_哔哩哔哩_bilibili",
+          "capturedAt": "2026-06-25T20:44:46.084Z"
         }
       ]
     },
@@ -12110,14 +12120,24 @@
       {
         "date": "2026-06-25",
         "readingMinutes": 0.0,
-        "grammarMinutes": 8.9,
+        "grammarMinutes": 10.7,
         "verbMinutes": 0.0,
-        "totalMinutes": 8.9,
+        "totalMinutes": 10.7,
         "warnings": [
           {
             "source": "www.bilibili.com",
             "title": "越南烤肉…和国内有什么差别？？？大鼎鼎吃播版_哔哩哔哩_bilibili",
             "capturedAt": "2026-06-25T17:57:57.726Z"
+          },
+          {
+            "source": "www.youtube.com",
+            "title": "The Best of Prince of Persia: The Lost Crown OST - YouTube",
+            "capturedAt": "2026-06-25T20:13:55.914Z"
+          },
+          {
+            "source": "www.bilibili.com",
+            "title": "越南烤肉…和国内有什么差别？？？大鼎鼎吃播版_哔哩哔哩_bilibili",
+            "capturedAt": "2026-06-25T20:44:46.084Z"
           }
         ]
       }
