@@ -227,7 +227,7 @@
     },
     "2026-06-25": {
       "reading": 0,
-      "grammar": 640.0,
+      "grammar": 875.0,
       "verb": 0,
       "warnings": [
         {
@@ -244,21 +244,26 @@
           "source": "www.bilibili.com",
           "title": "越南烤肉…和国内有什么差别？？？大鼎鼎吃播版_哔哩哔哩_bilibili",
           "capturedAt": "2026-06-25T20:44:46.084Z"
+        },
+        {
+          "source": "www.youtube.com",
+          "title": "The Best of Prince of Persia: The Lost Crown OST - YouTube",
+          "capturedAt": "2026-06-25T21:18:38.788Z"
         }
       ],
       "sources": {
-        "chatgpt": 430.0,
-        "adobe-acrobat": 210.0
+        "chatgpt": 620.0,
+        "adobe-acrobat": 255.0
       }
     }
   },
   "lastContext": "grammar",
   "lastPing": {
-    "category": "distraction",
-    "source": "www.bilibili.com",
-    "seconds": 0,
-    "title": "越南烤肉…和国内有什么差别？？？大鼎鼎吃播版_哔哩哔哩_bilibili",
-    "url": "https://www.bilibili.com/video/BV19dj96HEff/?spm_id_from=333.788.top_right_bar_window_dynamic.content.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
-    "capturedAt": "2026-06-25T20:44:51.634Z"
+    "category": "contextual",
+    "source": "chatgpt",
+    "seconds": 10,
+    "title": "法语数量副词用法",
+    "url": "https://chatgpt.com/c/6a3b2bd1-8f74-83ea-aa92-8d56def7bb4a",
+    "capturedAt": "2026-06-25T21:40:20.929Z"
   }
 }
