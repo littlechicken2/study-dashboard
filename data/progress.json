@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-26T01:02:16-04:00",
+  "updatedAt": "2026-06-26T02:02:18-04:00",
   "today": {
     "date": "2026-06-26",
-    "focusMinutes": 5
+    "focusMinutes": 9
   },
   "anki": {
     "today": {
@@ -2268,26 +2268,26 @@
       "goalPercent": 0
     },
     "pdf": {
-      "pages": 70,
+      "pages": 71,
       "totalPages": 88,
-      "percent": 79.55,
+      "percent": 80.68,
       "documents": [
         {
           "id": "a1-grammar",
           "title": "A1 语法讲义",
-          "currentPage": 70,
+          "currentPage": 71,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-26T01:02:14-0400"
+          "updatedAt": "2026-06-26T02:02:15-0400"
         }
       ],
-      "todayPages": 1,
+      "todayPages": 2,
       "month": {
         "unit": "pages",
         "target": 88,
-        "completed": 70,
-        "remaining": 18,
-        "percent": 79.55,
+        "completed": 71,
+        "remaining": 17,
+        "percent": 80.68,
         "daysRemaining": 5,
         "deadline": "2026-06-30",
         "recommendedToday": 4,
@@ -9057,9 +9057,9 @@
     "today": {
       "date": "2026-06-26",
       "readingMinutes": 0.0,
-      "grammarMinutes": 5.3,
+      "grammarMinutes": 8.7,
       "verbMinutes": 0.0,
-      "totalMinutes": 5.3,
+      "totalMinutes": 8.7,
       "warnings": []
     },
     "history": [
@@ -12118,9 +12118,9 @@
       {
         "date": "2026-06-26",
         "readingMinutes": 0.0,
-        "grammarMinutes": 5.3,
+        "grammarMinutes": 8.7,
         "verbMinutes": 0.0,
-        "totalMinutes": 5.3,
+        "totalMinutes": 8.7,
         "warnings": []
       }
     ],
