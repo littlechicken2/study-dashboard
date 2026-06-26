@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-26T17:01:51-04:00",
+  "updatedAt": "2026-06-26T18:01:54-04:00",
   "today": {
     "date": "2026-06-26",
     "focusMinutes": 35
@@ -2211,7 +2211,7 @@
     ]
   },
   "course": {
-    "updatedAt": "2026-06-26T16:17:04.900Z",
+    "updatedAt": "2026-06-26T21:42:21.212Z",
     "lastLesson": {
       "id": "a1/6_4.mp4",
       "title": "6 4 · 形容词特殊阴性变化",
@@ -2278,7 +2278,7 @@
           "currentPage": 75,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-26T17:01:49-0400"
+          "updatedAt": "2026-06-26T18:01:50-0400"
         }
       ],
       "todayPages": 6,
