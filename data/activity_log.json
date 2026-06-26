@@ -227,7 +227,7 @@
     },
     "2026-06-25": {
       "reading": 0,
-      "grammar": 1705.0,
+      "grammar": 2205.0,
       "verb": 0,
       "warnings": [
         {
@@ -252,18 +252,18 @@
         }
       ],
       "sources": {
-        "chatgpt": 1450.0,
-        "adobe-acrobat": 255.0
+        "chatgpt": 1780.0,
+        "adobe-acrobat": 425.0
       }
     }
   },
   "lastContext": "grammar",
   "lastPing": {
-    "category": "contextual",
-    "source": "chatgpt",
-    "seconds": 10,
-    "title": "法语数量副词用法",
-    "url": "https://chatgpt.com/c/6a3b2bd1-8f74-83ea-aa92-8d56def7bb4a",
-    "capturedAt": "2026-06-25T22:51:02.732Z"
+    "category": "grammar",
+    "source": "adobe-acrobat",
+    "seconds": 5,
+    "title": "【新东方在线诚意出品】法语欧标A1语法大全电子讲义.pdf.pdf (SECURED) - Adobe Acrobat Reader (64-bit)",
+    "idleSeconds": 0.1,
+    "capturedAt": "2026-06-25T19:53:37-0400"
   }
 }
