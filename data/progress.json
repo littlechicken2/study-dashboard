@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-06-26T11:01:33-04:00",
+  "updatedAt": "2026-06-26T12:01:35-04:00",
   "today": {
     "date": "2026-06-26",
     "focusMinutes": 17
   },
   "anki": {
     "today": {
-      "reviews": 117,
-      "new": 35,
-      "minutes": 17.1,
+      "reviews": 129,
+      "new": 47,
+      "minutes": 20.2,
       "activityComplete": true,
       "goalPercent": 100
     },
@@ -2204,9 +2204,9 @@
       },
       {
         "date": "2026-06-26",
-        "reviews": 117,
-        "new": 35,
-        "minutes": 17.1
+        "reviews": 129,
+        "new": 47,
+        "minutes": 20.2
       }
     ]
   },
