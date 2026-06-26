@@ -255,6 +255,15 @@
         "chatgpt": 1780.0,
         "adobe-acrobat": 640.0
       }
+    },
+    "2026-06-26": {
+      "reading": 0,
+      "grammar": 320.0,
+      "verb": 0,
+      "warnings": [],
+      "sources": {
+        "adobe-acrobat": 320.0
+      }
     }
   },
   "lastContext": "grammar",
@@ -263,7 +272,7 @@
     "source": "adobe-acrobat",
     "seconds": 5,
     "title": "",
-    "idleSeconds": 55.9,
-    "capturedAt": "2026-06-25T23:35:09-0400"
+    "idleSeconds": 25.8,
+    "capturedAt": "2026-06-26T00:24:54-0400"
   }
 }
