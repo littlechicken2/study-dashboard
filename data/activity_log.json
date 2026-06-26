@@ -258,11 +258,11 @@
     },
     "2026-06-26": {
       "reading": 0,
-      "grammar": 520.0,
+      "grammar": 1040.0,
       "verb": 0,
       "warnings": [],
       "sources": {
-        "adobe-acrobat": 520.0
+        "adobe-acrobat": 1040.0
       }
     }
   },
@@ -272,7 +272,7 @@
     "source": "adobe-acrobat",
     "seconds": 5,
     "title": "",
-    "idleSeconds": 55.9,
-    "capturedAt": "2026-06-26T01:58:35-0400"
+    "idleSeconds": 55.2,
+    "capturedAt": "2026-06-26T02:34:25-0400"
   }
 }
