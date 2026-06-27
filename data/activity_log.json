@@ -267,11 +267,11 @@
     },
     "2026-06-27": {
       "reading": 0,
-      "grammar": 1065.0,
+      "grammar": 1375.0,
       "verb": 0,
       "warnings": [],
       "sources": {
-        "adobe-acrobat": 1065.0
+        "adobe-acrobat": 1375.0
       }
     }
   },
@@ -281,7 +281,7 @@
     "source": "adobe-acrobat",
     "seconds": 5,
     "title": "【新东方在线诚意出品】法语欧标A1语法大全电子讲义.pdf.pdf (SECURED) - Adobe Acrobat Reader (64-bit)",
-    "idleSeconds": 58.7,
-    "capturedAt": "2026-06-27T02:00:32-0400"
+    "idleSeconds": 0,
+    "capturedAt": "2026-06-27T02:24:32-0400"
   }
 }

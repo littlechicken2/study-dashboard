@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-27T02:02:19-04:00",
+  "updatedAt": "2026-06-27T03:02:22-04:00",
   "today": {
     "date": "2026-06-27",
-    "focusMinutes": 18
+    "focusMinutes": 23
   },
   "anki": {
     "today": {
@@ -2211,7 +2211,7 @@
     ]
   },
   "course": {
-    "updatedAt": "2026-06-26T21:42:21.212Z",
+    "updatedAt": "2026-06-27T06:27:05.381Z",
     "lastLesson": {
       "id": "a1/6_4.mp4",
       "title": "6 4 · 形容词特殊阴性变化",
@@ -2268,26 +2268,26 @@
       "goalPercent": 0
     },
     "pdf": {
-      "pages": 77,
+      "pages": 78,
       "totalPages": 88,
-      "percent": 87.5,
+      "percent": 88.64,
       "documents": [
         {
           "id": "a1-grammar",
           "title": "A1 语法讲义",
-          "currentPage": 77,
+          "currentPage": 78,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-27T02:02:17-0400"
+          "updatedAt": "2026-06-27T03:02:19-0400"
         }
       ],
-      "todayPages": 2,
+      "todayPages": 3,
       "month": {
         "unit": "pages",
         "target": 88,
-        "completed": 77,
-        "remaining": 11,
-        "percent": 87.5,
+        "completed": 78,
+        "remaining": 10,
+        "percent": 88.64,
         "daysRemaining": 4,
         "deadline": "2026-06-30",
         "recommendedToday": 3,
@@ -9057,9 +9057,9 @@
     "today": {
       "date": "2026-06-27",
       "readingMinutes": 0.0,
-      "grammarMinutes": 17.8,
+      "grammarMinutes": 22.9,
       "verbMinutes": 0.0,
-      "totalMinutes": 17.8,
+      "totalMinutes": 22.9,
       "warnings": []
     },
     "history": [
@@ -12118,9 +12118,9 @@
       {
         "date": "2026-06-27",
         "readingMinutes": 0.0,
-        "grammarMinutes": 17.8,
+        "grammarMinutes": 22.9,
         "verbMinutes": 0.0,
-        "totalMinutes": 17.8,
+        "totalMinutes": 22.9,
         "warnings": []
       }
     ],
