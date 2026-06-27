@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-06-27T14:01:48-04:00",
+  "updatedAt": "2026-06-27T15:01:50-04:00",
   "today": {
     "date": "2026-06-27",
-    "focusMinutes": 23
+    "focusMinutes": 34
   },
   "anki": {
     "today": {
-      "reviews": 27,
-      "new": 0,
-      "minutes": 6.6,
+      "reviews": 187,
+      "new": 85,
+      "minutes": 46.2,
       "activityComplete": true,
       "goalPercent": 100
     },
     "total": {
       "cards": 25974,
-      "mature": 250
+      "mature": 255
     },
     "streak": 15,
     "history": [
@@ -1707,7 +1707,7 @@
       {
         "date": "2026-04-05",
         "reviews": 29,
-        "new": 178,
+        "new": 179,
         "minutes": 3.0
       },
       {
@@ -1923,7 +1923,7 @@
       {
         "date": "2026-05-11",
         "reviews": 216,
-        "new": 160,
+        "new": 165,
         "minutes": 29.1
       },
       {
@@ -2013,7 +2013,7 @@
       {
         "date": "2026-05-26",
         "reviews": 153,
-        "new": 96,
+        "new": 98,
         "minutes": 17.6
       },
       {
@@ -2025,7 +2025,7 @@
       {
         "date": "2026-05-28",
         "reviews": 114,
-        "new": 140,
+        "new": 141,
         "minutes": 18.8
       },
       {
@@ -2037,13 +2037,13 @@
       {
         "date": "2026-05-30",
         "reviews": 86,
-        "new": 163,
+        "new": 166,
         "minutes": 11.2
       },
       {
         "date": "2026-05-31",
         "reviews": 75,
-        "new": 163,
+        "new": 166,
         "minutes": 15.3
       },
       {
@@ -2067,7 +2067,7 @@
       {
         "date": "2026-06-04",
         "reviews": 280,
-        "new": 303,
+        "new": 309,
         "minutes": 41.1
       },
       {
@@ -2097,7 +2097,7 @@
       {
         "date": "2026-06-09",
         "reviews": 179,
-        "new": 116,
+        "new": 121,
         "minutes": 22.4
       },
       {
@@ -2121,7 +2121,7 @@
       {
         "date": "2026-06-13",
         "reviews": 195,
-        "new": 139,
+        "new": 144,
         "minutes": 34.9
       },
       {
@@ -2133,7 +2133,7 @@
       {
         "date": "2026-06-15",
         "reviews": 87,
-        "new": 105,
+        "new": 106,
         "minutes": 12.3
       },
       {
@@ -2145,13 +2145,13 @@
       {
         "date": "2026-06-17",
         "reviews": 71,
-        "new": 111,
+        "new": 118,
         "minutes": 9.3
       },
       {
         "date": "2026-06-18",
         "reviews": 149,
-        "new": 94,
+        "new": 96,
         "minutes": 16.2
       },
       {
@@ -2163,19 +2163,19 @@
       {
         "date": "2026-06-20",
         "reviews": 109,
-        "new": 76,
+        "new": 80,
         "minutes": 18.6
       },
       {
         "date": "2026-06-21",
         "reviews": 96,
-        "new": 68,
+        "new": 72,
         "minutes": 12.5
       },
       {
         "date": "2026-06-22",
         "reviews": 124,
-        "new": 73,
+        "new": 83,
         "minutes": 22.9
       },
       {
@@ -2187,7 +2187,7 @@
       {
         "date": "2026-06-24",
         "reviews": 136,
-        "new": 40,
+        "new": 56,
         "minutes": 20.9
       },
       {
@@ -2204,9 +2204,9 @@
       },
       {
         "date": "2026-06-27",
-        "reviews": 27,
-        "new": 0,
-        "minutes": 6.6
+        "reviews": 187,
+        "new": 85,
+        "minutes": 46.2
       }
     ]
   },
@@ -2268,32 +2268,32 @@
       "goalPercent": 0
     },
     "pdf": {
-      "pages": 78,
+      "pages": 83,
       "totalPages": 88,
-      "percent": 88.64,
+      "percent": 94.32,
       "documents": [
         {
           "id": "a1-grammar",
           "title": "A1 语法讲义",
-          "currentPage": 78,
+          "currentPage": 83,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-27T03:53:08-0400"
+          "updatedAt": "2026-06-27T15:01:45-0400"
         }
       ],
-      "todayPages": 3,
+      "todayPages": 8,
       "month": {
         "unit": "pages",
         "target": 88,
-        "completed": 78,
-        "remaining": 10,
-        "percent": 88.64,
+        "completed": 83,
+        "remaining": 5,
+        "percent": 94.32,
         "daysRemaining": 4,
         "deadline": "2026-06-30",
-        "recommendedToday": 3,
+        "recommendedToday": 2,
         "yesterdayDone": 6,
-        "etaDays": 2,
-        "etaDate": "2026-06-29"
+        "etaDays": 1,
+        "etaDate": "2026-06-28"
       }
     },
     "history": [
@@ -9057,9 +9057,9 @@
     "today": {
       "date": "2026-06-27",
       "readingMinutes": 0.0,
-      "grammarMinutes": 22.9,
+      "grammarMinutes": 34.5,
       "verbMinutes": 0.0,
-      "totalMinutes": 22.9,
+      "totalMinutes": 34.5,
       "warnings": []
     },
     "history": [
@@ -12118,9 +12118,9 @@
       {
         "date": "2026-06-27",
         "readingMinutes": 0.0,
-        "grammarMinutes": 22.9,
+        "grammarMinutes": 34.5,
         "verbMinutes": 0.0,
-        "totalMinutes": 22.9,
+        "totalMinutes": 34.5,
         "warnings": []
       }
     ],
