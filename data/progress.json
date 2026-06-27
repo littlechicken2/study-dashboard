@@ -1,29 +1,23 @@
 {
-  "updatedAt": "2026-06-26T23:02:10-04:00",
+  "updatedAt": "2026-06-27T00:02:14-04:00",
   "today": {
-    "date": "2026-06-26",
-    "focusMinutes": 35
+    "date": "2026-06-27",
+    "focusMinutes": 0
   },
   "anki": {
     "today": {
-      "reviews": 129,
-      "new": 47,
-      "minutes": 20.2,
-      "activityComplete": true,
-      "goalPercent": 100
+      "reviews": 0,
+      "new": 0,
+      "minutes": 0,
+      "activityComplete": false,
+      "goalPercent": 0
     },
     "total": {
       "cards": 25974,
       "mature": 247
     },
-    "streak": 14,
+    "streak": 0,
     "history": [
-      {
-        "date": "2025-06-27",
-        "reviews": 0,
-        "new": 0,
-        "minutes": 0
-      },
       {
         "date": "2025-06-28",
         "reviews": 0,
@@ -2207,6 +2201,12 @@
         "reviews": 129,
         "new": 47,
         "minutes": 20.2
+      },
+      {
+        "date": "2026-06-27",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
       }
     ]
   },
@@ -2278,33 +2278,25 @@
           "currentPage": 75,
           "totalPages": 88,
           "seconds": 5714.503000000007,
-          "updatedAt": "2026-06-26T22:45:21-0400"
+          "updatedAt": "2026-06-27T00:02:11-0400"
         }
       ],
-      "todayPages": 6,
+      "todayPages": 0,
       "month": {
         "unit": "pages",
         "target": 88,
         "completed": 75,
         "remaining": 13,
         "percent": 85.23,
-        "daysRemaining": 5,
+        "daysRemaining": 4,
         "deadline": "2026-06-30",
-        "recommendedToday": 3,
-        "yesterdayDone": 0,
-        "etaDays": 0,
-        "etaDate": null
+        "recommendedToday": 4,
+        "yesterdayDone": 6,
+        "etaDays": 3,
+        "etaDate": "2026-06-30"
       }
     },
     "history": [
-      {
-        "date": "2025-06-27",
-        "minutes": 0.0,
-        "videoMinutes": 0.0,
-        "pdfMinutes": 0.0,
-        "activityComplete": false,
-        "goalPercent": 0
-      },
       {
         "date": "2025-06-28",
         "minutes": 0.0,
@@ -5216,12 +5208,20 @@
         "pdfMinutes": 0.0,
         "activityComplete": false,
         "goalPercent": 0
+      },
+      {
+        "date": "2026-06-27",
+        "minutes": 0.0,
+        "videoMinutes": 0.0,
+        "pdfMinutes": 0.0,
+        "activityComplete": false,
+        "goalPercent": 0
       }
     ]
   },
   "reading": {
     "today": {
-      "date": "2026-06-26",
+      "date": "2026-06-27",
       "sets": 0,
       "questions": 0,
       "correct": 0,
@@ -5230,19 +5230,9 @@
       "accuracy": 0,
       "goalPercent": 0.0,
       "activityComplete": false,
-      "recommendedQuestions": 151
+      "recommendedQuestions": 188
     },
     "history": [
-      {
-        "date": "2025-06-27",
-        "sets": 0,
-        "questions": 0,
-        "correct": 0,
-        "minutes": 0,
-        "tests": [],
-        "accuracy": 0,
-        "goalPercent": 0.0
-      },
       {
         "date": "2025-06-28",
         "sets": 0,
@@ -9035,9 +9025,19 @@
         "minutes": 0,
         "tests": [],
         "accuracy": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-06-27",
+        "sets": 0,
+        "questions": 0,
+        "correct": 0,
+        "minutes": 0,
+        "tests": [],
+        "accuracy": 0,
         "goalPercent": 0.0,
         "activityComplete": false,
-        "recommendedQuestions": 151
+        "recommendedQuestions": 188
       }
     ],
     "month": {
@@ -9045,9 +9045,9 @@
       "completed": 28,
       "remaining": 752,
       "percent": 3.59,
-      "daysRemaining": 5,
+      "daysRemaining": 4,
       "deadline": "2026-06-30",
-      "recommendedToday": 151,
+      "recommendedToday": 188,
       "yesterdayQuestions": 0,
       "etaDays": 0,
       "etaDate": null
@@ -9055,22 +9055,14 @@
   },
   "activity": {
     "today": {
-      "date": "2026-06-26",
+      "date": "2026-06-27",
       "readingMinutes": 0.0,
-      "grammarMinutes": 34.8,
+      "grammarMinutes": 0.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 34.8,
+      "totalMinutes": 0.0,
       "warnings": []
     },
     "history": [
-      {
-        "date": "2025-06-27",
-        "readingMinutes": 0.0,
-        "grammarMinutes": 0.0,
-        "verbMinutes": 0.0,
-        "totalMinutes": 0.0,
-        "warnings": []
-      },
       {
         "date": "2025-06-28",
         "readingMinutes": 0.0,
@@ -12118,9 +12110,17 @@
       {
         "date": "2026-06-26",
         "readingMinutes": 0.0,
-        "grammarMinutes": 34.8,
+        "grammarMinutes": 35.5,
         "verbMinutes": 0.0,
-        "totalMinutes": 34.8,
+        "totalMinutes": 35.5,
+        "warnings": []
+      },
+      {
+        "date": "2026-06-27",
+        "readingMinutes": 0.0,
+        "grammarMinutes": 0.0,
+        "verbMinutes": 0.0,
+        "totalMinutes": 0.0,
         "warnings": []
       }
     ],
