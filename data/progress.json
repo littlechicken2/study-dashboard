@@ -1,22 +1,22 @@
 {
-  "updatedAt": "2026-06-28T17:01:59-04:00",
+  "updatedAt": "2026-06-28T18:02:01-04:00",
   "today": {
     "date": "2026-06-28",
-    "focusMinutes": 0
+    "focusMinutes": 5
   },
   "anki": {
     "today": {
-      "reviews": 0,
+      "reviews": 33,
       "new": 0,
-      "minutes": 0,
-      "activityComplete": false,
-      "goalPercent": 0
+      "minutes": 4.8,
+      "activityComplete": true,
+      "goalPercent": 100
     },
     "total": {
       "cards": 25974,
-      "mature": 255
+      "mature": 260
     },
-    "streak": 0,
+    "streak": 16,
     "history": [
       {
         "date": "2025-06-29",
@@ -2013,7 +2013,7 @@
       {
         "date": "2026-05-27",
         "reviews": 54,
-        "new": 141,
+        "new": 142,
         "minutes": 10.0
       },
       {
@@ -2061,7 +2061,7 @@
       {
         "date": "2026-06-04",
         "reviews": 280,
-        "new": 309,
+        "new": 312,
         "minutes": 41.1
       },
       {
@@ -2091,7 +2091,7 @@
       {
         "date": "2026-06-09",
         "reviews": 179,
-        "new": 121,
+        "new": 125,
         "minutes": 22.4
       },
       {
@@ -2115,7 +2115,7 @@
       {
         "date": "2026-06-13",
         "reviews": 195,
-        "new": 144,
+        "new": 149,
         "minutes": 34.9
       },
       {
@@ -2127,7 +2127,7 @@
       {
         "date": "2026-06-15",
         "reviews": 87,
-        "new": 106,
+        "new": 107,
         "minutes": 12.3
       },
       {
@@ -2139,43 +2139,43 @@
       {
         "date": "2026-06-17",
         "reviews": 71,
-        "new": 118,
+        "new": 122,
         "minutes": 9.3
       },
       {
         "date": "2026-06-18",
         "reviews": 149,
-        "new": 96,
+        "new": 97,
         "minutes": 16.2
       },
       {
         "date": "2026-06-19",
         "reviews": 70,
-        "new": 61,
+        "new": 62,
         "minutes": 12.3
       },
       {
         "date": "2026-06-20",
         "reviews": 109,
-        "new": 80,
+        "new": 82,
         "minutes": 18.6
       },
       {
         "date": "2026-06-21",
         "reviews": 96,
-        "new": 72,
+        "new": 74,
         "minutes": 12.5
       },
       {
         "date": "2026-06-22",
         "reviews": 124,
-        "new": 83,
+        "new": 89,
         "minutes": 22.9
       },
       {
         "date": "2026-06-23",
         "reviews": 95,
-        "new": 27,
+        "new": 30,
         "minutes": 11.1
       },
       {
@@ -2204,9 +2204,9 @@
       },
       {
         "date": "2026-06-28",
-        "reviews": 0,
+        "reviews": 33,
         "new": 0,
-        "minutes": 0
+        "minutes": 4.8
       }
     ]
   },
