@@ -15,7 +15,7 @@
     try {
       const data = await fetch("http://127.0.0.1:8765/data/progress.json?t=" + Date.now()).then(r => r.json());
       const reading = Number(data.reading?.today?.articles || 0) >= 3;
-      const verb = Number(data.anki?.today?.new || 0) >= 1;
+      const verb = Number(data.anki?.today?.new || 0) >= 50;
       return reading && verb;
     } catch (_) {
       return false;
@@ -46,7 +46,7 @@
     box.innerHTML = `
       <div style="font-size:42px;font-weight:900;line-height:1.05;margin-bottom:18px">今天的学习任务还没完成</div>
       <div style="font-size:20px;line-height:1.55;max-width:760px;margin:0 auto 22px">
-        Bilibili / YouTube / 抖音已暂停。先完成 3 篇 Reading 和 1 个 Anki 新词，再回来放松。
+        Bilibili / YouTube / 抖音已暂停。先完成 3 篇 Reading 和 50 个 Anki 新词，再回来放松。
       </div>
       <div id="study-focus-status" style="font-size:16px;opacity:.9">正在检查监督台进度...</div>
     `;

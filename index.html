@@ -83,6 +83,16 @@ const n=(v,d=0)=>Number(v||0).toLocaleString("zh-CN",{maximumFractionDigits:d,mi
 const pct=v=>`${n(v,2)}%`;
 const bar=v=>`<div class="bar"><i style="--value:${Math.max(0,Math.min(100,v||0))}%"></i></div>`;
 const stats=items=>`<div class="stats">${items.map(([v,k])=>`<div class="stat"><b>${v}</b><span>${k}</span></div>`).join("")}</div>`;
+let currentReadingArticles=0;
+let recordNotice="";
+const localDateKey=()=>{
+  const d=new Date();
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+};
+const storedReading=()=>{
+  const value=localStorage.getItem(`lingua-reading-${localDateKey()}`);
+  return value===null?null:Math.max(0,Number(value)||0);
+};
 const fitDashboard=()=>{
   const widthFit=(window.innerWidth-24)/1040;
   const heightFit=(window.innerHeight-24)/720;
@@ -111,8 +121,10 @@ async function load(){
   const data=await fetch(`data/progress.json?t=${Date.now()}`).then(r=>r.json());
   const a=data.anki,r=data.reading,act=data.activity||{today:{readingMinutes:0,verbMinutes:0,warnings:[]},history:[]};
   const readingTarget=3;
-  const readingDone=Math.min(100,Number(r.today.articles||0)/readingTarget*100);
-  const verbTarget=1;
+  const browserReading=storedReading();
+  currentReadingArticles=browserReading===null?Number(r.today.articles||0):browserReading;
+  const readingDone=Math.min(100,currentReadingArticles/readingTarget*100);
+  const verbTarget=50;
   const verbDone=Math.min(100,Number(a.today.new||0)/verbTarget*100);
   const daily=(readingDone+verbDone)/2;
   const activeMinutes=Number(act.today.readingMinutes||0)+Number(act.today.verbMinutes||0);
@@ -122,8 +134,8 @@ async function load(){
     <div class="sectionHead"><h2>今日活动完成度</h2><span class="muted">${n(activeMinutes,1)} 分钟已记录</span></div>
     <div class="overview"><div class="heroValue">${pct(daily)}</div><div><p class="muted">Reading 与 Verb 均达标才是 100%</p>${bar(daily)}<p class="details">Reading ${pct(readingDone)} · Verb ${pct(verbDone)}<br>有效时长：Reading ${n(act.today.readingMinutes,1)} 分钟 · Verb ${n(act.today.verbMinutes,1)} 分钟 · 警告 ${n((act.today.warnings||[]).length)} 次</p></div></div>
     <div class="goalGrid">
-      <div class="goal"><div class="goalTop"><h2>Reading</h2><span>Lingua A1 · 每日 3 篇</span></div><div class="goalValue">${n(r.today.articles)} / ${n(readingTarget)} <span class="unit">篇</span></div>${bar(readingDone)}<div class="actions"><button class="action" data-reading="-1">撤销</button><a class="action primary" href="https://lingua.com/french/reading/" target="_blank" rel="noopener">打开 Lingua A1</a><button class="action" data-reading="1">+1</button></div><p class="recordStatus" id="recordStatus">完成一篇及理解题后手动 +1</p></div>
-      <div class="goal"><div class="goalTop"><h2>Verb</h2><span>每日目标 1 张新卡</span></div><div class="goalValue">${n(a.today.new)} / ${n(verbTarget)} <span class="unit">新卡</span></div>${bar(verbDone)}<p class="details">复习 ${n(a.today.reviews)} 次 · 今日 ${n(a.today.minutes,1)} 分钟 · 连续 ${n(a.streak)} 天</p></div>
+      <div class="goal"><div class="goalTop"><h2>Reading</h2><span>Lingua A1 · 每日 3 篇</span></div><div class="goalValue">${n(currentReadingArticles)} / ${n(readingTarget)} <span class="unit">篇</span></div>${bar(readingDone)}<div class="actions"><button class="action" data-reading="-1">撤销</button><a class="action primary" href="https://lingua.com/french/reading/" target="_blank" rel="noopener">打开 Lingua A1</a><button class="action" data-reading="1">+1</button></div><p class="recordStatus" id="recordStatus">${recordNotice||"完成一篇及理解题后手动 +1"}</p></div>
+      <div class="goal"><div class="goalTop"><h2>Verb</h2><span>每日目标 50 张新卡</span></div><div class="goalValue">${n(a.today.new)} / ${n(verbTarget)} <span class="unit">新卡</span></div>${bar(verbDone)}<p class="details">复习 ${n(a.today.reviews)} 次 · 今日 ${n(a.today.minutes,1)} 分钟 · 连续 ${n(a.streak)} 天</p></div>
     </div>
   </article>
   <article class="card trackerCard"><div class="sectionHead"><h2>${new Date().getMonth()+1}月学习日历</h2><div class="legend"><span><i style="background:#f00"></i>阅读</span><span><i style="background:#00f"></i>动词</span></div></div>${rgbTracker(a.history,r.history,act.history||[])}</article>
@@ -136,13 +148,24 @@ async function recordReading(delta){
   const buttons=[...document.querySelectorAll("[data-reading]")],status=document.querySelector("#recordStatus");
   buttons.forEach(x=>x.disabled=true);
   status.textContent="正在记录...";
+  const saveInBrowser=async()=>{
+    currentReadingArticles=Math.max(0,currentReadingArticles+delta);
+    localStorage.setItem(`lingua-reading-${localDateKey()}`,String(currentReadingArticles));
+    recordNotice="线上记录已保存于当前浏览器";
+    await load();
+  };
+  if(location.hostname.endsWith("github.io")){
+    await saveInBrowser();
+    return;
+  }
   try{
     const response=await fetch("/api/reading-manual",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({delta})});
-    if(!response.ok) throw new Error("请从本地或局域网监督台记录");
+    if(!response.ok) throw new Error("local api unavailable");
+    localStorage.removeItem(`lingua-reading-${localDateKey()}`);
+    recordNotice="已同步到本地监督台";
     await load();
-  }catch(error){
-    status.textContent=error.message;
-    buttons.forEach(x=>x.disabled=false);
+  }catch(_){
+    await saveInBrowser();
   }
 }
 load().catch(e=>document.querySelector("#dashboard").innerHTML=`<article class="card hero"><h2>暂时没有进度数据</h2><p class="muted">${e.message}</p></article>`);
