@@ -204,95 +204,29 @@ def collect_course(days=365):
 
 def collect_reading(days=30):
     raw = read_json(READING_LOG, {"entries": []})
-    automatic = read_json(READING_PROGRESS, {"entries": []})
-    session = read_json(READING_SESSION, {"startedAt": None, "baselines": {}})
     today = datetime.now().date()
     start = today - timedelta(days=days - 1)
-    daily = defaultdict(lambda: {"sets": 0, "questions": 0, "correct": 0, "minutes": 0})
+    daily = defaultdict(lambda: {"articles": 0, "minutes": 0})
     for entry in raw.get("entries", []):
         key = entry.get("date", "")
-        if key < start.isoformat():
+        if key < start.isoformat() or not str(entry.get("source", "")).startswith("lingua"):
             continue
-        for field in ("sets", "questions", "correct", "minutes"):
-            daily[key][field] += float(entry.get(field, 0) or 0)
-    tests = defaultdict(list)
-    previous_by_test = {}
-    entries = sorted(automatic.get("entries", []), key=lambda row: str(row.get("capturedAt", "")))
-    session_day = str(session.get("startedAt") or "")[:10]
-    for entry in entries:
-        key = entry.get("date", "")
-        if key < start.isoformat():
-            continue
-        test = str(entry.get("test", ""))
-        current = {
-            "answered": int(entry.get("answered", 0) or 0),
-            "correct": int(entry.get("correct", 0) or 0),
-            "seconds": int(entry.get("seconds", 0) or 0),
-        }
-        baseline = previous_by_test.get(test, {"answered": 0, "correct": 0, "seconds": 0})
-        if key == session_day:
-            baseline = session.get("baselines", {}).get(test, baseline)
-        answered = current["answered"] - int(baseline.get("answered", 0) or 0)
-        correct = current["correct"] - int(baseline.get("correct", 0) or 0)
-        seconds = current["seconds"] - int(baseline.get("seconds", 0) or 0)
-        if answered < 0:
-            answered = current["answered"]
-        if correct < 0:
-            correct = current["correct"]
-        if seconds < 0:
-            seconds = current["seconds"]
-        if answered == 0:
-            seconds = 0
-        daily[key]["sets"] += answered / 39
-        daily[key]["questions"] += answered
-        daily[key]["correct"] += correct
-        daily[key]["minutes"] += round(seconds / 60, 1)
-        tests[key].append({
-            "test": test,
-            "answered": answered,
-            "correct": correct,
-            "total": 39,
-        })
-        previous_by_test[test] = current
+        daily[key]["articles"] += int(entry.get("sets", 0) or 0)
+        daily[key]["minutes"] += float(entry.get("minutes", 0) or 0)
     history = []
     for offset in range(days):
         key = (start + timedelta(days=offset)).isoformat()
-        row = {"date": key, **daily[key], "tests": tests[key]}
-        row["accuracy"] = round(row["correct"] / row["questions"] * 100, 2) if row["questions"] else 0
-        row["goalPercent"] = round(min(1, row["questions"] / 39) * 100, 2)
+        row = {"date": key, **daily[key]}
+        row["articles"] = max(0, int(row["articles"]))
+        row["goalPercent"] = round(min(1, row["articles"] / 3) * 100, 2)
         history.append(row)
-    month_start = today.replace(day=1)
-    month_end = today.replace(day=calendar.monthrange(today.year, today.month)[1])
-    days_remaining = (month_end - today).days + 1
-    month_rows = [x for x in history if x["date"] >= month_start.isoformat()]
-    month_completed = int(sum(x["questions"] for x in month_rows))
-    month_target = 20 * 39
-    remaining = max(0, month_target - month_completed)
-    recommended = math.ceil(remaining / days_remaining) if remaining else 0
-    yesterday_key = (today - timedelta(days=1)).isoformat()
-    yesterday = next((x for x in history if x["date"] == yesterday_key), {"questions": 0})
-    yesterday_pace = int(yesterday["questions"])
-    eta_days = math.ceil(remaining / yesterday_pace) if yesterday_pace > 0 and remaining else 0
-    eta_date = (today + timedelta(days=eta_days)).isoformat() if eta_days else None
     today_row = history[-1]
-    today_row["activityComplete"] = today_row["questions"] > 0
-    today_row["recommendedQuestions"] = recommended
-    today_row["goalPercent"] = round(min(1, today_row["questions"] / recommended) * 100, 2) if recommended else 100
+    today_row["target"] = 3
+    today_row["activityComplete"] = today_row["articles"] >= 3
     return {
         "today": today_row,
         "history": history,
-        "month": {
-            "target": month_target,
-            "completed": month_completed,
-            "remaining": remaining,
-            "percent": round(month_completed / month_target * 100, 2),
-            "daysRemaining": days_remaining,
-            "deadline": month_end.isoformat(),
-            "recommendedToday": recommended,
-            "yesterdayQuestions": yesterday_pace,
-            "etaDays": eta_days,
-            "etaDate": eta_date,
-        },
+        "source": "https://lingua.com/french/reading/",
     }
 
 

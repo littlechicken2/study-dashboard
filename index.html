@@ -55,19 +55,16 @@
     .weekday{display:grid;place-items:center;color:var(--muted);font-size:10px}
     .rgbDay.empty{opacity:.18}
     .rgbDay.future{opacity:.3}
-    .rgbDay{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:1fr;gap:1px;padding:2px;border:1px solid #253e35;border-radius:4px;background:#081510;overflow:hidden}
+    .rgbDay{position:relative;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:1fr;gap:1px;padding:2px;border:1px solid #253e35;border-radius:4px;background:#081510;overflow:hidden}
     .rgbDay b{position:absolute;inset:0;z-index:2;display:grid;place-items:center;min-width:0;background:transparent;color:#fff;font-size:9px;font-weight:800;font-variant-numeric:tabular-nums;text-shadow:0 1px 2px #000,0 0 3px #000;pointer-events:none}
     .rgbDay span{min-width:0;border-radius:1px}
     .rgbDay .r{background:rgb(var(--r),0,0)}
-    .rgbDay .g{background:rgb(0,var(--g),0)}
     .rgbDay .b{background:rgb(0,0,var(--b))}
-    .courseCard .bar{margin:0}
-    .pdfCard{padding:10px}
-    .pdfCard .big{font-size:24px;margin-top:5px}
-    .pdfCard>.bar{margin:6px 0}
-    .pdfCard .stat b{font-size:16px}
-    .pdfCard .details{font-size:10px;margin-top:3px}
-    .readingPlan{padding:12px}
+    .actions{display:flex;gap:7px;margin-top:9px}
+    .action{min-height:34px;padding:0 12px;border:0;border-radius:4px;background:#18392d;color:var(--text);font:inherit;font-weight:700;cursor:pointer}
+    .action.primary{flex:1;background:linear-gradient(90deg,var(--green),var(--cyan));color:#03120d}
+    .action:disabled{opacity:.55;cursor:wait}
+    .recordStatus{min-height:16px;margin-top:5px;color:var(--muted);font-size:11px}
     footer{display:none}
     @media(max-width:760px){main{padding:18px 0}.grid{grid-template-columns:1fr}.hero{display:block}.hero,.trackerCard,.wide{grid-column:auto}.goalGrid,.overview{grid-template-columns:1fr}.goalGrid{margin-top:10px}.date{font-size:11px}}
   </style>
@@ -95,49 +92,58 @@ const fitDashboard=()=>{
 fitDashboard();
 addEventListener("resize",fitDashboard);
 const level=(value,target)=>Number(value||0)<=0?56:Math.max(72,Math.min(255,Math.round((Number(value||0)/Math.max(1,target))*255)));
-const eta=x=>x?.etaDate?`${x.etaDate}（${n(x.etaDays)} 天）`:"暂无速度";
-const rgbTracker=(a,r,c,act)=>{
-  const map=rows=>new Map((rows||[]).map(x=>[x.date,x])),am=map(a),rm=map(r),cm=map(c),tm=map(act);
+const rgbTracker=(a,r,act)=>{
+  const map=rows=>new Map((rows||[]).map(x=>[x.date,x])),am=map(a),rm=map(r),tm=map(act);
   const now=new Date(),year=now.getFullYear(),month=now.getMonth(),days=new Date(year,month+1,0).getDate();
   const firstDay=(new Date(year,month,1).getDay()+6)%7;
-  const readingDailyTarget=780/days;
   const cells=[...['一','二','三','四','五','六','日'].map(x=>`<span class="weekday">${x}</span>`)];
   for(let i=0;i<firstDay;i++) cells.push('<span class="rgbDay empty"></span>');
   for(let i=1;i<=days;i++){
     const key=`${year}-${String(month+1).padStart(2,"0")}-${String(i).padStart(2,"0")}`;
-    const rr=rm.get(key)||{}, aa=am.get(key)||{}, cc=cm.get(key)||{}, tt=tm.get(key)||{};
-    const red=Math.max(level(rr.questions,readingDailyTarget),level(tt.readingMinutes,30));
-    const green=Math.max(level(cc.minutes,30),level(tt.grammarMinutes,30));
+    const rr=rm.get(key)||{}, aa=am.get(key)||{}, tt=tm.get(key)||{};
+    const red=Math.max(level(rr.articles,3),level(tt.readingMinutes,30));
     const blue=Math.max(level((aa.reviews||0)+(aa.new||0),20),level(tt.verbMinutes,20));
-    cells.push(`<span class="rgbDay ${i>now.getDate()?'future':''}" style="--r:${red};--g:${green};--b:${blue}" title="${key} | Reading ${rr.questions||0} 题 / ${n(tt.readingMinutes||0,1)} 分钟 | Grammar ${n(cc.minutes||0,1)} 分钟 / ${n(tt.grammarMinutes||0,1)} 有效分钟 | Verb ${Number(aa.reviews||0)+Number(aa.new||0)} 次 / ${n(tt.verbMinutes||0,1)} 分钟"><span class="r"></span><span class="g"></span><span class="b"></span><b>${i}</b></span>`);
+    cells.push(`<span class="rgbDay ${i>now.getDate()?'future':''}" style="--r:${red};--b:${blue}" title="${key} | Reading ${rr.articles||0} 篇 / ${n(tt.readingMinutes||0,1)} 分钟 | Verb ${Number(aa.reviews||0)+Number(aa.new||0)} 次 / ${n(tt.verbMinutes||0,1)} 分钟"><span class="r"></span><span class="b"></span><b>${i}</b></span>`);
   }
   return `<div class="monthLabel">${year} 年 ${month+1} 月</div><div class="rgbCalendar">${cells.join("")}</div>`;
 };
 async function load(){
   const data=await fetch(`data/progress.json?t=${Date.now()}`).then(r=>r.json());
-  const a=data.anki,c=data.course,r=data.reading,act=data.activity||{today:{readingMinutes:0,grammarMinutes:0,verbMinutes:0,totalMinutes:0,warnings:[]},history:[]};
-  const pdf=c.pdf||{pages:0,totalPages:88,percent:0,todayPages:0,month:{recommendedToday:0,remaining:88,daysRemaining:0}};
-  const pdfMonth=pdf.month||{};
-  const grammarTarget=Number(pdfMonth.recommendedToday||0);
-  const grammarDone=grammarTarget>0?Math.min(100,Number(pdf.todayPages||0)/grammarTarget*100):100;
+  const a=data.anki,r=data.reading,act=data.activity||{today:{readingMinutes:0,verbMinutes:0,warnings:[]},history:[]};
+  const readingTarget=3;
+  const readingDone=Math.min(100,Number(r.today.articles||0)/readingTarget*100);
   const verbTarget=1;
   const verbDone=Math.min(100,Number(a.today.new||0)/verbTarget*100);
-  const daily=(grammarDone+verbDone)/2;
+  const daily=(readingDone+verbDone)/2;
+  const activeMinutes=Number(act.today.readingMinutes||0)+Number(act.today.verbMinutes||0);
   document.querySelector("#updated").textContent=`更新于 ${new Date(data.updatedAt).toLocaleString("zh-CN")}`;
   document.querySelector("#dashboard").innerHTML=`
   <article class="card hero">
-    <div class="sectionHead"><h2>今日活动完成度</h2><span class="muted">${n(data.today.focusMinutes)} 分钟已记录</span></div>
-    <div class="overview"><div class="heroValue">${pct(daily)}</div><div><p class="muted">按今日目标实际进度计算，两项均达标才是 100%</p>${bar(daily)}<p class="details">Grammar ${pct(grammarDone)} · Verb ${pct(verbDone)}<br>有效时长：Grammar ${n(act.today.grammarMinutes,1)} 分钟 · Verb ${n(act.today.verbMinutes,1)} 分钟 · 警告 ${n((act.today.warnings||[]).length)} 次</p></div></div>
+    <div class="sectionHead"><h2>今日活动完成度</h2><span class="muted">${n(activeMinutes,1)} 分钟已记录</span></div>
+    <div class="overview"><div class="heroValue">${pct(daily)}</div><div><p class="muted">Reading 与 Verb 均达标才是 100%</p>${bar(daily)}<p class="details">Reading ${pct(readingDone)} · Verb ${pct(verbDone)}<br>有效时长：Reading ${n(act.today.readingMinutes,1)} 分钟 · Verb ${n(act.today.verbMinutes,1)} 分钟 · 警告 ${n((act.today.warnings||[]).length)} 次</p></div></div>
     <div class="goalGrid">
-      <div class="goal"><div class="goalTop"><h2>Grammar</h2><span>完成今日建议页数</span></div><div class="goalValue">${n(pdf.todayPages)} / ${n(grammarTarget)} <span class="unit">页</span></div>${bar(grammarDone)}<p class="details">A1 讲义 ${n(pdf.pages)} / ${n(pdf.totalPages)} 页 · 今日建议推进 ${n(grammarTarget)} 页<br>视频 ${n(c.today.videoMinutes,1)} 分钟仅记录时长，不计任务完成</p></div>
+      <div class="goal"><div class="goalTop"><h2>Reading</h2><span>Lingua A1 · 每日 3 篇</span></div><div class="goalValue">${n(r.today.articles)} / ${n(readingTarget)} <span class="unit">篇</span></div>${bar(readingDone)}<div class="actions"><button class="action" data-reading="-1">撤销</button><a class="action primary" href="https://lingua.com/french/reading/" target="_blank" rel="noopener">打开 Lingua A1</a><button class="action" data-reading="1">+1</button></div><p class="recordStatus" id="recordStatus">完成一篇及理解题后手动 +1</p></div>
       <div class="goal"><div class="goalTop"><h2>Verb</h2><span>每日目标 1 张新卡</span></div><div class="goalValue">${n(a.today.new)} / ${n(verbTarget)} <span class="unit">新卡</span></div>${bar(verbDone)}<p class="details">复习 ${n(a.today.reviews)} 次 · 今日 ${n(a.today.minutes,1)} 分钟 · 连续 ${n(a.streak)} 天</p></div>
     </div>
   </article>
-  <article class="card trackerCard"><div class="sectionHead"><h2>${new Date().getMonth()+1}月 RGB</h2><div class="legend"><span><i style="background:#f00"></i>阅读</span><span><i style="background:#0f0"></i>语法</span><span><i style="background:#00f"></i>动词</span></div></div>${rgbTracker(a.history,r.history,c.history,act.history||[])}</article>
-  <article class="card"><div class="sectionHead"><h2>有效学习时长</h2><span class="muted">娱乐网站自动暂停</span></div><div class="big">${n(act.today.totalMinutes,1)} <span class="unit">分钟</span></div>${stats([[n(act.today.readingMinutes,1),"Reading"],[n(act.today.grammarMinutes,1),"Grammar"],[n(act.today.verbMinutes,1),"Verb"]])}<p class="details">Bilibili / YouTube / 抖音警告：${n((act.today.warnings||[]).length)} 次</p></article>
+  <article class="card trackerCard"><div class="sectionHead"><h2>${new Date().getMonth()+1}月学习日历</h2><div class="legend"><span><i style="background:#f00"></i>阅读</span><span><i style="background:#00f"></i>动词</span></div></div>${rgbTracker(a.history,r.history,act.history||[])}</article>
+  <article class="card"><div class="sectionHead"><h2>有效学习时长</h2><span class="muted">娱乐网站自动暂停</span></div><div class="big">${n(activeMinutes,1)} <span class="unit">分钟</span></div>${stats([[n(act.today.readingMinutes,1),"Reading"],[n(act.today.verbMinutes,1),"Verb"],[n((act.today.warnings||[]).length),"警告"]])}</article>
   <article class="card"><div class="sectionHead"><h2>Verb 具体记录</h2><span class="muted">Anki</span></div><div class="big">${n(a.today.reviews)} <span class="unit">次复习</span></div>${stats([[n(a.today.new),"新卡"],[n(a.today.minutes,1),"分钟"],[n(a.total.cards),"总卡片"]])}</article>
-  <article class="card wide courseCard"><div class="sectionHead"><h2>视频课程累计</h2><span class="muted">${pct(c.total.percent)}</span></div><div class="courseRows">${c.courses.map(x=>`<div class="courseRow"><strong>${x.label}</strong>${bar(x.percent)}<span>${pct(x.percent)}</span></div>`).join("")}</div></article>
-  <article class="card wide pdfCard"><div class="sectionHead"><h2>A1 讲义月底计划</h2><span class="muted">Acrobat 自动同步</span></div><div class="big">${n(pdf.pages)} / ${n(pdf.totalPages)} <span class="unit">页</span></div>${bar(pdf.percent)}${stats([[`${n(pdf.todayPages)} / ${n(pdfMonth.recommendedToday)}`,"今日推进 / 建议"],[n(pdfMonth.remaining),"剩余页数"],[eta(pdfMonth),"按昨日速度 ETA"]])}<p class="details">${pdfMonth.deadline||""} 前完成；关闭或翻页后由 Acrobat 恢复位置更新</p></article>`;
+  `;
+  document.querySelectorAll("[data-reading]").forEach(button=>button.addEventListener("click",()=>recordReading(Number(button.dataset.reading))));
+}
+async function recordReading(delta){
+  const buttons=[...document.querySelectorAll("[data-reading]")],status=document.querySelector("#recordStatus");
+  buttons.forEach(x=>x.disabled=true);
+  status.textContent="正在记录...";
+  try{
+    const response=await fetch("/api/reading-manual",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({delta})});
+    if(!response.ok) throw new Error("请从本地或局域网监督台记录");
+    await load();
+  }catch(error){
+    status.textContent=error.message;
+    buttons.forEach(x=>x.disabled=false);
+  }
 }
 load().catch(e=>document.querySelector("#dashboard").innerHTML=`<article class="card hero"><h2>暂时没有进度数据</h2><p class="muted">${e.message}</p></article>`);
 </script>
