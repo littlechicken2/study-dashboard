@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-07-02T07:02:40-04:00",
+  "updatedAt": "2026-07-02T08:02:42-04:00",
   "today": {
     "date": "2026-07-02",
-    "focusMinutes": 28
+    "focusMinutes": 31
   },
   "anki": {
     "today": {
-      "reviews": 157,
-      "new": 16,
-      "minutes": 27.9,
+      "reviews": 174,
+      "new": 20,
+      "minutes": 31.2,
       "activityComplete": true,
       "goalPercent": 100
     },
     "total": {
       "cards": 25974,
-      "mature": 296
+      "mature": 297
     },
     "streak": 20,
     "history": [
@@ -2169,19 +2169,19 @@
       {
         "date": "2026-06-26",
         "reviews": 129,
-        "new": 84,
+        "new": 87,
         "minutes": 20.2
       },
       {
         "date": "2026-06-27",
         "reviews": 187,
-        "new": 133,
+        "new": 137,
         "minutes": 46.2
       },
       {
         "date": "2026-06-28",
         "reviews": 177,
-        "new": 100,
+        "new": 106,
         "minutes": 24.8
       },
       {
@@ -2204,9 +2204,9 @@
       },
       {
         "date": "2026-07-02",
-        "reviews": 157,
-        "new": 16,
-        "minutes": 27.9
+        "reviews": 174,
+        "new": 20,
+        "minutes": 31.2
       }
     ]
   },
