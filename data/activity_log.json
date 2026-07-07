@@ -273,6 +273,15 @@
       "sources": {
         "adobe-acrobat": 3155.0
       }
+    },
+    "2026-07-06": {
+      "reading": 0,
+      "grammar": 5.0,
+      "verb": 0,
+      "warnings": [],
+      "sources": {
+        "adobe-acrobat": 5.0
+      }
     }
   },
   "lastContext": "grammar",
@@ -280,8 +289,8 @@
     "category": "grammar",
     "source": "adobe-acrobat",
     "seconds": 5,
-    "title": "【新东方在线诚意出品】法语欧标A1语法大全电子讲义.pdf.pdf (SECURED) - Adobe Acrobat Reader (64-bit)",
+    "title": "TCF Canada B2 100天冲刺计划 - Adobe Acrobat Reader (64-bit)",
     "idleSeconds": 0,
-    "capturedAt": "2026-06-27T15:22:51-0400"
+    "capturedAt": "2026-07-06T21:51:57-0400"
   }
 }
