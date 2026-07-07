@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1014">
+  <title>TCF French Morphology Trainer</title>
+  <style>
+    :root{
+      --bg:#0b1014;--panel:#121a20;--panel2:#18232a;--line:#2c3c45;--text:#f5f7f8;--muted:#9fb0ba;
+      --red:#ff6b6b;--blue:#69a7ff;--green:#65e3a1;--yellow:#ffd166;--violet:#b99cff;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;color:var(--text);background:
+      radial-gradient(circle at 12% 0,rgba(105,167,255,.16),transparent 28rem),
+      radial-gradient(circle at 84% 8%,rgba(101,227,161,.13),transparent 26rem),var(--bg);
+      font-family:Inter,"Segoe UI","Microsoft YaHei",sans-serif}
+    button,input,select,textarea{font:inherit}
+    button{border:0;cursor:pointer}
+    main{width:1180px;max-width:calc(100% - 24px);margin:auto;padding:18px 0 26px}
+    header{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:14px}
+    h1{margin:0;font-size:28px;line-height:1}
+    h2{margin:0;font-size:17px}
+    h3{margin:0 0 8px;font-size:15px}
+    p{margin:0}
+    a{color:var(--blue)}
+    .muted{color:var(--muted)}
+    .layout{display:grid;grid-template-columns:250px 1fr 300px;gap:10px;align-items:start}
+    .panel{border:1px solid var(--line);border-radius:8px;background:rgba(18,26,32,.92);overflow:hidden}
+    .pad{padding:14px}
+    .nav{display:grid;gap:8px}
+    .nav button,.pill,.primary,.ghost{min-height:38px;border-radius:6px;padding:0 12px;color:var(--text);background:var(--panel2);text-align:left;font-weight:700}
+    .nav button.active{background:linear-gradient(90deg,var(--blue),var(--green));color:#071014}
+    .pill{display:inline-flex;align-items:center;gap:7px;min-height:30px;font-size:12px;background:#1b2830}
+    .primary{background:linear-gradient(90deg,var(--green),var(--blue));color:#071014;text-align:center}
+    .ghost{background:#20303a;text-align:center}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+    .stat{padding:10px;border-radius:6px;background:#0d151a}
+    .stat b{display:block;font-size:22px;font-variant-numeric:tabular-nums}
+    .stat span{font-size:12px;color:var(--muted)}
+    .trainer{min-height:560px}
+    .toolbar{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:12px 14px;border-bottom:1px solid var(--line);background:rgba(24,35,42,.65)}
+    .prompt{padding:26px 26px 18px}
+    .word{font-size:56px;font-weight:850;line-height:1.05;letter-spacing:0}
+    .sub{margin-top:8px;color:var(--muted)}
+    .form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:0 26px 22px}
+    .field{display:grid;gap:5px}
+    .field.full{grid-column:1/-1}
+    label{color:var(--muted);font-size:12px}
+    input,select,textarea{width:100%;min-height:42px;padding:9px 10px;border:1px solid var(--line);border-radius:6px;background:#091116;color:var(--text)}
+    textarea{min-height:76px;resize:vertical}
+    .choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .choice{min-height:48px;border-radius:6px;padding:0 12px;background:#20303a;color:var(--text);font-weight:800}
+    .choice.good{background:rgba(101,227,161,.25);outline:2px solid var(--green)}
+    .choice.bad{background:rgba(255,107,107,.24);outline:2px solid var(--red)}
+    .actions{display:flex;gap:10px;padding:0 26px 24px}
+    .actions button{flex:1}
+    .feedback{margin:0 26px 22px;padding:12px;border-radius:6px;background:#0d151a;color:var(--muted);line-height:1.55}
+    .feedback.ok{color:#c9ffe2;border:1px solid rgba(101,227,161,.45)}
+    .feedback.no{color:#ffd7d7;border:1px solid rgba(255,107,107,.45)}
+    .sideList{display:grid;gap:8px;max-height:410px;overflow:auto}
+    .entry{padding:10px;border-radius:6px;background:#0d151a}
+    .entry b{display:block}
+    .entry span{display:block;margin-top:3px;color:var(--muted);font-size:12px}
+    .search{display:grid;gap:8px}
+    .themeGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px}
+    .theme{padding:12px;border-radius:6px;background:#0d151a}
+    .theme b{display:flex;justify-content:space-between}
+    .empty{padding:34px;text-align:center;color:var(--muted)}
+    .small{font-size:12px;color:var(--muted)}
+    .kbd{font-family:Consolas,monospace;background:#091116;border:1px solid var(--line);border-radius:4px;padding:1px 5px}
+    @media(max-width:980px){.layout{grid-template-columns:1fr}.trainer{min-height:0}.word{font-size:42px}.form{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div>
+      <h1>TCF French Morphology Trainer</h1>
+      <p class="muted">Anki 负责记忆；这里只训练词性、性数、变位和固定搭配。</p>
+    </div>
+    <a class="pill" href="index.html">返回监督台</a>
+  </header>
+
+  <section class="layout">
+    <aside class="panel pad">
+      <h2>今日训练</h2>
+      <div class="stats" id="todayStats"></div>
+      <div class="nav" id="modeNav" style="margin-top:12px"></div>
+      <p class="small" style="margin-top:12px">数据只来自 <span class="kbd">data/morphology.json</span>。修改 Anki 后重新导入即可同步。</p>
+    </aside>
+
+    <section class="panel trainer">
+      <div class="toolbar">
+        <div>
+          <h2 id="modeTitle">读取中</h2>
+          <p class="small" id="modeHint">正在载入 Anki 派生数据</p>
+        </div>
+        <button class="ghost" id="nextBtn" type="button">下一题</button>
+      </div>
+      <div id="trainerBody"></div>
+    </section>
+
+    <aside class="panel pad">
+      <div class="search">
+        <h2>搜索</h2>
+        <input id="searchInput" placeholder="travaux / travail / 工作">
+        <div class="sideList" id="searchResults"></div>
+      </div>
+      <div style="height:14px"></div>
+      <h2>最容易错 Top20</h2>
+      <div class="sideList" id="weakList" style="margin-top:8px"></div>
+    </aside>
+  </section>
+</main>
+
+<script>
+const MODES=[
+  ["nounRecognition","Noun Recognition","看到词形，写原形、词性、性、数和中文"],
+  ["nounProduction","Noun Production","看到原形，写复数"],
+  ["gender","Gender","判断名词阴阳性"],
+  ["verbRecognition","Verb Recognition","看到变位，写原形、时态和人称"],
+  ["fullConjugation","Full Conjugation","填写一个动词现在时六个人称"],
+  ["pastParticiple","Past Participle","判断过去分词的原形、性和数"],
+  ["adjectiveAgreement","Adjective Agreement","按要求写形容词性数变化"],
+  ["phraseTrainer","Phrase Trainer","固定搭配法中互译"],
+  ["themeBrowser","Theme Browser","按主题浏览词汇和搭配"],
+  ["randomReview","Random Review","按 70/20/10 混合复习"]
+];
+const REQUIRED=["French","Chinese","Gender","PartOfSpeech","Lemma","Plural","Theme","Level","FixedPhrases","ConjugationGroup","PastParticiple","Notes"];
+let DATA={entries:[]},mode="nounRecognition",current=null,feedback="",answered=false;
+const statsKey="tcf-morphology-stats-v1";
+let stats=JSON.parse(localStorage.getItem(statsKey)||"{}");
+const todayKey=()=>new Date().toISOString().slice(0,10);
+const norm=x=>(x||"").toString().trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+const has=(entry,field)=>Boolean((entry[field]||"").toString().trim());
+const isNoun=e=>norm(e.partOfSpeech).includes("noun")||norm(e.partOfSpeech).includes("nom")||has(e,"gender");
+const isVerb=e=>norm(e.partOfSpeech).includes("verb")||norm(e.partOfSpeech).includes("verbe")||has(e,"conjugationGroup");
+const isAdj=e=>norm(e.partOfSpeech).includes("adj")||norm(e.partOfSpeech).includes("adjectif");
+const phrases=()=>DATA.entries.flatMap(e=>(e.fixedPhrases||[]).map(p=>({...e,phrase:p})));
+const saveStats=()=>localStorage.setItem(statsKey,JSON.stringify(stats));
+const entryStats=id=>stats[id]||(stats[id]={correct:0,wrong:0,streak:0,last:null});
+const weightedPick=items=>{
+  if(!items.length)return null;
+  const weights=items.map(item=>1+Math.max(0,(entryStats(item.id).wrong||0)-2)*3+(entryStats(item.id).streak>=3?-0.4:0));
+  let roll=Math.random()*weights.reduce((a,b)=>a+b,0);
+  for(let i=0;i<items.length;i++){roll-=weights[i];if(roll<=0)return items[i]}
+  return items[items.length-1];
+};
+const pct=(a,b)=>b?`${Math.round(a/b*100)}%`:"0%";
+function candidatesFor(name){
+  const entries=DATA.entries;
+  if(name==="nounRecognition")return entries.filter(e=>isNoun(e)&&has(e,"french")&&has(e,"lemma"));
+  if(name==="nounProduction")return entries.filter(e=>isNoun(e)&&has(e,"lemma")&&has(e,"plural"));
+  if(name==="gender")return entries.filter(e=>isNoun(e)&&has(e,"french")&&has(e,"gender"));
+  if(name==="verbRecognition")return verbForms().map(x=>({...x.entry,id:`${x.entry.id}-${x.tense}-${x.person}`}));
+  if(name==="fullConjugation")return entries.filter(e=>isVerb(e)&&e.conjugations&&e.conjugations.present);
+  if(name==="pastParticiple")return entries.filter(e=>isVerb(e)&&has(e,"pastParticiple"));
+  if(name==="adjectiveAgreement")return entries.filter(e=>isAdj(e)&&has(e,"french"));
+  if(name==="phraseTrainer")return phrases();
+  if(name==="randomReview")return randomPool();
+  return entries;
+}
+function verbForms(){
+  const out=[];
+  DATA.entries.filter(isVerb).forEach(entry=>{
+    const present=entry.conjugations&&entry.conjugations.present;
+    if(!present)return;
+    Object.entries(present).forEach(([person,form])=>{if(form)out.push({entry,tense:"Présent",person,form})});
+  });
+  return out;
+}
+function randomPool(){
+  const n=candidatesFor("nounRecognition"),v=candidatesFor("verbRecognition"),p=candidatesFor("phraseTrainer");
+  const r=Math.random();
+  if(r<.7&&n.length)return n;
+  if(r<.9&&v.length)return v;
+  return p.length?p:n.concat(v);
+}
+function setMode(next){
+  mode=next;feedback="";answered=false;renderNav();nextQuestion();
+}
+function renderNav(){
+  document.querySelector("#modeNav").innerHTML=MODES.map(([id,label])=>`<button class="${id===mode?"active":""}" data-mode="${id}">${label}</button>`).join("");
+  document.querySelectorAll("[data-mode]").forEach(btn=>btn.onclick=()=>setMode(btn.dataset.mode));
+}
+function renderStats(){
+  const today=Object.values(stats).filter(x=>x.last===todayKey());
+  const correct=today.reduce((a,b)=>a+(b.todayCorrect||0),0), wrong=today.reduce((a,b)=>a+(b.todayWrong||0),0);
+  document.querySelector("#todayStats").innerHTML=`<div class="stat"><b>${correct}</b><span>正确</span></div><div class="stat"><b>${wrong}</b><span>错误</span></div><div class="stat"><b>${pct(correct,correct+wrong)}</b><span>正确率</span></div>`;
+  const weak=DATA.entries.map(e=>({e,s:entryStats(e.id)})).filter(x=>x.s.wrong).sort((a,b)=>b.s.wrong-a.s.wrong).slice(0,20);
+  document.querySelector("#weakList").innerHTML=weak.length?weak.map(({e,s})=>entryHtml(e,`${s.wrong} 错 · 连对 ${s.streak}`)).join(""):`<p class="small">还没有错题记录。</p>`;
+}
+function entryHtml(e,tail=""){
+  return `<div class="entry"><b>${e.french||e.lemma||e.phrase}</b><span>${e.chinese||""}</span><span>${e.partOfSpeech||""} · ${e.gender||""} · ${e.theme||""} ${tail?`· ${tail}`:""}</span></div>`;
+}
+function nextQuestion(){
+  const meta=MODES.find(x=>x[0]===mode);
+  document.querySelector("#modeTitle").textContent=meta[1];
+  document.querySelector("#modeHint").textContent=meta[2];
+  if(mode==="themeBrowser"){renderThemeBrowser();return}
+  const pool=candidatesFor(mode);
+  current=weightedPick(pool);feedback="";answered=false;
+  if(!current){renderEmpty(pool);return}
+  renderQuestion();
+}
+function renderEmpty(){
+  const missing=(DATA.missingRequiredFields||[]).filter(x=>REQUIRED.includes(x));
+  document.querySelector("#trainerBody").innerHTML=`<div class="empty"><h2>这个模式暂时没有可训练数据</h2><p>请从 Anki 导出 CSV/APKG 后运行导入脚本。${missing.length?`<br>当前缺少推荐字段：${missing.join("、")}`:""}</p><p style="margin-top:12px"><span class="kbd">python scripts/import_anki_deck.py D:\\path\\deck.apkg</span></p></div>`;
+}
+function renderQuestion(){
+  let html="";
+  if(mode==="nounRecognition"||mode==="randomReview"&&isNoun(current)){
+    const number=norm(current.french)===norm(current.plural)?"plural":"singular";
+    html=promptHtml(current.french,current.chinese,"写出它的语法身份")+formHtml([
+      ["lemma","原形"],["pos","词性"],["gender","性"],["number","数"],["chinese","中文"]
+    ])+actionsHtml();
+    current.answer={lemma:current.lemma,pos:"noun",gender:current.gender,number,chinese:current.chinese};
+  }else if(mode==="nounProduction"){
+    html=promptHtml(current.lemma,current.chinese,"写出复数形式")+formHtml([["plural","复数"]])+actionsHtml();
+    current.answer={plural:current.plural};
+  }else if(mode==="gender"){
+    html=promptHtml(current.french,current.chinese,"选择名词性")+choiceHtml(["Masculine","Feminine","Common","Neuter"]);
+    current.answer={choice:current.gender};
+  }else if(mode==="verbRecognition"||mode==="randomReview"&&current.form){
+    html=promptHtml(current.form,current.entry.chinese,`识别这个动词变位`)+formHtml([["lemma","Lemma"],["tense","Tense"],["person","Person"]])+actionsHtml();
+    current.answer={lemma:current.entry.lemma||current.entry.french,tense:current.tense,person:current.person};
+  }else if(mode==="fullConjugation"){
+    html=promptHtml(current.lemma||current.french,current.chinese,"填写现在时六个人称")+formHtml([["je","je"],["tu","tu"],["il","il / elle"],["nous","nous"],["vous","vous"],["ils","ils / elles"]])+actionsHtml();
+    current.answer=current.conjugations.present;
+  }else if(mode==="pastParticiple"){
+    html=promptHtml(current.pastParticiple,current.chinese,"识别过去分词")+formHtml([["lemma","Lemma"],["gender","性"],["number","数"]])+actionsHtml();
+    current.answer={lemma:current.lemma||current.french,gender:inferGender(current.pastParticiple),number:inferNumber(current.pastParticiple)};
+  }else if(mode==="adjectiveAgreement"){
+    const target=Math.random()<.5?["Feminine","Plural","es"]:["Feminine","Singular","e"];
+    html=promptHtml(current.french,current.chinese,`写出${target[0]} ${target[1]}形式`)+formHtml([["form","变化后形式"]])+actionsHtml();
+    current.answer={form:agreeAdj(current.french,target[2])};
+  }else{
+    const zhToFr=Math.random()<.5;
+    html=promptHtml(zhToFr?current.chinese:current.phrase,zhToFr?"输入法语固定搭配":"输入中文意思","固定搭配训练")+formHtml([[zhToFr?"phrase":"chinese",zhToFr?"法语":"中文"]])+actionsHtml();
+    current.answer=zhToFr?{phrase:current.phrase}:{chinese:current.chinese};
+  }
+  document.querySelector("#trainerBody").innerHTML=html+feedbackHtml();
+  bindQuestion();
+}
+function promptHtml(word,sub,hint){return `<div class="prompt"><div class="word">${word||"?"}</div><p class="sub">${hint}${sub?` · ${sub}`:""}</p></div>`}
+function formHtml(fields){return `<div class="form">${fields.map(([id,label])=>`<div class="field"><label>${label}</label><input data-answer="${id}" autocomplete="off"></div>`).join("")}</div>`}
+function actionsHtml(){return `<div class="actions"><button class="primary" id="submitBtn" type="button">提交并下一题</button><button class="ghost" id="showBtn" type="button">显示答案</button></div>`}
+function choiceHtml(choices){return `<div class="form"><div class="field full"><div class="choices">${choices.map(x=>`<button class="choice" data-choice="${x}">${x}</button>`).join("")}</div></div></div>`}
+function feedbackHtml(){return feedback?`<div class="feedback ${feedback.startsWith("正确")?"ok":"no"}">${feedback}</div>`:""}
+function bindQuestion(){
+  const submit=document.querySelector("#submitBtn");
+  if(submit)submit.onclick=()=>checkInputs(true);
+  const show=document.querySelector("#showBtn");
+  if(show)show.onclick=()=>showAnswer();
+  document.querySelectorAll("[data-choice]").forEach(btn=>btn.onclick=()=>checkChoice(btn));
+  document.querySelectorAll("[data-answer]").forEach(input=>input.onkeydown=e=>{if(e.key==="Enter")checkInputs(true)});
+}
+function checkInputs(autoNext){
+  const got={};
+  document.querySelectorAll("[data-answer]").forEach(x=>got[x.dataset.answer]=x.value);
+  const ok=Object.entries(current.answer).every(([k,v])=>fuzzy(got[k],v,k));
+  record(ok);
+  feedback=(ok?"正确。":"不对。")+answerText(current.answer);
+  renderQuestion();
+  if(ok&&autoNext)setTimeout(nextQuestion,420);
+}
+function checkChoice(btn){
+  const ok=fuzzy(btn.dataset.choice,current.answer.choice,"choice");
+  record(ok);
+  document.querySelectorAll("[data-choice]").forEach(x=>x.classList.add(fuzzy(x.dataset.choice,current.answer.choice,"choice")?"good":"bad"));
+  feedback=(ok?"正确。":"不对。")+answerText(current.answer);
+  document.querySelector("#trainerBody").insertAdjacentHTML("beforeend",feedbackHtml());
+  if(ok)setTimeout(nextQuestion,520);
+}
+function fuzzy(a,b,key){
+  if(!b)return true;
+  const aa=norm(a),bb=norm(b);
+  if(key==="chinese")return aa&&bb.includes(aa)||aa.includes(bb);
+  if(key==="pos")return ["noun","nom"].includes(aa)&&["noun","nom"].some(x=>bb.includes(x));
+  if(key==="gender")return aa[0]===bb[0]||bb.includes(aa);
+  if(key==="number")return aa[0]===bb[0]||bb.includes(aa);
+  return aa===bb;
+}
+function answerText(ans){return " 答案：" + Object.entries(ans).map(([k,v])=>`${k}: ${v}`).join("；")}
+function record(ok){
+  if(answered)return;
+  answered=true;
+  const id=(current.entry&&current.entry.id)||current.id;
+  const s=entryStats(id),today=todayKey();
+  if(s.last!==today){s.todayCorrect=0;s.todayWrong=0;s.last=today}
+  if(ok){s.correct++;s.todayCorrect++;s.streak++}else{s.wrong++;s.todayWrong++;s.streak=0}
+  saveStats();renderStats();
+}
+function showAnswer(){feedback="答案："+answerText(current.answer);renderQuestion()}
+function inferGender(form){return /e(s)?$/i.test(form)?"Feminine":""}
+function inferNumber(form){return /s$/i.test(form)?"Plural":"Singular"}
+function agreeAdj(base,suffix){return base.endsWith("e")&&suffix==="e"?base:base+suffix}
+function renderThemeBrowser(){
+  const groups=new Map();
+  DATA.entries.forEach(e=>{const k=e.theme||"未分类";groups.set(k,[...(groups.get(k)||[]),e])});
+  document.querySelector("#trainerBody").innerHTML=`<div class="prompt"><div class="word" style="font-size:34px">Theme Browser</div><p class="sub">只浏览，不做练习。</p></div><div class="form"><div class="field full"><div class="themeGrid">${[...groups.entries()].map(([theme,items])=>`<div class="theme"><b>${theme}<span>${items.length}</span></b>${items.slice(0,10).map(e=>`<p class="small">${e.french||e.lemma} · ${e.chinese||""}</p>`).join("")}</div>`).join("")}</div></div></div>`;
+}
+function search(){
+  const q=norm(document.querySelector("#searchInput").value);
+  if(!q){document.querySelector("#searchResults").innerHTML="";return}
+  const result=DATA.entries.filter(e=>[e.french,e.lemma,e.chinese,e.theme,...(e.fixedPhrases||[])].some(x=>norm(x).includes(q))).slice(0,30);
+  document.querySelector("#searchResults").innerHTML=result.map(e=>entryHtml(e,`掌握 ${entryStats(e.id).streak} 连对`)).join("")||`<p class="small">没有找到。</p>`;
+}
+document.querySelector("#nextBtn").onclick=nextQuestion;
+document.querySelector("#searchInput").oninput=search;
+fetch("data/morphology.json?"+Date.now()).then(r=>r.json()).then(data=>{
+  DATA=data;
+  renderNav();renderStats();
+  if(!DATA.entries.length)renderEmpty();else nextQuestion();
+}).catch(err=>{
+  document.querySelector("#trainerBody").innerHTML=`<div class="empty">读取 morphology.json 失败：${err.message}</div>`;
+});
+</script>
+</body>
+</html>

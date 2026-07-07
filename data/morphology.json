@@ -1,0 +1,22 @@
+{
+  "generatedAt": null,
+  "source": {
+    "type": "empty",
+    "path": null
+  },
+  "requiredFields": [
+    "French",
+    "Chinese",
+    "Gender",
+    "PartOfSpeech",
+    "Lemma",
+    "Plural",
+    "Theme",
+    "Level",
+    "FixedPhrases",
+    "ConjugationGroup",
+    "PastParticiple",
+    "Notes"
+  ],
+  "entries": []
+}
