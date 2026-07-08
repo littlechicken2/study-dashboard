@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-07-08T03:18:23-04:00",
+  "updatedAt": "2026-07-08T04:18:26-04:00",
   "today": {
     "date": "2026-07-08",
-    "focusMinutes": 23
+    "focusMinutes": 28
   },
   "anki": {
     "today": {
-      "reviews": 176,
-      "new": 84,
-      "minutes": 22.9,
+      "reviews": 209,
+      "new": 85,
+      "minutes": 27.6,
       "activityComplete": true,
       "goalPercent": 100
     },
@@ -2124,7 +2124,7 @@
       {
         "date": "2026-06-24",
         "reviews": 136,
-        "new": 114,
+        "new": 115,
         "minutes": 20.9
       },
       {
@@ -2160,7 +2160,7 @@
       {
         "date": "2026-06-30",
         "reviews": 223,
-        "new": 199,
+        "new": 200,
         "minutes": 32.5
       },
       {
@@ -2172,19 +2172,19 @@
       {
         "date": "2026-07-02",
         "reviews": 403,
-        "new": 168,
+        "new": 178,
         "minutes": 59.1
       },
       {
         "date": "2026-07-03",
         "reviews": 215,
-        "new": 151,
+        "new": 158,
         "minutes": 34.1
       },
       {
         "date": "2026-07-04",
         "reviews": 328,
-        "new": 123,
+        "new": 136,
         "minutes": 58.6
       },
       {
@@ -2207,9 +2207,9 @@
       },
       {
         "date": "2026-07-08",
-        "reviews": 176,
-        "new": 84,
-        "minutes": 22.9
+        "reviews": 209,
+        "new": 85,
+        "minutes": 27.6
       }
     ],
     "decks": [
