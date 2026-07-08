@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-07-07T22:18:06-04:00",
+  "updatedAt": "2026-07-07T23:18:09-04:00",
   "today": {
     "date": "2026-07-07",
-    "focusMinutes": 8
+    "focusMinutes": 12
   },
   "anki": {
     "today": {
-      "reviews": 38,
-      "new": 0,
-      "minutes": 7.6,
+      "reviews": 71,
+      "new": 3,
+      "minutes": 12.3,
       "activityComplete": true,
       "goalPercent": 100
     },
     "total": {
       "cards": 25974,
-      "mature": 341
+      "mature": 343
     },
     "streak": 25,
     "history": [
@@ -1845,7 +1845,7 @@
       {
         "date": "2026-05-08",
         "reviews": 111,
-        "new": 162,
+        "new": 164,
         "minutes": 23.9
       },
       {
@@ -1965,13 +1965,13 @@
       {
         "date": "2026-05-28",
         "reviews": 114,
-        "new": 156,
+        "new": 158,
         "minutes": 18.8
       },
       {
         "date": "2026-05-29",
         "reviews": 43,
-        "new": 144,
+        "new": 149,
         "minutes": 6.6
       },
       {
@@ -1983,7 +1983,7 @@
       {
         "date": "2026-05-31",
         "reviews": 75,
-        "new": 191,
+        "new": 194,
         "minutes": 15.3
       },
       {
@@ -2037,7 +2037,7 @@
       {
         "date": "2026-06-09",
         "reviews": 179,
-        "new": 147,
+        "new": 149,
         "minutes": 22.4
       },
       {
@@ -2067,7 +2067,7 @@
       {
         "date": "2026-06-14",
         "reviews": 59,
-        "new": 189,
+        "new": 194,
         "minutes": 7.7
       },
       {
@@ -2097,7 +2097,7 @@
       {
         "date": "2026-06-19",
         "reviews": 70,
-        "new": 82,
+        "new": 83,
         "minutes": 12.3
       },
       {
@@ -2109,13 +2109,13 @@
       {
         "date": "2026-06-21",
         "reviews": 96,
-        "new": 100,
+        "new": 101,
         "minutes": 12.5
       },
       {
         "date": "2026-06-22",
         "reviews": 124,
-        "new": 120,
+        "new": 125,
         "minutes": 22.9
       },
       {
@@ -2139,7 +2139,7 @@
       {
         "date": "2026-06-26",
         "reviews": 129,
-        "new": 118,
+        "new": 119,
         "minutes": 20.2
       },
       {
@@ -2175,19 +2175,19 @@
       {
         "date": "2026-07-02",
         "reviews": 403,
-        "new": 150,
+        "new": 151,
         "minutes": 59.1
       },
       {
         "date": "2026-07-03",
         "reviews": 215,
-        "new": 132,
+        "new": 133,
         "minutes": 34.1
       },
       {
         "date": "2026-07-04",
         "reviews": 328,
-        "new": 94,
+        "new": 95,
         "minutes": 58.6
       },
       {
@@ -2204,9 +2204,9 @@
       },
       {
         "date": "2026-07-07",
-        "reviews": 38,
-        "new": 0,
-        "minutes": 7.6
+        "reviews": 71,
+        "new": 3,
+        "minutes": 12.3
       }
     ]
   },
