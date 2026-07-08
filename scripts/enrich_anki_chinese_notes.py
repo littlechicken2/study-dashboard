@@ -16,6 +16,7 @@ from __future__ import annotations
 import argparse
 import csv
 import html
+import json
 import re
 import shutil
 import sqlite3
@@ -107,6 +108,28 @@ def build_source_map(cur: sqlite3.Cursor, source_name: str) -> dict[str, SourceM
     return source
 
 
+def merge_manual_csv(source: dict[str, SourceMeaning], path: Path | None) -> int:
+    if not path:
+        return 0
+    if not path.exists():
+        raise SystemExit(f"Manual CSV not found: {path}")
+    count = 0
+    with path.open("r", encoding="utf-8-sig", newline="") as fh:
+        reader = csv.DictReader(fh)
+        for row in reader:
+            word = clean(row.get("word")).casefold()
+            chinese = clean(row.get("chinese"))
+            if not word or not chinese:
+                continue
+            source[word] = SourceMeaning(
+                chinese=chinese,
+                english=clean(row.get("english")),
+                sentence=clean(row.get("example")),
+            )
+            count += 1
+    return count
+
+
 def target_notes(cur: sqlite3.Cursor, target_names: list[str]) -> list[tuple[int, int, str, str]]:
     result: list[tuple[int, int, str, str]] = []
     for name in target_names:
@@ -148,6 +171,8 @@ def main() -> None:
     parser.add_argument("--target-deck", action="append", dest="target_decks")
     parser.add_argument("--preview", type=Path, default=Path("data/anki_chinese_preview.csv"))
     parser.add_argument("--unmatched", type=Path, default=Path("data/anki_chinese_unmatched.csv"))
+    parser.add_argument("--status", type=Path, default=Path("data/anki_enrichment_status.json"))
+    parser.add_argument("--manual-csv", type=Path, help="CSV with word,chinese,english,example columns for unmatched words.")
     parser.add_argument("--apply", action="store_true", help="Actually update the Anki collection. Close Anki first.")
     parser.add_argument("--overwrite", action="store_true", help="Replace existing Note content that already contains 中文语境义.")
     args = parser.parse_args()
@@ -160,6 +185,7 @@ def main() -> None:
     con = connect(args.collection)
     cur = con.cursor()
     source = build_source_map(cur, args.source_deck)
+    manual_count = merge_manual_csv(source, args.manual_csv)
     targets = target_notes(cur, args.target_decks or TARGET_DECKS)
 
     preview_rows: list[dict[str, str]] = []
@@ -205,6 +231,20 @@ def main() -> None:
 
     write_csv(args.preview, preview_rows)
     write_csv(args.unmatched, unmatched_rows)
+    args.status.parent.mkdir(parents=True, exist_ok=True)
+    args.status.write_text(json.dumps({
+        "updatedAt": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
+        "sourceDeck": display_deck(args.source_deck),
+        "targetDecks": [display_deck(x) for x in (args.target_decks or TARGET_DECKS)],
+        "matched": len(preview_rows),
+        "unmatched": len(unmatched_rows),
+        "manualCsvRows": manual_count,
+        "updatesPending": len(updates) if not args.apply else 0,
+        "updated": len(updates) if args.apply else 0,
+        "preview": str(args.preview),
+        "unmatchedCsv": str(args.unmatched),
+        "nextStep": "Use data/anki_chinese_unmatched.csv for AI/manual Chinese context meanings.",
+    }, ensure_ascii=False, indent=2), encoding="utf-8")
 
     if args.apply and updates:
         backup = args.collection.with_name(args.collection.name + f".backup-before-chinese-{time.strftime('%Y%m%d-%H%M%S')}")
@@ -218,6 +258,7 @@ def main() -> None:
         print(f"Dry run only. Matched {len(preview_rows)} notes, {len(unmatched_rows)} unmatched.")
         print(f"Preview: {args.preview}")
         print(f"Unmatched: {args.unmatched}")
+        print(f"Status: {args.status}")
 
     con.close()
 

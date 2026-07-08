@@ -73,9 +73,10 @@ def find_anki_collection():
 def collect_anki(days=30):
     result = {
         "today": {"reviews": 0, "new": 0, "minutes": 0},
-        "total": {"cards": 0, "mature": 0},
+        "total": {"cards": 0, "mature": 0, "learned": 0, "newRemaining": 0, "percent": 0},
         "streak": 0,
         "history": [],
+        "decks": [],
     }
     source = find_anki_collection()
     today = datetime.now().date()
@@ -86,9 +87,38 @@ def collect_anki(days=30):
             copy = Path(tmp) / "collection.anki2"
             shutil.copy2(source, copy)
             db = sqlite3.connect(copy)
+            db.create_collation("unicase", lambda a, b: (a.casefold() > b.casefold()) - (a.casefold() < b.casefold()))
             try:
                 result["total"]["cards"] = db.execute("select count(*) from cards").fetchone()[0]
                 result["total"]["mature"] = db.execute("select count(*) from cards where ivl >= 21").fetchone()[0]
+                result["total"]["learned"] = db.execute("select count(*) from cards where type != 0 or reps > 0").fetchone()[0]
+                result["total"]["newRemaining"] = db.execute("select count(*) from cards where type = 0 and reps = 0").fetchone()[0]
+                result["total"]["percent"] = round(
+                    result["total"]["learned"] / result["total"]["cards"] * 100,
+                    2,
+                ) if result["total"]["cards"] else 0
+                for did, name, total, learned, mature, new_remaining in db.execute(
+                    """
+                    select d.id, d.name, count(c.id),
+                      sum(case when c.type != 0 or c.reps > 0 then 1 else 0 end),
+                      sum(case when c.ivl >= 21 then 1 else 0 end),
+                      sum(case when c.type = 0 and c.reps = 0 then 1 else 0 end)
+                    from decks d join cards c on c.did=d.id
+                    group by d.id, d.name
+                    having count(c.id) > 0
+                    order by count(c.id) desc
+                    limit 20
+                    """
+                ):
+                    result["decks"].append({
+                        "id": did,
+                        "name": str(name).replace("\x1f", "::"),
+                        "cards": total or 0,
+                        "learned": learned or 0,
+                        "mature": mature or 0,
+                        "newRemaining": new_remaining or 0,
+                        "percent": round((learned or 0) / total * 100, 2) if total else 0,
+                    })
                 start_ms = int(datetime.combine(start, datetime.min.time()).timestamp() * 1000)
                 for stamp, count, elapsed in db.execute(
                     "select id, count(*), sum(time) from revlog where id >= ? group by date(id / 1000, 'unixepoch', 'localtime')",

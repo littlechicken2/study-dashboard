@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
@@ -119,7 +119,9 @@ const rgbTracker=(a,r,act)=>{
 };
 async function load(){
   const data=await fetch(`data/progress.json?t=${Date.now()}`).then(r=>r.json());
-  const a=data.anki,r=data.reading,act=data.activity||{today:{readingMinutes:0,verbMinutes:0,warnings:[]},history:[]};
+  const liveAnki=await loadAnkiLive();
+  const a=liveAnki?.anki||data.anki,r=data.reading,act=data.activity||{today:{readingMinutes:0,verbMinutes:0,warnings:[]},history:[]};
+  const addedToday=Number(liveAnki?.additionsToday?.added||0);
   const readingTarget=3;
   const browserReading=storedReading();
   currentReadingArticles=browserReading===null?Number(r.today.articles||0):browserReading;
@@ -128,7 +130,7 @@ async function load(){
   const verbDone=Math.min(100,Number(a.today.new||0)/verbTarget*100);
   const daily=(readingDone+verbDone)/2;
   const activeMinutes=Number(act.today.readingMinutes||0)+Number(act.today.verbMinutes||0);
-  document.querySelector("#updated").textContent=`更新于 ${new Date(data.updatedAt).toLocaleString("zh-CN")}`;
+  document.querySelector("#updated").textContent=`更新于 ${new Date(liveAnki?.updatedAt||data.updatedAt).toLocaleString("zh-CN")}`;
   document.querySelector("#dashboard").innerHTML=`
   <article class="card hero">
     <div class="sectionHead"><h2>今日活动完成度</h2><span class="muted">${n(activeMinutes,1)} 分钟已记录</span></div>
@@ -140,11 +142,25 @@ async function load(){
   </article>
   <article class="card trackerCard"><div class="sectionHead"><h2>${new Date().getMonth()+1}月学习日历</h2><div class="legend"><span><i style="background:#f00"></i>阅读</span><span><i style="background:#00f"></i>动词</span></div></div>${rgbTracker(a.history,r.history,act.history||[])}</article>
   <article class="card"><div class="sectionHead"><h2>有效学习时长</h2><span class="muted">娱乐网站自动暂停</span></div><div class="big">${n(activeMinutes,1)} <span class="unit">分钟</span></div>${stats([[n(act.today.readingMinutes,1),"Reading"],[n(act.today.verbMinutes,1),"Verb"],[n((act.today.warnings||[]).length),"警告"]])}</article>
-  <article class="card"><div class="sectionHead"><h2>Verb 具体记录</h2><span class="muted">Anki</span></div><div class="big">${n(a.today.reviews)} <span class="unit">次复习</span></div>${stats([[n(a.today.new),"新卡"],[n(a.today.minutes,1),"分钟"],[n(a.total.cards),"总卡片"]])}</article>
+  <article class="card"><div class="sectionHead"><h2>Anki 总进度</h2><span class="muted">${pct(a.total?.percent||0)}</span></div><div class="big">${n(a.total?.learned)} / ${n(a.total?.cards)} <span class="unit">张</span></div>${bar(a.total?.percent||0)}<p class="details">今日新卡 ${n(a.today.new)} · 今日复习 ${n(a.today.reviews)} · 网站新增 ${n(addedToday)}</p><div class="actions"><button class="action" data-anki-add="-1">撤销</button><button class="action primary" data-anki-add="1">网站新增 +1</button></div>${stats([[n(a.total?.newRemaining),"未学"],[n(a.total?.mature),"成熟"],[n(a.today.minutes,1),"分钟"]])}</article>
   `;
   document.querySelectorAll("[data-reading]").forEach(button=>button.addEventListener("click",()=>recordReading(Number(button.dataset.reading))));
+  document.querySelectorAll("[data-anki-add]").forEach(button=>button.addEventListener("click",()=>recordAnkiAddition(Number(button.dataset.ankiAdd))));
 }
-async function recordReading(delta){
+async function loadAnkiLive(){
+  if(location.hostname.endsWith("github.io")) return null;
+  try{
+    const response=await fetch(`/api/anki-stats?t=${Date.now()}`);
+    return response.ok?await response.json():null;
+  }catch(_){
+    return null;
+  }
+}
+async function recordAnkiAddition(delta){
+  if(location.hostname.endsWith("github.io")) return;
+  await fetch("/api/anki-addition",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({delta,source:"dashboard",capturedAt:new Date().toISOString()})});
+  await load();
+}async function recordReading(delta){
   const buttons=[...document.querySelectorAll("[data-reading]")],status=document.querySelector("#recordStatus");
   buttons.forEach(x=>x.disabled=true);
   status.textContent="正在记录...";
@@ -172,3 +188,4 @@ load().catch(e=>document.querySelector("#dashboard").innerHTML=`<article class="
 </script>
 </body>
 </html>
+

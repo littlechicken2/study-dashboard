@@ -3,3 +3,5 @@ __pycache__/
 scripts/update_error.log
 data/player_state.json
 data/anki_chinese_*.csv
+data/anki_additions.json
+data/anki_enrichment_status.json
