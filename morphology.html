@@ -87,7 +87,7 @@
       <h2>今日训练</h2>
       <div class="stats" id="todayStats"></div>
       <div class="nav" id="modeNav" style="margin-top:12px"></div>
-      <p class="small" style="margin-top:12px">数据只来自 <span class="kbd">data/morphology.json</span>。修改 Anki 后重新导入即可同步。</p>
+      <p class="small" style="margin-top:12px">本地/LAN 会自动读取 Anki；GitHub Pages 使用静态缓存。</p>
     </aside>
 
     <section class="panel trainer">
@@ -309,12 +309,21 @@ function search(){
 }
 document.querySelector("#nextBtn").onclick=nextQuestion;
 document.querySelector("#searchInput").oninput=search;
-fetch("data/morphology.json?"+Date.now()).then(r=>r.json()).then(data=>{
+async function loadMorphologyData(){
+  if(!location.hostname.endsWith("github.io")){
+    try{
+      const live=await fetch(`/api/morphology-data?t=${Date.now()}`);
+      if(live.ok) return await live.json();
+    }catch(_){}
+  }
+  return fetch("data/morphology.json?"+Date.now()).then(r=>r.json());
+}
+loadMorphologyData().then(data=>{
   DATA=data;
   renderNav();renderStats();
   if(!DATA.entries.length)renderEmpty();else nextQuestion();
 }).catch(err=>{
-  document.querySelector("#trainerBody").innerHTML=`<div class="empty">读取 morphology.json 失败：${err.message}</div>`;
+  document.querySelector("#trainerBody").innerHTML=`<div class="empty">读取 Anki 数据失败：${err.message}</div>`;
 });
 </script>
 </body>
