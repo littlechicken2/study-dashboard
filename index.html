@@ -65,6 +65,7 @@
     .action.primary{flex:1;background:linear-gradient(90deg,var(--green),var(--cyan));color:#03120d}
     .action:disabled{opacity:.55;cursor:wait}
     .recordStatus{min-height:16px;margin-top:5px;color:var(--muted);font-size:11px}
+    .pill{display:inline-flex;align-items:center;justify-content:center;min-height:28px;margin-bottom:5px;padding:0 10px;border-radius:4px;background:linear-gradient(90deg,var(--green),var(--cyan));color:#03120d;text-decoration:none;font-weight:800}
     footer{display:none}
     @media(max-width:760px){main{padding:18px 0}.grid{grid-template-columns:1fr}.hero{display:block}.hero,.trackerCard,.wide{grid-column:auto}.goalGrid,.overview{grid-template-columns:1fr}.goalGrid{margin-top:10px}.date{font-size:11px}}
   </style>
@@ -73,7 +74,7 @@
 <main>
   <header>
     <div><h1>学习监督台</h1><p class="muted">月底目标明确，每天只要求留下真实进度。</p></div>
-    <p class="date muted" id="updated">读取中</p>
+    <p class="date muted"><a class="pill" href="morphology.html">背单词训练</a><br><span id="updated">读取中</span></p>
   </header>
   <section class="grid" id="dashboard"></section>
   <footer>公开页面只展示统计数字，不包含卡片、题目、PDF 内容或本地文件。</footer>
