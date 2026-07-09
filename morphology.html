@@ -127,6 +127,9 @@ const IRREGULAR={
   devoir:{inf:"devoir",zh:"必须/欠",present:{je:"dois",tu:"dois",il:"doit",nous:"devons",vous:"devez",ils:"doivent"},past:"dû"},
   dire:{inf:"dire",zh:"说",present:{je:"dis",tu:"dis",il:"dit",nous:"disons",vous:"dites",ils:"disent"},past:"dit"}
 };
+const REGULAR_IR=new Set(["finir","choisir","réussir","reussir","remplir","réfléchir","reflechir","grandir","grossir","maigrir","obéir","obeir","punir"]);
+const REGULAR_RE=new Set(["vendre","attendre","répondre","repondre","perdre","descendre","rendre","entendre"]);
+const REGULAR_ER=new Set(["parler","aimer","chercher","trouver","regarder","donner","demander","travailler","jouer","écouter","ecouter","habiter","arriver","rester","passer","porter","fermer","montrer","entrer","tomber"]);
 const RULES=[
   ["名词性数","阳性常见 <code>le/un</code>，阴性常见 <code>la/une</code>。复数通常加 <code>-s</code>，<code>-eau/-eu</code> 多加 <code>-x</code>，<code>-al</code> 常变 <code>-aux</code>。"],
   ["形容词配合","阴性通常加 <code>-e</code>，复数加 <code>-s</code>。若本来以 <code>-e</code> 结尾，阴性不再加；<code>-eux</code> 常变 <code>-euse</code>。"],
@@ -189,14 +192,17 @@ function regularVerb(inf){
   const v=norm(inf);
   if(IRREGULAR[v])return IRREGULAR[v];
   if(v.endsWith("er")){
+    if(!REGULAR_ER.has(v))return null;
     const stem=inf.slice(0,-2);
     return {inf,zh:"",present:{je:stem+"e",tu:stem+"es",il:stem+"e",nous:stem+"ons",vous:stem+"ez",ils:stem+"ent"},past:stem+"é",rule:"-er"};
   }
   if(v.endsWith("ir")){
+    if(!REGULAR_IR.has(v))return null;
     const stem=inf.slice(0,-2);
     return {inf,zh:"",present:{je:stem+"is",tu:stem+"is",il:stem+"it",nous:stem+"issons",vous:stem+"issez",ils:stem+"issent"},past:stem+"i",rule:"-ir"};
   }
   if(v.endsWith("re")){
+    if(!REGULAR_RE.has(v))return null;
     const stem=inf.slice(0,-2);
     return {inf,zh:"",present:{je:stem+"s",tu:stem+"s",il:stem,nous:stem+"ons",vous:stem+"ez",ils:stem+"ent"},past:stem+"u",rule:"-re"};
   }
@@ -213,12 +219,14 @@ function identifyPool(){
   const items=[];
   DATA.entries.forEach(e=>{
     const pos=inferPos(e);
-    if(!e.french||pos==="Other")return;
-    items.push({id:e.id,type:"word",display:e.french,zh:e.chinese,answer:{pos,gender:e.gender||"Unknown",number:pos==="Noun"?nounNumber(e):"none",tense:pos==="Verb"?"Infinitif":"none",person:"none"},note:e.notes||""});
+    if(!e.french)return;
+    if(pos==="Noun"){
+      items.push({id:e.id,kind:"noun",display:e.french,zh:e.chinese,answer:{gender:e.gender||"Unknown",number:nounNumber(e)},note:e.notes||""});
+    }
     const verb=pos==="Verb"?regularVerb(e.lemma||e.french):null;
     if(verb){
-      Object.entries(verb.present).forEach(([person,form])=>items.push({id:`${e.id}-${person}`,type:"verbForm",display:form,zh:e.chinese,answer:{pos:"Verb",gender:"none",number:"none",tense:"Présent",person:person==="il"?"il/elle":person==="ils"?"ils/elles":person},note:e.lemma||e.french}));
-      items.push({id:`${e.id}-past`,type:"verbForm",display:verb.past,zh:e.chinese,answer:{pos:"Verb",gender:"none",number:"none",tense:"Participe passé",person:"none"},note:e.lemma||e.french});
+      Object.entries(verb.present).forEach(([person,form])=>items.push({id:`${e.id}-${person}`,kind:"verb",display:form,zh:e.chinese,answer:{person:person==="il"?"il/elle":person==="ils"?"ils/elles":person,tense:"Présent"},note:e.lemma||e.french}));
+      items.push({id:`${e.id}-past`,kind:"verb",display:verb.past,zh:e.chinese,answer:{person:"none",tense:"Participe passé"},note:e.lemma||e.french});
     }
   });
   return items;
@@ -276,16 +284,12 @@ function emptyHtml(){
 }
 function renderIdentify(){
   if(!current){$("#trainerBody").innerHTML=emptyHtml();return}
-  const a=current.answer;
+  const groups=current.kind==="verb"
+    ? `${choiceGroup("1. 人称","person",PERSON_CHOICES)}${choiceGroup("2. 时态/形式","tense",TENSE_CHOICES)}`
+    : `${choiceGroup("1. 性","gender",GENDER_CHOICES)}${choiceGroup("2. 数","number",["Singular","Plural"])}`;
   $("#trainerBody").innerHTML=`
     <div class="question"><div class="word">${current.display}</div><p class="hint">${current.zh||""}${current.note?` · ${current.note}`:""}</p></div>
-    <div class="choiceBlock">
-      ${choiceGroup("词性","pos",POS_CHOICES)}
-      ${choiceGroup("性","gender",GENDER_CHOICES)}
-      ${choiceGroup("数","number",["Singular","Plural","none"])}
-      ${choiceGroup("时态/形式","tense",TENSE_CHOICES.concat(["none"]))}
-      ${choiceGroup("人称","person",PERSON_CHOICES)}
-    </div>
+    <div class="choiceBlock">${groups}</div>
     <div class="actions"><button class="primary" id="submitBtn">提交</button><button class="ghost" id="showBtn">显示答案</button></div>
     ${feedbackHtml()}
   `;
@@ -306,7 +310,8 @@ function selectedMap(){
 }
 function checkIdentify(){
   const got=selectedMap(), ans=current.answer;
-  const ok=["pos","gender","number","tense","person"].every(k=>(got[k]||"")===String(ans[k]||"none"));
+  const keys=current.kind==="verb"?["person","tense"]:["gender","number"];
+  const ok=keys.every(k=>(got[k]||"")===String(ans[k]||"none"));
   record(ok);
   document.querySelectorAll(".choice").forEach(btn=>{
     const good=String(ans[btn.dataset.key]||"none")===btn.dataset.value;
