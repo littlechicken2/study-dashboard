@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-07-12T12:56:32-04:00",
+  "updatedAt": "2026-07-12T13:56:34-04:00",
   "today": {
     "date": "2026-07-12",
-    "focusMinutes": 31
+    "focusMinutes": 37
   },
   "anki": {
     "today": {
-      "reviews": 185,
-      "new": 47,
-      "minutes": 30.9,
+      "reviews": 214,
+      "new": 57,
+      "minutes": 36.9,
       "activityComplete": true,
       "goalPercent": 100
     },
     "total": {
       "cards": 25974,
-      "mature": 414,
-      "learned": 1344,
-      "newRemaining": 24630,
-      "percent": 5.17
+      "mature": 415,
+      "learned": 1349,
+      "newRemaining": 24625,
+      "percent": 5.19
     },
     "streak": 30,
     "history": [
@@ -2124,19 +2124,19 @@
       {
         "date": "2026-06-28",
         "reviews": 177,
-        "new": 237,
+        "new": 239,
         "minutes": 24.8
       },
       {
         "date": "2026-06-29",
         "reviews": 180,
-        "new": 263,
+        "new": 264,
         "minutes": 42.4
       },
       {
         "date": "2026-06-30",
         "reviews": 223,
-        "new": 222,
+        "new": 224,
         "minutes": 32.5
       },
       {
@@ -2154,13 +2154,13 @@
       {
         "date": "2026-07-03",
         "reviews": 215,
-        "new": 237,
+        "new": 239,
         "minutes": 34.1
       },
       {
         "date": "2026-07-04",
         "reviews": 328,
-        "new": 256,
+        "new": 258,
         "minutes": 58.6
       },
       {
@@ -2184,13 +2184,13 @@
       {
         "date": "2026-07-08",
         "reviews": 517,
-        "new": 290,
+        "new": 299,
         "minutes": 65.5
       },
       {
         "date": "2026-07-09",
         "reviews": 289,
-        "new": 92,
+        "new": 93,
         "minutes": 37.3
       },
       {
@@ -2207,9 +2207,9 @@
       },
       {
         "date": "2026-07-12",
-        "reviews": 185,
-        "new": 47,
-        "minutes": 30.9
+        "reviews": 214,
+        "new": 57,
+        "minutes": 36.9
       }
     ],
     "decks": [
@@ -2217,10 +2217,10 @@
         "id": 1777946190611,
         "name": "5000 Most Common French Words Pt. 2::[1] Main Course::[b] Option 1: Canadian French Audio::I) French to English",
         "cards": 4500,
-        "learned": 784,
-        "mature": 49,
-        "newRemaining": 3716,
-        "percent": 17.42
+        "learned": 789,
+        "mature": 50,
+        "newRemaining": 3711,
+        "percent": 17.53
       },
       {
         "id": 1777946190612,
