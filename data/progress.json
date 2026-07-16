@@ -1,25 +1,25 @@
 {
-  "updatedAt": "2026-07-16T08:01:46-04:00",
+  "updatedAt": "2026-07-16T09:01:49-04:00",
   "today": {
     "date": "2026-07-16",
-    "focusMinutes": 0
+    "focusMinutes": 4
   },
   "anki": {
     "today": {
-      "reviews": 0,
+      "reviews": 42,
       "new": 0,
-      "minutes": 0,
-      "activityComplete": false,
-      "goalPercent": 0
+      "minutes": 3.6,
+      "activityComplete": true,
+      "goalPercent": 100
     },
     "total": {
       "cards": 25974,
-      "mature": 460,
+      "mature": 468,
       "learned": 1470,
       "newRemaining": 24504,
       "percent": 5.66
     },
-    "streak": 0,
+    "streak": 1,
     "history": [
       {
         "date": "2025-07-17",
@@ -1596,7 +1596,7 @@
       {
         "date": "2026-04-05",
         "reviews": 29,
-        "new": 187,
+        "new": 188,
         "minutes": 3.0
       },
       {
@@ -1782,19 +1782,19 @@
       {
         "date": "2026-05-06",
         "reviews": 135,
-        "new": 224,
+        "new": 226,
         "minutes": 18.0
       },
       {
         "date": "2026-05-07",
         "reviews": 142,
-        "new": 275,
+        "new": 276,
         "minutes": 28.4
       },
       {
         "date": "2026-05-08",
         "reviews": 111,
-        "new": 185,
+        "new": 189,
         "minutes": 23.9
       },
       {
@@ -1812,7 +1812,7 @@
       {
         "date": "2026-05-11",
         "reviews": 216,
-        "new": 218,
+        "new": 221,
         "minutes": 29.1
       },
       {
@@ -1908,13 +1908,13 @@
       {
         "date": "2026-05-27",
         "reviews": 54,
-        "new": 168,
+        "new": 170,
         "minutes": 10.0
       },
       {
         "date": "2026-05-28",
         "reviews": 114,
-        "new": 174,
+        "new": 176,
         "minutes": 18.8
       },
       {
@@ -1926,7 +1926,7 @@
       {
         "date": "2026-05-30",
         "reviews": 86,
-        "new": 210,
+        "new": 212,
         "minutes": 11.2
       },
       {
@@ -1956,7 +1956,7 @@
       {
         "date": "2026-06-04",
         "reviews": 280,
-        "new": 393,
+        "new": 394,
         "minutes": 41.1
       },
       {
@@ -1986,7 +1986,7 @@
       {
         "date": "2026-06-09",
         "reviews": 179,
-        "new": 163,
+        "new": 165,
         "minutes": 22.4
       },
       {
@@ -2010,19 +2010,19 @@
       {
         "date": "2026-06-13",
         "reviews": 195,
-        "new": 201,
+        "new": 204,
         "minutes": 34.9
       },
       {
         "date": "2026-06-14",
         "reviews": 59,
-        "new": 208,
+        "new": 209,
         "minutes": 7.7
       },
       {
         "date": "2026-06-15",
         "reviews": 87,
-        "new": 153,
+        "new": 157,
         "minutes": 12.3
       },
       {
@@ -2034,37 +2034,37 @@
       {
         "date": "2026-06-17",
         "reviews": 71,
-        "new": 189,
+        "new": 191,
         "minutes": 9.3
       },
       {
         "date": "2026-06-18",
         "reviews": 149,
-        "new": 150,
+        "new": 151,
         "minutes": 16.2
       },
       {
         "date": "2026-06-19",
         "reviews": 70,
-        "new": 92,
+        "new": 96,
         "minutes": 12.3
       },
       {
         "date": "2026-06-20",
         "reviews": 109,
-        "new": 121,
+        "new": 122,
         "minutes": 18.6
       },
       {
         "date": "2026-06-21",
         "reviews": 96,
-        "new": 108,
+        "new": 113,
         "minutes": 12.5
       },
       {
         "date": "2026-06-22",
         "reviews": 124,
-        "new": 149,
+        "new": 150,
         "minutes": 22.9
       },
       {
@@ -2207,9 +2207,9 @@
       },
       {
         "date": "2026-07-16",
-        "reviews": 0,
+        "reviews": 42,
         "new": 0,
-        "minutes": 0
+        "minutes": 3.6
       }
     ],
     "decks": [
@@ -2335,7 +2335,7 @@
         "name": "5000 Most Common French Words::[1] Main Course::[a] Option 1: Parisian French Audio::I) French to English (Start here)",
         "cards": 500,
         "learned": 500,
-        "mature": 355,
+        "mature": 363,
         "newRemaining": 0,
         "percent": 100.0
       },
