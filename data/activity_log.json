@@ -282,6 +282,15 @@
       "sources": {
         "adobe-acrobat": 5.0
       }
+    },
+    "2026-07-17": {
+      "reading": 0,
+      "grammar": 5.0,
+      "verb": 0,
+      "warnings": [],
+      "sources": {
+        "adobe-acrobat": 5.0
+      }
     }
   },
   "lastContext": "grammar",
@@ -289,8 +298,8 @@
     "category": "grammar",
     "source": "adobe-acrobat",
     "seconds": 5,
-    "title": "TCF Canada B2 100天冲刺计划 - Adobe Acrobat Reader (64-bit)",
-    "idleSeconds": 0,
-    "capturedAt": "2026-07-06T21:51:57-0400"
+    "title": "Adobe Acrobat",
+    "idleSeconds": 2.0,
+    "capturedAt": "2026-07-17T10:34:55-0400"
   }
 }
