@@ -1,22 +1,22 @@
 {
-  "updatedAt": "2026-07-19T14:12:49-04:00",
+  "updatedAt": "2026-07-19T15:12:52-04:00",
   "today": {
     "date": "2026-07-19",
-    "focusMinutes": 8
+    "focusMinutes": 10
   },
   "anki": {
     "today": {
-      "reviews": 72,
-      "new": 13,
-      "minutes": 8.2,
+      "reviews": 88,
+      "new": 17,
+      "minutes": 10.4,
       "activityComplete": true,
       "goalPercent": 100
     },
     "total": {
       "cards": 25974,
       "mature": 550,
-      "learned": 1630,
-      "newRemaining": 24344,
+      "learned": 1631,
+      "newRemaining": 24343,
       "percent": 6.28
     },
     "streak": 4,
@@ -2064,7 +2064,7 @@
       {
         "date": "2026-06-25",
         "reviews": 129,
-        "new": 150,
+        "new": 151,
         "minutes": 21.9
       },
       {
@@ -2094,7 +2094,7 @@
       {
         "date": "2026-06-30",
         "reviews": 223,
-        "new": 271,
+        "new": 272,
         "minutes": 32.5
       },
       {
@@ -2106,7 +2106,7 @@
       {
         "date": "2026-07-02",
         "reviews": 403,
-        "new": 263,
+        "new": 264,
         "minutes": 59.1
       },
       {
@@ -2118,7 +2118,7 @@
       {
         "date": "2026-07-04",
         "reviews": 328,
-        "new": 346,
+        "new": 347,
         "minutes": 58.6
       },
       {
@@ -2130,13 +2130,13 @@
       {
         "date": "2026-07-06",
         "reviews": 309,
-        "new": 257,
+        "new": 258,
         "minutes": 51.2
       },
       {
         "date": "2026-07-07",
         "reviews": 71,
-        "new": 8,
+        "new": 9,
         "minutes": 12.3
       },
       {
@@ -2166,19 +2166,19 @@
       {
         "date": "2026-07-12",
         "reviews": 364,
-        "new": 234,
+        "new": 236,
         "minutes": 54.5
       },
       {
         "date": "2026-07-13",
         "reviews": 347,
-        "new": 204,
+        "new": 205,
         "minutes": 35.4
       },
       {
         "date": "2026-07-14",
         "reviews": 357,
-        "new": 139,
+        "new": 142,
         "minutes": 39.1
       },
       {
@@ -2207,9 +2207,9 @@
       },
       {
         "date": "2026-07-19",
-        "reviews": 72,
-        "new": 13,
-        "minutes": 8.2
+        "reviews": 88,
+        "new": 17,
+        "minutes": 10.4
       }
     ],
     "decks": [
@@ -2217,10 +2217,10 @@
         "id": 1777946190611,
         "name": "5000 Most Common French Words Pt. 2::[1] Main Course::[b] Option 1: Canadian French Audio::I) French to English",
         "cards": 4500,
-        "learned": 1070,
+        "learned": 1071,
         "mature": 175,
-        "newRemaining": 3430,
-        "percent": 23.78
+        "newRemaining": 3429,
+        "percent": 23.8
       },
       {
         "id": 1777946190612,
