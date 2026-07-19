@@ -66,8 +66,12 @@
     .action:disabled{opacity:.55;cursor:wait}
     .recordStatus{min-height:16px;margin-top:5px;color:var(--muted);font-size:11px}
     .pill{display:inline-flex;align-items:center;justify-content:center;min-height:28px;margin-bottom:5px;padding:0 10px;border-radius:4px;background:linear-gradient(90deg,var(--green),var(--cyan));color:#03120d;text-decoration:none;font-weight:800}
+    .pinnedPlan{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;margin:6px 0;padding:10px 12px;border:1px solid rgba(105,227,157,.38);border-radius:7px;background:linear-gradient(90deg,rgba(105,227,157,.16),rgba(98,217,222,.10))}
+    .pinnedPlan b{display:block;font-size:16px}
+    .pinnedPlan span{color:var(--muted);font-size:12px;line-height:1.35}
+    .planDays{font-size:24px;font-weight:900;color:var(--green);font-variant-numeric:tabular-nums;text-align:right}
     footer{display:none}
-    @media(max-width:760px){main{padding:18px 0}.grid{grid-template-columns:1fr}.hero{display:block}.hero,.trackerCard,.wide{grid-column:auto}.goalGrid,.overview{grid-template-columns:1fr}.goalGrid{margin-top:10px}.date{font-size:11px}}
+    @media(max-width:760px){main{padding:18px 0}.grid{grid-template-columns:1fr}.hero{display:block}.hero,.trackerCard,.wide{grid-column:auto}.goalGrid,.overview{grid-template-columns:1fr}.goalGrid{margin-top:10px}.date{font-size:11px}.pinnedPlan{grid-template-columns:1fr}.planDays{text-align:left}}
   </style>
 </head>
 <body>
@@ -76,6 +80,10 @@
     <div><h1>学习监督台</h1><p class="muted">月底目标明确，每天只要求留下真实进度。</p></div>
     <p class="date muted"><a class="pill" href="morphology.html">背单词训练</a><br><span id="updated">读取中</span></p>
   </header>
+  <section class="pinnedPlan">
+    <div><b>置顶目标：2026 年 9 月前考完法语</b><span>每日主线：Lingua 阅读 3 篇 · Anki 新卡 50 张 · 词形训练 10 分钟。先保证有记录，再追求多做。</span></div>
+    <div class="planDays" id="examCountdown">-- 天</div>
+  </section>
   <section class="grid" id="dashboard"></section>
   <footer>公开页面只展示统计数字，不包含卡片、题目、PDF 内容或本地文件。</footer>
 </main>
@@ -102,6 +110,13 @@ const fitDashboard=()=>{
 };
 fitDashboard();
 addEventListener("resize",fitDashboard);
+const updateExamCountdown=()=>{
+  const today=new Date();
+  const target=new Date(2026,7,31);
+  const left=Math.max(0,Math.ceil((target-today)/86400000));
+  document.querySelector("#examCountdown").textContent=`${left} 天`;
+};
+updateExamCountdown();
 const level=(value,target)=>Number(value||0)<=0?56:Math.max(72,Math.min(255,Math.round((Number(value||0)/Math.max(1,target))*255)));
 const rgbTracker=(a,r,act)=>{
   const map=rows=>new Map((rows||[]).map(x=>[x.date,x])),am=map(a),rm=map(r),tm=map(act);
