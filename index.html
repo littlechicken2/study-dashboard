@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
@@ -65,6 +65,10 @@
     .action.primary{flex:1;background:linear-gradient(90deg,var(--green),var(--cyan));color:#03120d}
     .action:disabled{opacity:.55;cursor:wait}
     .recordStatus{min-height:16px;margin-top:5px;color:var(--muted);font-size:11px}
+    .exprForm{display:grid;gap:6px;margin-top:8px}
+    .exprForm input{width:100%;min-height:30px;padding:6px 8px;border:1px solid var(--line);border-radius:4px;background:#06100c;color:var(--text);font:inherit;font-size:12px}
+    .exprList{display:grid;gap:4px;margin-top:7px;max-height:86px;overflow:auto;font-size:11px;color:var(--muted)}
+    .exprList b{color:var(--text)}
     .pill{display:inline-flex;align-items:center;justify-content:center;min-height:28px;margin-bottom:5px;padding:0 10px;border-radius:4px;background:linear-gradient(90deg,var(--green),var(--cyan));color:#03120d;text-decoration:none;font-weight:800}
     .pinnedPlan{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;margin:6px 0;padding:10px 12px;border:1px solid rgba(105,227,157,.38);border-radius:7px;background:linear-gradient(90deg,rgba(105,227,157,.16),rgba(98,217,222,.10))}
     .pinnedPlan b{display:block;font-size:16px}
@@ -77,11 +81,11 @@
 <body>
 <main>
   <header>
-    <div><h1>学习监督台</h1><p class="muted">月底目标明确，每天只要求留下真实进度。</p></div>
-    <p class="date muted"><a class="pill" href="morphology.html">背单词训练</a><br><span id="updated">读取中</span></p>
+    <div><h1>学习监督台</h1><p class="muted">只记录会迁移到考试输出里的真实进步。</p></div>
+    <p class="date muted"><a class="pill" href="morphology.html">词形训练</a><br><span id="updated">读取中</span></p>
   </header>
   <section class="pinnedPlan">
-    <div><b>置顶目标：2026 年 9 月前考完法语</b><span>每日主线：Lingua 阅读 3 篇 · Anki 新卡 50 张 · 词形训练 10 分钟。先保证有记录，再追求多做。</span></div>
+    <div><b>置顶目标：2026 年 9 月前完成法语考试</b><span>每日主线：Anki 复习清空 · Lingua 沉淀 5 条高频表达 · 词形/变位训练 10 分钟 · 口语/写作各留一点输出。</span></div>
     <div class="planDays" id="examCountdown">-- 天</div>
   </section>
   <section class="grid" id="dashboard"></section>
@@ -136,11 +140,13 @@ const rgbTracker=(a,r,act)=>{
 async function load(){
   const data=await fetch(`data/progress.json?t=${Date.now()}`).then(r=>r.json());
   const liveAnki=await loadAnkiLive();
+  const expressions=await loadExpressions();
   const a=liveAnki?.anki||data.anki,r=data.reading,act=data.activity||{today:{readingMinutes:0,verbMinutes:0,warnings:[]},history:[]};
   const addedToday=Number(liveAnki?.additionsToday?.added||0);
-  const readingTarget=3;
-  const browserReading=storedReading();
-  currentReadingArticles=browserReading===null?Number(r.today.articles||0):browserReading;
+  const readingTarget=5;
+  const todayKeyText=localDateKey();
+  const todayExpressions=(expressions.entries||[]).filter(x=>x.date===todayKeyText);
+  currentReadingArticles=todayExpressions.length;
   const readingDone=Math.min(100,currentReadingArticles/readingTarget*100);
   const verbTarget=50;
   const verbDone=Math.min(100,Number(a.today.new||0)/verbTarget*100);
@@ -150,9 +156,9 @@ async function load(){
   document.querySelector("#dashboard").innerHTML=`
   <article class="card hero">
     <div class="sectionHead"><h2>今日活动完成度</h2><span class="muted">${n(activeMinutes,1)} 分钟已记录</span></div>
-    <div class="overview"><div class="heroValue">${pct(daily)}</div><div><p class="muted">Reading 与 Verb 均达标才是 100%</p>${bar(daily)}<p class="details">Reading ${pct(readingDone)} · Verb ${pct(verbDone)}<br>有效时长：Reading ${n(act.today.readingMinutes,1)} 分钟 · Verb ${n(act.today.verbMinutes,1)} 分钟 · 警告 ${n((act.today.warnings||[]).length)} 次</p></div></div>
+    <div class="overview"><div class="heroValue">${pct(daily)}</div><div><p class="muted">Expression 与 Verb 均达标才是 100%</p>${bar(daily)}<p class="details">Expression ${pct(readingDone)} · Verb ${pct(verbDone)}<br>有效时长：Reading ${n(act.today.readingMinutes,1)} 分钟 · Verb ${n(act.today.verbMinutes,1)} 分钟 · 警告 ${n((act.today.warnings||[]).length)} 次</p></div></div>
     <div class="goalGrid">
-      <div class="goal"><div class="goalTop"><h2>Reading</h2><span>Lingua A1 · 每日 3 篇</span></div><div class="goalValue">${n(currentReadingArticles)} / ${n(readingTarget)} <span class="unit">篇</span></div>${bar(readingDone)}<div class="actions"><button class="action" data-reading="-1">撤销</button><a class="action primary" href="https://lingua.com/french/reading/" target="_blank" rel="noopener">打开 Lingua A1</a><button class="action" data-reading="1">+1</button></div><p class="recordStatus" id="recordStatus">${recordNotice||"完成一篇及理解题后手动 +1"}</p></div>
+      <div class="goal"><div class="goalTop"><h2>Expression</h2><span>Lingua 高频表达 · 每日 5 条</span></div><div class="goalValue">${n(currentReadingArticles)} / ${n(readingTarget)} <span class="unit">条</span></div>${bar(readingDone)}<div class="exprForm"><input id="exprFrench" placeholder="法语表达：avoir tendance à / en revanche"><input id="exprChinese" placeholder="中文/用法：倾向于 / 然而，用于转折"></div><div class="actions"><a class="action" href="https://lingua.com/french/reading/" target="_blank" rel="noopener">打开 Lingua</a><button class="action primary" id="saveExpression">保存表达</button></div><div class="exprList">${todayExpressions.slice(-4).reverse().map(x=>`<p><b>${x.french}</b> · ${x.chinese||x.note||""}</p>`).join("")||"<p>读完后记录真正想迁移到口语/写作里的表达。</p>"}</div><p class="recordStatus" id="recordStatus">${recordNotice||"目标不是刷篇数，是沉淀可复用表达。"}</p></div>
       <div class="goal"><div class="goalTop"><h2>Verb</h2><span>每日目标 50 张新卡</span></div><div class="goalValue">${n(a.today.new)} / ${n(verbTarget)} <span class="unit">新卡</span></div>${bar(verbDone)}<p class="details">复习 ${n(a.today.reviews)} 次 · 今日 ${n(a.today.minutes,1)} 分钟 · 连续 ${n(a.streak)} 天</p></div>
     </div>
   </article>
@@ -160,10 +166,37 @@ async function load(){
   <article class="card"><div class="sectionHead"><h2>有效学习时长</h2><span class="muted">娱乐网站自动暂停</span></div><div class="big">${n(activeMinutes,1)} <span class="unit">分钟</span></div>${stats([[n(act.today.readingMinutes,1),"Reading"],[n(act.today.verbMinutes,1),"Verb"],[n((act.today.warnings||[]).length),"警告"]])}</article>
   <article class="card"><div class="sectionHead"><h2>Anki 总进度</h2><span class="muted">${pct(a.total?.percent||0)}</span></div><div class="big">${n(a.total?.learned)} / ${n(a.total?.cards)} <span class="unit">张</span></div>${bar(a.total?.percent||0)}<p class="details">今日新卡 ${n(a.today.new)} · 今日复习 ${n(a.today.reviews)} · 网站新增 ${n(addedToday)}</p><div class="actions"><button class="action" data-anki-add="-1">撤销</button><button class="action primary" data-anki-add="1">网站新增 +1</button></div>${stats([[n(a.total?.newRemaining),"未学"],[n(a.total?.mature),"成熟"],[n(a.today.minutes,1),"分钟"]])}</article>
   `;
-  document.querySelectorAll("[data-reading]").forEach(button=>button.addEventListener("click",()=>recordReading(Number(button.dataset.reading))));
+  const saveExpression=document.querySelector("#saveExpression");
+  if(saveExpression) saveExpression.addEventListener("click",recordExpression);
   document.querySelectorAll("[data-anki-add]").forEach(button=>button.addEventListener("click",()=>recordAnkiAddition(Number(button.dataset.ankiAdd))));
 }
-async function loadAnkiLive(){
+async function loadExpressions(){
+  if(location.hostname.endsWith("github.io")){
+    return JSON.parse(localStorage.getItem("expression-log")||"{\"entries\":[]}");
+  }
+  try{
+    const response=await fetch(`/api/expression-log?t=${Date.now()}`);
+    return response.ok?await response.json():{entries:[]};
+  }catch(_){
+    return {entries:[]};
+  }
+}
+async function recordExpression(){
+  const french=document.querySelector("#exprFrench")?.value.trim();
+  const chinese=document.querySelector("#exprChinese")?.value.trim();
+  const status=document.querySelector("#recordStatus");
+  if(!french){ if(status) status.textContent="先输入一条法语表达。"; return; }
+  const entry={date:localDateKey(),french,chinese,source:"Lingua",capturedAt:new Date().toISOString()};
+  if(location.hostname.endsWith("github.io")){
+    const log=JSON.parse(localStorage.getItem("expression-log")||"{\"entries\":[]}");
+    log.entries=[...(log.entries||[]),entry].slice(-1000);
+    localStorage.setItem("expression-log",JSON.stringify(log));
+  }else{
+    await fetch("/api/expression-log",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(entry)});
+  }
+  recordNotice="表达已保存";
+  await load();
+}async function loadAnkiLive(){
   if(location.hostname.endsWith("github.io")) return null;
   try{
     const response=await fetch(`/api/anki-stats?t=${Date.now()}`);

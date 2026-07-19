@@ -5,3 +5,4 @@ data/player_state.json
 data/anki_chinese_*.csv
 data/anki_additions.json
 data/anki_enrichment_status.json
+data/expression_log.json
