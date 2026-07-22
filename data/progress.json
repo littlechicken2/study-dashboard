@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-07-22T17:02:14-04:00",
+  "updatedAt": "2026-07-22T18:02:19-04:00",
   "today": {
     "date": "2026-07-22",
-    "focusMinutes": 20
+    "focusMinutes": 39
   },
   "anki": {
     "today": {
-      "reviews": 190,
-      "new": 49,
-      "minutes": 20.4,
+      "reviews": 385,
+      "new": 112,
+      "minutes": 39.1,
       "activityComplete": true,
       "goalPercent": 100
     },
     "total": {
       "cards": 25974,
-      "mature": 659,
-      "learned": 1799,
-      "newRemaining": 24175,
-      "percent": 6.93
+      "mature": 673,
+      "learned": 1820,
+      "newRemaining": 24154,
+      "percent": 7.01
     },
     "streak": 7,
     "history": [
@@ -2058,7 +2058,7 @@
       {
         "date": "2026-06-27",
         "reviews": 187,
-        "new": 387,
+        "new": 392,
         "minutes": 46.2
       },
       {
@@ -2070,13 +2070,13 @@
       {
         "date": "2026-06-29",
         "reviews": 180,
-        "new": 336,
+        "new": 340,
         "minutes": 42.4
       },
       {
         "date": "2026-06-30",
         "reviews": 223,
-        "new": 300,
+        "new": 301,
         "minutes": 32.5
       },
       {
@@ -2094,25 +2094,25 @@
       {
         "date": "2026-07-03",
         "reviews": 215,
-        "new": 320,
+        "new": 324,
         "minutes": 34.1
       },
       {
         "date": "2026-07-04",
         "reviews": 328,
-        "new": 378,
+        "new": 384,
         "minutes": 58.6
       },
       {
         "date": "2026-07-05",
         "reviews": 237,
-        "new": 313,
+        "new": 317,
         "minutes": 41.1
       },
       {
         "date": "2026-07-06",
         "reviews": 309,
-        "new": 305,
+        "new": 307,
         "minutes": 51.2
       },
       {
@@ -2124,43 +2124,43 @@
       {
         "date": "2026-07-08",
         "reviews": 517,
-        "new": 550,
+        "new": 561,
         "minutes": 65.5
       },
       {
         "date": "2026-07-09",
         "reviews": 289,
-        "new": 218,
+        "new": 220,
         "minutes": 37.3
       },
       {
         "date": "2026-07-10",
         "reviews": 372,
-        "new": 285,
+        "new": 293,
         "minutes": 55.6
       },
       {
         "date": "2026-07-11",
         "reviews": 322,
-        "new": 244,
+        "new": 249,
         "minutes": 52.2
       },
       {
         "date": "2026-07-12",
         "reviews": 364,
-        "new": 284,
+        "new": 285,
         "minutes": 54.5
       },
       {
         "date": "2026-07-13",
         "reviews": 347,
-        "new": 240,
+        "new": 247,
         "minutes": 35.4
       },
       {
         "date": "2026-07-14",
         "reviews": 357,
-        "new": 213,
+        "new": 217,
         "minutes": 39.1
       },
       {
@@ -2172,25 +2172,25 @@
       {
         "date": "2026-07-16",
         "reviews": 668,
-        "new": 169,
+        "new": 175,
         "minutes": 78.1
       },
       {
         "date": "2026-07-17",
         "reviews": 252,
-        "new": 162,
+        "new": 185,
         "minutes": 24.5
       },
       {
         "date": "2026-07-18",
         "reviews": 471,
-        "new": 118,
+        "new": 136,
         "minutes": 57.2
       },
       {
         "date": "2026-07-19",
         "reviews": 323,
-        "new": 106,
+        "new": 127,
         "minutes": 35.0
       },
       {
@@ -2207,9 +2207,9 @@
       },
       {
         "date": "2026-07-22",
-        "reviews": 190,
-        "new": 49,
-        "minutes": 20.4
+        "reviews": 385,
+        "new": 112,
+        "minutes": 39.1
       }
     ],
     "decks": [
@@ -2217,10 +2217,10 @@
         "id": 1777946190611,
         "name": "5000 Most Common French Words Pt. 2::[1] Main Course::[b] Option 1: Canadian French Audio::I) French to English",
         "cards": 4500,
-        "learned": 1239,
-        "mature": 271,
-        "newRemaining": 3261,
-        "percent": 27.53
+        "learned": 1260,
+        "mature": 285,
+        "newRemaining": 3240,
+        "percent": 28.0
       },
       {
         "id": 1777946190612,
