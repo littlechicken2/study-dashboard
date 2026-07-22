@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07120f">
+  <title>TCF 阅读错题地图</title>
+  <style>
+    :root{--bg:#07120f;--panel:#10211b;--panel2:#0a1813;--line:#294238;--text:#f3f7f5;--muted:#9fb1a8;--green:#69e39d;--cyan:#62d9de;--yellow:#f4c95d;--red:#ff7b72}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 Inter,"Segoe UI","Microsoft YaHei",sans-serif}
+    button,input,textarea,select{font:inherit}
+    button,a{touch-action:manipulation}
+    a{color:var(--cyan);text-decoration:none}
+    .app{width:min(1240px,calc(100% - 24px));margin:auto;padding:14px 0 28px}
+    header{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:10px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .back{display:grid;place-items:center;width:36px;height:36px;border:1px solid var(--line);background:var(--panel);color:var(--text);font-size:20px}
+    h1,h2,h3,p{margin:0}
+    h1{font-size:24px;line-height:1.1}
+    .subtitle,.muted{color:var(--muted)}
+    .headerActions{display:flex;gap:7px;align-items:center}
+    .button{min-height:34px;padding:0 11px;border:1px solid var(--line);border-radius:4px;background:#18392d;color:var(--text);font-weight:750;cursor:pointer}
+    .button.primary{border-color:transparent;background:var(--green);color:#03120d}
+    .button.danger{color:var(--red)}
+    .saveState{min-width:72px;color:var(--muted);font-size:11px;text-align:right}
+    .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin-bottom:8px}
+    .stat{padding:9px 11px;border:1px solid var(--line);border-radius:5px;background:var(--panel)}
+    .stat b{display:block;font-size:21px;font-variant-numeric:tabular-nums}
+    .stat span{color:var(--muted);font-size:11px}
+    .layout{display:grid;grid-template-columns:258px minmax(0,1fr);gap:8px;align-items:start}
+    .sidebar,.workspace{border:1px solid var(--line);border-radius:6px;background:var(--panel)}
+    .sidebar{position:sticky;top:8px;padding:11px}
+    .sectionHead{display:flex;justify-content:space-between;gap:10px;align-items:baseline;margin-bottom:8px}
+    .sectionHead h2{font-size:15px}
+    .sectionHead span{color:var(--muted);font-size:10px}
+    .setMap{display:grid;grid-template-columns:repeat(6,1fr);gap:4px}
+    .setButton{position:relative;isolation:isolate;height:34px;padding:0;border:1px solid var(--line);border-radius:3px;overflow:hidden;background:var(--panel2);color:var(--muted);font-weight:800;cursor:pointer}
+    .setButton::before{content:"";position:absolute;inset:auto 0 0;z-index:-1;height:var(--p);background:var(--green);opacity:.28}
+    .setButton.active{border-color:var(--cyan);color:#fff;box-shadow:inset 0 0 0 1px var(--cyan)}
+    .setButton.started{color:var(--text)}
+    .legend{display:flex;gap:10px;margin-top:9px;color:var(--muted);font-size:10px}
+    .legend i{display:inline-block;width:8px;height:8px;margin-right:4px;background:var(--line)}
+    .legend .started{background:var(--cyan)}
+    .legend .done{background:var(--green)}
+    .workspace{padding:13px}
+    .testBar{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center}
+    .navButton{width:36px;height:36px;padding:0;border:1px solid var(--line);border-radius:3px;background:var(--panel2);color:var(--text);font-size:19px;cursor:pointer}
+    .testTitle{text-align:center}
+    .testTitle h2{font-size:19px}
+    .testTitle p{font-size:11px;color:var(--muted)}
+    .testMeta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin:11px 0}
+    .field label,.analysisField label{display:block;margin-bottom:4px;color:var(--muted);font-size:11px;font-weight:700}
+    input,textarea,select{width:100%;border:1px solid var(--line);border-radius:3px;background:#06100c;color:var(--text);outline:none}
+    input,select{height:35px;padding:0 9px}
+    textarea{min-height:78px;padding:8px 9px;resize:vertical}
+    input:focus,textarea:focus,select:focus{border-color:var(--cyan);box-shadow:0 0 0 2px rgba(98,217,222,.12)}
+    .questionMap{display:grid;grid-template-columns:repeat(13,minmax(0,1fr));gap:4px;margin-bottom:12px}
+    .questionButton{position:relative;height:30px;border:1px solid var(--line);border-radius:3px;background:var(--panel2);color:var(--muted);font-size:11px;font-weight:800;cursor:pointer}
+    .questionButton.started::after{content:"";position:absolute;right:3px;bottom:3px;width:4px;height:4px;background:var(--cyan)}
+    .questionButton.wrong{border-color:rgba(255,123,114,.55);color:var(--red)}
+    .questionButton.guessed{border-color:rgba(244,201,93,.55);color:var(--yellow)}
+    .questionButton.done{border-color:rgba(105,227,157,.6);background:rgba(105,227,157,.16);color:var(--green)}
+    .questionButton.active{border-color:var(--yellow);color:#fff;box-shadow:inset 0 0 0 1px var(--yellow)}
+    .questionHead{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:9px 0;border-top:1px solid var(--line)}
+    .questionHead h2{font-size:17px}
+    .questionControls{display:flex;gap:10px;align-items:center}
+    .outcome{display:flex;gap:6px;align-items:center;color:var(--muted);font-size:11px;font-weight:700}
+    .outcome select{width:92px;height:32px}
+    .mastered{display:flex;align-items:center;gap:7px;color:var(--green);font-weight:800;cursor:pointer}
+    .mastered input{width:17px;height:17px;accent-color:var(--green)}
+    .analysisGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+    .analysisField{padding:9px;border:1px solid var(--line);border-radius:4px;background:var(--panel2)}
+    .analysisField.wide{grid-column:1/-1}
+    .errorTypes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}
+    .errorTypes label{display:flex;gap:5px;align-items:center;min-height:33px;padding:5px 7px;border:1px solid var(--line);border-radius:3px;color:var(--muted);cursor:pointer}
+    .errorTypes input{width:14px;height:14px;accent-color:var(--red)}
+    .errorTypes label:has(input:checked){border-color:var(--red);background:rgba(255,123,114,.09);color:var(--text)}
+    .vocabPanel{margin-top:9px;padding:10px;border:1px solid var(--line);border-radius:4px;background:var(--panel2)}
+    .vocabRows{display:grid;gap:5px}
+    .vocabRow{display:grid;grid-template-columns:minmax(120px,.8fr) minmax(180px,1.2fr) auto;gap:6px;align-items:center}
+    .translationWrap{position:relative}
+    .translationStatus{position:absolute;right:7px;top:50%;translate:0 -50%;color:var(--muted);font-size:9px;pointer-events:none}
+    .removeVocab{width:34px;height:34px;padding:0;border:1px solid var(--line);border-radius:3px;background:transparent;color:var(--red);cursor:pointer}
+    .vocabHint{margin-top:6px;color:var(--muted);font-size:10px}
+    .questionActions{display:flex;justify-content:space-between;gap:8px;margin-top:10px}
+    .hiddenFile{display:none}
+    @media(max-width:850px){
+      .app{width:min(100% - 14px,720px);padding-top:8px}
+      header{align-items:flex-start}.headerActions{flex-wrap:wrap;justify-content:flex-end}.saveState{width:100%}
+      .stats{grid-template-columns:repeat(2,1fr)}
+      .layout{grid-template-columns:1fr}.sidebar{position:static}.setMap{grid-template-columns:repeat(7,1fr)}
+      .analysisGrid{grid-template-columns:1fr}.analysisField.wide{grid-column:auto}.questionMap{grid-template-columns:repeat(8,1fr)}
+    }
+    @media(max-width:520px){
+      h1{font-size:20px}.subtitle{font-size:11px}.headerActions .button{padding:0 8px;font-size:11px}
+      .testMeta{grid-template-columns:1fr}.errorTypes{grid-template-columns:repeat(2,1fr)}
+      .questionHead{align-items:flex-start}.questionControls{align-items:flex-end;flex-direction:column}
+      .vocabRow{grid-template-columns:1fr 1fr auto}.questionMap{grid-template-columns:repeat(7,1fr)}
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="brand"><a class="back" id="backLink" href="index.html" title="返回监督台">&larr;</a><div><h1>TCF 阅读错题地图</h1><p class="subtitle">42 套 × 39 题 · 用证据拆掉每一种错误</p></div></div>
+      <div class="headerActions"><span class="saveState" id="saveState">已保存</span><button class="button" id="exportButton">导出备份</button><button class="button" id="importButton">导入</button><input class="hiddenFile" id="importFile" type="file" accept="application/json"></div>
+    </header>
+
+    <section class="stats" id="stats"></section>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="sectionHead"><h2>42 套阅读地图</h2><span id="setSummary">0 / 42 开始</span></div>
+        <div class="setMap" id="setMap"></div>
+        <div class="legend"><span><i class="started"></i>已填写</span><span><i class="done"></i>已掌握</span></div>
+      </aside>
+
+      <section class="workspace">
+        <div class="testBar"><button class="navButton" id="previousSet" title="上一套">&lsaquo;</button><div class="testTitle"><h2 id="setTitle">第 1 套</h2><p id="setProgress">0 / 39 已分析</p></div><button class="navButton" id="nextSet" title="下一套">&rsaquo;</button></div>
+
+        <div class="testMeta">
+          <div class="field"><label for="correctCount">本套正确题数 / 39</label><input id="correctCount" type="number" min="0" max="39" placeholder="例如 16"></div>
+          <div class="field"><label for="scaledScore">换算分数 / 699</label><input id="scaledScore" type="number" min="0" max="699" placeholder="例如 215"></div>
+          <div class="field"><label for="testDuration">完成用时</label><input id="testDuration" placeholder="例如 1:00:40"></div>
+        </div>
+
+        <div class="questionMap" id="questionMap"></div>
+
+        <div class="questionHead"><div><h2 id="questionTitle">第 1 题分析</h2><p class="muted" id="questionStatus">尚未填写</p></div><div class="questionControls"><label class="outcome">答题结果<select id="outcome"><option value="">未记录</option><option value="correct">答对</option><option value="wrong">答错</option><option value="guessed">蒙对</option></select></label><label class="mastered"><input id="mastered" type="checkbox">已掌握</label></div></div>
+
+        <div class="analysisGrid">
+          <div class="analysisField wide"><label for="evidence">原文证据</label><textarea id="evidence" data-field="evidence" placeholder="复制真正支持正确答案的法语句子"></textarea></div>
+          <div class="analysisField"><label for="correctAnswer">正确答案及原因</label><textarea id="correctAnswer" data-field="correctAnswer" placeholder="正确选项是什么？它如何改写原文？"></textarea></div>
+          <div class="analysisField"><label for="myAnswer">我的答案及当时思路</label><textarea id="myAnswer" data-field="myAnswer" placeholder="我选了什么？当时依据是什么？"></textarea></div>
+          <div class="analysisField wide"><label for="trapReason">为什么会被错误选项吸引</label><textarea id="trapReason" data-field="trapReason" placeholder="它偷换了主体、时间、程度、范围，还是利用了原文同词？"></textarea></div>
+          <div class="analysisField wide"><label>错误类型（可多选）</label><div class="errorTypes" id="errorTypes"></div></div>
+          <div class="analysisField wide"><label for="takeaway">需要记住的词块或规则</label><textarea id="takeaway" data-field="takeaway" placeholder="例如：être interrompu = 被中断；à partir de = 从……开始"></textarea></div>
+        </div>
+
+        <section class="vocabPanel">
+          <div class="sectionHead"><h2>本题生词</h2><button class="button" id="addVocab">添加生词</button></div>
+          <div class="vocabRows" id="vocabRows"></div>
+          <p class="vocabHint">输入法语单词或短词组后会发送给 MyMemory 自动翻译；机器翻译仅作提示，中文可以直接修改。结果会缓存在当前浏览器。</p>
+        </section>
+
+        <div class="questionActions"><button class="button" id="previousQuestion">上一题</button><button class="button primary" id="nextQuestion">保存并下一题</button></div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const STORAGE_KEY="tcf-reading-map-v1";
+    const CACHE_KEY="tcf-reading-translation-cache-v1";
+    const ERROR_TYPES={V:"词汇",G:"语法",L:"逻辑",P:"定位",O:"选项陷阱",T:"时间",C:"粗心"};
+    const TOTAL_SETS=42,TOTAL_QUESTIONS=39;
+    let currentSet=Number(localStorage.getItem("tcf-reading-last-set")||1);
+    let currentQuestion=Number(localStorage.getItem("tcf-reading-last-question")||1);
+    let saveTimer=null;
+    const translationTimers=new Map();
+    const translationStatus=new Map();
+
+    const clamp=(value,min,max)=>Math.max(min,Math.min(max,Number(value)||min));
+    const escapeHtml=value=>String(value??"").replace(/[&<>\"]/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[char]));
+    const freshData=()=>({version:1,updatedAt:null,sets:{"1":{meta:{correct:16,score:215,duration:"1:00:40",date:"2026-07-22"},questions:{}}}});
+    const loadData=()=>{try{return JSON.parse(localStorage.getItem(STORAGE_KEY))||freshData();}catch(_){return freshData();}};
+    let data=loadData();
+    if(!localStorage.getItem(STORAGE_KEY)) localStorage.setItem(STORAGE_KEY,JSON.stringify(data));
+    const getSet=(number=currentSet)=>data.sets[String(number)]||(data.sets[String(number)]={meta:{},questions:{}});
+    const getQuestion=(set=currentSet,question=currentQuestion)=>{
+      const questions=getSet(set).questions;
+      return questions[String(question)]||(questions[String(question)]={errors:[],vocab:[]});
+    };
+    const hasQuestionData=question=>Boolean(question.mastered||question.outcome||question.evidence||question.correctAnswer||question.myAnswer||question.trapReason||question.takeaway||(question.errors||[]).length||(question.vocab||[]).some(word=>word.fr||word.zh));
+    const save=()=>{
+      data.updatedAt=new Date().toISOString();
+      localStorage.setItem(STORAGE_KEY,JSON.stringify(data));
+      document.querySelector("#saveState").textContent="已保存";
+      updateNavigationState();
+    };
+    const scheduleSave=()=>{
+      document.querySelector("#saveState").textContent="保存中...";
+      clearTimeout(saveTimer);
+      saveTimer=setTimeout(save,250);
+    };
+
+    function calculateStats(){
+      let startedSets=0,startedQuestions=0,mastered=0,vocab=0;
+      for(let set=1;set<=TOTAL_SETS;set++){
+        const row=data.sets[String(set)];
+        if(!row) continue;
+        const questions=Object.values(row.questions||{});
+        const setStarted=questions.some(hasQuestionData)||Object.values(row.meta||{}).some(Boolean);
+        if(setStarted) startedSets++;
+        for(const question of questions){
+          if(hasQuestionData(question)) startedQuestions++;
+          if(question.mastered) mastered++;
+          vocab+=(question.vocab||[]).filter(word=>word.fr).length;
+        }
+      }
+      return {startedSets,startedQuestions,mastered,vocab};
+    }
+    function renderStats(){
+      const summary=calculateStats();
+      const percent=summary.mastered/TOTAL_SETS/TOTAL_QUESTIONS*100;
+      document.querySelector("#stats").innerHTML=`
+        <div class="stat"><b>${summary.mastered} / ${TOTAL_SETS*TOTAL_QUESTIONS}</b><span>已掌握题目</span></div>
+        <div class="stat"><b>${percent.toFixed(2)}%</b><span>地图完成度</span></div>
+        <div class="stat"><b>${summary.startedSets} / ${TOTAL_SETS}</b><span>已开始套题</span></div>
+        <div class="stat"><b>${summary.vocab}</b><span>累计生词</span></div>`;
+      document.querySelector("#setSummary").textContent=`${summary.startedSets} / ${TOTAL_SETS} 开始`;
+    }
+    function renderSetMap(){
+      document.querySelector("#setMap").innerHTML=Array.from({length:TOTAL_SETS},(_,index)=>{
+        const set=index+1,row=data.sets[String(set)]||{meta:{},questions:{}};
+        const questions=Object.values(row.questions||{}),mastered=questions.filter(question=>question.mastered).length;
+        const started=questions.some(hasQuestionData)||Object.values(row.meta||{}).some(Boolean);
+        return `<button class="setButton ${set===currentSet?"active":""} ${started?"started":""}" data-set="${set}" style="--p:${mastered/TOTAL_QUESTIONS*100}%" title="第${set}套：${mastered}/39已掌握">${set}</button>`;
+      }).join("");
+    }
+    function renderQuestionMap(){
+      const questions=getSet().questions;
+      document.querySelector("#questionMap").innerHTML=Array.from({length:TOTAL_QUESTIONS},(_,index)=>{
+        const number=index+1,question=questions[String(number)]||{};
+        return `<button class="questionButton ${number===currentQuestion?"active":""} ${hasQuestionData(question)?"started":""} ${question.outcome||""} ${question.mastered?"done":""}" data-question="${number}" title="第${number}题">${number}</button>`;
+      }).join("");
+      const done=Object.values(questions).filter(question=>question.mastered).length;
+      document.querySelector("#setProgress").textContent=`${done} / 39 已掌握`;
+    }
+    function renderMeta(){
+      const meta=getSet().meta||{};
+      document.querySelector("#setTitle").textContent=`第 ${currentSet} 套`;
+      document.querySelector("#correctCount").value=meta.correct??"";
+      document.querySelector("#scaledScore").value=meta.score??"";
+      document.querySelector("#testDuration").value=meta.duration??"";
+    }
+    function renderErrorTypes(question){
+      document.querySelector("#errorTypes").innerHTML=Object.entries(ERROR_TYPES).map(([code,label])=>`<label><input type="checkbox" data-error="${code}" ${(question.errors||[]).includes(code)?"checked":""}><span>${code} · ${label}</span></label>`).join("");
+    }
+    function renderVocab(question){
+      if(!question.vocab) question.vocab=[];
+      if(question.vocab.length===0) question.vocab.push({fr:"",zh:""});
+      document.querySelector("#vocabRows").innerHTML=question.vocab.map((word,index)=>`<div class="vocabRow"><input data-vocab-fr="${index}" value="${escapeHtml(word.fr)}" placeholder="法语单词或词组"><div class="translationWrap"><input data-vocab-zh="${index}" value="${escapeHtml(word.zh)}" placeholder="中文翻译"><span class="translationStatus" data-translation-status="${index}">${escapeHtml(translationStatus.get(`${currentSet}-${currentQuestion}-${index}`)||"")}</span></div><button class="removeVocab" data-remove-vocab="${index}" title="删除生词">×</button></div>`).join("");
+    }
+    function renderQuestion(){
+      const question=getQuestion();
+      document.querySelector("#questionTitle").textContent=`第 ${currentQuestion} 题分析`;
+      document.querySelector("#questionStatus").textContent=question.mastered?"已经能够解释正确答案与干扰项":hasQuestionData(question)?"分析进行中":"尚未填写";
+      for(const field of ["evidence","correctAnswer","myAnswer","trapReason","takeaway"]) document.querySelector(`#${field}`).value=question[field]||"";
+      document.querySelector("#mastered").checked=Boolean(question.mastered);
+      document.querySelector("#outcome").value=question.outcome||"";
+      renderErrorTypes(question);
+      renderVocab(question);
+    }
+    function updateNavigationState(){
+      renderStats();renderSetMap();renderQuestionMap();
+    }
+    function render(){
+      currentSet=clamp(currentSet,1,TOTAL_SETS);currentQuestion=clamp(currentQuestion,1,TOTAL_QUESTIONS);
+      localStorage.setItem("tcf-reading-last-set",currentSet);localStorage.setItem("tcf-reading-last-question",currentQuestion);
+      renderMeta();renderQuestion();updateNavigationState();
+    }
+    function selectSet(number){currentSet=clamp(number,1,TOTAL_SETS);currentQuestion=1;render();}
+    function selectQuestion(number){currentQuestion=clamp(number,1,TOTAL_QUESTIONS);render();}
+
+    function translationCache(){try{return JSON.parse(localStorage.getItem(CACHE_KEY)||"{}");}catch(_){return {};}}
+    function repairTranslation(value){
+      const text=String(value||"");
+      try{
+        const bytes=Uint8Array.from([...text],character=>character.charCodeAt(0));
+        const decoded=new TextDecoder("utf-8").decode(bytes);
+        return /[\u3400-\u9fff]/.test(decoded)?decoded:text;
+      }catch(_){return text;}
+    }
+    async function translateVocab(index){
+      const question=getQuestion(),word=question.vocab[index];
+      if(!word?.fr?.trim()||word.zh?.trim()) return;
+      const source=word.fr.trim(),cache=translationCache(),cacheKey=source.toLocaleLowerCase("fr");
+      const statusKey=`${currentSet}-${currentQuestion}-${index}`;
+      if(cache[cacheKey]){word.zh=repairTranslation(cache[cacheKey]);cache[cacheKey]=word.zh;localStorage.setItem(CACHE_KEY,JSON.stringify(cache));translationStatus.set(statusKey,"已缓存");save();renderVocab(question);return;}
+      translationStatus.set(statusKey,"翻译中");renderVocab(question);
+      try{
+        const url=`https://api.mymemory.translated.net/get?q=${encodeURIComponent(source)}&langpair=fr%7Czh-CN`;
+        const response=await fetch(url);
+        if(!response.ok) throw new Error("翻译服务暂不可用");
+        const payload=await response.json();
+        const translated=repairTranslation(payload?.responseData?.translatedText).trim();
+        if(!translated||translated.toLocaleLowerCase()===source.toLocaleLowerCase()) throw new Error("没有找到中文翻译");
+        word.zh=translated;cache[cacheKey]=translated;
+        localStorage.setItem(CACHE_KEY,JSON.stringify(cache));
+        translationStatus.set(statusKey,"自动");save();renderVocab(question);
+      }catch(_){
+        translationStatus.set(statusKey,"请手动填写");renderVocab(question);
+      }
+    }
+    function scheduleTranslation(index){
+      const key=`${currentSet}-${currentQuestion}-${index}`;
+      clearTimeout(translationTimers.get(key));
+      translationTimers.set(key,setTimeout(()=>translateVocab(index),800));
+    }
+
+    document.addEventListener("input",event=>{
+      const target=event.target,question=getQuestion();
+      if(target.dataset.field){question[target.dataset.field]=target.value;scheduleSave();return;}
+      if(target.id==="correctCount"){getSet().meta.correct=target.value===""?"":clamp(target.value,0,39);scheduleSave();return;}
+      if(target.id==="scaledScore"){getSet().meta.score=target.value===""?"":clamp(target.value,0,699);scheduleSave();return;}
+      if(target.id==="testDuration"){getSet().meta.duration=target.value;scheduleSave();return;}
+      if(target.dataset.vocabFr!==undefined){const index=Number(target.dataset.vocabFr);question.vocab[index].fr=target.value;question.vocab[index].zh="";scheduleSave();scheduleTranslation(index);return;}
+      if(target.dataset.vocabZh!==undefined){question.vocab[Number(target.dataset.vocabZh)].zh=target.value;scheduleSave();}
+    });
+    document.addEventListener("change",event=>{
+      const target=event.target,question=getQuestion();
+      if(target.id==="mastered"){question.mastered=target.checked;save();renderQuestion();return;}
+      if(target.id==="outcome"){question.outcome=target.value;save();renderQuestion();return;}
+      if(target.dataset.error){const errors=new Set(question.errors||[]);target.checked?errors.add(target.dataset.error):errors.delete(target.dataset.error);question.errors=[...errors];save();}
+    });
+    document.addEventListener("click",event=>{
+      const target=event.target.closest("button");if(!target)return;
+      if(target.dataset.set) selectSet(target.dataset.set);
+      else if(target.dataset.question) selectQuestion(target.dataset.question);
+      else if(target.dataset.removeVocab!==undefined){getQuestion().vocab.splice(Number(target.dataset.removeVocab),1);save();renderQuestion();}
+    });
+    document.querySelector("#addVocab").addEventListener("click",()=>{getQuestion().vocab.push({fr:"",zh:""});save();renderVocab(getQuestion());});
+    document.querySelector("#previousSet").addEventListener("click",()=>selectSet(currentSet-1));
+    document.querySelector("#nextSet").addEventListener("click",()=>selectSet(currentSet+1));
+    document.querySelector("#previousQuestion").addEventListener("click",()=>selectQuestion(currentQuestion-1));
+    document.querySelector("#nextQuestion").addEventListener("click",()=>{save();if(currentQuestion<TOTAL_QUESTIONS)selectQuestion(currentQuestion+1);else if(currentSet<TOTAL_SETS)selectSet(currentSet+1);});
+    document.querySelector("#exportButton").addEventListener("click",()=>{
+      save();const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"}),link=document.createElement("a");
+      link.href=URL.createObjectURL(blob);link.download=`tcf-reading-map-${new Date().toISOString().slice(0,10)}.json`;link.click();URL.revokeObjectURL(link.href);
+    });
+    document.querySelector("#importButton").addEventListener("click",()=>document.querySelector("#importFile").click());
+    document.querySelector("#importFile").addEventListener("change",async event=>{
+      const file=event.target.files?.[0];if(!file)return;
+      try{const imported=JSON.parse(await file.text());if(!imported?.sets)throw new Error();data=imported;save();render();}catch(_){alert("无法读取这个备份文件。");}
+      event.target.value="";
+    });
+    if(!location.hostname.endsWith("github.io")) document.querySelector("#backLink").href="/dashboard";
+    render();
+  </script>
+</body>
+</html>
