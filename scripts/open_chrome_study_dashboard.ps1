@@ -1,3 +1,4 @@
-$Chrome = Join-Path $env:ProgramFiles "Google\Chrome\Application\chrome.exe"
-$Dashboard = "https://littlechicken2.github.io/study-dashboard/"
-Start-Process -FilePath $Chrome -ArgumentList "--restore-last-session", $Dashboard
+$Launcher = Join-Path $PSScriptRoot "start_dashboard_session.ps1"
+Start-Process -FilePath "powershell.exe" -ArgumentList @(
+    "-NoProfile", "-WindowStyle", "Hidden", "-ExecutionPolicy", "Bypass", "-File", $Launcher
+) -WindowStyle Hidden

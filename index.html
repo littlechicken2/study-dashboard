@@ -74,8 +74,35 @@
     .pinnedPlan b{display:block;font-size:16px}
     .pinnedPlan span{color:var(--muted);font-size:12px;line-height:1.35}
     .planDays{font-size:24px;font-weight:900;color:var(--green);font-variant-numeric:tabular-nums;text-align:right}
+    .planBoard{margin:6px 0;padding:12px 14px;border:1px solid var(--line);border-radius:7px;background:rgba(16,33,27,.94)}
+    .planHeader{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:start}
+    .planHeader h2{font-size:18px}
+    .planHeader p{margin-top:3px;font-size:11px;color:var(--muted)}
+    .planProgress{text-align:right;font-variant-numeric:tabular-nums}
+    .planProgress b{display:block;font-size:25px;line-height:1;color:var(--green)}
+    .planProgress span{font-size:10px;color:var(--muted)}
+    .todayPlan{display:grid;grid-template-columns:120px 1fr;gap:12px;margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
+    .todayMeta b{display:block;font-size:16px}
+    .todayMeta span{font-size:11px;color:var(--muted)}
+    .taskList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px 12px}
+    .taskRow{display:grid;grid-template-columns:18px 1fr;gap:7px;align-items:start;min-width:0;padding:3px 0;font-size:12px;line-height:1.35;cursor:pointer}
+    .taskRow input{width:16px;height:16px;margin:0;accent-color:var(--green);cursor:pointer}
+    .taskRow.done .taskText{text-decoration:line-through;color:#769087}
+    .taskResult{display:inline-flex;margin-top:3px;padding:2px 6px;border-radius:3px;background:rgba(98,217,222,.13);color:var(--cyan);font-size:10px;font-weight:700;text-decoration:none}
+    .planArchive{margin-top:9px;border-top:1px solid var(--line)}
+    .planArchive summary{padding:9px 0 0;color:var(--cyan);font-size:12px;font-weight:800;cursor:pointer;list-style:none}
+    .planArchive summary::-webkit-details-marker{display:none}
+    .planArchive summary::before{content:"+";display:inline-block;width:18px;color:var(--green)}
+    .planArchive[open] summary::before{content:"−"}
+    .planDaysList{display:grid;gap:0;max-height:430px;margin-top:8px;overflow:auto;border-top:1px solid var(--line)}
+    .planDay{display:grid;grid-template-columns:92px 1fr;gap:10px;padding:8px 2px;border-bottom:1px solid rgba(41,66,56,.72)}
+    .planDay.today{background:rgba(105,227,157,.06)}
+    .planDayDate b{display:block;font-size:12px}
+    .planDayDate span{font-size:10px;color:var(--muted)}
+    .planDay .taskList{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .planLoading{color:var(--muted);font-size:12px}
     footer{display:none}
-    @media(max-width:760px){main{padding:18px 0}.grid{grid-template-columns:1fr}.hero{display:block}.hero,.trackerCard,.wide{grid-column:auto}.goalGrid,.overview{grid-template-columns:1fr}.goalGrid{margin-top:10px}.date{font-size:11px}.pinnedPlan{grid-template-columns:1fr}.planDays{text-align:left}}
+    @media(max-width:760px){main{padding:18px 0}.grid{grid-template-columns:1fr}.hero{display:block}.hero,.trackerCard,.wide{grid-column:auto}.goalGrid,.overview{grid-template-columns:1fr}.goalGrid{margin-top:10px}.date{font-size:11px}.pinnedPlan,.planHeader,.todayPlan,.planDay{grid-template-columns:1fr}.planDays,.planProgress{text-align:left}.taskList,.planDay .taskList{grid-template-columns:1fr}.planDaysList{max-height:none}}
   </style>
 </head>
 <body>
@@ -88,6 +115,7 @@
     <div><b>置顶目标：2026 年 9 月前完成法语考试</b><span>每日主线：Anki 复习清空 · Lingua 沉淀 5 条高频表达 · 词形/变位训练 10 分钟 · 口语/写作各留一点输出。</span></div>
     <div class="planDays" id="examCountdown">-- 天</div>
   </section>
+  <section class="planBoard" id="studyPlan"><p class="planLoading">正在读取每日计划...</p></section>
   <section class="grid" id="dashboard"></section>
   <footer>公开页面只展示统计数字，不包含卡片、题目、PDF 内容或本地文件。</footer>
 </main>
@@ -102,6 +130,79 @@ const localDateKey=()=>{
   const d=new Date();
   return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
 };
+const PLAN_STORAGE_KEY="tcf-plan-checks-v1";
+const planBaseTasks={
+  regular:[
+    {key:"anki",label:"Anki 35分钟：先清复习，新卡最多30张"},
+    {key:"morphology",label:"词形/时态20分钟：识别30个，完整写2个动词"},
+    {key:"expressions",label:"记录5条可用于口语或写作的高频表达"}
+  ],
+  mock:[
+    {key:"anki",label:"Anki只清复习，最多20分钟，不加新卡"},
+    {key:"expressions",label:"从模考中记录3条可复用表达"}
+  ],
+  review:[
+    {key:"anki",label:"Anki复习30分钟，新卡最多15张"},
+    {key:"expressions",label:"从错题中记录5条高频表达"}
+  ],
+  light:[
+    {key:"anki",label:"Anki只清到期复习，最多25分钟"}
+  ]
+};
+const planEscape=value=>String(value??"").replace(/[&<>\"]/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[char]));
+const planTasks=day=>[
+  ...(planBaseTasks[day.type]||planBaseTasks.regular).map(task=>({id:`${day.date}-base-${task.key}`,label:task.label})),
+  ...(day.tasks||[])
+];
+const planDateLabel=date=>new Date(`${date}T12:00:00`).toLocaleDateString("zh-CN",{month:"numeric",day:"numeric",weekday:"short"});
+const readPlanState=()=>{
+  try{return JSON.parse(localStorage.getItem(PLAN_STORAGE_KEY)||"{}");}catch(_){return {};}
+};
+const renderPlanTask=(task,state)=>{
+  const checked=Boolean(state[task.id]);
+  return `<label class="taskRow ${checked?"done":""}"><input type="checkbox" data-plan-task="${planEscape(task.id)}" ${checked?"checked":""}><span class="taskText">${planEscape(task.label)}${task.result?`<span class="taskResult">${planEscape(task.result)}</span>`:""}</span></label>`;
+};
+async function loadPlan(){
+  const host=document.querySelector("#studyPlan");
+  try{
+    const plan=await fetch(`data/tcf_plan.json?t=${Date.now()}`).then(response=>{
+      if(!response.ok) throw new Error("计划文件读取失败");
+      return response.json();
+    });
+    const state=readPlanState();
+    plan.days.forEach(day=>planTasks(day).forEach(task=>{
+      if(!(task.id in state)) state[task.id]=Boolean(task.completed);
+    }));
+    localStorage.setItem(PLAN_STORAGE_KEY,JSON.stringify(state));
+    renderPlan(plan,state);
+  }catch(error){
+    host.innerHTML=`<p class="planLoading">${planEscape(error.message)}</p>`;
+  }
+}
+function renderPlan(plan,state){
+  const host=document.querySelector("#studyPlan");
+  const today=localDateKey();
+  const current=plan.days.find(day=>day.date===today)||plan.days.find(day=>day.date>today)||plan.days.at(-1);
+  const all=plan.days.flatMap(planTasks);
+  const completed=all.filter(task=>state[task.id]).length;
+  const overall=all.length?completed/all.length*100:0;
+  const currentTasks=planTasks(current);
+  const currentDone=currentTasks.filter(task=>state[task.id]).length;
+  const dayBlocks=plan.days.map(day=>{
+    const tasks=planTasks(day),done=tasks.filter(task=>state[task.id]).length;
+    return `<div class="planDay ${day.date===today?"today":""}"><div class="planDayDate"><b>${planDateLabel(day.date)}</b><span>${done}/${tasks.length} 完成</span></div><div class="taskList">${tasks.map(task=>renderPlanTask(task,state)).join("")}</div></div>`;
+  }).join("");
+  host.innerHTML=`
+    <div class="planHeader"><div><h2>${planEscape(plan.title)}</h2><p>${planEscape(plan.start)} 至 ${planEscape(plan.end)} · 漏一天不补双倍，继续下一天</p></div><div class="planProgress"><b>${pct(overall)}</b><span>${completed} / ${all.length} 项完成</span></div></div>
+    <div class="todayPlan"><div class="todayMeta"><b>${current.date===today?"今天":"最近计划"}</b><span>${planDateLabel(current.date)} · ${currentDone}/${currentTasks.length}</span></div><div class="taskList">${currentTasks.map(task=>renderPlanTask(task,state)).join("")}</div></div>
+    <details class="planArchive"><summary>查看并勾选全部每日计划</summary><div class="planDaysList">${dayBlocks}</div></details>`;
+  host.querySelectorAll("[data-plan-task]").forEach(input=>input.addEventListener("change",event=>{
+    const next=readPlanState();
+    next[event.currentTarget.dataset.planTask]=event.currentTarget.checked;
+    localStorage.setItem(PLAN_STORAGE_KEY,JSON.stringify(next));
+    renderPlan(plan,next);
+  }));
+}
 const storedReading=()=>{
   const value=localStorage.getItem(`lingua-reading-${localDateKey()}`);
   return value===null?null:Math.max(0,Number(value)||0);
@@ -233,6 +334,7 @@ async function recordAnkiAddition(delta){
     await saveInBrowser();
   }
 }
+loadPlan();
 load().catch(e=>document.querySelector("#dashboard").innerHTML=`<article class="card hero"><h2>暂时没有进度数据</h2><p class="muted">${e.message}</p></article>`);
 </script>
 </body>

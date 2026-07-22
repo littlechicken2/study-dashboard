@@ -1,0 +1,198 @@
+{
+  "title": "TCF Canada 9月前冲刺计划",
+  "start": "2026-07-22",
+  "end": "2026-08-31",
+  "days": [
+    {"date":"2026-07-22","type":"regular","tasks":[
+      {"id":"2026-07-22-reading-r1","label":"阅读 R1：39题，限时60分钟","completed":true,"result":"16/39 · 41.03% · 215/699 · 1:00:40"},
+      {"id":"2026-07-22-reading-review","label":"分析 R1 全部错题并标记错误类型"},
+      {"id":"2026-07-22-writing-t1","label":"写作 T1：60-120词"},
+      {"id":"2026-07-22-speaking-t1","label":"口语 T1：录一次自我介绍"}
+    ]},
+    {"date":"2026-07-23","type":"regular","tasks":[
+      {"id":"2026-07-23-listening-l1","label":"听力 L1：39题，限时35分钟"},
+      {"id":"2026-07-23-listening-review","label":"错题逐句重听并核对文本"},
+      {"id":"2026-07-23-tense","label":"专项：présent / passé composé"},
+      {"id":"2026-07-23-speaking-t2","label":"口语 T2：完成一次提问互动"}
+    ]},
+    {"date":"2026-07-24","type":"regular","tasks":[
+      {"id":"2026-07-24-reading-r2","label":"阅读 R2：39题，限时60分钟"},
+      {"id":"2026-07-24-writing-t2","label":"写作 T2：120-150词"},
+      {"id":"2026-07-24-connectors","label":"摘录5个连接表达并各造一句"}
+    ]},
+    {"date":"2026-07-25","type":"regular","tasks":[
+      {"id":"2026-07-25-listening-l2","label":"听力 L2：39题，限时35分钟"},
+      {"id":"2026-07-25-writing-t3","label":"写作 T3：两方观点+自己的立场"},
+      {"id":"2026-07-25-speaking-t3","label":"口语 T3：录音并连续表达4分钟"}
+    ]},
+    {"date":"2026-07-26","type":"mock","tasks":[
+      {"id":"2026-07-26-mock-1","label":"完整模考 1：四科连续完成，严格计时"},
+      {"id":"2026-07-26-mock-score","label":"记录四科分数、超时位置和猜题数"}
+    ]},
+    {"date":"2026-07-27","type":"review","tasks":[
+      {"id":"2026-07-27-review-wrong","label":"重做模考1全部错题"},
+      {"id":"2026-07-27-review-write","label":"重写最差的一篇写作"},
+      {"id":"2026-07-27-review-speak","label":"重新录制最差的一项口语"}
+    ]},
+    {"date":"2026-07-28","type":"regular","tasks":[
+      {"id":"2026-07-28-weak-20","label":"最弱科目专项20题"},
+      {"id":"2026-07-28-tense-40","label":"混合时态识别40个变位"},
+      {"id":"2026-07-28-shadow","label":"Lingua音频跟读15分钟"}
+    ]},
+    {"date":"2026-07-29","type":"regular","tasks":[
+      {"id":"2026-07-29-reading-r3","label":"阅读 R3：39题，限时60分钟"},
+      {"id":"2026-07-29-writing-t1","label":"写作 T1：60-120词"},
+      {"id":"2026-07-29-speaking-t2","label":"口语 T2：准备并提出10个有效问题"}
+    ]},
+    {"date":"2026-07-30","type":"regular","tasks":[
+      {"id":"2026-07-30-listening-l3","label":"听力 L3：39题，限时35分钟"},
+      {"id":"2026-07-30-writing-t2","label":"写作 T2：120-150词"},
+      {"id":"2026-07-30-speaking-t3","label":"口语 T3：连续表达4分钟"}
+    ]},
+    {"date":"2026-07-31","type":"regular","tasks":[
+      {"id":"2026-07-31-pc-imparfait","label":"passé composé / imparfait 对比30句"},
+      {"id":"2026-07-31-dictation","label":"法语听写10分钟并订正"},
+      {"id":"2026-07-31-speaking-t1","label":"口语 T1：完整录音一次"}
+    ]},
+    {"date":"2026-08-01","type":"regular","tasks":[
+      {"id":"2026-08-01-reading-r4","label":"阅读 R4：39题，限时60分钟"},
+      {"id":"2026-08-01-speaking-full","label":"完整口语12分钟，记录5个问题"}
+    ]},
+    {"date":"2026-08-02","type":"mock","tasks":[
+      {"id":"2026-08-02-mock-2","label":"完整模考 2：四科连续完成"},
+      {"id":"2026-08-02-mock-score","label":"记录四科成绩、超时位置和猜题数"}
+    ]},
+    {"date":"2026-08-03","type":"review","tasks":[
+      {"id":"2026-08-03-review-wrong","label":"复盘模考2全部错题"},
+      {"id":"2026-08-03-error-top10","label":"建立个人前10错误类型"},
+      {"id":"2026-08-03-rewrite","label":"修改模考2全部三篇写作"}
+    ]},
+    {"date":"2026-08-04","type":"regular","tasks":[
+      {"id":"2026-08-04-writing-full","label":"写作三题连续60分钟"},
+      {"id":"2026-08-04-writing-check","label":"检查字数、连接词和动词时态"},
+      {"id":"2026-08-04-listening-review","label":"精听旧错题15分钟"}
+    ]},
+    {"date":"2026-08-05","type":"regular","tasks":[
+      {"id":"2026-08-05-listening-l4","label":"听力 L4：39题，限时35分钟"},
+      {"id":"2026-08-05-speaking-t2a","label":"口语 T2 第一题：准备并互动"},
+      {"id":"2026-08-05-speaking-t2b","label":"口语 T2 第二题：准备并互动"}
+    ]},
+    {"date":"2026-08-06","type":"regular","tasks":[
+      {"id":"2026-08-06-reading-r5","label":"阅读 R5：39题，限时60分钟"},
+      {"id":"2026-08-06-writing-t3","label":"写作 T3：120-180词"},
+      {"id":"2026-08-06-opinion","label":"整理5个表达观点和让步的句型"}
+    ]},
+    {"date":"2026-08-07","type":"regular","tasks":[
+      {"id":"2026-08-07-tense-40","label":"futur simple / conditionnel 识别40个"},
+      {"id":"2026-08-07-listening-20","label":"听力专项20题"},
+      {"id":"2026-08-07-speaking-t3","label":"口语 T3：连续表达4分钟"}
+    ]},
+    {"date":"2026-08-08","type":"regular","tasks":[
+      {"id":"2026-08-08-half-mock","label":"听力+阅读半模考，共95分钟"},
+      {"id":"2026-08-08-half-review","label":"立即分析半模考全部错题"}
+    ]},
+    {"date":"2026-08-09","type":"mock","tasks":[
+      {"id":"2026-08-09-mock-3","label":"完整模考 3：禁止暂停、查词和回听"},
+      {"id":"2026-08-09-mock-score","label":"记录四科成绩与时间"}
+    ]},
+    {"date":"2026-08-10","type":"review","tasks":[
+      {"id":"2026-08-10-review-wrong","label":"复盘模考3全部错题"},
+      {"id":"2026-08-10-error-classify","label":"按词汇、定位、时态、逻辑、时间分类"}
+    ]},
+    {"date":"2026-08-11","type":"regular","tasks":[
+      {"id":"2026-08-11-reading-hard20","label":"阅读高难度20题"},
+      {"id":"2026-08-11-writing-t12","label":"写作 T1+T2，共35分钟"},
+      {"id":"2026-08-11-speaking-t1","label":"口语 T1：完整录音"}
+    ]},
+    {"date":"2026-08-12","type":"regular","tasks":[
+      {"id":"2026-08-12-listening-l5","label":"听力 L5：39题，限时35分钟"},
+      {"id":"2026-08-12-speaking-t2a","label":"口语 T2 第一题：礼貌提问和追问"},
+      {"id":"2026-08-12-speaking-t2b","label":"口语 T2 第二题：礼貌提问和追问"}
+    ]},
+    {"date":"2026-08-13","type":"regular","tasks":[
+      {"id":"2026-08-13-reading-r6","label":"阅读 R6：39题，限时60分钟"},
+      {"id":"2026-08-13-writing-t3","label":"写作 T3：120-180词"},
+      {"id":"2026-08-13-tense","label":"plus-que-parfait / subjonctif 常见形式"}
+    ]},
+    {"date":"2026-08-14","type":"regular","tasks":[
+      {"id":"2026-08-14-listening-l6","label":"听力 L6：39题，限时35分钟"},
+      {"id":"2026-08-14-speaking-full","label":"完整口语12分钟并重录最差任务"}
+    ]},
+    {"date":"2026-08-15","type":"regular","tasks":[
+      {"id":"2026-08-15-writing-full","label":"写作三题连续60分钟"},
+      {"id":"2026-08-15-writing-check","label":"逐句检查主谓、性数、时态和拼写"}
+    ]},
+    {"date":"2026-08-16","type":"mock","tasks":[
+      {"id":"2026-08-16-mock-4","label":"完整模考 4：四科连续完成"},
+      {"id":"2026-08-16-compare","label":"比较模考1-4的正确率和时间"}
+    ]},
+    {"date":"2026-08-17","type":"review","tasks":[
+      {"id":"2026-08-17-review-wrong","label":"复盘模考4并重做错误最多的20题"},
+      {"id":"2026-08-17-rewrite","label":"重写最差的一篇作文"}
+    ]},
+    {"date":"2026-08-18","type":"regular","tasks":[
+      {"id":"2026-08-18-reading-r7","label":"阅读 R7：39题，限时60分钟"},
+      {"id":"2026-08-18-tense-50","label":"混合时态识别50个"},
+      {"id":"2026-08-18-writing-t1","label":"写作 T1：60-120词"}
+    ]},
+    {"date":"2026-08-19","type":"regular","tasks":[
+      {"id":"2026-08-19-listening-l7","label":"听力 L7：39题，限时35分钟"},
+      {"id":"2026-08-19-speaking-t2","label":"口语 T2：使用本月积累表达"},
+      {"id":"2026-08-19-speaking-t3","label":"口语 T3：使用本月积累表达"}
+    ]},
+    {"date":"2026-08-20","type":"regular","tasks":[
+      {"id":"2026-08-20-half-mock","label":"听力+阅读半模考，严格计时"},
+      {"id":"2026-08-20-half-review","label":"计算正确率并复盘误判题"}
+    ]},
+    {"date":"2026-08-21","type":"regular","tasks":[
+      {"id":"2026-08-21-writing-full","label":"写作三题连续60分钟"},
+      {"id":"2026-08-21-speaking-full","label":"完整口语12分钟并保存录音"}
+    ]},
+    {"date":"2026-08-22","type":"review","tasks":[
+      {"id":"2026-08-22-wrong-50","label":"重做累计50道错题"},
+      {"id":"2026-08-22-rewrite-2","label":"重写两篇旧作文中的薄弱段落"}
+    ]},
+    {"date":"2026-08-23","type":"mock","tasks":[
+      {"id":"2026-08-23-mock-5","label":"完整模考 5：模拟正式考试顺序"},
+      {"id":"2026-08-23-mock-score","label":"记录四科成绩与时间"}
+    ]},
+    {"date":"2026-08-24","type":"review","tasks":[
+      {"id":"2026-08-24-review-wrong","label":"复盘模考5全部错题"},
+      {"id":"2026-08-24-priority","label":"确定最后需要抢分的两个区域"}
+    ]},
+    {"date":"2026-08-25","type":"regular","tasks":[
+      {"id":"2026-08-25-reading-r8","label":"阅读 R8：39题，限时60分钟"},
+      {"id":"2026-08-25-speaking-full","label":"完整口语12分钟"},
+      {"id":"2026-08-25-speaking-frame","label":"整理三种口语任务的开头和结尾"}
+    ]},
+    {"date":"2026-08-26","type":"regular","tasks":[
+      {"id":"2026-08-26-listening-l8","label":"听力 L8：39题，限时35分钟"},
+      {"id":"2026-08-26-writing-weak","label":"完成自己最弱的写作任务"},
+      {"id":"2026-08-26-tense-review","label":"复习全部易混时态"}
+    ]},
+    {"date":"2026-08-27","type":"mock","tasks":[
+      {"id":"2026-08-27-mock-6","label":"完整模考 6：目标是稳定发挥"},
+      {"id":"2026-08-27-mock-score","label":"记录四科成绩与时间"}
+    ]},
+    {"date":"2026-08-28","type":"review","tasks":[
+      {"id":"2026-08-28-review-wrong","label":"复盘模考6并重做所有犹豫题"},
+      {"id":"2026-08-28-time-plan","label":"修正正式考试的答题时间分配"}
+    ]},
+    {"date":"2026-08-29","type":"regular","tasks":[
+      {"id":"2026-08-29-reading-hard20","label":"最难阅读20题"},
+      {"id":"2026-08-29-listening-hard20","label":"最难听力20题"},
+      {"id":"2026-08-29-writing","label":"完成一篇弱项作文"},
+      {"id":"2026-08-29-speaking-t3","label":"录一题口语 T3"}
+    ]},
+    {"date":"2026-08-30","type":"mock","tasks":[
+      {"id":"2026-08-30-mock-7","label":"完整模考 7：最后一次高强度模拟"},
+      {"id":"2026-08-30-mock-score","label":"记录最终四科成绩与时间"}
+    ]},
+    {"date":"2026-08-31","type":"light","tasks":[
+      {"id":"2026-08-31-review-final","label":"复盘模考7，不再开启新题"},
+      {"id":"2026-08-31-final-sheet","label":"整理最终表达表、时态表和高频错误"},
+      {"id":"2026-08-31-speaking","label":"轻量完成一次完整口语"},
+      {"id":"2026-08-31-rest","label":"提前结束学习并保证睡眠"}
+    ]}
+  ]
+}
