@@ -65,10 +65,29 @@
     .questionHead{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:9px 0;border-top:1px solid var(--line)}
     .questionHead h2{font-size:17px}
     .questionControls{display:flex;gap:10px;align-items:center}
-    .outcome{display:flex;gap:6px;align-items:center;color:var(--muted);font-size:11px;font-weight:700}
-    .outcome select{width:92px;height:32px}
     .mastered{display:flex;align-items:center;gap:7px;color:var(--green);font-weight:800;cursor:pointer}
     .mastered input{width:17px;height:17px;accent-color:var(--green)}
+    .auditSummary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;margin:0 0 10px}
+    .auditStat{padding:7px 9px;border:1px solid var(--line);border-radius:3px;background:var(--panel2)}
+    .auditStat b{display:block;font-size:16px;font-variant-numeric:tabular-nums}
+    .auditStat span{color:var(--muted);font-size:10px}
+    .outcomeSegment{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-bottom:8px}
+    .outcomeButton{min-height:38px;border:1px solid var(--line);border-radius:3px;background:var(--panel2);color:var(--muted);font-weight:850;cursor:pointer}
+    .outcomeButton[data-outcome="correct"].active{border-color:var(--cyan);background:rgba(98,217,222,.12);color:var(--cyan)}
+    .outcomeButton[data-outcome="guessed"].active{border-color:var(--yellow);background:rgba(244,201,93,.12);color:var(--yellow)}
+    .outcomeButton[data-outcome="wrong"].active{border-color:var(--red);background:rgba(255,123,114,.12);color:var(--red)}
+    .quickGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+    .quickField{padding:8px;border:1px solid var(--line);border-radius:4px;background:var(--panel2)}
+    .quickField.wide{grid-column:1/-1}
+    .quickField label{display:block;margin-bottom:4px;color:var(--muted);font-size:11px;font-weight:700}
+    .quickField textarea{min-height:58px}
+    .quickField.wide textarea{min-height:66px}
+    .deepPanel{margin-top:8px;border:1px solid var(--line);border-radius:4px;background:var(--panel2)}
+    .deepPanel summary{padding:9px 10px;color:var(--cyan);font-size:12px;font-weight:800;cursor:pointer;list-style:none}
+    .deepPanel summary::-webkit-details-marker{display:none}
+    .deepPanel summary::before{content:"+";display:inline-block;width:18px;color:var(--green)}
+    .deepPanel[open] summary::before{content:"−"}
+    .deepPanel .analysisGrid{padding:0 9px 9px}
     .analysisGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
     .analysisField{padding:9px;border:1px solid var(--line);border-radius:4px;background:var(--panel2)}
     .analysisField.wide{grid-column:1/-1}
@@ -90,12 +109,12 @@
       header{align-items:flex-start}.headerActions{flex-wrap:wrap;justify-content:flex-end}.saveState{width:100%}
       .stats{grid-template-columns:repeat(2,1fr)}
       .layout{grid-template-columns:1fr}.sidebar{position:static}.setMap{grid-template-columns:repeat(7,1fr)}
-      .analysisGrid{grid-template-columns:1fr}.analysisField.wide{grid-column:auto}.questionMap{grid-template-columns:repeat(8,1fr)}
+      .analysisGrid,.quickGrid{grid-template-columns:1fr}.analysisField.wide,.quickField.wide{grid-column:auto}.questionMap{grid-template-columns:repeat(8,1fr)}
     }
     @media(max-width:520px){
       h1{font-size:20px}.subtitle{font-size:11px}.headerActions .button{padding:0 8px;font-size:11px}
       .testMeta{grid-template-columns:1fr}.errorTypes{grid-template-columns:repeat(2,1fr)}
-      .questionHead{align-items:flex-start}.questionControls{align-items:flex-end;flex-direction:column}
+      .questionHead{align-items:flex-start}.questionControls{align-items:flex-end;flex-direction:column}.auditSummary{grid-template-columns:repeat(2,1fr)}
       .vocabRow{grid-template-columns:1fr 1fr auto}.questionMap{grid-template-columns:repeat(7,1fr)}
     }
   </style>
@@ -125,18 +144,26 @@
           <div class="field"><label for="testDuration">完成用时</label><input id="testDuration" placeholder="例如 1:00:40"></div>
         </div>
 
+        <div class="auditSummary" id="auditSummary"></div>
         <div class="questionMap" id="questionMap"></div>
 
-        <div class="questionHead"><div><h2 id="questionTitle">第 1 题分析</h2><p class="muted" id="questionStatus">尚未填写</p></div><div class="questionControls"><label class="outcome">答题结果<select id="outcome"><option value="">未记录</option><option value="correct">答对</option><option value="wrong">答错</option><option value="guessed">蒙对</option></select></label><label class="mastered"><input id="mastered" type="checkbox">已掌握</label></div></div>
+        <div class="questionHead"><div><h2 id="questionTitle">第 1 题审计</h2><p class="muted" id="questionStatus">尚未审计</p></div><div class="questionControls"><label class="mastered"><input id="mastered" type="checkbox">已掌握</label></div></div>
 
-        <div class="analysisGrid">
-          <div class="analysisField wide"><label for="evidence">原文证据</label><textarea id="evidence" data-field="evidence" placeholder="复制真正支持正确答案的法语句子"></textarea></div>
-          <div class="analysisField"><label for="correctAnswer">正确答案及原因</label><textarea id="correctAnswer" data-field="correctAnswer" placeholder="正确选项是什么？它如何改写原文？"></textarea></div>
-          <div class="analysisField"><label for="myAnswer">我的答案及当时思路</label><textarea id="myAnswer" data-field="myAnswer" placeholder="我选了什么？当时依据是什么？"></textarea></div>
-          <div class="analysisField wide"><label for="trapReason">为什么会被错误选项吸引</label><textarea id="trapReason" data-field="trapReason" placeholder="它偷换了主体、时间、程度、范围，还是利用了原文同词？"></textarea></div>
-          <div class="analysisField wide"><label>错误类型（可多选）</label><div class="errorTypes" id="errorTypes"></div></div>
-          <div class="analysisField wide"><label for="takeaway">需要记住的词块或规则</label><textarea id="takeaway" data-field="takeaway" placeholder="例如：être interrompu = 被中断；à partir de = 从……开始"></textarea></div>
+        <div class="outcomeSegment" id="outcomeSegment"><button class="outcomeButton" data-outcome="correct">确定</button><button class="outcomeButton" data-outcome="guessed">蒙对 / 模糊</button><button class="outcomeButton" data-outcome="wrong">答错</button></div>
+
+        <div class="quickGrid">
+          <div class="quickField wide"><label for="evidence">决定答案的原文证据</label><textarea id="evidence" data-field="evidence" placeholder="复制真正决定答案的法语句子；完全确定时可以留空"></textarea></div>
+          <div class="quickField"><label for="ambiguity">我模糊的地方</label><textarea id="ambiguity" data-field="ambiguity" placeholder="哪个词、句子结构或选项区别不确定？"></textarea></div>
+          <div class="quickField"><label for="newKnowledge">本题新知识</label><textarea id="newKnowledge" data-field="newKnowledge" placeholder="只写一句真正值得带走的结论"></textarea></div>
+          <div class="quickField wide"><label for="fixedPhrases">固定搭配 / 词块</label><input id="fixedPhrases" data-field="fixedPhrases" placeholder="例如：interrompre un service；à partir de 18 h"></div>
         </div>
+
+        <details class="deepPanel" id="deepPanel"><summary>展开深度分析（只用于重要错题或反复模糊题）</summary><div class="analysisGrid">
+          <div class="analysisField"><label for="correctAnswer">正确答案及原因</label><textarea id="correctAnswer" data-field="correctAnswer" placeholder="正确选项如何改写原文？"></textarea></div>
+          <div class="analysisField"><label for="myAnswer">我的答案及当时思路</label><textarea id="myAnswer" data-field="myAnswer" placeholder="我当时依据什么作答？"></textarea></div>
+          <div class="analysisField wide"><label for="trapReason">干扰项为什么有吸引力</label><textarea id="trapReason" data-field="trapReason" placeholder="它偷换了主体、时间、程度、范围，还是利用了原文同词？"></textarea></div>
+          <div class="analysisField wide"><label>错误类型（可多选）</label><div class="errorTypes" id="errorTypes"></div></div>
+        </div></details>
 
         <section class="vocabPanel">
           <div class="sectionHead"><h2>本题生词</h2><button class="button" id="addVocab">添加生词</button></div>
@@ -144,7 +171,7 @@
           <p class="vocabHint">输入法语单词或短词组后会发送给 MyMemory 自动翻译；机器翻译仅作提示，中文可以直接修改。结果会缓存在当前浏览器。</p>
         </section>
 
-        <div class="questionActions"><button class="button" id="previousQuestion">上一题</button><button class="button primary" id="nextQuestion">保存并下一题</button></div>
+        <div class="questionActions"><button class="button" id="previousQuestion">上一题</button><button class="button" id="nextUnaudited">下一道未审题</button><button class="button primary" id="nextQuestion">保存并下一题</button></div>
       </section>
     </div>
   </main>
@@ -171,7 +198,7 @@
       const questions=getSet(set).questions;
       return questions[String(question)]||(questions[String(question)]={errors:[],vocab:[]});
     };
-    const hasQuestionData=question=>Boolean(question.mastered||question.outcome||question.evidence||question.correctAnswer||question.myAnswer||question.trapReason||question.takeaway||(question.errors||[]).length||(question.vocab||[]).some(word=>word.fr||word.zh));
+    const hasQuestionData=question=>Boolean(question.mastered||question.outcome||question.evidence||question.ambiguity||question.newKnowledge||question.fixedPhrases||question.correctAnswer||question.myAnswer||question.trapReason||question.takeaway||(question.errors||[]).length||(question.vocab||[]).some(word=>word.fr||word.zh));
     const save=()=>{
       data.updatedAt=new Date().toISOString();
       localStorage.setItem(STORAGE_KEY,JSON.stringify(data));
@@ -185,7 +212,7 @@
     };
 
     function calculateStats(){
-      let startedSets=0,startedQuestions=0,mastered=0,vocab=0;
+      let startedSets=0,startedQuestions=0,audited=0,mastered=0,vocab=0;
       for(let set=1;set<=TOTAL_SETS;set++){
         const row=data.sets[String(set)];
         if(!row) continue;
@@ -194,17 +221,18 @@
         if(setStarted) startedSets++;
         for(const question of questions){
           if(hasQuestionData(question)) startedQuestions++;
+          if(question.outcome) audited++;
           if(question.mastered) mastered++;
           vocab+=(question.vocab||[]).filter(word=>word.fr).length;
         }
       }
-      return {startedSets,startedQuestions,mastered,vocab};
+      return {startedSets,startedQuestions,audited,mastered,vocab};
     }
     function renderStats(){
       const summary=calculateStats();
-      const percent=summary.mastered/TOTAL_SETS/TOTAL_QUESTIONS*100;
+      const percent=summary.audited/TOTAL_SETS/TOTAL_QUESTIONS*100;
       document.querySelector("#stats").innerHTML=`
-        <div class="stat"><b>${summary.mastered} / ${TOTAL_SETS*TOTAL_QUESTIONS}</b><span>已掌握题目</span></div>
+        <div class="stat"><b>${summary.audited} / ${TOTAL_SETS*TOTAL_QUESTIONS}</b><span>已审计题目</span></div>
         <div class="stat"><b>${percent.toFixed(2)}%</b><span>地图完成度</span></div>
         <div class="stat"><b>${summary.startedSets} / ${TOTAL_SETS}</b><span>已开始套题</span></div>
         <div class="stat"><b>${summary.vocab}</b><span>累计生词</span></div>`;
@@ -213,10 +241,28 @@
     function renderSetMap(){
       document.querySelector("#setMap").innerHTML=Array.from({length:TOTAL_SETS},(_,index)=>{
         const set=index+1,row=data.sets[String(set)]||{meta:{},questions:{}};
-        const questions=Object.values(row.questions||{}),mastered=questions.filter(question=>question.mastered).length;
+        const questions=Object.values(row.questions||{}),audited=questions.filter(question=>question.outcome).length,mastered=questions.filter(question=>question.mastered).length;
         const started=questions.some(hasQuestionData)||Object.values(row.meta||{}).some(Boolean);
-        return `<button class="setButton ${set===currentSet?"active":""} ${started?"started":""}" data-set="${set}" style="--p:${mastered/TOTAL_QUESTIONS*100}%" title="第${set}套：${mastered}/39已掌握">${set}</button>`;
+        return `<button class="setButton ${set===currentSet?"active":""} ${started?"started":""}" data-set="${set}" style="--p:${audited/TOTAL_QUESTIONS*100}%" title="第${set}套：${audited}/39已审，${mastered}/39已掌握">${set}</button>`;
       }).join("");
+    }
+    function getAuditCounts(){
+      const questions=Object.values(getSet().questions||{});
+      return {
+        audited:questions.filter(question=>question.outcome).length,
+        correct:questions.filter(question=>question.outcome==="correct").length,
+        guessed:questions.filter(question=>question.outcome==="guessed").length,
+        wrong:questions.filter(question=>question.outcome==="wrong").length,
+        mastered:questions.filter(question=>question.mastered).length
+      };
+    }
+    function renderAuditSummary(){
+      const counts=getAuditCounts();
+      document.querySelector("#auditSummary").innerHTML=`
+        <div class="auditStat"><b>${TOTAL_QUESTIONS-counts.audited}</b><span>未审</span></div>
+        <div class="auditStat correct"><b>${counts.correct}</b><span>确定</span></div>
+        <div class="auditStat guessed"><b>${counts.guessed}</b><span>蒙对 / 模糊</span></div>
+        <div class="auditStat wrong"><b>${counts.wrong}</b><span>答错</span></div>`;
     }
     function renderQuestionMap(){
       const questions=getSet().questions;
@@ -224,8 +270,9 @@
         const number=index+1,question=questions[String(number)]||{};
         return `<button class="questionButton ${number===currentQuestion?"active":""} ${hasQuestionData(question)?"started":""} ${question.outcome||""} ${question.mastered?"done":""}" data-question="${number}" title="第${number}题">${number}</button>`;
       }).join("");
-      const done=Object.values(questions).filter(question=>question.mastered).length;
-      document.querySelector("#setProgress").textContent=`${done} / 39 已掌握`;
+      const counts=getAuditCounts();
+      document.querySelector("#setProgress").textContent=`${counts.audited} / 39 已审 · ${counts.mastered} / 39 已掌握`;
+      renderAuditSummary();
     }
     function renderMeta(){
       const meta=getSet().meta||{};
@@ -244,11 +291,14 @@
     }
     function renderQuestion(){
       const question=getQuestion();
-      document.querySelector("#questionTitle").textContent=`第 ${currentQuestion} 题分析`;
-      document.querySelector("#questionStatus").textContent=question.mastered?"已经能够解释正确答案与干扰项":hasQuestionData(question)?"分析进行中":"尚未填写";
-      for(const field of ["evidence","correctAnswer","myAnswer","trapReason","takeaway"]) document.querySelector(`#${field}`).value=question[field]||"";
+      const status={correct:"已确定理解",guessed:"需要消除模糊",wrong:"需要复盘"};
+      document.querySelector("#questionTitle").textContent=`第 ${currentQuestion} 题审计`;
+      document.querySelector("#questionStatus").textContent=question.mastered?"已掌握":status[question.outcome]||(hasQuestionData(question)?"审计进行中":"尚未审计");
+      for(const field of ["evidence","ambiguity","fixedPhrases","correctAnswer","myAnswer","trapReason"]) document.querySelector(`#${field}`).value=question[field]||"";
+      document.querySelector("#newKnowledge").value=question.newKnowledge||question.takeaway||"";
       document.querySelector("#mastered").checked=Boolean(question.mastered);
-      document.querySelector("#outcome").value=question.outcome||"";
+      document.querySelectorAll("[data-outcome]").forEach(button=>button.classList.toggle("active",button.dataset.outcome===question.outcome));
+      document.querySelector("#deepPanel").open=Boolean(question.correctAnswer||question.myAnswer||question.trapReason||(question.errors||[]).length);
       renderErrorTypes(question);
       renderVocab(question);
     }
@@ -262,6 +312,13 @@
     }
     function selectSet(number){currentSet=clamp(number,1,TOTAL_SETS);currentQuestion=1;render();}
     function selectQuestion(number){currentQuestion=clamp(number,1,TOTAL_QUESTIONS);render();}
+    function selectNextUnaudited(){
+      const questions=getSet().questions;
+      for(let offset=1;offset<=TOTAL_QUESTIONS;offset++){
+        const candidate=(currentQuestion-1+offset)%TOTAL_QUESTIONS+1;
+        if(!questions[String(candidate)]?.outcome){selectQuestion(candidate);return;}
+      }
+    }
 
     function translationCache(){try{return JSON.parse(localStorage.getItem(CACHE_KEY)||"{}");}catch(_){return {};}}
     function repairTranslation(value){
@@ -311,19 +368,20 @@
     document.addEventListener("change",event=>{
       const target=event.target,question=getQuestion();
       if(target.id==="mastered"){question.mastered=target.checked;save();renderQuestion();return;}
-      if(target.id==="outcome"){question.outcome=target.value;save();renderQuestion();return;}
       if(target.dataset.error){const errors=new Set(question.errors||[]);target.checked?errors.add(target.dataset.error):errors.delete(target.dataset.error);question.errors=[...errors];save();}
     });
     document.addEventListener("click",event=>{
       const target=event.target.closest("button");if(!target)return;
       if(target.dataset.set) selectSet(target.dataset.set);
       else if(target.dataset.question) selectQuestion(target.dataset.question);
+      else if(target.dataset.outcome!==undefined){const question=getQuestion();question.outcome=question.outcome===target.dataset.outcome?"":target.dataset.outcome;save();renderQuestion();}
       else if(target.dataset.removeVocab!==undefined){getQuestion().vocab.splice(Number(target.dataset.removeVocab),1);save();renderQuestion();}
     });
     document.querySelector("#addVocab").addEventListener("click",()=>{getQuestion().vocab.push({fr:"",zh:""});save();renderVocab(getQuestion());});
     document.querySelector("#previousSet").addEventListener("click",()=>selectSet(currentSet-1));
     document.querySelector("#nextSet").addEventListener("click",()=>selectSet(currentSet+1));
     document.querySelector("#previousQuestion").addEventListener("click",()=>selectQuestion(currentQuestion-1));
+    document.querySelector("#nextUnaudited").addEventListener("click",selectNextUnaudited);
     document.querySelector("#nextQuestion").addEventListener("click",()=>{save();if(currentQuestion<TOTAL_QUESTIONS)selectQuestion(currentQuestion+1);else if(currentSet<TOTAL_SETS)selectSet(currentSet+1);});
     document.querySelector("#exportButton").addEventListener("click",()=>{
       save();const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"}),link=document.createElement("a");
