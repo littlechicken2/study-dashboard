@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-07-24T15:02:00-04:00",
+  "updatedAt": "2026-07-24T16:02:03-04:00",
   "today": {
     "date": "2026-07-24",
-    "focusMinutes": 1
+    "focusMinutes": 4
   },
   "anki": {
     "today": {
-      "reviews": 15,
+      "reviews": 25,
       "new": 0,
-      "minutes": 1.2,
+      "minutes": 3.6,
       "activityComplete": true,
       "goalPercent": 100
     },
     "total": {
       "cards": 25974,
-      "mature": 702,
+      "mature": 701,
       "learned": 1870,
       "newRemaining": 24104,
       "percent": 7.2
@@ -1548,7 +1548,7 @@
       {
         "date": "2026-04-05",
         "reviews": 29,
-        "new": 195,
+        "new": 196,
         "minutes": 3.0
       },
       {
@@ -1740,7 +1740,7 @@
       {
         "date": "2026-05-07",
         "reviews": 142,
-        "new": 296,
+        "new": 297,
         "minutes": 28.4
       },
       {
@@ -1854,7 +1854,7 @@
       {
         "date": "2026-05-26",
         "reviews": 153,
-        "new": 119,
+        "new": 121,
         "minutes": 17.6
       },
       {
@@ -1908,7 +1908,7 @@
       {
         "date": "2026-06-04",
         "reviews": 280,
-        "new": 427,
+        "new": 431,
         "minutes": 41.1
       },
       {
@@ -1968,7 +1968,7 @@
       {
         "date": "2026-06-14",
         "reviews": 59,
-        "new": 233,
+        "new": 234,
         "minutes": 7.7
       },
       {
@@ -1986,7 +1986,7 @@
       {
         "date": "2026-06-17",
         "reviews": 71,
-        "new": 209,
+        "new": 210,
         "minutes": 9.3
       },
       {
@@ -2207,9 +2207,9 @@
       },
       {
         "date": "2026-07-24",
-        "reviews": 15,
+        "reviews": 25,
         "new": 0,
-        "minutes": 1.2
+        "minutes": 3.6
       }
     ],
     "decks": [
@@ -2335,7 +2335,7 @@
         "name": "5000 Most Common French Words::[1] Main Course::[a] Option 1: Parisian French Audio::I) French to English (Start here)",
         "cards": 500,
         "learned": 500,
-        "mature": 377,
+        "mature": 376,
         "newRemaining": 0,
         "percent": 100.0
       },
