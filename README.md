@@ -20,7 +20,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\install_daily_update.ps1
 
 ## 有效学习时长
 
-开机启动器会运行桌面 watcher：Anki 前台且 60 秒内有输入计入 Verb，Adobe Acrobat 前台计入 Grammar。Chrome 扩展会记录 TCF 阅读、本地课程/PDF、ChatGPT 的有效前台时间；Bilibili、YouTube、抖音会暂停计时并显示警告。更新扩展代码后，需要在 `chrome://extensions` 点击扩展的刷新按钮。
+开机启动器会运行桌面 watcher：Anki 前台且 60 秒内有输入计入 Verb，Adobe Acrobat 前台计入 Grammar。Chrome 扩展会记录 TCF 阅读、本地课程/PDF、ChatGPT 的有效前台时间；Bilibili、YouTube、抖音会在 `French Daily Audio + Reading` 当日新卡、学习中和复习数量全部归零前暂停并静音，完成后当天保持解锁。更新扩展代码后，需要在 `chrome://extensions` 点击扩展的刷新按钮。
 
 手机网页只能检测当前学习网页是否可见；无法检测手机上其他 App（Bilibili/YouTube/抖音）的前台状态。手机端娱乐 App 拦截需要使用系统屏幕使用时间、数字健康、专注模式或网络层工具。
 

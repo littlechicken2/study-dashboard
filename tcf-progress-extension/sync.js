@@ -1,30 +1,66 @@
 (() => {
   let lastActivity = 0;
   let focusBlocker = null;
+  const ANKI_UNLOCK_PREFIX = "ankiEntertainmentUnlocked:";
+
+  function localDateKey() {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, "0");
+    const day = String(now.getDate()).padStart(2, "0");
+    return `${year}-${month}-${day}`;
+  }
 
   function classify() {
     const host = location.hostname;
     const path = location.pathname;
-    if (/bilibili\.com|youtube\.com|douyin\.com/.test(host)) return { category: "distraction", source: host };
-    if (/freetcf\.com/.test(host) && path.startsWith("/question")) return { category: "reading", source: "freetcf-reading" };
-    if (/lingua\.com/.test(host) && path.startsWith("/french/reading")) return { category: "reading", source: "lingua-reading" };
-    if (/chatgpt\.com|chat\.openai\.com/.test(host)) return { category: "contextual", source: "chatgpt" };
+    if (/bilibili\.com|youtube\.com|douyin\.com/.test(host)) {
+      return { category: "distraction", source: host };
+    }
+    if (/freetcf\.com/.test(host) && path.startsWith("/question")) {
+      return { category: "reading", source: "freetcf-reading" };
+    }
+    if (/lingua\.com/.test(host) && path.startsWith("/french/reading")) {
+      return { category: "reading", source: "lingua-reading" };
+    }
+    if (/chatgpt\.com|chat\.openai\.com/.test(host)) {
+      return { category: "contextual", source: "chatgpt" };
+    }
     return null;
   }
 
   async function dailyTasksComplete() {
+    const unlockKey = ANKI_UNLOCK_PREFIX + localDateKey();
     try {
-      const data = await fetch("http://127.0.0.1:8765/data/progress.json?t=" + Date.now()).then(r => r.json());
-      const reading = Number(data.reading?.today?.articles || 0) >= 3;
-      const verb = Number(data.anki?.today?.new || 0) >= 50;
-      return reading && verb;
-    } catch (_) {
-      return false;
+      const stored = await chrome.storage.local.get(unlockKey);
+      if (stored[unlockKey]) {
+        return { complete: true, persisted: true };
+      }
+      const status = await fetch(
+        `http://127.0.0.1:8765/api/anki-daily-status?t=${Date.now()}`
+      ).then(response => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      });
+      if (status.complete) {
+        await chrome.storage.local.set({ [unlockKey]: true });
+      }
+      return status;
+    } catch (error) {
+      return {
+        available: false,
+        complete: false,
+        message: String(error?.message || error)
+      };
     }
   }
 
   function suppressMedia() {
     document.querySelectorAll("video, audio").forEach(media => {
+      if (!media.dataset.studyOriginalMuted) {
+        media.dataset.studyOriginalMuted = media.muted ? "1" : "0";
+        media.dataset.studyOriginalVolume = String(media.volume);
+      }
       media.muted = true;
       media.volume = 0;
       media.pause?.();
@@ -34,6 +70,13 @@
 
   function restoreMedia() {
     document.querySelectorAll("video, audio").forEach(media => {
+      if (media.dataset.studyOriginalMuted) {
+        media.muted = media.dataset.studyOriginalMuted === "1";
+        const originalVolume = Number(media.dataset.studyOriginalVolume);
+        media.volume = Number.isFinite(originalVolume) ? originalVolume : 1;
+        delete media.dataset.studyOriginalMuted;
+        delete media.dataset.studyOriginalVolume;
+      }
       media.style.filter = "";
     });
   }
@@ -45,11 +88,13 @@
     focusBlocker = box;
     box.id = "study-focus-warning";
     box.innerHTML = `
-      <div style="font-size:42px;font-weight:900;line-height:1.05;margin-bottom:18px">今天的学习任务还没完成</div>
-      <div style="font-size:20px;line-height:1.55;max-width:760px;margin:0 auto 22px">
-        Bilibili / YouTube / 抖音已暂停。先完成 3 篇 Reading 和 50 个 Anki 新词，再回来放松。
+      <div>
+        <div style="font-size:42px;font-weight:900;line-height:1.05;margin-bottom:18px">今天的 Anki 还没有清空</div>
+        <div style="font-size:20px;line-height:1.55;max-width:760px;margin:0 auto 22px">
+          Bilibili / YouTube / 抖音已暂停。完成统一卡组今天的全部新卡、学习中卡片和复习卡后自动解锁。
+        </div>
+        <div id="study-focus-status" style="font-size:16px;opacity:.9">正在检查 Anki...</div>
       </div>
-      <div id="study-focus-status" style="font-size:16px;opacity:.9">正在检查监督台进度...</div>
     `;
     Object.assign(box.style, {
       position: "fixed",
@@ -76,14 +121,19 @@
   async function enforceDistractionBlock() {
     const info = classify();
     if (!info || info.category !== "distraction") return;
-    const complete = await dailyTasksComplete();
-    if (complete) {
+    const statusInfo = await dailyTasksComplete();
+    if (statusInfo.complete) {
       hideWarning();
       return;
     }
     showWarning();
     const status = document.getElementById("study-focus-status");
-    if (status) status.textContent = "未完成：娱乐视频已静音并暂停。关闭此页面，完成任务后会自动解锁。";
+    if (!status) return;
+    if (!statusInfo.available) {
+      status.textContent = "请打开 Anki。完成后当天会保持解锁，即使随后关闭 Anki。";
+      return;
+    }
+    status.textContent = `剩余：新卡 ${Number(statusInfo.new || 0)} · 学习中 ${Number(statusInfo.learning || 0)} · 复习 ${Number(statusInfo.review || 0)}`;
   }
 
   function sendActivity(force = false) {
@@ -111,6 +161,8 @@
   enforceDistractionBlock();
   setInterval(sendActivity, 10000);
   setInterval(enforceDistractionBlock, 3000);
-  document.addEventListener("click", () => setTimeout(() => sendActivity(true), 800), true);
+  document.addEventListener("click", () => {
+    setTimeout(() => sendActivity(true), 800);
+  }, true);
   window.addEventListener("focus", () => sendActivity(true));
 })();
