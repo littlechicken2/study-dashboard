@@ -51,9 +51,20 @@
       questionNumber: params.get("qnumber") || "",
       capturedAt: Date.now()
     };
-    const storing = chrome.storage.local.set({ [CONTEXT_KEY]: context });
+    let storing = null;
+    try {
+      storing = chrome.storage.local.set({ [CONTEXT_KEY]: context });
+    } catch (_) {
+      // A recently reloaded extension must not prevent the dictionary from opening.
+    }
     window.open(`https://${DICTIONARY_HOST}/dicts/fr/${encodeURIComponent(word)}`, "_blank", "noopener");
-    await storing;
+    if (storing) {
+      try {
+        await storing;
+      } catch (_) {
+        // The dictionary lookup still works without the optional source context.
+      }
+    }
     removeBubble();
   }
 
@@ -341,10 +352,8 @@
   document.addEventListener("dblclick", () => {
     cancelBubbleTimer();
     removeBubble();
-    setTimeout(() => {
-      const word = selectedFrench();
-      if (word) openDictionary(word);
-    }, 0);
+    const word = selectedFrench();
+    if (word) openDictionary(word);
   }, true);
   document.addEventListener("mousedown", event => {
     if (event.target instanceof Element && !event.target.closest(`#${BUBBLE_ID}`)) removeBubble();
