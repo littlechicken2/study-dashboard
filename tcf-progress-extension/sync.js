@@ -6,6 +6,7 @@
     const host = location.hostname;
     const path = location.pathname;
     if (/bilibili\.com|youtube\.com|douyin\.com/.test(host)) return { category: "distraction", source: host };
+    if (/freetcf\.com/.test(host) && path.startsWith("/question")) return { category: "reading", source: "freetcf-reading" };
     if (/lingua\.com/.test(host) && path.startsWith("/french/reading")) return { category: "reading", source: "lingua-reading" };
     if (/chatgpt\.com|chat\.openai\.com/.test(host)) return { category: "contextual", source: "chatgpt" };
     return null;

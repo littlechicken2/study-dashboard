@@ -1,15 +1,21 @@
 {
   "manifest_version": 3,
   "name": "Study Progress and Focus Sync",
-  "version": "1.0.0",
-  "description": "Syncs study activity, TCF progress and distraction warnings to the local study dashboard.",
+  "version": "1.1.0",
+  "description": "Syncs study activity and sends FreeTCF vocabulary to Anki.",
+  "permissions": [
+    "storage"
+  ],
   "host_permissions": [
-    "http://127.0.0.1:8765/*"
+    "http://127.0.0.1:8765/*",
+    "http://127.0.0.1:8766/*"
   ],
   "content_scripts": [
     {
       "matches": [
         "https://tcfca.cn/reading/test*",
+        "https://www.freetcf.com/question*",
+        "https://app.freetcf.com/question*",
         "https://chatgpt.com/*",
         "https://chat.openai.com/*",
         "http://127.0.0.1:8765/*",
@@ -23,6 +29,17 @@
       ],
       "js": [
         "sync.js"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://www.freetcf.com/question*",
+        "https://app.freetcf.com/question*",
+        "https://www.frdic.com/dicts/fr/*"
+      ],
+      "js": [
+        "word_miner.js"
       ],
       "run_at": "document_idle"
     }
