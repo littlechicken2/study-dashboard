@@ -293,12 +293,18 @@
       }
     },
     "2026-07-27": {
-      "reading": 1210.0,
+      "reading": 1270.0,
       "grammar": 0,
       "verb": 0,
-      "warnings": [],
+      "warnings": [
+        {
+          "source": "www.bilibili.com",
+          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+          "capturedAt": "2026-07-27T17:58:48.538Z"
+        }
+      ],
       "sources": {
-        "freetcf-reading": 1210.0
+        "freetcf-reading": 1270.0
       }
     }
   },
@@ -309,6 +315,6 @@
     "seconds": 10,
     "title": "Free TCF Canada Practice & Tests",
     "url": "https://www.freetcf.com/question?pageType=test&category=reading&paperId=test2&qnumber=2",
-    "capturedAt": "2026-07-27T08:40:35.046Z"
+    "capturedAt": "2026-07-27T17:59:01.855Z"
   }
 }
