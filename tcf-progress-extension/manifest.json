@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Study Progress and Focus Sync",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Syncs study activity and sends FreeTCF vocabulary to Anki.",
   "permissions": [
     "storage"

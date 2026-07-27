@@ -6,6 +6,7 @@
   const MODEL_NAME = "French Chinese English Simple";
   const BUBBLE_ID = "tcf-anki-selection-bubble";
   const PANEL_ID = "tcf-anki-dictionary-panel";
+  let bubbleTimer = 0;
 
   const clean = value => String(value || "").replace(/\s+/g, " ").trim();
   const escapeRegex = value => String(value || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -32,6 +33,12 @@
 
   function removeBubble() {
     document.getElementById(BUBBLE_ID)?.remove();
+  }
+
+  function cancelBubbleTimer() {
+    if (!bubbleTimer) return;
+    clearTimeout(bubbleTimer);
+    bubbleTimer = 0;
   }
 
   async function openDictionary(word) {
@@ -324,10 +331,26 @@
 
   document.addEventListener("mouseup", event => {
     if (event.target instanceof Element && event.target.closest(`#${BUBBLE_ID}`)) return;
-    setTimeout(() => showSelectionBubble(event), 0);
+    cancelBubbleTimer();
+    if (event.detail > 1) return;
+    bubbleTimer = setTimeout(() => {
+      bubbleTimer = 0;
+      showSelectionBubble(event);
+    }, 420);
+  }, true);
+  document.addEventListener("dblclick", () => {
+    cancelBubbleTimer();
+    removeBubble();
+    setTimeout(() => {
+      const word = selectedFrench();
+      if (word) openDictionary(word);
+    }, 0);
   }, true);
   document.addEventListener("mousedown", event => {
     if (event.target instanceof Element && !event.target.closest(`#${BUBBLE_ID}`)) removeBubble();
   }, true);
-  window.addEventListener("blur", removeBubble);
+  window.addEventListener("blur", () => {
+    cancelBubbleTimer();
+    removeBubble();
+  });
 })();
