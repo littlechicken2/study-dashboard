@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27T16:01:55-04:00",
+  "updatedAt": "2026-07-27T17:02:00-04:00",
   "today": {
     "date": "2026-07-27",
     "focusMinutes": 21
@@ -2214,13 +2214,13 @@
     ],
     "decks": [
       {
-        "id": 1777946190611,
-        "name": "5000 Most Common French Words Pt. 2::[1] Main Course::[b] Option 1: Canadian French Audio::I) French to English",
-        "cards": 4500,
-        "learned": 1450,
-        "mature": 411,
+        "id": 1785181252796,
+        "name": "French Daily Audio + Reading",
+        "cards": 5000,
+        "learned": 1950,
+        "mature": 797,
         "newRemaining": 3050,
-        "percent": 32.22
+        "percent": 39.0
       },
       {
         "id": 1777946190612,
@@ -2340,15 +2340,6 @@
         "percent": 2.6
       },
       {
-        "id": 1785181252796,
-        "name": "French Daily Audio + Reading",
-        "cards": 500,
-        "learned": 500,
-        "mature": 386,
-        "newRemaining": 0,
-        "percent": 100.0
-      },
-      {
         "id": 1775380211225,
         "name": "5000 Most Common French Words::[A. 2] The Study of Sounds (Phonology)::IV) Museum of Sounds::[2] Showcase (Formal Accent)::a. Parisian French",
         "cards": 357,
@@ -2387,6 +2378,15 @@
       {
         "id": 1775380211201,
         "name": "5000 Most Common French Words::[A. 2] The Study of Sounds (Phonology)::II) Words With Irregular Pronunciation::[2a] Sorted by frequency",
+        "cards": 96,
+        "learned": 0,
+        "mature": 0,
+        "newRemaining": 96,
+        "percent": 0.0
+      },
+      {
+        "id": 1775380211200,
+        "name": "5000 Most Common French Words::[A. 2] The Study of Sounds (Phonology)::II) Words With Irregular Pronunciation::[2b] Sorted by group",
         "cards": 96,
         "learned": 0,
         "mature": 0,
