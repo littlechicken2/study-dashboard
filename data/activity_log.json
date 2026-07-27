@@ -291,15 +291,24 @@
       "sources": {
         "adobe-acrobat": 5.0
       }
+    },
+    "2026-07-27": {
+      "reading": 1210.0,
+      "grammar": 0,
+      "verb": 0,
+      "warnings": [],
+      "sources": {
+        "freetcf-reading": 1210.0
+      }
     }
   },
-  "lastContext": "grammar",
+  "lastContext": "reading",
   "lastPing": {
-    "category": "grammar",
-    "source": "adobe-acrobat",
-    "seconds": 5,
-    "title": "Adobe Acrobat",
-    "idleSeconds": 2.0,
-    "capturedAt": "2026-07-17T10:34:55-0400"
+    "category": "reading",
+    "source": "freetcf-reading",
+    "seconds": 10,
+    "title": "Free TCF Canada Practice & Tests",
+    "url": "https://www.freetcf.com/question?pageType=test&category=reading&paperId=test2&qnumber=2",
+    "capturedAt": "2026-07-27T08:40:35.046Z"
   }
 }
