@@ -10,7 +10,7 @@
 
 卡片会进入：
 
-`5000 Most Common French Words::TCF Reading`
+`French Daily Audio + Reading`
 
 字段来自现有的 `French Chinese English Simple` 模板：
 

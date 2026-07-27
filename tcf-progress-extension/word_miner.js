@@ -2,7 +2,7 @@
   const CONTEXT_KEY = "tcfWordMiningContext";
   const DICTIONARY_HOST = "www.frdic.com";
   const ANKI_URL = "http://127.0.0.1:8766";
-  const TARGET_DECK = "5000 Most Common French Words::TCF Reading";
+  const TARGET_DECK = "French Daily Audio + Reading";
   const MODEL_NAME = "French Chinese English Simple";
   const BUBBLE_ID = "tcf-anki-selection-bubble";
   const PANEL_ID = "tcf-anki-dictionary-panel";
@@ -195,6 +195,7 @@
           tags: [
             "TCF_Reading",
             "FreeTCF",
+            "merge_source_tcf_reading",
             `mined_${new Date().toISOString().slice(0, 10).replaceAll("-", "_")}`
           ]
         }
@@ -206,7 +207,7 @@
     } catch (error) {
       const message = String(error?.message || error);
       if (/duplicate/i.test(message)) {
-        status.textContent = "这个词已经在 TCF Reading 牌组中。";
+        status.textContent = "这个词已经在统一学习牌组中。";
         button.textContent = "已经存在";
       } else if (/fetch|network|failed/i.test(message)) {
         status.textContent = "请先打开 Anki，再点击一次。";
