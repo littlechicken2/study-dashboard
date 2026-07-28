@@ -1,25 +1,25 @@
 {
-  "updatedAt": "2026-07-28T15:01:58-04:00",
+  "updatedAt": "2026-07-28T16:02:03-04:00",
   "today": {
     "date": "2026-07-28",
-    "focusMinutes": 1
+    "focusMinutes": 36
   },
   "anki": {
     "today": {
-      "reviews": 0,
-      "new": 0,
-      "minutes": 0,
-      "activityComplete": false,
-      "goalPercent": 0
+      "reviews": 7,
+      "new": 7,
+      "minutes": 0.0,
+      "activityComplete": true,
+      "goalPercent": 100
     },
     "total": {
-      "cards": 25974,
+      "cards": 25975,
       "mature": 841,
-      "learned": 2065,
-      "newRemaining": 23909,
-      "percent": 7.95
+      "learned": 2072,
+      "newRemaining": 23903,
+      "percent": 7.98
     },
-    "streak": 0,
+    "streak": 46,
     "history": [
       {
         "date": "2025-07-29",
@@ -2207,29 +2207,29 @@
       },
       {
         "date": "2026-07-28",
-        "reviews": 0,
-        "new": 0,
-        "minutes": 0
+        "reviews": 7,
+        "new": 7,
+        "minutes": 0.0
       }
     ],
     "decks": [
       {
         "id": 1785181252796,
         "name": "French Daily Audio + Reading",
-        "cards": 5000,
-        "learned": 2000,
+        "cards": 5001,
+        "learned": 2004,
         "mature": 826,
-        "newRemaining": 3000,
-        "percent": 40.0
+        "newRemaining": 2997,
+        "percent": 40.07
       },
       {
         "id": 1777946190612,
         "name": "5000 Most Common French Words Pt. 2::[1] Main Course::[b] Option 1: Canadian French Audio::II) English to French",
         "cards": 4500,
-        "learned": 0,
+        "learned": 3,
         "mature": 0,
-        "newRemaining": 4500,
-        "percent": 0.0
+        "newRemaining": 4497,
+        "percent": 0.07
       },
       {
         "id": 1777954114246,
@@ -7612,10 +7612,10 @@
   "activity": {
     "today": {
       "date": "2026-07-28",
-      "readingMinutes": 0.7,
+      "readingMinutes": 35.5,
       "grammarMinutes": 0.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 0.7,
+      "totalMinutes": 35.5,
       "warnings": [
         {
           "source": "www.bilibili.com",
@@ -10685,10 +10685,10 @@
       },
       {
         "date": "2026-07-28",
-        "readingMinutes": 0.7,
+        "readingMinutes": 35.5,
         "grammarMinutes": 0.0,
         "verbMinutes": 0.0,
-        "totalMinutes": 0.7,
+        "totalMinutes": 35.5,
         "warnings": [
           {
             "source": "www.bilibili.com",
