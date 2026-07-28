@@ -308,7 +308,7 @@
       }
     },
     "2026-07-28": {
-      "reading": 4220.0,
+      "reading": 5950.0,
       "grammar": 0,
       "verb": 0,
       "warnings": [
@@ -316,21 +316,26 @@
           "source": "www.bilibili.com",
           "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
           "capturedAt": "2026-07-28T04:29:36.065Z"
+        },
+        {
+          "source": "www.youtube.com",
+          "title": "Palworld 1.0 - The Top 10 MOST OP Combat Pals in Game - Best Build Highest Damage Pal & Skill Guide! - YouTube",
+          "capturedAt": "2026-07-28T22:52:09.588Z"
         }
       ],
       "sources": {
-        "freetcf-reading": 3360.0,
-        "chatgpt": 860.0
+        "freetcf-reading": 4770.0,
+        "chatgpt": 1180.0
       }
     }
   },
   "lastContext": "reading",
   "lastPing": {
-    "category": "contextual",
-    "source": "chatgpt",
-    "seconds": 10,
-    "title": "欧洲影像比赛解析",
-    "url": "https://chatgpt.com/c/6a69093e-bfa4-83ea-b014-5df9eb476db3",
-    "capturedAt": "2026-07-28T22:00:00.777Z"
+    "category": "distraction",
+    "source": "www.youtube.com",
+    "seconds": 0,
+    "title": "Palworld 1.0 - The Top 10 MOST OP Combat Pals in Game - Best Build Highest Damage Pal & Skill Guide! - YouTube",
+    "url": "https://www.youtube.com/watch?v=9bu084Acgao",
+    "capturedAt": "2026-07-28T22:52:09.588Z"
   }
 }
