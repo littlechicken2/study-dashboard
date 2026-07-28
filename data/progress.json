@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-07-28T17:02:06-04:00",
+  "updatedAt": "2026-07-28T18:02:13-04:00",
   "today": {
     "date": "2026-07-28",
-    "focusMinutes": 64
+    "focusMinutes": 70
   },
   "anki": {
     "today": {
@@ -7612,10 +7612,10 @@
   "activity": {
     "today": {
       "date": "2026-07-28",
-      "readingMinutes": 64.0,
+      "readingMinutes": 70.3,
       "grammarMinutes": 0.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 64.0,
+      "totalMinutes": 70.3,
       "warnings": [
         {
           "source": "www.bilibili.com",
@@ -10685,10 +10685,10 @@
       },
       {
         "date": "2026-07-28",
-        "readingMinutes": 64.0,
+        "readingMinutes": 70.3,
         "grammarMinutes": 0.0,
         "verbMinutes": 0.0,
-        "totalMinutes": 64.0,
+        "totalMinutes": 70.3,
         "warnings": [
           {
             "source": "www.bilibili.com",
