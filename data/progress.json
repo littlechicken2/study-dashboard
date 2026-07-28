@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-07-28T00:02:25-04:00",
+  "updatedAt": "2026-07-28T01:02:29-04:00",
   "today": {
     "date": "2026-07-28",
-    "focusMinutes": 0
+    "focusMinutes": 1
   },
   "anki": {
     "today": {
@@ -7612,11 +7612,17 @@
   "activity": {
     "today": {
       "date": "2026-07-28",
-      "readingMinutes": 0.0,
+      "readingMinutes": 0.7,
       "grammarMinutes": 0.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 0.0,
-      "warnings": []
+      "totalMinutes": 0.7,
+      "warnings": [
+        {
+          "source": "www.bilibili.com",
+          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+          "capturedAt": "2026-07-28T04:29:36.065Z"
+        }
+      ]
     },
     "history": [
       {
@@ -10679,11 +10685,17 @@
       },
       {
         "date": "2026-07-28",
-        "readingMinutes": 0.0,
+        "readingMinutes": 0.7,
         "grammarMinutes": 0.0,
         "verbMinutes": 0.0,
-        "totalMinutes": 0.0,
-        "warnings": []
+        "totalMinutes": 0.7,
+        "warnings": [
+          {
+            "source": "www.bilibili.com",
+            "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+            "capturedAt": "2026-07-28T04:29:36.065Z"
+          }
+        ]
       }
     ],
     "lastContext": "reading"
