@@ -308,7 +308,7 @@
       }
     },
     "2026-07-28": {
-      "reading": 5950.0,
+      "reading": 8100.0,
       "grammar": 0,
       "verb": 0,
       "warnings": [
@@ -321,21 +321,26 @@
           "source": "www.youtube.com",
           "title": "Palworld 1.0 - The Top 10 MOST OP Combat Pals in Game - Best Build Highest Damage Pal & Skill Guide! - YouTube",
           "capturedAt": "2026-07-28T22:52:09.588Z"
+        },
+        {
+          "source": "www.bilibili.com",
+          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+          "capturedAt": "2026-07-28T23:17:04.758Z"
         }
       ],
       "sources": {
-        "freetcf-reading": 4770.0,
-        "chatgpt": 1180.0
+        "freetcf-reading": 6210.0,
+        "chatgpt": 1890.0
       }
     }
   },
   "lastContext": "reading",
   "lastPing": {
-    "category": "distraction",
-    "source": "www.youtube.com",
-    "seconds": 0,
-    "title": "Palworld 1.0 - The Top 10 MOST OP Combat Pals in Game - Best Build Highest Damage Pal & Skill Guide! - YouTube",
-    "url": "https://www.youtube.com/watch?v=9bu084Acgao",
-    "capturedAt": "2026-07-28T22:52:09.588Z"
+    "category": "contextual",
+    "source": "chatgpt",
+    "seconds": 10,
+    "title": "欧洲影像比赛解析",
+    "url": "https://chatgpt.com/c/6a69093e-bfa4-83ea-b014-5df9eb476db3",
+    "capturedAt": "2026-07-28T23:22:31.326Z"
   }
 }

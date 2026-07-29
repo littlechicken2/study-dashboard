@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-07-28T19:02:16-04:00",
+  "updatedAt": "2026-07-28T20:02:19-04:00",
   "today": {
     "date": "2026-07-28",
-    "focusMinutes": 99
+    "focusMinutes": 135
   },
   "anki": {
     "today": {
@@ -7612,10 +7612,10 @@
   "activity": {
     "today": {
       "date": "2026-07-28",
-      "readingMinutes": 99.2,
+      "readingMinutes": 135.0,
       "grammarMinutes": 0.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 99.2,
+      "totalMinutes": 135.0,
       "warnings": [
         {
           "source": "www.bilibili.com",
@@ -7626,6 +7626,11 @@
           "source": "www.youtube.com",
           "title": "Palworld 1.0 - The Top 10 MOST OP Combat Pals in Game - Best Build Highest Damage Pal & Skill Guide! - YouTube",
           "capturedAt": "2026-07-28T22:52:09.588Z"
+        },
+        {
+          "source": "www.bilibili.com",
+          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+          "capturedAt": "2026-07-28T23:17:04.758Z"
         }
       ]
     },
@@ -10690,10 +10695,10 @@
       },
       {
         "date": "2026-07-28",
-        "readingMinutes": 99.2,
+        "readingMinutes": 135.0,
         "grammarMinutes": 0.0,
         "verbMinutes": 0.0,
-        "totalMinutes": 99.2,
+        "totalMinutes": 135.0,
         "warnings": [
           {
             "source": "www.bilibili.com",
@@ -10704,6 +10709,11 @@
             "source": "www.youtube.com",
             "title": "Palworld 1.0 - The Top 10 MOST OP Combat Pals in Game - Best Build Highest Damage Pal & Skill Guide! - YouTube",
             "capturedAt": "2026-07-28T22:52:09.588Z"
+          },
+          {
+            "source": "www.bilibili.com",
+            "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+            "capturedAt": "2026-07-28T23:17:04.758Z"
           }
         ]
       }
