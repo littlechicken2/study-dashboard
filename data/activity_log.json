@@ -334,7 +334,7 @@
       }
     },
     "2026-07-29": {
-      "reading": 170.0,
+      "reading": 180.0,
       "grammar": 0,
       "verb": 0,
       "warnings": [
@@ -356,17 +356,17 @@
       ],
       "sources": {
         "freetcf-reading": 60.0,
-        "chatgpt": 110.0
+        "chatgpt": 120.0
       }
     }
   },
   "lastContext": "reading",
   "lastPing": {
-    "category": "distraction",
-    "source": "www.bilibili.com",
-    "seconds": 0,
-    "title": "“有的人总是撞上枪口”_游戏热门视频",
-    "url": "https://www.bilibili.com/video/BV1S142127AG?spm_id_from=333.788.player.switch&vd_source=af1f5c7cace3a370b57a585619471fbb",
-    "capturedAt": "2026-07-29T15:01:38.253Z"
+    "category": "contextual",
+    "source": "chatgpt",
+    "seconds": 10,
+    "title": "欧洲影像比赛解析",
+    "url": "https://chatgpt.com/c/6a69093e-bfa4-83ea-b014-5df9eb476db3",
+    "capturedAt": "2026-07-29T15:08:00.101Z"
   }
 }
