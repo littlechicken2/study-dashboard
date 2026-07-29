@@ -308,7 +308,7 @@
       }
     },
     "2026-07-28": {
-      "reading": 8120.0,
+      "reading": 8150.0,
       "grammar": 0,
       "verb": 0,
       "warnings": [
@@ -330,7 +330,7 @@
       ],
       "sources": {
         "freetcf-reading": 6210.0,
-        "chatgpt": 1910.0
+        "chatgpt": 1940.0
       }
     }
   },
@@ -341,6 +341,6 @@
     "seconds": 10,
     "title": "欧洲影像比赛解析",
     "url": "https://chatgpt.com/c/6a69093e-bfa4-83ea-b014-5df9eb476db3",
-    "capturedAt": "2026-07-29T00:14:00.867Z"
+    "capturedAt": "2026-07-29T02:30:09.973Z"
   }
 }
