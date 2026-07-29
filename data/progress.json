@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-07-29T01:02:38-04:00",
+  "updatedAt": "2026-07-29T08:01:32-04:00",
   "today": {
     "date": "2026-07-29",
-    "focusMinutes": 1
+    "focusMinutes": 3
   },
   "anki": {
     "today": {
@@ -7612,15 +7612,25 @@
   "activity": {
     "today": {
       "date": "2026-07-29",
-      "readingMinutes": 1.0,
+      "readingMinutes": 2.8,
       "grammarMinutes": 0.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 1.0,
+      "totalMinutes": 2.8,
       "warnings": [
         {
           "source": "www.bilibili.com",
           "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
           "capturedAt": "2026-07-29T04:21:11.249Z"
+        },
+        {
+          "source": "www.youtube.com",
+          "title": "Vyse Can Dash Now - YouTube",
+          "capturedAt": "2026-07-29T05:31:40.709Z"
+        },
+        {
+          "source": "www.bilibili.com",
+          "title": "【Chef/译】维斯现在可以冲刺了_游戏热门视频",
+          "capturedAt": "2026-07-29T05:31:53.300Z"
         }
       ]
     },
@@ -10701,15 +10711,25 @@
       },
       {
         "date": "2026-07-29",
-        "readingMinutes": 1.0,
+        "readingMinutes": 2.8,
         "grammarMinutes": 0.0,
         "verbMinutes": 0.0,
-        "totalMinutes": 1.0,
+        "totalMinutes": 2.8,
         "warnings": [
           {
             "source": "www.bilibili.com",
             "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
             "capturedAt": "2026-07-29T04:21:11.249Z"
+          },
+          {
+            "source": "www.youtube.com",
+            "title": "Vyse Can Dash Now - YouTube",
+            "capturedAt": "2026-07-29T05:31:40.709Z"
+          },
+          {
+            "source": "www.bilibili.com",
+            "title": "【Chef/译】维斯现在可以冲刺了_游戏热门视频",
+            "capturedAt": "2026-07-29T05:31:53.300Z"
           }
         ]
       }

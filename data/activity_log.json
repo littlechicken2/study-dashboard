@@ -334,7 +334,7 @@
       }
     },
     "2026-07-29": {
-      "reading": 60.0,
+      "reading": 170.0,
       "grammar": 0,
       "verb": 0,
       "warnings": [
@@ -342,10 +342,21 @@
           "source": "www.bilibili.com",
           "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
           "capturedAt": "2026-07-29T04:21:11.249Z"
+        },
+        {
+          "source": "www.youtube.com",
+          "title": "Vyse Can Dash Now - YouTube",
+          "capturedAt": "2026-07-29T05:31:40.709Z"
+        },
+        {
+          "source": "www.bilibili.com",
+          "title": "【Chef/译】维斯现在可以冲刺了_游戏热门视频",
+          "capturedAt": "2026-07-29T05:31:53.300Z"
         }
       ],
       "sources": {
-        "freetcf-reading": 60.0
+        "freetcf-reading": 60.0,
+        "chatgpt": 110.0
       }
     }
   },
@@ -354,8 +365,8 @@
     "category": "distraction",
     "source": "www.bilibili.com",
     "seconds": 0,
-    "title": "傲慢正在摧毁万代系TCG",
-    "url": "https://www.bilibili.com/video/BV1bX3q6QE4s/?spm_id_from=333.1007.tianma.1-2-2.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
-    "capturedAt": "2026-07-29T05:02:24.471Z"
+    "title": "【Chef/译】维斯现在可以冲刺了_游戏热门视频",
+    "url": "https://www.bilibili.com/video/BV1S13g6rE87/?spm_id_from=333.1007.tianma.1-1-1.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
+    "capturedAt": "2026-07-29T05:32:17.548Z"
   }
 }
