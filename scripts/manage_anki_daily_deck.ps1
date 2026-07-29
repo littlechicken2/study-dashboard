@@ -56,6 +56,82 @@ function Find-Notes {
     return @(Invoke-Anki "findNotes" @{ query = $Query })
 }
 
+function Set-ReadingCardStyle {
+    $modelName = "French Chinese English Simple"
+    $modelNames = @(Invoke-Anki "modelNames")
+    if ($modelNames -notcontains $modelName) {
+        return
+    }
+
+    Invoke-Anki "updateModelTemplates" @{
+        model = @{
+            name = $modelName
+            templates = @{
+                Vocabulary = @{
+                    Front = '<div class="reading-word"><b>{{French}}</b></div>'
+                    Back = '{{FrontSide}}<hr id="answer"><div class="reading-meaning"><b>{{Chinese}}</b></div><div class="reading-english">{{English}}</div><div class="reading-context">{{Sentence}}</div>'
+                }
+            }
+        }
+    } | Out-Null
+
+    Invoke-Anki "updateModelStyling" @{
+        model = @{
+            name = $modelName
+            css = @'
+.card {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 40px;
+  line-height: 1.4;
+  text-align: center;
+  color: #4a4a4a;
+  background-color: white;
+}
+
+.reading-word {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.reading-meaning {
+  margin: 0.45em auto 0;
+  font-size: 0.7em;
+  font-weight: 700;
+}
+
+.reading-english {
+  margin-top: 0.3em;
+  font-size: 0.5em;
+  color: #666;
+}
+
+.reading-context {
+  margin: 0.8em auto 0;
+  max-width: 36em;
+  font-size: 0.55em;
+  font-weight: 400;
+  text-align: left;
+}
+
+a {
+  color: #496899;
+}
+
+.nightMode .card,
+.night_mode .card {
+  color: #f1f3f2;
+  background-color: #111817;
+}
+
+.nightMode .reading-english,
+.night_mode .reading-english {
+  color: #b8c1be;
+}
+'@
+        }
+    } | Out-Null
+}
+
 try {
     Invoke-Anki "version" | Out-Null
 } catch {
@@ -63,6 +139,7 @@ try {
 }
 
 Invoke-Anki "createDeck" @{ deck = $TargetDeck } | Out-Null
+Set-ReadingCardStyle
 
 if ($Action -eq "merge") {
     foreach ($source in $Sources) {
