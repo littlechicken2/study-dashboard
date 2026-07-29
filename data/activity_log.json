@@ -332,15 +332,30 @@
         "freetcf-reading": 6210.0,
         "chatgpt": 1940.0
       }
+    },
+    "2026-07-29": {
+      "reading": 60.0,
+      "grammar": 0,
+      "verb": 0,
+      "warnings": [
+        {
+          "source": "www.bilibili.com",
+          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+          "capturedAt": "2026-07-29T04:21:11.249Z"
+        }
+      ],
+      "sources": {
+        "freetcf-reading": 60.0
+      }
     }
   },
   "lastContext": "reading",
   "lastPing": {
-    "category": "contextual",
-    "source": "chatgpt",
-    "seconds": 10,
-    "title": "欧洲影像比赛解析",
-    "url": "https://chatgpt.com/c/6a69093e-bfa4-83ea-b014-5df9eb476db3",
-    "capturedAt": "2026-07-29T02:30:09.973Z"
+    "category": "distraction",
+    "source": "www.bilibili.com",
+    "seconds": 0,
+    "title": "傲慢正在摧毁万代系TCG",
+    "url": "https://www.bilibili.com/video/BV1bX3q6QE4s/?spm_id_from=333.1007.tianma.1-2-2.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
+    "capturedAt": "2026-07-29T05:02:24.471Z"
   }
 }
