@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-07-29T23:58:32-04:00",
+  "updatedAt": "2026-07-30T00:58:37-04:00",
   "today": {
-    "date": "2026-07-29",
-    "focusMinutes": 8
+    "date": "2026-07-30",
+    "focusMinutes": 0
   },
   "anki": {
     "today": {
-      "reviews": 427,
-      "new": 100,
-      "minutes": 66.2,
-      "activityComplete": true,
-      "goalPercent": 100
+      "reviews": 0,
+      "new": 0,
+      "minutes": 0,
+      "activityComplete": false,
+      "goalPercent": 0
     },
     "total": {
       "cards": 25979,
@@ -19,14 +19,8 @@
       "newRemaining": 23788,
       "percent": 8.43
     },
-    "streak": 47,
+    "streak": 0,
     "history": [
-      {
-        "date": "2025-07-30",
-        "reviews": 0,
-        "new": 0,
-        "minutes": 0
-      },
       {
         "date": "2025-07-31",
         "reviews": 0,
@@ -2210,6 +2204,12 @@
         "reviews": 427,
         "new": 100,
         "minutes": 66.2
+      },
+      {
+        "date": "2026-07-30",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
       }
     ],
     "decks": [
@@ -2473,7 +2473,7 @@
         "completed": 88,
         "remaining": 0,
         "percent": 100.0,
-        "daysRemaining": 3,
+        "daysRemaining": 2,
         "deadline": "2026-07-31",
         "recommendedToday": 0,
         "yesterdayDone": 0,
@@ -2482,14 +2482,6 @@
       }
     },
     "history": [
-      {
-        "date": "2025-07-30",
-        "minutes": 0.0,
-        "videoMinutes": 0.0,
-        "pdfMinutes": 0.0,
-        "activityComplete": false,
-        "goalPercent": 0
-      },
       {
         "date": "2025-07-31",
         "minutes": 0.0,
@@ -5401,12 +5393,20 @@
         "pdfMinutes": 0.0,
         "activityComplete": false,
         "goalPercent": 0
+      },
+      {
+        "date": "2026-07-30",
+        "minutes": 0.0,
+        "videoMinutes": 0.0,
+        "pdfMinutes": 0.0,
+        "activityComplete": false,
+        "goalPercent": 0
       }
     ]
   },
   "reading": {
     "today": {
-      "date": "2026-07-29",
+      "date": "2026-07-30",
       "articles": 0,
       "minutes": 0,
       "goalPercent": 0.0,
@@ -5414,12 +5414,6 @@
       "activityComplete": false
     },
     "history": [
-      {
-        "date": "2025-07-30",
-        "articles": 0,
-        "minutes": 0,
-        "goalPercent": 0.0
-      },
       {
         "date": "2025-07-31",
         "articles": 0,
@@ -7602,6 +7596,12 @@
         "date": "2026-07-29",
         "articles": 0,
         "minutes": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-07-30",
+        "articles": 0,
+        "minutes": 0,
         "goalPercent": 0.0,
         "target": 3,
         "activityComplete": false
@@ -7611,48 +7611,14 @@
   },
   "activity": {
     "today": {
-      "date": "2026-07-29",
-      "readingMinutes": 8.2,
+      "date": "2026-07-30",
+      "readingMinutes": 0.0,
       "grammarMinutes": 0.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 8.2,
-      "warnings": [
-        {
-          "source": "www.bilibili.com",
-          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
-          "capturedAt": "2026-07-29T04:21:11.249Z"
-        },
-        {
-          "source": "www.youtube.com",
-          "title": "Vyse Can Dash Now - YouTube",
-          "capturedAt": "2026-07-29T05:31:40.709Z"
-        },
-        {
-          "source": "www.bilibili.com",
-          "title": "【Chef/译】维斯现在可以冲刺了_游戏热门视频",
-          "capturedAt": "2026-07-29T05:31:53.300Z"
-        },
-        {
-          "source": "www.youtube.com",
-          "title": "周旋 - YouTube",
-          "capturedAt": "2026-07-30T01:18:02.037Z"
-        },
-        {
-          "source": "www.bilibili.com",
-          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
-          "capturedAt": "2026-07-30T01:18:21.825Z"
-        }
-      ]
+      "totalMinutes": 0.0,
+      "warnings": []
     },
     "history": [
-      {
-        "date": "2025-07-30",
-        "readingMinutes": 0.0,
-        "grammarMinutes": 0.0,
-        "verbMinutes": 0.0,
-        "totalMinutes": 0.0,
-        "warnings": []
-      },
       {
         "date": "2025-07-31",
         "readingMinutes": 0.0,
@@ -10752,6 +10718,14 @@
             "capturedAt": "2026-07-30T01:18:21.825Z"
           }
         ]
+      },
+      {
+        "date": "2026-07-30",
+        "readingMinutes": 0.0,
+        "grammarMinutes": 0.0,
+        "verbMinutes": 0.0,
+        "totalMinutes": 0.0,
+        "warnings": []
       }
     ],
     "lastContext": "reading"
