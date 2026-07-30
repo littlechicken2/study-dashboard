@@ -352,6 +352,16 @@
           "source": "www.bilibili.com",
           "title": "【Chef/译】维斯现在可以冲刺了_游戏热门视频",
           "capturedAt": "2026-07-29T05:31:53.300Z"
+        },
+        {
+          "source": "www.youtube.com",
+          "title": "周旋 - YouTube",
+          "capturedAt": "2026-07-30T01:18:02.037Z"
+        },
+        {
+          "source": "www.bilibili.com",
+          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+          "capturedAt": "2026-07-30T01:18:21.825Z"
         }
       ],
       "sources": {
@@ -362,11 +372,11 @@
   },
   "lastContext": "reading",
   "lastPing": {
-    "category": "reading",
-    "source": "freetcf-reading",
-    "seconds": 10,
-    "title": "Free TCF Canada Practice & Tests",
-    "url": "https://www.freetcf.com/question?pageType=test&category=reading&paperId=test3&qnumber=14",
-    "capturedAt": "2026-07-29T19:34:54.834Z"
+    "category": "distraction",
+    "source": "www.bilibili.com",
+    "seconds": 0,
+    "title": "没救了？一事无成的休赛期！库里和勇士彻底完蛋？_哔哩哔哩_bilibili",
+    "url": "https://www.bilibili.com/video/BV1RR3n6LEaP/?spm_id_from=333.1007.tianma.1-1-1.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
+    "capturedAt": "2026-07-30T01:39:18.593Z"
   }
 }
