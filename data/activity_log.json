@@ -368,15 +368,28 @@
         "freetcf-reading": 130.0,
         "chatgpt": 360.0
       }
+    },
+    "2026-07-30": {
+      "reading": 0,
+      "grammar": 0,
+      "verb": 0,
+      "warnings": [
+        {
+          "source": "www.bilibili.com",
+          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+          "capturedAt": "2026-07-30T05:12:26.174Z"
+        }
+      ],
+      "sources": {}
     }
   },
   "lastContext": "reading",
   "lastPing": {
-    "category": "contextual",
-    "source": "chatgpt",
-    "seconds": 10,
-    "title": "éteindre 和 enceinte 区别",
-    "url": "https://chatgpt.com/c/6a6ac658-79f8-83ea-90cc-eb48003c2e3b",
-    "capturedAt": "2026-07-30T03:36:19.923Z"
+    "category": "distraction",
+    "source": "www.bilibili.com",
+    "seconds": 0,
+    "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+    "url": "https://www.bilibili.com/",
+    "capturedAt": "2026-07-30T05:12:50.183Z"
   }
 }
