@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-07-30T16:01:56-04:00",
+  "updatedAt": "2026-07-30T17:02:00-04:00",
   "today": {
     "date": "2026-07-30",
     "focusMinutes": 1
   },
   "anki": {
     "today": {
-      "reviews": 63,
+      "reviews": 65,
       "new": 2,
-      "minutes": 12.5,
+      "minutes": 13.6,
       "activityComplete": true,
       "goalPercent": 100
     },
     "total": {
       "cards": 25979,
-      "mature": 901,
+      "mature": 902,
       "learned": 2192,
       "newRemaining": 23787,
       "percent": 8.44
@@ -2046,7 +2046,7 @@
       {
         "date": "2026-07-03",
         "reviews": 215,
-        "new": 369,
+        "new": 370,
         "minutes": 34.1
       },
       {
@@ -2184,7 +2184,7 @@
       {
         "date": "2026-07-26",
         "reviews": 330,
-        "new": 103,
+        "new": 104,
         "minutes": 30.8
       },
       {
@@ -2207,9 +2207,9 @@
       },
       {
         "date": "2026-07-30",
-        "reviews": 63,
+        "reviews": 65,
         "new": 2,
-        "minutes": 12.5
+        "minutes": 13.6
       }
     ],
     "decks": [
@@ -2218,7 +2218,7 @@
         "name": "French Daily Audio + Reading",
         "cards": 5005,
         "learned": 2113,
-        "mature": 886,
+        "mature": 887,
         "newRemaining": 2892,
         "percent": 42.22
       },
