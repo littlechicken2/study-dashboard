@@ -370,7 +370,7 @@
       }
     },
     "2026-07-30": {
-      "reading": 0,
+      "reading": 40.0,
       "grammar": 0,
       "verb": 0,
       "warnings": [
@@ -380,16 +380,18 @@
           "capturedAt": "2026-07-30T05:12:26.174Z"
         }
       ],
-      "sources": {}
+      "sources": {
+        "freetcf-reading": 40.0
+      }
     }
   },
   "lastContext": "reading",
   "lastPing": {
-    "category": "distraction",
-    "source": "www.bilibili.com",
-    "seconds": 0,
-    "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
-    "url": "https://www.bilibili.com/",
-    "capturedAt": "2026-07-30T05:12:50.183Z"
+    "category": "reading",
+    "source": "freetcf-reading",
+    "seconds": 10,
+    "title": "Free TCF Canada Practice & Tests",
+    "url": "https://www.freetcf.com/question?pageType=test&category=reading&paperId=test3&qnumber=14",
+    "capturedAt": "2026-07-30T06:38:16.037Z"
   }
 }
