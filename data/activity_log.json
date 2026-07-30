@@ -334,7 +334,7 @@
       }
     },
     "2026-07-29": {
-      "reading": 380.0,
+      "reading": 490.0,
       "grammar": 0,
       "verb": 0,
       "warnings": [
@@ -365,18 +365,18 @@
         }
       ],
       "sources": {
-        "freetcf-reading": 100.0,
-        "chatgpt": 280.0
+        "freetcf-reading": 130.0,
+        "chatgpt": 360.0
       }
     }
   },
   "lastContext": "reading",
   "lastPing": {
-    "category": "distraction",
-    "source": "www.bilibili.com",
-    "seconds": 0,
-    "title": "最轮椅的来了！裸配 六倍RM277 能打一个加一个配件 满改清图撤离吗_游戏热门视频",
-    "url": "https://www.bilibili.com/video/BV1QN3261EL4/?spm_id_from=333.1007.tianma.3-4-10.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
-    "capturedAt": "2026-07-30T02:13:32.641Z"
+    "category": "contextual",
+    "source": "chatgpt",
+    "seconds": 10,
+    "title": "éteindre 和 enceinte 区别",
+    "url": "https://chatgpt.com/c/6a6ac658-79f8-83ea-90cc-eb48003c2e3b",
+    "capturedAt": "2026-07-30T03:36:19.923Z"
   }
 }
