@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-07-30T23:02:29-04:00",
+  "updatedAt": "2026-07-31T00:02:33-04:00",
   "today": {
-    "date": "2026-07-30",
-    "focusMinutes": 1
+    "date": "2026-07-31",
+    "focusMinutes": 0
   },
   "anki": {
     "today": {
-      "reviews": 376,
-      "new": 109,
-      "minutes": 53.8,
-      "activityComplete": true,
-      "goalPercent": 100
+      "reviews": 0,
+      "new": 0,
+      "minutes": 0,
+      "activityComplete": false,
+      "goalPercent": 0
     },
     "total": {
       "cards": 25979,
@@ -19,14 +19,8 @@
       "newRemaining": 23738,
       "percent": 8.63
     },
-    "streak": 48,
+    "streak": 0,
     "history": [
-      {
-        "date": "2025-07-31",
-        "reviews": 0,
-        "new": 0,
-        "minutes": 0
-      },
       {
         "date": "2025-08-01",
         "reviews": 0,
@@ -2210,6 +2204,12 @@
         "reviews": 376,
         "new": 109,
         "minutes": 53.8
+      },
+      {
+        "date": "2026-07-31",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
       }
     ],
     "decks": [
@@ -2473,7 +2473,7 @@
         "completed": 88,
         "remaining": 0,
         "percent": 100.0,
-        "daysRemaining": 2,
+        "daysRemaining": 1,
         "deadline": "2026-07-31",
         "recommendedToday": 0,
         "yesterdayDone": 0,
@@ -2482,14 +2482,6 @@
       }
     },
     "history": [
-      {
-        "date": "2025-07-31",
-        "minutes": 0.0,
-        "videoMinutes": 0.0,
-        "pdfMinutes": 0.0,
-        "activityComplete": false,
-        "goalPercent": 0
-      },
       {
         "date": "2025-08-01",
         "minutes": 0.0,
@@ -5401,12 +5393,20 @@
         "pdfMinutes": 0.0,
         "activityComplete": false,
         "goalPercent": 0
+      },
+      {
+        "date": "2026-07-31",
+        "minutes": 0.0,
+        "videoMinutes": 0.0,
+        "pdfMinutes": 0.0,
+        "activityComplete": false,
+        "goalPercent": 0
       }
     ]
   },
   "reading": {
     "today": {
-      "date": "2026-07-30",
+      "date": "2026-07-31",
       "articles": 0,
       "minutes": 0,
       "goalPercent": 0.0,
@@ -5414,12 +5414,6 @@
       "activityComplete": false
     },
     "history": [
-      {
-        "date": "2025-07-31",
-        "articles": 0,
-        "minutes": 0,
-        "goalPercent": 0.0
-      },
       {
         "date": "2025-08-01",
         "articles": 0,
@@ -7602,6 +7596,12 @@
         "date": "2026-07-30",
         "articles": 0,
         "minutes": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-07-31",
+        "articles": 0,
+        "minutes": 0,
         "goalPercent": 0.0,
         "target": 3,
         "activityComplete": false
@@ -7611,28 +7611,14 @@
   },
   "activity": {
     "today": {
-      "date": "2026-07-30",
-      "readingMinutes": 0.7,
+      "date": "2026-07-31",
+      "readingMinutes": 0.0,
       "grammarMinutes": 0.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 0.7,
-      "warnings": [
-        {
-          "source": "www.bilibili.com",
-          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
-          "capturedAt": "2026-07-30T05:12:26.174Z"
-        }
-      ]
+      "totalMinutes": 0.0,
+      "warnings": []
     },
     "history": [
-      {
-        "date": "2025-07-31",
-        "readingMinutes": 0.0,
-        "grammarMinutes": 0.0,
-        "verbMinutes": 0.0,
-        "totalMinutes": 0.0,
-        "warnings": []
-      },
       {
         "date": "2025-08-01",
         "readingMinutes": 0.0,
@@ -10738,6 +10724,14 @@
             "capturedAt": "2026-07-30T05:12:26.174Z"
           }
         ]
+      },
+      {
+        "date": "2026-07-31",
+        "readingMinutes": 0.0,
+        "grammarMinutes": 0.0,
+        "verbMinutes": 0.0,
+        "totalMinutes": 0.0,
+        "warnings": []
       }
     ],
     "lastContext": "reading"
