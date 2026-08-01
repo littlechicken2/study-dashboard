@@ -383,15 +383,25 @@
       "sources": {
         "freetcf-reading": 40.0
       }
+    },
+    "2026-08-01": {
+      "reading": 1820.0,
+      "grammar": 0,
+      "verb": 0,
+      "warnings": [],
+      "sources": {
+        "freetcf-reading": 1300.0,
+        "chatgpt": 520.0
+      }
     }
   },
   "lastContext": "reading",
   "lastPing": {
-    "category": "reading",
-    "source": "freetcf-reading",
+    "category": "contextual",
+    "source": "chatgpt",
     "seconds": 10,
-    "title": "Free TCF Canada Practice & Tests",
-    "url": "https://www.freetcf.com/question?pageType=test&category=reading&paperId=test3&qnumber=14",
-    "capturedAt": "2026-07-30T06:38:16.037Z"
+    "title": "阅读抗拒与情绪管理",
+    "url": "https://chatgpt.com/c/6a6e6cc4-e018-83ea-ae9c-808eb8f6467d",
+    "capturedAt": "2026-08-01T23:01:19.147Z"
   }
 }

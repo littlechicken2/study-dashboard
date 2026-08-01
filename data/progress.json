@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-08-01T18:02:09-04:00",
+  "updatedAt": "2026-08-01T19:02:12-04:00",
   "today": {
     "date": "2026-08-01",
-    "focusMinutes": 18
+    "focusMinutes": 30
   },
   "anki": {
     "today": {
-      "reviews": 131,
-      "new": 19,
-      "minutes": 17.5,
+      "reviews": 159,
+      "new": 29,
+      "minutes": 21.1,
       "activityComplete": true,
       "goalPercent": 100
     },
     "total": {
-      "cards": 25979,
-      "mature": 929,
-      "learned": 2292,
-      "newRemaining": 23687,
-      "percent": 8.82
+      "cards": 25982,
+      "mature": 932,
+      "learned": 2301,
+      "newRemaining": 23681,
+      "percent": 8.86
     },
     "streak": 50,
     "history": [
@@ -1698,7 +1698,7 @@
       {
         "date": "2026-05-08",
         "reviews": 111,
-        "new": 223,
+        "new": 224,
         "minutes": 23.9
       },
       {
@@ -1806,7 +1806,7 @@
       {
         "date": "2026-05-26",
         "reviews": 153,
-        "new": 130,
+        "new": 131,
         "minutes": 17.6
       },
       {
@@ -1818,7 +1818,7 @@
       {
         "date": "2026-05-28",
         "reviews": 114,
-        "new": 198,
+        "new": 199,
         "minutes": 18.8
       },
       {
@@ -1998,13 +1998,13 @@
       {
         "date": "2026-06-27",
         "reviews": 187,
-        "new": 447,
+        "new": 448,
         "minutes": 46.2
       },
       {
         "date": "2026-06-28",
         "reviews": 177,
-        "new": 356,
+        "new": 357,
         "minutes": 24.8
       },
       {
@@ -2034,19 +2034,19 @@
       {
         "date": "2026-07-03",
         "reviews": 215,
-        "new": 380,
+        "new": 381,
         "minutes": 34.1
       },
       {
         "date": "2026-07-04",
         "reviews": 328,
-        "new": 448,
+        "new": 449,
         "minutes": 58.6
       },
       {
         "date": "2026-07-05",
         "reviews": 237,
-        "new": 386,
+        "new": 387,
         "minutes": 41.1
       },
       {
@@ -2070,7 +2070,7 @@
       {
         "date": "2026-07-09",
         "reviews": 289,
-        "new": 276,
+        "new": 277,
         "minutes": 37.3
       },
       {
@@ -2124,7 +2124,7 @@
       {
         "date": "2026-07-18",
         "reviews": 471,
-        "new": 211,
+        "new": 213,
         "minutes": 57.2
       },
       {
@@ -2166,7 +2166,7 @@
       {
         "date": "2026-07-25",
         "reviews": 526,
-        "new": 206,
+        "new": 210,
         "minutes": 68.0
       },
       {
@@ -2178,7 +2178,7 @@
       {
         "date": "2026-07-27",
         "reviews": 472,
-        "new": 148,
+        "new": 150,
         "minutes": 55.3
       },
       {
@@ -2190,7 +2190,7 @@
       {
         "date": "2026-07-29",
         "reviews": 427,
-        "new": 101,
+        "new": 102,
         "minutes": 66.2
       },
       {
@@ -2207,29 +2207,29 @@
       },
       {
         "date": "2026-08-01",
-        "reviews": 131,
-        "new": 19,
-        "minutes": 17.5
+        "reviews": 159,
+        "new": 29,
+        "minutes": 21.1
       }
     ],
     "decks": [
       {
         "id": 1785181252796,
         "name": "French Daily Audio + Reading",
-        "cards": 5005,
-        "learned": 2213,
-        "mature": 914,
-        "newRemaining": 2792,
-        "percent": 44.22
+        "cards": 5008,
+        "learned": 2221,
+        "mature": 917,
+        "newRemaining": 2787,
+        "percent": 44.35
       },
       {
         "id": 1777946190612,
         "name": "5000 Most Common French Words Pt. 2::[1] Main Course::[b] Option 1: Canadian French Audio::II) English to French",
         "cards": 4500,
-        "learned": 8,
+        "learned": 9,
         "mature": 0,
-        "newRemaining": 4492,
-        "percent": 0.18
+        "newRemaining": 4491,
+        "percent": 0.2
       },
       {
         "id": 1777954114246,
@@ -7612,10 +7612,10 @@
   "activity": {
     "today": {
       "date": "2026-08-01",
-      "readingMinutes": 0.0,
+      "readingMinutes": 30.3,
       "grammarMinutes": 0.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 0.0,
+      "totalMinutes": 30.3,
       "warnings": []
     },
     "history": [
@@ -10727,10 +10727,10 @@
       },
       {
         "date": "2026-08-01",
-        "readingMinutes": 0.0,
+        "readingMinutes": 30.3,
         "grammarMinutes": 0.0,
         "verbMinutes": 0.0,
-        "totalMinutes": 0.0,
+        "totalMinutes": 30.3,
         "warnings": []
       }
     ],
