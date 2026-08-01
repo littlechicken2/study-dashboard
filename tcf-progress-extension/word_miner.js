@@ -7,6 +7,8 @@
   const BUBBLE_ID = "tcf-anki-selection-bubble";
   const PANEL_ID = "tcf-anki-dictionary-panel";
   let bubbleTimer = 0;
+  let panelRenderToken = 0;
+  let pendingPanelKey = "";
 
   const clean = value => String(value || "").replace(/\s+/g, " ").trim();
   const escapeRegex = value => String(value || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -249,10 +251,17 @@
   }
 
   async function showDictionaryPanel() {
-    if (document.getElementById(PANEL_ID)) return;
     const entry = dictionaryEntry();
     if (!entry.word) return;
+    const entryKey = JSON.stringify([entry.word, entry.meanings, entry.ipa, entry.partOfSpeech]);
+    const existingPanel = document.getElementById(PANEL_ID);
+    if (existingPanel?.dataset.entryKey === entryKey) return;
+    if (pendingPanelKey === entryKey) return;
+    pendingPanelKey = entryKey;
+    const renderToken = ++panelRenderToken;
+    existingPanel?.remove();
     const stored = await chrome.storage.local.get(CONTEXT_KEY);
+    if (renderToken !== panelRenderToken) return;
     const context = stored[CONTEXT_KEY];
     const recentContext = context && Date.now() - Number(context.capturedAt || 0) < 30 * 60 * 1000
       ? context
@@ -260,6 +269,7 @@
 
     const panel = document.createElement("aside");
     panel.id = PANEL_ID;
+    panel.dataset.entryKey = entryKey;
     panel.innerHTML = `
       <button class="tcf-close" type="button" title="关闭">×</button>
       <div class="tcf-eyebrow">${escapeHtml(sourceLabel(recentContext))}</div>
@@ -361,6 +371,7 @@
       addEntryToAnki(entry, meaningEditor.value, recentContext, status, addButton)
     ));
     document.documentElement.appendChild(panel);
+    pendingPanelKey = "";
   }
 
   if (location.hostname === DICTIONARY_HOST) {
@@ -370,7 +381,6 @@
       const hasPhraseTranslation = document.querySelector("#tbOrgText")
         && document.querySelector("#tbTransResult");
       if (hasDictionaryEntry || hasPhraseTranslation) {
-        observer.disconnect();
         showDictionaryPanel();
       }
     });

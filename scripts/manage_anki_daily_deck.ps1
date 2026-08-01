@@ -69,7 +69,7 @@ function Set-ReadingCardStyle {
             templates = @{
                 Vocabulary = @{
                     Front = '<div class="reading-word"><b>{{French}}</b></div>'
-                    Back = '{{FrontSide}}<hr id="answer"><div class="reading-meaning"><b>{{Chinese}}</b></div><div class="reading-english">{{English}}</div><div class="reading-context">{{Sentence}}</div>'
+                    Back = '<div class="reading-word"><b>{{French}}</b></div><hr id="answer"><div class="reading-meaning"><b>{{Chinese}}</b></div><div class="reading-english">{{English}}</div><div class="reading-context">{{Sentence}}</div>'
                 }
             }
         }
