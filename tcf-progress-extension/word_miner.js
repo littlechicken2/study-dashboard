@@ -10,6 +10,9 @@
 
   const clean = value => String(value || "").replace(/\s+/g, " ").trim();
   const escapeRegex = value => String(value || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const escapeAnkiQuoted = value => String(value || "")
+    .replace(/\\/g, "\\\\")
+    .replace(/"/g, '\\"');
   const escapeHtml = value => clean(value).replace(/[&<>"']/g, character => ({
     "&": "&amp;",
     "<": "&lt;",
@@ -129,18 +132,24 @@
   }
 
   function dictionaryEntry() {
-    const word = clean(document.querySelector(".explain-Word .word")?.textContent);
+    const dictionaryWord = clean(document.querySelector(".explain-Word .word")?.textContent);
+    const translatedPhrase = clean(document.querySelector("#tbOrgText")?.textContent);
+    const word = dictionaryWord || translatedPhrase;
     const ipa = directText(document.querySelector(".Phonitic"));
     const partOfSpeech = clean(document.querySelector("#ExpFCchild .cara")?.textContent);
-    const meanings = [...document.querySelectorAll("#ExpFCchild .exp")]
+    let meanings = [...document.querySelectorAll("#ExpFCchild .exp")]
       .map(element => clean(element.textContent))
       .filter(Boolean)
       .slice(0, 4);
+    if (!meanings.length) {
+      const phraseMeaning = clean(document.querySelector("#tbTransResult")?.textContent);
+      if (phraseMeaning) meanings = [phraseMeaning];
+    }
     const examples = [...document.querySelectorAll("#ExpFCchild .eg")]
       .map(element => clean(element.textContent))
       .filter(Boolean)
       .slice(0, 2);
-    return { word, ipa, partOfSpeech, meanings, examples };
+    return { word, ipa, partOfSpeech, meanings, examples, isPhrase: /\s/u.test(word) };
   }
 
   function sourceLabel(context) {
@@ -163,10 +172,10 @@
     try {
       await anki("version");
       await anki("createDeck", { deck: TARGET_DECK });
-      const exact = escapeRegex(entry.word);
+      const exact = escapeAnkiQuoted(escapeRegex(entry.word));
       const existing = new Set([
-        ...await anki("findNotes", { query: `French:re:^${exact}$` }),
-        ...await anki("findNotes", { query: `Word:re:^${exact}$` })
+        ...await anki("findNotes", { query: `French:re:"^${exact}$"` }),
+        ...await anki("findNotes", { query: `Word:re:"^${exact}$"` })
       ]);
       if (existing.size) {
         const cards = await anki("findCards", { query: `nid:${[...existing].join(",")}` });
@@ -213,6 +222,7 @@
           },
           tags: [
             "TCF_Reading",
+            ...(entry.isPhrase ? ["TCF_Phrase"] : []),
             "FreeTCF",
             "merge_source_tcf_reading",
             `mined_${new Date().toISOString().slice(0, 10).replaceAll("-", "_")}`
@@ -254,7 +264,7 @@
       <button class="tcf-close" type="button" title="关闭">×</button>
       <div class="tcf-eyebrow">${escapeHtml(sourceLabel(recentContext))}</div>
       <div class="tcf-word">${escapeHtml(entry.word)}</div>
-      <div class="tcf-meta">${escapeHtml([entry.ipa, entry.partOfSpeech].filter(Boolean).join(" · "))}</div>
+      <div class="tcf-meta">${escapeHtml([entry.isPhrase ? "短语" : "", entry.ipa, entry.partOfSpeech].filter(Boolean).join(" · "))}</div>
       <label class="tcf-meaning-label" for="tcf-meaning-editor">中文释义（可修改）</label>
       <textarea class="tcf-meaning" id="tcf-meaning-editor" rows="5">${escapeHtml(entry.meanings.join("；"))}</textarea>
       <button class="tcf-add" type="button">加入 Anki · 明天复习</button>
@@ -355,7 +365,11 @@
 
   if (location.hostname === DICTIONARY_HOST) {
     const observer = new MutationObserver(() => {
-      if (document.querySelector(".explain-Word .word") && document.querySelector("#ExpFCchild .exp")) {
+      const hasDictionaryEntry = document.querySelector(".explain-Word .word")
+        && document.querySelector("#ExpFCchild .exp");
+      const hasPhraseTranslation = document.querySelector("#tbOrgText")
+        && document.querySelector("#tbTransResult");
+      if (hasDictionaryEntry || hasPhraseTranslation) {
         observer.disconnect();
         showDictionaryPanel();
       }
