@@ -151,9 +151,10 @@
     return pieces.length ? `FreeTCF ${pieces.join(" · ")}` : "FreeTCF 阅读";
   }
 
-  async function addEntryToAnki(entry, context, status, button) {
-    if (!entry.word || !entry.meanings.length) {
-      status.textContent = "没有读取到法汉释义，请稍后刷新词典页。";
+  async function addEntryToAnki(entry, editedMeaning, context, status, button) {
+    const meaning = String(editedMeaning || "").trim();
+    if (!entry.word || !meaning) {
+      status.textContent = "请填写中文释义后再加入 Anki。";
       return;
     }
     button.disabled = true;
@@ -177,9 +178,9 @@
       const sourceUrl = context?.sourceUrl || "https://www.freetcf.com/";
       const dictionaryUrl = location.href;
       const chinese = [
-        entry.partOfSpeech,
-        entry.meanings.join("；"),
-        entry.ipa ? `音标 ${entry.ipa}` : ""
+        escapeHtml(entry.partOfSpeech),
+        escapeHtml(meaning).replace(/\r?\n/g, "<br>"),
+        entry.ipa ? `音标 ${escapeHtml(entry.ipa)}` : ""
       ].filter(Boolean).join("<br>");
       const exampleHtml = entry.examples.length
         ? `<div>${entry.examples.map(escapeHtml).join("<br>")}</div>`
@@ -254,9 +255,10 @@
       <div class="tcf-eyebrow">${escapeHtml(sourceLabel(recentContext))}</div>
       <div class="tcf-word">${escapeHtml(entry.word)}</div>
       <div class="tcf-meta">${escapeHtml([entry.ipa, entry.partOfSpeech].filter(Boolean).join(" · "))}</div>
-      <div class="tcf-meaning">${entry.meanings.map(escapeHtml).join("<br>") || "未读取到法汉释义"}</div>
+      <label class="tcf-meaning-label" for="tcf-meaning-editor">中文释义（可修改）</label>
+      <textarea class="tcf-meaning" id="tcf-meaning-editor" rows="5">${escapeHtml(entry.meanings.join("；"))}</textarea>
       <button class="tcf-add" type="button">加入 Anki · 明天复习</button>
-      <div class="tcf-status">释义来自当前法语助手词典页。</div>
+      <div class="tcf-status">默认释义来自当前词典页，加入前可以直接修改。</div>
     `;
     Object.assign(panel.style, {
       position: "fixed",
@@ -299,12 +301,33 @@
       color: "#9fb1a8",
       fontSize: "12px"
     });
+    Object.assign(panel.querySelector(".tcf-meaning-label").style, {
+      display: "block",
+      marginTop: "12px",
+      color: "#c8d7d0",
+      fontSize: "12px",
+      fontWeight: "700"
+    });
     Object.assign(panel.querySelector(".tcf-meaning").style, {
-      margin: "12px 0",
+      boxSizing: "border-box",
+      width: "100%",
+      minHeight: "104px",
+      margin: "6px 0 12px",
       padding: "10px",
       border: "1px solid #294238",
       borderRadius: "4px",
-      background: "#10211b"
+      outline: "none",
+      resize: "vertical",
+      background: "#10211b",
+      color: "#f3f7f5",
+      font: "600 14px/1.45 Inter, system-ui, sans-serif"
+    });
+    const meaningEditor = panel.querySelector(".tcf-meaning");
+    meaningEditor.addEventListener("focus", () => {
+      meaningEditor.style.borderColor = "#62d9de";
+    });
+    meaningEditor.addEventListener("blur", () => {
+      meaningEditor.style.borderColor = "#294238";
     });
     const addButton = panel.querySelector(".tcf-add");
     Object.assign(addButton.style, {
@@ -324,7 +347,9 @@
       fontSize: "11px"
     });
     closeButton.addEventListener("click", () => panel.remove());
-    addButton.addEventListener("click", () => addEntryToAnki(entry, recentContext, status, addButton));
+    addButton.addEventListener("click", () => (
+      addEntryToAnki(entry, meaningEditor.value, recentContext, status, addButton)
+    ));
     document.documentElement.appendChild(panel);
   }
 
