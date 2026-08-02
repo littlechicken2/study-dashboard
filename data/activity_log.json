@@ -395,7 +395,7 @@
       }
     },
     "2026-08-02": {
-      "reading": 800.0,
+      "reading": 810.0,
       "grammar": 0,
       "verb": 0,
       "warnings": [
@@ -412,7 +412,7 @@
       ],
       "sources": {
         "freetcf-reading": 570.0,
-        "chatgpt": 230.0
+        "chatgpt": 240.0
       }
     }
   },
@@ -423,6 +423,6 @@
     "seconds": 10,
     "title": "阅读抗拒与情绪管理",
     "url": "https://chatgpt.com/c/6a6e6cc4-e018-83ea-ae9c-808eb8f6467d",
-    "capturedAt": "2026-08-02T04:21:21.822Z"
+    "capturedAt": "2026-08-02T05:47:08.008Z"
   }
 }
