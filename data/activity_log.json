@@ -418,11 +418,11 @@
   },
   "lastContext": "reading",
   "lastPing": {
-    "category": "contextual",
-    "source": "chatgpt",
-    "seconds": 10,
-    "title": "阅读抗拒与情绪管理",
-    "url": "https://chatgpt.com/c/6a6e6cc4-e018-83ea-ae9c-808eb8f6467d",
-    "capturedAt": "2026-08-02T05:47:08.008Z"
+    "category": "distraction",
+    "source": "www.bilibili.com",
+    "seconds": 0,
+    "title": "【漫威】荷兰弟剧透这几段我能笑一辈子，太可爱了！_哔哩哔哩_bilibili",
+    "url": "https://www.bilibili.com/video/BV1Hp411R72J?spm_id_from=333.788.player.player_end_recommend&trackid=web_related_0.router-related-2589621-48s8n.1785653032269.953&vd_source=af1f5c7cace3a370b57a585619471fbb",
+    "capturedAt": "2026-08-02T06:48:10.052Z"
   }
 }
