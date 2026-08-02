@@ -408,6 +408,11 @@
           "source": "www.bilibili.com",
           "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
           "capturedAt": "2026-08-02T04:13:52.915Z"
+        },
+        {
+          "source": "www.youtube.com",
+          "title": "(2) Shai Gilgeous-Alexander \"1-ON-1 GOD\" Moments 🔥 - YouTube",
+          "capturedAt": "2026-08-02T17:55:28.293Z"
         }
       ],
       "sources": {
@@ -418,11 +423,11 @@
   },
   "lastContext": "reading",
   "lastPing": {
-    "category": "reading",
-    "source": "freetcf-reading",
-    "seconds": 10,
-    "title": "Free TCF Canada Practice & Tests",
-    "url": "https://www.freetcf.com/question?pageType=test&category=listening&paperId=test1&qnumber=7",
-    "capturedAt": "2026-08-02T15:41:20.458Z"
+    "category": "distraction",
+    "source": "www.youtube.com",
+    "seconds": 0,
+    "title": "(2) Shai Gilgeous-Alexander \"1-ON-1 GOD\" Moments 🔥 - YouTube",
+    "url": "https://www.youtube.com/watch?v=tfagB2_y19w",
+    "capturedAt": "2026-08-02T18:01:53.759Z"
   }
 }

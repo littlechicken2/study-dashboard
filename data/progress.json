@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T13:01:52-04:00",
+  "updatedAt": "2026-08-02T14:01:54-04:00",
   "today": {
     "date": "2026-08-02",
     "focusMinutes": 14
@@ -7626,6 +7626,11 @@
           "source": "www.bilibili.com",
           "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
           "capturedAt": "2026-08-02T04:13:52.915Z"
+        },
+        {
+          "source": "www.youtube.com",
+          "title": "(2) Shai Gilgeous-Alexander \"1-ON-1 GOD\" Moments 🔥 - YouTube",
+          "capturedAt": "2026-08-02T17:55:28.293Z"
         }
       ]
     },
@@ -10752,6 +10757,11 @@
             "source": "www.bilibili.com",
             "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
             "capturedAt": "2026-08-02T04:13:52.915Z"
+          },
+          {
+            "source": "www.youtube.com",
+            "title": "(2) Shai Gilgeous-Alexander \"1-ON-1 GOD\" Moments 🔥 - YouTube",
+            "capturedAt": "2026-08-02T17:55:28.293Z"
           }
         ]
       }
