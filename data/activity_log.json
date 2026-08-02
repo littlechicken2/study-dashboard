@@ -395,7 +395,7 @@
       }
     },
     "2026-08-02": {
-      "reading": 860.0,
+      "reading": 1000.0,
       "grammar": 0,
       "verb": 0,
       "warnings": [
@@ -416,8 +416,8 @@
         }
       ],
       "sources": {
-        "freetcf-reading": 610.0,
-        "chatgpt": 250.0
+        "freetcf-reading": 740.0,
+        "chatgpt": 260.0
       }
     }
   },
@@ -428,6 +428,6 @@
     "seconds": 10,
     "title": "Free TCF Canada Practice & Tests",
     "url": "https://www.freetcf.com/question?pageType=test&category=listening&paperId=test1&qnumber=7",
-    "capturedAt": "2026-08-02T19:30:18.324Z"
+    "capturedAt": "2026-08-02T20:38:23.839Z"
   }
 }
