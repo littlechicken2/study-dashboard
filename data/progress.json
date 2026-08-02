@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-08-01T22:02:20-04:00",
+  "updatedAt": "2026-08-01T23:02:23-04:00",
   "today": {
     "date": "2026-08-01",
-    "focusMinutes": 65
+    "focusMinutes": 71
   },
   "anki": {
     "today": {
@@ -2396,12 +2396,12 @@
     ]
   },
   "course": {
-    "updatedAt": "2026-06-30T01:27:31.238Z",
+    "updatedAt": "2026-08-02T02:14:21.326Z",
     "lastLesson": {
       "id": "a1/6_4.mp4",
       "title": "6 4 · 形容词特殊阴性变化",
       "course": "a1",
-      "time": 205.822033
+      "time": 216.665583
     },
     "courses": [
       {
@@ -2414,9 +2414,9 @@
       {
         "id": "a1",
         "label": "A1",
-        "watchedSeconds": 19143.09,
+        "watchedSeconds": 19152.77,
         "durationSeconds": 79062.89,
-        "percent": 24.21
+        "percent": 24.22
       },
       {
         "id": "a2",
@@ -2441,16 +2441,16 @@
       }
     ],
     "total": {
-      "watchedSeconds": 38215.74,
+      "watchedSeconds": 38225.42,
       "durationSeconds": 487318.95,
       "percent": 7.84
     },
     "today": {
-      "minutes": 0.0,
-      "videoMinutes": 0.0,
+      "minutes": 0.2,
+      "videoMinutes": 0.2,
       "pdfMinutes": 0.0,
-      "activityComplete": false,
-      "goalPercent": 0
+      "activityComplete": true,
+      "goalPercent": 100
     },
     "pdf": {
       "pages": 88,
@@ -5396,11 +5396,11 @@
       },
       {
         "date": "2026-08-01",
-        "minutes": 0.0,
-        "videoMinutes": 0.0,
+        "minutes": 0.2,
+        "videoMinutes": 0.2,
         "pdfMinutes": 0.0,
-        "activityComplete": false,
-        "goalPercent": 0
+        "activityComplete": true,
+        "goalPercent": 100
       }
     ]
   },
@@ -7612,10 +7612,10 @@
   "activity": {
     "today": {
       "date": "2026-08-01",
-      "readingMinutes": 65.2,
+      "readingMinutes": 70.7,
       "grammarMinutes": 0.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 65.2,
+      "totalMinutes": 70.7,
       "warnings": []
     },
     "history": [
@@ -10727,10 +10727,10 @@
       },
       {
         "date": "2026-08-01",
-        "readingMinutes": 65.2,
+        "readingMinutes": 70.7,
         "grammarMinutes": 0.0,
         "verbMinutes": 0.0,
-        "totalMinutes": 65.2,
+        "totalMinutes": 70.7,
         "warnings": []
       }
     ],
