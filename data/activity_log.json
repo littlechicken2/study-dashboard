@@ -413,6 +413,11 @@
           "source": "www.youtube.com",
           "title": "(2) Shai Gilgeous-Alexander \"1-ON-1 GOD\" Moments 🔥 - YouTube",
           "capturedAt": "2026-08-02T17:55:28.293Z"
+        },
+        {
+          "source": "www.bilibili.com",
+          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+          "capturedAt": "2026-08-02T21:29:12.511Z"
         }
       ],
       "sources": {
@@ -423,11 +428,11 @@
   },
   "lastContext": "reading",
   "lastPing": {
-    "category": "reading",
-    "source": "freetcf-reading",
-    "seconds": 10,
-    "title": "Free TCF Canada Practice & Tests",
-    "url": "https://www.freetcf.com/question?pageType=test&category=listening&paperId=test1&qnumber=7",
-    "capturedAt": "2026-08-02T20:38:23.839Z"
+    "category": "distraction",
+    "source": "www.bilibili.com",
+    "seconds": 0,
+    "title": "Sasi新专爆火最急的是秃子？_哔哩哔哩_bilibili",
+    "url": "https://www.bilibili.com/video/BV1hMG36SEzm/?spm_id_from=333.1007.tianma.4-4-14.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
+    "capturedAt": "2026-08-02T21:48:48.593Z"
   }
 }
