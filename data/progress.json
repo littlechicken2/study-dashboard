@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T15:01:57-04:00",
+  "updatedAt": "2026-08-02T16:02:00-04:00",
   "today": {
     "date": "2026-08-02",
     "focusMinutes": 14
@@ -7612,10 +7612,10 @@
   "activity": {
     "today": {
       "date": "2026-08-02",
-      "readingMinutes": 14.0,
+      "readingMinutes": 14.3,
       "grammarMinutes": 0.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 14.0,
+      "totalMinutes": 14.3,
       "warnings": [
         {
           "source": "www.youtube.com",
@@ -10743,10 +10743,10 @@
       },
       {
         "date": "2026-08-02",
-        "readingMinutes": 14.0,
+        "readingMinutes": 14.3,
         "grammarMinutes": 0.0,
         "verbMinutes": 0.0,
-        "totalMinutes": 14.0,
+        "totalMinutes": 14.3,
         "warnings": [
           {
             "source": "www.youtube.com",

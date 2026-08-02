@@ -395,7 +395,7 @@
       }
     },
     "2026-08-02": {
-      "reading": 840.0,
+      "reading": 860.0,
       "grammar": 0,
       "verb": 0,
       "warnings": [
@@ -416,18 +416,18 @@
         }
       ],
       "sources": {
-        "freetcf-reading": 600.0,
-        "chatgpt": 240.0
+        "freetcf-reading": 610.0,
+        "chatgpt": 250.0
       }
     }
   },
   "lastContext": "reading",
   "lastPing": {
-    "category": "distraction",
-    "source": "www.youtube.com",
-    "seconds": 0,
-    "title": "(2) It’s Time to Admit SGA is the Best Player in the World 🔥 2026 Highlights - YouTube",
-    "url": "https://www.youtube.com/watch?v=qfj-xhp1gXg",
-    "capturedAt": "2026-08-02T18:19:07.683Z"
+    "category": "reading",
+    "source": "freetcf-reading",
+    "seconds": 10,
+    "title": "Free TCF Canada Practice & Tests",
+    "url": "https://www.freetcf.com/question?pageType=test&category=listening&paperId=test1&qnumber=7",
+    "capturedAt": "2026-08-02T19:30:18.324Z"
   }
 }
