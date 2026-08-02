@@ -1,25 +1,25 @@
 {
-  "updatedAt": "2026-08-02T00:02:25-04:00",
+  "updatedAt": "2026-08-02T01:02:28-04:00",
   "today": {
     "date": "2026-08-02",
-    "focusMinutes": 6
+    "focusMinutes": 13
   },
   "anki": {
     "today": {
-      "reviews": 0,
-      "new": 0,
-      "minutes": 0,
-      "activityComplete": false,
-      "goalPercent": 0
+      "reviews": 1,
+      "new": 1,
+      "minutes": 0.0,
+      "activityComplete": true,
+      "goalPercent": 100
     },
     "total": {
-      "cards": 25984,
+      "cards": 25985,
       "mature": 944,
-      "learned": 2348,
+      "learned": 2349,
       "newRemaining": 23636,
       "percent": 9.04
     },
-    "streak": 0,
+    "streak": 51,
     "history": [
       {
         "date": "2025-08-03",
@@ -2207,20 +2207,20 @@
       },
       {
         "date": "2026-08-02",
-        "reviews": 0,
-        "new": 0,
-        "minutes": 0
+        "reviews": 1,
+        "new": 1,
+        "minutes": 0.0
       }
     ],
     "decks": [
       {
         "id": 1785181252796,
         "name": "French Daily Audio + Reading",
-        "cards": 5010,
-        "learned": 2268,
+        "cards": 5011,
+        "learned": 2269,
         "mature": 929,
         "newRemaining": 2742,
-        "percent": 45.27
+        "percent": 45.28
       },
       {
         "id": 1777946190612,
@@ -2396,7 +2396,7 @@
     ]
   },
   "course": {
-    "updatedAt": "2026-08-02T02:14:21.326Z",
+    "updatedAt": "2026-08-02T04:05:33.833Z",
     "lastLesson": {
       "id": "a1/6_4.mp4",
       "title": "6 4 · 形容词特殊阴性变化",
@@ -7612,11 +7612,22 @@
   "activity": {
     "today": {
       "date": "2026-08-02",
-      "readingMinutes": 6.5,
+      "readingMinutes": 13.3,
       "grammarMinutes": 0.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 6.5,
-      "warnings": []
+      "totalMinutes": 13.3,
+      "warnings": [
+        {
+          "source": "www.youtube.com",
+          "title": "法语常用100句句子 睡前法语磨耳朵 - YouTube",
+          "capturedAt": "2026-08-02T04:07:11.285Z"
+        },
+        {
+          "source": "www.bilibili.com",
+          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+          "capturedAt": "2026-08-02T04:13:52.915Z"
+        }
+      ]
     },
     "history": [
       {
@@ -10727,11 +10738,22 @@
       },
       {
         "date": "2026-08-02",
-        "readingMinutes": 6.5,
+        "readingMinutes": 13.3,
         "grammarMinutes": 0.0,
         "verbMinutes": 0.0,
-        "totalMinutes": 6.5,
-        "warnings": []
+        "totalMinutes": 13.3,
+        "warnings": [
+          {
+            "source": "www.youtube.com",
+            "title": "法语常用100句句子 睡前法语磨耳朵 - YouTube",
+            "capturedAt": "2026-08-02T04:07:11.285Z"
+          },
+          {
+            "source": "www.bilibili.com",
+            "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+            "capturedAt": "2026-08-02T04:13:52.915Z"
+          }
+        ]
       }
     ],
     "lastContext": "reading"

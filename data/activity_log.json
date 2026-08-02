@@ -395,13 +395,24 @@
       }
     },
     "2026-08-02": {
-      "reading": 390.0,
+      "reading": 800.0,
       "grammar": 0,
       "verb": 0,
-      "warnings": [],
+      "warnings": [
+        {
+          "source": "www.youtube.com",
+          "title": "法语常用100句句子 睡前法语磨耳朵 - YouTube",
+          "capturedAt": "2026-08-02T04:07:11.285Z"
+        },
+        {
+          "source": "www.bilibili.com",
+          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+          "capturedAt": "2026-08-02T04:13:52.915Z"
+        }
+      ],
       "sources": {
-        "freetcf-reading": 320.0,
-        "chatgpt": 70.0
+        "freetcf-reading": 570.0,
+        "chatgpt": 230.0
       }
     }
   },
@@ -412,6 +423,6 @@
     "seconds": 10,
     "title": "阅读抗拒与情绪管理",
     "url": "https://chatgpt.com/c/6a6e6cc4-e018-83ea-ae9c-808eb8f6467d",
-    "capturedAt": "2026-08-02T04:02:19.394Z"
+    "capturedAt": "2026-08-02T04:21:21.822Z"
   }
 }
