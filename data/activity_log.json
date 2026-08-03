@@ -424,6 +424,19 @@
         "freetcf-reading": 740.0,
         "chatgpt": 260.0
       }
+    },
+    "2026-08-03": {
+      "reading": 0,
+      "grammar": 0,
+      "verb": 0,
+      "warnings": [
+        {
+          "source": "www.bilibili.com",
+          "title": "doinb受教宁王暴力小课堂day2。宁：知道你为啥穷不？doinb：我不会刷钱？ning：是你太TM能逛了！开录像！对面已经很菜了，你比对面更菜！_DOTA2_教学",
+          "capturedAt": "2026-08-03T04:00:29.114Z"
+        }
+      ],
+      "sources": {}
     }
   },
   "lastContext": "reading",
@@ -431,8 +444,8 @@
     "category": "distraction",
     "source": "www.bilibili.com",
     "seconds": 0,
-    "title": "Sasi新专爆火最急的是秃子？_哔哩哔哩_bilibili",
-    "url": "https://www.bilibili.com/video/BV1hMG36SEzm/?spm_id_from=333.1007.tianma.4-4-14.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
-    "capturedAt": "2026-08-02T21:48:48.593Z"
+    "title": "doinb受教宁王暴力小课堂day2。宁：知道你为啥穷不？doinb：我不会刷钱？ning：是你太TM能逛了！开录像！对面已经很菜了，你比对面更菜！_DOTA2_教学",
+    "url": "https://www.bilibili.com/video/BV1Uu3Z6rEe2/?spm_id_from=333.1007.tianma.1-2-2.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
+    "capturedAt": "2026-08-03T04:00:36.385Z"
   }
 }

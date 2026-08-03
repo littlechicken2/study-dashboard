@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-08-02T23:02:20-04:00",
+  "updatedAt": "2026-08-03T00:02:24-04:00",
   "today": {
-    "date": "2026-08-02",
-    "focusMinutes": 17
+    "date": "2026-08-03",
+    "focusMinutes": 0
   },
   "anki": {
     "today": {
-      "reviews": 71,
-      "new": 14,
-      "minutes": 11.4,
-      "activityComplete": true,
-      "goalPercent": 100
+      "reviews": 0,
+      "new": 0,
+      "minutes": 0,
+      "activityComplete": false,
+      "goalPercent": 0
     },
     "total": {
       "cards": 25985,
@@ -19,14 +19,8 @@
       "newRemaining": 23628,
       "percent": 9.07
     },
-    "streak": 51,
+    "streak": 0,
     "history": [
-      {
-        "date": "2025-08-03",
-        "reviews": 0,
-        "new": 0,
-        "minutes": 0
-      },
       {
         "date": "2025-08-04",
         "reviews": 0,
@@ -2210,6 +2204,12 @@
         "reviews": 71,
         "new": 14,
         "minutes": 11.4
+      },
+      {
+        "date": "2026-08-03",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
       }
     ],
     "decks": [
@@ -2473,7 +2473,7 @@
         "completed": 88,
         "remaining": 0,
         "percent": 100.0,
-        "daysRemaining": 30,
+        "daysRemaining": 29,
         "deadline": "2026-08-31",
         "recommendedToday": 0,
         "yesterdayDone": 0,
@@ -2482,14 +2482,6 @@
       }
     },
     "history": [
-      {
-        "date": "2025-08-03",
-        "minutes": 0.0,
-        "videoMinutes": 0.0,
-        "pdfMinutes": 0.0,
-        "activityComplete": false,
-        "goalPercent": 0
-      },
       {
         "date": "2025-08-04",
         "minutes": 0.0,
@@ -5401,12 +5393,20 @@
         "pdfMinutes": 0.0,
         "activityComplete": false,
         "goalPercent": 0
+      },
+      {
+        "date": "2026-08-03",
+        "minutes": 0.0,
+        "videoMinutes": 0.0,
+        "pdfMinutes": 0.0,
+        "activityComplete": false,
+        "goalPercent": 0
       }
     ]
   },
   "reading": {
     "today": {
-      "date": "2026-08-02",
+      "date": "2026-08-03",
       "articles": 0,
       "minutes": 0,
       "goalPercent": 0.0,
@@ -5414,12 +5414,6 @@
       "activityComplete": false
     },
     "history": [
-      {
-        "date": "2025-08-03",
-        "articles": 0,
-        "minutes": 0,
-        "goalPercent": 0.0
-      },
       {
         "date": "2025-08-04",
         "articles": 0,
@@ -7602,6 +7596,12 @@
         "date": "2026-08-02",
         "articles": 0,
         "minutes": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-08-03",
+        "articles": 0,
+        "minutes": 0,
         "goalPercent": 0.0,
         "target": 3,
         "activityComplete": false
@@ -7611,43 +7611,20 @@
   },
   "activity": {
     "today": {
-      "date": "2026-08-02",
-      "readingMinutes": 16.7,
+      "date": "2026-08-03",
+      "readingMinutes": 0.0,
       "grammarMinutes": 0.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 16.7,
+      "totalMinutes": 0.0,
       "warnings": [
         {
-          "source": "www.youtube.com",
-          "title": "法语常用100句句子 睡前法语磨耳朵 - YouTube",
-          "capturedAt": "2026-08-02T04:07:11.285Z"
-        },
-        {
           "source": "www.bilibili.com",
-          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
-          "capturedAt": "2026-08-02T04:13:52.915Z"
-        },
-        {
-          "source": "www.youtube.com",
-          "title": "(2) Shai Gilgeous-Alexander \"1-ON-1 GOD\" Moments 🔥 - YouTube",
-          "capturedAt": "2026-08-02T17:55:28.293Z"
-        },
-        {
-          "source": "www.bilibili.com",
-          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
-          "capturedAt": "2026-08-02T21:29:12.511Z"
+          "title": "doinb受教宁王暴力小课堂day2。宁：知道你为啥穷不？doinb：我不会刷钱？ning：是你太TM能逛了！开录像！对面已经很菜了，你比对面更菜！_DOTA2_教学",
+          "capturedAt": "2026-08-03T04:00:29.114Z"
         }
       ]
     },
     "history": [
-      {
-        "date": "2025-08-03",
-        "readingMinutes": 0.0,
-        "grammarMinutes": 0.0,
-        "verbMinutes": 0.0,
-        "totalMinutes": 0.0,
-        "warnings": []
-      },
       {
         "date": "2025-08-04",
         "readingMinutes": 0.0,
@@ -10772,6 +10749,20 @@
             "source": "www.bilibili.com",
             "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
             "capturedAt": "2026-08-02T21:29:12.511Z"
+          }
+        ]
+      },
+      {
+        "date": "2026-08-03",
+        "readingMinutes": 0.0,
+        "grammarMinutes": 0.0,
+        "verbMinutes": 0.0,
+        "totalMinutes": 0.0,
+        "warnings": [
+          {
+            "source": "www.bilibili.com",
+            "title": "doinb受教宁王暴力小课堂day2。宁：知道你为啥穷不？doinb：我不会刷钱？ning：是你太TM能逛了！开录像！对面已经很菜了，你比对面更菜！_DOTA2_教学",
+            "capturedAt": "2026-08-03T04:00:29.114Z"
           }
         ]
       }
