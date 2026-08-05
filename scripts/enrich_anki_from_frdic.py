@@ -29,6 +29,7 @@ FRDIC_END = "<!-- frdic-cn:end -->"
 LEGACY_MARKER = "中文语境义："
 CHINESE_RE = re.compile(r"[\u3400-\u9fff]")
 CURATED_FALLBACKS = {
+    "maïs": "玉米；玉蜀黍",
     "veine": "静脉；血管；矿脉；（口语）运气",
     "saoul": "醉的；喝醉的",
     "allure": "外貌，样子；速度，步调",
@@ -122,6 +123,18 @@ CURATED_FALLBACKS = {
 }
 
 
+def page_headword(soup: BeautifulSoup) -> str:
+    title = clean(soup.title.get_text(" ", strip=True) if soup.title else "")
+    match = re.match(r"^([A-Za-zÀ-ÖØ-öø-ÿŒœÆæ'’-]+)", title)
+    return match.group(1) if match else ""
+
+
+def require_matching_headword(soup: BeautifulSoup, requested_word: str) -> None:
+    returned_word = page_headword(soup)
+    if returned_word and returned_word.casefold() != requested_word.casefold():
+        raise ValueError(f"dictionary returned {returned_word!r} for {requested_word!r}")
+
+
 def anki(action: str, params: dict[str, Any] | None = None) -> Any:
     payload = json.dumps({"action": action, "version": 6, "params": params or {}}).encode("utf-8")
     request = Request(ANKI_URL, data=payload, headers={"Content-Type": "application/json"})
@@ -162,6 +175,9 @@ class DictionaryEntry:
 def fetch_entry(word: str, delay: float, retries: int = 3) -> DictionaryEntry:
     url = f"https://cn0.eudic.net/dicts/fr/{quote(word, safe='')}"
     legacy_url = f"https://legacy.frdic.com/SearchDic.aspx?word={quote(word, safe='')}"
+    curated = CURATED_FALLBACKS.get(word.casefold())
+    if curated:
+        return DictionaryEntry(word=word, part_of_speech="", meanings=[curated], url=url)
     last_error: Exception | None = None
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/138 Safari/537.36",
@@ -174,6 +190,7 @@ def fetch_entry(word: str, delay: float, retries: int = 3) -> DictionaryEntry:
             with urlopen(request, timeout=10) as response:
                 source = response.read().decode("utf-8", errors="replace")
             soup = BeautifulSoup(source, "html.parser")
+            require_matching_headword(soup, word)
             concise = soup.select_one("#DicFCChild")
             concise_lines = re.split(r"[\r\n]+", concise.get_text("\n", strip=True) if concise else "")
             meanings = unique([line for line in concise_lines if CHINESE_RE.search(line)], 6)
@@ -195,6 +212,7 @@ def fetch_entry(word: str, delay: float, retries: int = 3) -> DictionaryEntry:
         with urlopen(request, timeout=10) as response:
             source = response.read().decode("utf-8", errors="replace")
         soup = BeautifulSoup(source, "html.parser")
+        require_matching_headword(soup, word)
         section = soup.select_one("#ExpFCchild")
         if section:
             parts = unique([node.get_text(" ", strip=True) for node in section.select(".cara")], 3)
@@ -219,9 +237,6 @@ def fetch_entry(word: str, delay: float, retries: int = 3) -> DictionaryEntry:
 
     if legacy_meanings:
         return DictionaryEntry(word=word, part_of_speech="", meanings=legacy_meanings, url=url)
-    curated = CURATED_FALLBACKS.get(word.casefold())
-    if curated:
-        return DictionaryEntry(word=word, part_of_speech="", meanings=[curated], url=url)
     raise RuntimeError(f"{word}: {last_error}")
 
 
