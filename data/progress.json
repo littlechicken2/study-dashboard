@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-08-05T00:02:24-04:00",
+  "updatedAt": "2026-08-05T01:02:29-04:00",
   "today": {
     "date": "2026-08-05",
     "focusMinutes": 0
   },
   "anki": {
     "today": {
-      "reviews": 0,
+      "reviews": 4,
       "new": 0,
-      "minutes": 0,
-      "activityComplete": false,
-      "goalPercent": 0
+      "minutes": 0.3,
+      "activityComplete": true,
+      "goalPercent": 100
     },
     "total": {
       "cards": 25985,
@@ -19,7 +19,7 @@
       "newRemaining": 23506,
       "percent": 9.54
     },
-    "streak": 0,
+    "streak": 54,
     "history": [
       {
         "date": "2025-08-06",
@@ -2004,7 +2004,7 @@
       {
         "date": "2026-07-02",
         "reviews": 403,
-        "new": 325,
+        "new": 326,
         "minutes": 59.1
       },
       {
@@ -2022,7 +2022,7 @@
       {
         "date": "2026-07-05",
         "reviews": 237,
-        "new": 401,
+        "new": 402,
         "minutes": 41.1
       },
       {
@@ -2124,7 +2124,7 @@
       {
         "date": "2026-07-22",
         "reviews": 385,
-        "new": 303,
+        "new": 305,
         "minutes": 39.1
       },
       {
@@ -2154,7 +2154,7 @@
       {
         "date": "2026-07-27",
         "reviews": 472,
-        "new": 208,
+        "new": 209,
         "minutes": 55.3
       },
       {
@@ -2166,7 +2166,7 @@
       {
         "date": "2026-07-29",
         "reviews": 427,
-        "new": 218,
+        "new": 219,
         "minutes": 66.2
       },
       {
@@ -2184,7 +2184,7 @@
       {
         "date": "2026-08-01",
         "reviews": 515,
-        "new": 188,
+        "new": 190,
         "minutes": 50.9
       },
       {
@@ -2201,15 +2201,15 @@
       },
       {
         "date": "2026-08-04",
-        "reviews": 618,
-        "new": 126,
-        "minutes": 85.5
+        "reviews": 624,
+        "new": 128,
+        "minutes": 86.7
       },
       {
         "date": "2026-08-05",
-        "reviews": 0,
+        "reviews": 4,
         "new": 0,
-        "minutes": 0
+        "minutes": 0.3
       }
     ],
     "decks": [
