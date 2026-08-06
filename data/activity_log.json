@@ -448,7 +448,7 @@
       }
     },
     "2026-08-06": {
-      "reading": 1650.0,
+      "reading": 1660.0,
       "grammar": 0,
       "verb": 0,
       "warnings": [
@@ -456,11 +456,16 @@
           "source": "www.bilibili.com",
           "title": "给小白的法语教材选择建议｜教材选得好，法语学习没烦恼！_哔哩哔哩_bilibili",
           "capturedAt": "2026-08-06T06:50:32.772Z"
+        },
+        {
+          "source": "www.youtube.com",
+          "title": "How I Accidentally Became a Chinese Movie Star - YouTube",
+          "capturedAt": "2026-08-06T22:42:56.438Z"
         }
       ],
       "sources": {
         "freetcf-reading": 330.0,
-        "chatgpt": 1320.0
+        "chatgpt": 1330.0
       }
     }
   },
@@ -471,6 +476,6 @@
     "seconds": 10,
     "title": "Comptable 法语解释",
     "url": "https://chatgpt.com/c/6a702efc-0024-83ea-8ca1-a57340f41ca0",
-    "capturedAt": "2026-08-06T21:00:09.020Z"
+    "capturedAt": "2026-08-06T22:43:18.256Z"
   }
 }

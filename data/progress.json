@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T18:02:13-04:00",
+  "updatedAt": "2026-08-06T19:02:17-04:00",
   "today": {
     "date": "2026-08-06",
     "focusMinutes": 28
@@ -7612,15 +7612,20 @@
   "activity": {
     "today": {
       "date": "2026-08-06",
-      "readingMinutes": 27.5,
+      "readingMinutes": 27.7,
       "grammarMinutes": 0.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 27.5,
+      "totalMinutes": 27.7,
       "warnings": [
         {
           "source": "www.bilibili.com",
           "title": "给小白的法语教材选择建议｜教材选得好，法语学习没烦恼！_哔哩哔哩_bilibili",
           "capturedAt": "2026-08-06T06:50:32.772Z"
+        },
+        {
+          "source": "www.youtube.com",
+          "title": "How I Accidentally Became a Chinese Movie Star - YouTube",
+          "capturedAt": "2026-08-06T22:42:56.438Z"
         }
       ]
     },
@@ -10760,15 +10765,20 @@
       },
       {
         "date": "2026-08-06",
-        "readingMinutes": 27.5,
+        "readingMinutes": 27.7,
         "grammarMinutes": 0.0,
         "verbMinutes": 0.0,
-        "totalMinutes": 27.5,
+        "totalMinutes": 27.7,
         "warnings": [
           {
             "source": "www.bilibili.com",
             "title": "给小白的法语教材选择建议｜教材选得好，法语学习没烦恼！_哔哩哔哩_bilibili",
             "capturedAt": "2026-08-06T06:50:32.772Z"
+          },
+          {
+            "source": "www.youtube.com",
+            "title": "How I Accidentally Became a Chinese Movie Star - YouTube",
+            "capturedAt": "2026-08-06T22:42:56.438Z"
           }
         ]
       }
