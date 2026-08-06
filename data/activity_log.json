@@ -448,7 +448,7 @@
       }
     },
     "2026-08-06": {
-      "reading": 840.0,
+      "reading": 1650.0,
       "grammar": 0,
       "verb": 0,
       "warnings": [
@@ -460,7 +460,7 @@
       ],
       "sources": {
         "freetcf-reading": 330.0,
-        "chatgpt": 510.0
+        "chatgpt": 1320.0
       }
     }
   },
@@ -471,6 +471,6 @@
     "seconds": 10,
     "title": "Comptable 法语解释",
     "url": "https://chatgpt.com/c/6a702efc-0024-83ea-8ca1-a57340f41ca0",
-    "capturedAt": "2026-08-06T19:55:43.657Z"
+    "capturedAt": "2026-08-06T21:00:09.020Z"
   }
 }
