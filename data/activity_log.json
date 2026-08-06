@@ -448,7 +448,7 @@
       }
     },
     "2026-08-06": {
-      "reading": 330.0,
+      "reading": 840.0,
       "grammar": 0,
       "verb": 0,
       "warnings": [
@@ -459,17 +459,18 @@
         }
       ],
       "sources": {
-        "freetcf-reading": 330.0
+        "freetcf-reading": 330.0,
+        "chatgpt": 510.0
       }
     }
   },
   "lastContext": "reading",
   "lastPing": {
-    "category": "distraction",
-    "source": "www.bilibili.com",
-    "seconds": 0,
-    "title": "给小白的法语教材选择建议｜教材选得好，法语学习没烦恼！_哔哩哔哩_bilibili",
-    "url": "https://www.bilibili.com/video/BV1jt4y1X7QF/?spm_id_from=333.337.search-card.all.click",
-    "capturedAt": "2026-08-06T06:50:32.772Z"
+    "category": "contextual",
+    "source": "chatgpt",
+    "seconds": 10,
+    "title": "Comptable 法语解释",
+    "url": "https://chatgpt.com/c/6a702efc-0024-83ea-8ca1-a57340f41ca0",
+    "capturedAt": "2026-08-06T19:55:43.657Z"
   }
 }
