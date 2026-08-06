@@ -448,22 +448,28 @@
       }
     },
     "2026-08-06": {
-      "reading": 320.0,
+      "reading": 330.0,
       "grammar": 0,
       "verb": 0,
-      "warnings": [],
+      "warnings": [
+        {
+          "source": "www.bilibili.com",
+          "title": "给小白的法语教材选择建议｜教材选得好，法语学习没烦恼！_哔哩哔哩_bilibili",
+          "capturedAt": "2026-08-06T06:50:32.772Z"
+        }
+      ],
       "sources": {
-        "freetcf-reading": 320.0
+        "freetcf-reading": 330.0
       }
     }
   },
   "lastContext": "reading",
   "lastPing": {
-    "category": "reading",
-    "source": "freetcf-reading",
-    "seconds": 10,
-    "title": "Free TCF Canada Practice & Tests",
-    "url": "https://www.freetcf.com/question?pageType=test&category=reading&paperId=test4&qnumber=8",
-    "capturedAt": "2026-08-06T05:24:36.103Z"
+    "category": "distraction",
+    "source": "www.bilibili.com",
+    "seconds": 0,
+    "title": "给小白的法语教材选择建议｜教材选得好，法语学习没烦恼！_哔哩哔哩_bilibili",
+    "url": "https://www.bilibili.com/video/BV1jt4y1X7QF/?spm_id_from=333.337.search-card.all.click",
+    "capturedAt": "2026-08-06T06:50:32.772Z"
   }
 }

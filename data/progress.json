@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-08-06T02:02:53-04:00",
+  "updatedAt": "2026-08-06T08:01:39-04:00",
   "today": {
     "date": "2026-08-06",
-    "focusMinutes": 5
+    "focusMinutes": 6
   },
   "anki": {
     "today": {
@@ -7612,11 +7612,17 @@
   "activity": {
     "today": {
       "date": "2026-08-06",
-      "readingMinutes": 5.3,
+      "readingMinutes": 5.5,
       "grammarMinutes": 0.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 5.3,
-      "warnings": []
+      "totalMinutes": 5.5,
+      "warnings": [
+        {
+          "source": "www.bilibili.com",
+          "title": "给小白的法语教材选择建议｜教材选得好，法语学习没烦恼！_哔哩哔哩_bilibili",
+          "capturedAt": "2026-08-06T06:50:32.772Z"
+        }
+      ]
     },
     "history": [
       {
@@ -10754,11 +10760,17 @@
       },
       {
         "date": "2026-08-06",
-        "readingMinutes": 5.3,
+        "readingMinutes": 5.5,
         "grammarMinutes": 0.0,
         "verbMinutes": 0.0,
-        "totalMinutes": 5.3,
-        "warnings": []
+        "totalMinutes": 5.5,
+        "warnings": [
+          {
+            "source": "www.bilibili.com",
+            "title": "给小白的法语教材选择建议｜教材选得好，法语学习没烦恼！_哔哩哔哩_bilibili",
+            "capturedAt": "2026-08-06T06:50:32.772Z"
+          }
+        ]
       }
     ],
     "lastContext": "reading"
