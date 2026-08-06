@@ -437,15 +437,24 @@
         }
       ],
       "sources": {}
+    },
+    "2026-08-05": {
+      "reading": 0,
+      "grammar": 10.0,
+      "verb": 0,
+      "warnings": [],
+      "sources": {
+        "adobe-acrobat": 10.0
+      }
     }
   },
-  "lastContext": "reading",
+  "lastContext": "grammar",
   "lastPing": {
-    "category": "distraction",
-    "source": "www.bilibili.com",
-    "seconds": 0,
-    "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
-    "url": "https://www.bilibili.com/",
-    "capturedAt": "2026-08-03T07:06:38.381Z"
+    "category": "grammar",
+    "source": "adobe-acrobat",
+    "seconds": 5,
+    "title": "grade5 MATH.pdf - Adobe Acrobat Reader (64-bit)",
+    "idleSeconds": 0.0,
+    "capturedAt": "2026-08-05T20:03:31-0400"
   }
 }
