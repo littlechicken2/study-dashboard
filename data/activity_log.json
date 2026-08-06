@@ -446,15 +446,24 @@
       "sources": {
         "adobe-acrobat": 10.0
       }
+    },
+    "2026-08-06": {
+      "reading": 320.0,
+      "grammar": 0,
+      "verb": 0,
+      "warnings": [],
+      "sources": {
+        "freetcf-reading": 320.0
+      }
     }
   },
-  "lastContext": "grammar",
+  "lastContext": "reading",
   "lastPing": {
-    "category": "grammar",
-    "source": "adobe-acrobat",
-    "seconds": 5,
-    "title": "grade5 MATH.pdf - Adobe Acrobat Reader (64-bit)",
-    "idleSeconds": 0.0,
-    "capturedAt": "2026-08-05T20:03:31-0400"
+    "category": "reading",
+    "source": "freetcf-reading",
+    "seconds": 10,
+    "title": "Free TCF Canada Practice & Tests",
+    "url": "https://www.freetcf.com/question?pageType=test&category=reading&paperId=test4&qnumber=8",
+    "capturedAt": "2026-08-06T05:24:36.103Z"
   }
 }
