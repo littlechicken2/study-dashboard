@@ -26,6 +26,7 @@ TARGET_MODELS = {
 STATUS_PATH = Path(__file__).resolve().parents[1] / "data" / "anki_frdic_enrichment_status.json"
 FRDIC_BEGIN = "<!-- frdic-cn:begin -->"
 FRDIC_END = "<!-- frdic-cn:end -->"
+CONTEXT_BEGIN = "<!-- context-cn:begin -->"
 LEGACY_MARKER = "中文语境义："
 CHINESE_RE = re.compile(r"[\u3400-\u9fff]")
 CURATED_FALLBACKS = {
@@ -338,7 +339,7 @@ def main() -> None:
         fields = note_fields(note)
         word = clean(re.sub(r"<[^>]+>", " ", fields.get("Word", "")))
         current_note = fields.get("Note", "")
-        if not word or (FRDIC_BEGIN in current_note and not args.overwrite):
+        if not word or ((FRDIC_BEGIN in current_note or CONTEXT_BEGIN in current_note) and not args.overwrite):
             continue
         candidates.append((int(note["noteId"]), word, current_note))
     if args.limit > 0:
