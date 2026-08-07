@@ -472,6 +472,19 @@
         "freetcf-reading": 330.0,
         "chatgpt": 1330.0
       }
+    },
+    "2026-08-07": {
+      "reading": 0,
+      "grammar": 0,
+      "verb": 0,
+      "warnings": [
+        {
+          "source": "www.bilibili.com",
+          "title": "三个小时学习所有法语语法 A2 !!! 😲 (DELF 考试)_哔哩哔哩_bilibili",
+          "capturedAt": "2026-08-07T05:06:48.863Z"
+        }
+      ],
+      "sources": {}
     }
   },
   "lastContext": "reading",
@@ -481,6 +494,6 @@
     "seconds": 0,
     "title": "三个小时学习所有法语语法 A2 !!! 😲 (DELF 考试)_哔哩哔哩_bilibili",
     "url": "https://www.bilibili.com/video/BV1AR4y1p7C8/?vd_source=af1f5c7cace3a370b57a585619471fbb",
-    "capturedAt": "2026-08-07T03:50:21.954Z"
+    "capturedAt": "2026-08-07T05:34:34.702Z"
   }
 }

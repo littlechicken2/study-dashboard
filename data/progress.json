@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-07T01:02:44-04:00",
+  "updatedAt": "2026-08-07T08:01:44-04:00",
   "today": {
     "date": "2026-08-07",
     "focusMinutes": 0
@@ -7616,7 +7616,13 @@
       "grammarMinutes": 0.0,
       "verbMinutes": 0.0,
       "totalMinutes": 0.0,
-      "warnings": []
+      "warnings": [
+        {
+          "source": "www.bilibili.com",
+          "title": "三个小时学习所有法语语法 A2 !!! 😲 (DELF 考试)_哔哩哔哩_bilibili",
+          "capturedAt": "2026-08-07T05:06:48.863Z"
+        }
+      ]
     },
     "history": [
       {
@@ -10774,7 +10780,13 @@
         "grammarMinutes": 0.0,
         "verbMinutes": 0.0,
         "totalMinutes": 0.0,
-        "warnings": []
+        "warnings": [
+          {
+            "source": "www.bilibili.com",
+            "title": "三个小时学习所有法语语法 A2 !!! 😲 (DELF 考试)_哔哩哔哩_bilibili",
+            "capturedAt": "2026-08-07T05:06:48.863Z"
+          }
+        ]
       }
     ],
     "lastContext": "reading"
