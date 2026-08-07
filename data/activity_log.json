@@ -461,6 +461,11 @@
           "source": "www.youtube.com",
           "title": "How I Accidentally Became a Chinese Movie Star - YouTube",
           "capturedAt": "2026-08-06T22:42:56.438Z"
+        },
+        {
+          "source": "www.bilibili.com",
+          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+          "capturedAt": "2026-08-07T02:40:51.278Z"
         }
       ],
       "sources": {
@@ -471,11 +476,11 @@
   },
   "lastContext": "reading",
   "lastPing": {
-    "category": "contextual",
-    "source": "chatgpt",
-    "seconds": 10,
-    "title": "Comptable 法语解释",
-    "url": "https://chatgpt.com/c/6a702efc-0024-83ea-8ca1-a57340f41ca0",
-    "capturedAt": "2026-08-06T22:43:18.256Z"
+    "category": "distraction",
+    "source": "www.bilibili.com",
+    "seconds": 0,
+    "title": "Ludwig来中国拍摄《盛世天下2》搞笑幕后，被中文台词折磨疯掉_哔哩哔哩_bilibili",
+    "url": "https://www.bilibili.com/video/BV1Zyu76BEJb/?spm_id_from=333.1007.tianma.6-1-19.click&vd_source=af1f5c7cace3a370b57a585619471fbb",
+    "capturedAt": "2026-08-07T02:53:49.494Z"
   }
 }
