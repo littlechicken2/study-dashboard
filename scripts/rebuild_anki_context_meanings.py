@@ -1,16 +1,13 @@
 #!/usr/bin/env python3
-"""Rebuild Anki Chinese meanings around each card's English sense."""
+"""Rebuild concise Chinese meanings for the combined Anki deck."""
 from __future__ import annotations
 
 import argparse
 import html
+import json
 import re
 import sys
 from pathlib import Path
-from typing import Any
-
-from bs4 import BeautifulSoup
-
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import enrich_anki_from_frdic as frdic  # noqa: E402
 
@@ -18,6 +15,7 @@ import enrich_anki_from_frdic as frdic  # noqa: E402
 SOURCE_DECK = "French 2-Month Intensive 2500"
 CONTEXT_BEGIN = "<!-- context-cn:begin -->"
 CONTEXT_END = "<!-- context-cn:end -->"
+CACHE_PATH = Path(__file__).resolve().parents[1] / "data" / "anki_context_translations.json"
 
 # These are the cards currently in learning/due state. The English gloss on the
 # card determines the intended sense; French dictionary entries are secondary.
@@ -71,6 +69,14 @@ CURATED_CONTEXT = {
     "carrière": "职业；事业；职业生涯",
     "château": "城堡；庄园",
     "colis": "包裹；邮包",
+    "championnat": "锦标赛；冠军赛",
+    "conviction": "信念；确信",
+    "manche": "袖子；回合；一局比赛",
+    "orbite": "轨道；眼窝",
+    "pédale": "踏板；脚蹬",
+    "plonger": "潜水；跳入；使陷入",
+    "toast": "烤面包片；祝酒词",
+    "trottoir": "人行道",
     "timide": "害羞的；胆怯的",
     "ambiance": "气氛；氛围",
     "ère": "时代；纪元",
@@ -96,16 +102,6 @@ def strip_context_block(note: str) -> str:
     return re.sub(r"(?:\s*<br>\s*)+$", "", value).strip()
 
 
-def dictionary_reference(note: str) -> str:
-    if frdic.FRDIC_BEGIN not in note:
-        return ""
-    block = note.split(frdic.FRDIC_BEGIN, 1)[1].split(frdic.FRDIC_END, 1)[0]
-    soup = BeautifulSoup(block, "html.parser")
-    for node in soup.select("b, span, a"):
-        node.decompose()
-    return frdic.clean(soup.get_text(" ", strip=True))
-
-
 def source_map() -> dict[str, str]:
     note_ids = frdic.anki("findNotes", {"query": f'deck:"{SOURCE_DECK}"'})
     result: dict[str, str] = {}
@@ -118,30 +114,18 @@ def source_map() -> dict[str, str]:
     return result
 
 
+def load_cache() -> dict[str, str]:
+    if not CACHE_PATH.exists():
+        return {}
+    data = json.loads(CACHE_PATH.read_text(encoding="utf-8"))
+    return {str(key).casefold(): str(value) for key, value in data.items() if value}
+
+
 def make_context_note(
     chinese: str,
-    english: str,
-    dictionary: str,
-    source: str,
     previous_note: str,
 ) -> str:
-    if source == "dictionary":
-        detail = (
-            f'<b>词典参考：</b>{html.escape(dictionary)}'
-            if dictionary
-            else "中文待按本卡英文义项校准"
-        )
-        body = (
-            f'<div class="context-meaning"><b>英文义项：</b>{html.escape(english)}'
-            f'<br><span style="color:#777">{detail}</span></div>'
-        )
-    else:
-        source_label = "已校准" if source == "curated" else "原中文"
-        body = (
-            f'<div class="context-meaning"><b>本卡中文：</b>{html.escape(chinese)}'
-            f'<br><span style="color:#777"><b>英文义项：</b>{html.escape(english)}'
-            f' · {source_label}</span></div>'
-        )
+    body = f'<div class="context-meaning"><b>中文：</b>{html.escape(chinese)}</div>'
     block = f"{CONTEXT_BEGIN}{body}{CONTEXT_END}"
     preserved = strip_context_block(frdic.strip_old_enrichment(previous_note))
     return block if not preserved else f"{block}<br><br>{preserved}"
@@ -154,8 +138,9 @@ def main() -> None:
 
     old_chinese = source_map()
     target_notes = frdic.load_notes(frdic.find_target_notes(frdic.TARGET_DECK))
+    cache = load_cache()
     updates: list[tuple[int, str]] = []
-    counts = {"curated": 0, "original": 0, "dictionary": 0}
+    counts = {"curated": 0, "original": 0, "offline": 0, "missing": 0}
 
     for note in target_notes:
         if note.get("modelName") not in frdic.TARGET_MODELS:
@@ -163,22 +148,27 @@ def main() -> None:
         fields = frdic.note_fields(note)
         word = plain(fields.get("Word"))
         key = word.casefold()
-        english = plain(fields.get("Basic meanings of word"))
         current_note = fields.get("Note", "")
-        reference = dictionary_reference(current_note)
 
         if key in CURATED_CONTEXT:
             chinese, source = CURATED_CONTEXT[key], "curated"
         elif key in old_chinese:
             chinese, source = old_chinese[key], "original"
+        elif key in cache:
+            chinese, source = cache[key], "offline"
         else:
-            chinese, source = "", "dictionary"
+            chinese, source = "", "missing"
         counts[source] += 1
-        rebuilt = make_context_note(chinese, english, reference, source, current_note)
+        if not chinese:
+            continue
+        rebuilt = make_context_note(chinese, current_note)
         if rebuilt != current_note:
             updates.append((int(note["noteId"]), rebuilt))
 
-    print(f"Curated: {counts['curated']}; restored: {counts['original']}; reference-only: {counts['dictionary']}")
+    print(
+        f"Curated: {counts['curated']}; restored: {counts['original']}; "
+        f"offline: {counts['offline']}; missing: {counts['missing']}"
+    )
     print(f"Updates: {len(updates)}; apply={args.apply}")
     if args.apply:
         frdic.apply_updates(updates)
