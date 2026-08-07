@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-08-06T23:02:36-04:00",
+  "updatedAt": "2026-08-07T00:02:39-04:00",
   "today": {
-    "date": "2026-08-06",
-    "focusMinutes": 28
+    "date": "2026-08-07",
+    "focusMinutes": 0
   },
   "anki": {
     "today": {
-      "reviews": 511,
-      "new": 120,
-      "minutes": 69.4,
-      "activityComplete": true,
-      "goalPercent": 100
+      "reviews": 0,
+      "new": 0,
+      "minutes": 0,
+      "activityComplete": false,
+      "goalPercent": 0
     },
     "total": {
       "cards": 25985,
@@ -19,14 +19,8 @@
       "newRemaining": 23386,
       "percent": 10.0
     },
-    "streak": 55,
+    "streak": 0,
     "history": [
-      {
-        "date": "2025-08-07",
-        "reviews": 0,
-        "new": 0,
-        "minutes": 0
-      },
       {
         "date": "2025-08-08",
         "reviews": 0,
@@ -2210,6 +2204,12 @@
         "reviews": 511,
         "new": 120,
         "minutes": 69.4
+      },
+      {
+        "date": "2026-08-07",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
       }
     ],
     "decks": [
@@ -2473,7 +2473,7 @@
         "completed": 88,
         "remaining": 0,
         "percent": 100.0,
-        "daysRemaining": 26,
+        "daysRemaining": 25,
         "deadline": "2026-08-31",
         "recommendedToday": 0,
         "yesterdayDone": 0,
@@ -2482,14 +2482,6 @@
       }
     },
     "history": [
-      {
-        "date": "2025-08-07",
-        "minutes": 0.0,
-        "videoMinutes": 0.0,
-        "pdfMinutes": 0.0,
-        "activityComplete": false,
-        "goalPercent": 0
-      },
       {
         "date": "2025-08-08",
         "minutes": 0.0,
@@ -5401,12 +5393,20 @@
         "pdfMinutes": 0.0,
         "activityComplete": false,
         "goalPercent": 0
+      },
+      {
+        "date": "2026-08-07",
+        "minutes": 0.0,
+        "videoMinutes": 0.0,
+        "pdfMinutes": 0.0,
+        "activityComplete": false,
+        "goalPercent": 0
       }
     ]
   },
   "reading": {
     "today": {
-      "date": "2026-08-06",
+      "date": "2026-08-07",
       "articles": 0,
       "minutes": 0,
       "goalPercent": 0.0,
@@ -5414,12 +5414,6 @@
       "activityComplete": false
     },
     "history": [
-      {
-        "date": "2025-08-07",
-        "articles": 0,
-        "minutes": 0,
-        "goalPercent": 0.0
-      },
       {
         "date": "2025-08-08",
         "articles": 0,
@@ -7602,6 +7596,12 @@
         "date": "2026-08-06",
         "articles": 0,
         "minutes": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-08-07",
+        "articles": 0,
+        "minutes": 0,
         "goalPercent": 0.0,
         "target": 3,
         "activityComplete": false
@@ -7611,38 +7611,14 @@
   },
   "activity": {
     "today": {
-      "date": "2026-08-06",
-      "readingMinutes": 27.7,
+      "date": "2026-08-07",
+      "readingMinutes": 0.0,
       "grammarMinutes": 0.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 27.7,
-      "warnings": [
-        {
-          "source": "www.bilibili.com",
-          "title": "给小白的法语教材选择建议｜教材选得好，法语学习没烦恼！_哔哩哔哩_bilibili",
-          "capturedAt": "2026-08-06T06:50:32.772Z"
-        },
-        {
-          "source": "www.youtube.com",
-          "title": "How I Accidentally Became a Chinese Movie Star - YouTube",
-          "capturedAt": "2026-08-06T22:42:56.438Z"
-        },
-        {
-          "source": "www.bilibili.com",
-          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
-          "capturedAt": "2026-08-07T02:40:51.278Z"
-        }
-      ]
+      "totalMinutes": 0.0,
+      "warnings": []
     },
     "history": [
-      {
-        "date": "2025-08-07",
-        "readingMinutes": 0.0,
-        "grammarMinutes": 0.0,
-        "verbMinutes": 0.0,
-        "totalMinutes": 0.0,
-        "warnings": []
-      },
       {
         "date": "2025-08-08",
         "readingMinutes": 0.0,
@@ -10791,6 +10767,14 @@
             "capturedAt": "2026-08-07T02:40:51.278Z"
           }
         ]
+      },
+      {
+        "date": "2026-08-07",
+        "readingMinutes": 0.0,
+        "grammarMinutes": 0.0,
+        "verbMinutes": 0.0,
+        "totalMinutes": 0.0,
+        "warnings": []
       }
     ],
     "lastContext": "reading"
