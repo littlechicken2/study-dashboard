@@ -475,7 +475,7 @@
     },
     "2026-08-07": {
       "reading": 0,
-      "grammar": 0,
+      "grammar": 215.0,
       "verb": 0,
       "warnings": [
         {
@@ -484,16 +484,18 @@
           "capturedAt": "2026-08-07T05:06:48.863Z"
         }
       ],
-      "sources": {}
+      "sources": {
+        "adobe-acrobat": 215.0
+      }
     }
   },
-  "lastContext": "reading",
+  "lastContext": "grammar",
   "lastPing": {
-    "category": "distraction",
-    "source": "www.bilibili.com",
-    "seconds": 0,
-    "title": "三个小时学习所有法语语法 A2 !!! 😲 (DELF 考试)_哔哩哔哩_bilibili",
-    "url": "https://www.bilibili.com/video/BV1AR4y1p7C8/?vd_source=af1f5c7cace3a370b57a585619471fbb",
-    "capturedAt": "2026-08-07T05:34:34.702Z"
+    "category": "grammar",
+    "source": "adobe-acrobat",
+    "seconds": 5,
+    "title": "",
+    "idleSeconds": 0.2,
+    "capturedAt": "2026-08-07T21:00:58-0400"
   }
 }
