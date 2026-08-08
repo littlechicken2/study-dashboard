@@ -475,7 +475,7 @@
     },
     "2026-08-07": {
       "reading": 0,
-      "grammar": 215.0,
+      "grammar": 1415.0,
       "verb": 0,
       "warnings": [
         {
@@ -485,7 +485,7 @@
         }
       ],
       "sources": {
-        "adobe-acrobat": 215.0
+        "adobe-acrobat": 1415.0
       }
     }
   },
@@ -494,8 +494,8 @@
     "category": "grammar",
     "source": "adobe-acrobat",
     "seconds": 5,
-    "title": "",
-    "idleSeconds": 0.2,
-    "capturedAt": "2026-08-07T21:00:58-0400"
+    "title": "义务教育教科书·数学一年级下册.pdf - Adobe Acrobat Reader (64-bit)",
+    "idleSeconds": 0.0,
+    "capturedAt": "2026-08-07T21:55:18-0400"
   }
 }
