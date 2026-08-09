@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-08-08T19:02:05-04:00",
+  "updatedAt": "2026-08-08T20:02:08-04:00",
   "today": {
     "date": "2026-08-08",
-    "focusMinutes": 4
+    "focusMinutes": 56
   },
   "anki": {
     "today": {
-      "reviews": 24,
-      "new": 4,
-      "minutes": 4.1,
+      "reviews": 467,
+      "new": 98,
+      "minutes": 56.4,
       "activityComplete": true,
       "goalPercent": 100
     },
     "total": {
       "cards": 25985,
-      "mature": 1064,
-      "learned": 2652,
-      "newRemaining": 23333,
-      "percent": 10.21
+      "mature": 1084,
+      "learned": 2697,
+      "newRemaining": 23288,
+      "percent": 10.38
     },
     "streak": 57,
     "history": [
@@ -1650,7 +1650,7 @@
       {
         "date": "2026-05-07",
         "reviews": 142,
-        "new": 320,
+        "new": 322,
         "minutes": 28.4
       },
       {
@@ -1674,7 +1674,7 @@
       {
         "date": "2026-05-11",
         "reviews": 216,
-        "new": 279,
+        "new": 280,
         "minutes": 29.1
       },
       {
@@ -1758,7 +1758,7 @@
       {
         "date": "2026-05-25",
         "reviews": 33,
-        "new": 21,
+        "new": 22,
         "minutes": 4.1
       },
       {
@@ -1770,7 +1770,7 @@
       {
         "date": "2026-05-27",
         "reviews": 54,
-        "new": 191,
+        "new": 192,
         "minutes": 10.0
       },
       {
@@ -1782,13 +1782,13 @@
       {
         "date": "2026-05-29",
         "reviews": 43,
-        "new": 182,
+        "new": 183,
         "minutes": 6.6
       },
       {
         "date": "2026-05-30",
         "reviews": 86,
-        "new": 266,
+        "new": 268,
         "minutes": 11.2
       },
       {
@@ -1872,19 +1872,19 @@
       {
         "date": "2026-06-13",
         "reviews": 195,
-        "new": 268,
+        "new": 271,
         "minutes": 34.9
       },
       {
         "date": "2026-06-14",
         "reviews": 59,
-        "new": 280,
+        "new": 282,
         "minutes": 7.7
       },
       {
         "date": "2026-06-15",
         "reviews": 87,
-        "new": 239,
+        "new": 244,
         "minutes": 12.3
       },
       {
@@ -1902,19 +1902,19 @@
       {
         "date": "2026-06-18",
         "reviews": 149,
-        "new": 203,
+        "new": 204,
         "minutes": 16.2
       },
       {
         "date": "2026-06-19",
         "reviews": 70,
-        "new": 119,
+        "new": 121,
         "minutes": 12.3
       },
       {
         "date": "2026-06-20",
         "reviews": 109,
-        "new": 169,
+        "new": 171,
         "minutes": 18.6
       },
       {
@@ -1926,7 +1926,7 @@
       {
         "date": "2026-06-22",
         "reviews": 124,
-        "new": 212,
+        "new": 214,
         "minutes": 22.9
       },
       {
@@ -1938,43 +1938,43 @@
       {
         "date": "2026-06-24",
         "reviews": 136,
-        "new": 182,
+        "new": 183,
         "minutes": 20.9
       },
       {
         "date": "2026-06-25",
         "reviews": 129,
-        "new": 194,
+        "new": 195,
         "minutes": 21.9
       },
       {
         "date": "2026-06-26",
         "reviews": 129,
-        "new": 203,
+        "new": 204,
         "minutes": 20.2
       },
       {
         "date": "2026-06-27",
         "reviews": 187,
-        "new": 478,
+        "new": 479,
         "minutes": 46.2
       },
       {
         "date": "2026-06-28",
         "reviews": 177,
-        "new": 370,
+        "new": 379,
         "minutes": 24.8
       },
       {
         "date": "2026-06-29",
         "reviews": 180,
-        "new": 386,
+        "new": 392,
         "minutes": 42.4
       },
       {
         "date": "2026-06-30",
         "reviews": 223,
-        "new": 374,
+        "new": 377,
         "minutes": 32.5
       },
       {
@@ -1986,31 +1986,31 @@
       {
         "date": "2026-07-02",
         "reviews": 403,
-        "new": 337,
+        "new": 338,
         "minutes": 59.1
       },
       {
         "date": "2026-07-03",
         "reviews": 215,
-        "new": 408,
+        "new": 413,
         "minutes": 34.1
       },
       {
         "date": "2026-07-04",
         "reviews": 328,
-        "new": 482,
+        "new": 490,
         "minutes": 58.6
       },
       {
         "date": "2026-07-05",
         "reviews": 237,
-        "new": 417,
+        "new": 419,
         "minutes": 41.1
       },
       {
         "date": "2026-07-06",
         "reviews": 309,
-        "new": 398,
+        "new": 405,
         "minutes": 51.2
       },
       {
@@ -2022,43 +2022,43 @@
       {
         "date": "2026-07-08",
         "reviews": 517,
-        "new": 730,
+        "new": 735,
         "minutes": 65.5
       },
       {
         "date": "2026-07-09",
         "reviews": 289,
-        "new": 295,
+        "new": 298,
         "minutes": 37.3
       },
       {
         "date": "2026-07-10",
         "reviews": 372,
-        "new": 423,
+        "new": 425,
         "minutes": 55.6
       },
       {
         "date": "2026-07-11",
         "reviews": 322,
-        "new": 325,
+        "new": 327,
         "minutes": 52.2
       },
       {
         "date": "2026-07-12",
         "reviews": 364,
-        "new": 395,
+        "new": 402,
         "minutes": 54.5
       },
       {
         "date": "2026-07-13",
         "reviews": 347,
-        "new": 371,
+        "new": 373,
         "minutes": 35.4
       },
       {
         "date": "2026-07-14",
         "reviews": 357,
-        "new": 325,
+        "new": 327,
         "minutes": 39.1
       },
       {
@@ -2070,127 +2070,127 @@
       {
         "date": "2026-07-16",
         "reviews": 668,
-        "new": 258,
+        "new": 265,
         "minutes": 78.1
       },
       {
         "date": "2026-07-17",
         "reviews": 252,
-        "new": 320,
+        "new": 324,
         "minutes": 24.5
       },
       {
         "date": "2026-07-18",
         "reviews": 471,
-        "new": 244,
+        "new": 246,
         "minutes": 57.2
       },
       {
         "date": "2026-07-19",
         "reviews": 323,
-        "new": 313,
+        "new": 321,
         "minutes": 35.0
       },
       {
         "date": "2026-07-20",
         "reviews": 395,
-        "new": 229,
+        "new": 237,
         "minutes": 64.2
       },
       {
         "date": "2026-07-21",
         "reviews": 325,
-        "new": 292,
+        "new": 298,
         "minutes": 32.7
       },
       {
         "date": "2026-07-22",
         "reviews": 385,
-        "new": 342,
+        "new": 349,
         "minutes": 39.1
       },
       {
         "date": "2026-07-23",
         "reviews": 349,
-        "new": 312,
+        "new": 317,
         "minutes": 37.3
       },
       {
         "date": "2026-07-24",
         "reviews": 230,
-        "new": 162,
+        "new": 163,
         "minutes": 28.9
       },
       {
         "date": "2026-07-25",
         "reviews": 526,
-        "new": 273,
+        "new": 284,
         "minutes": 68.0
       },
       {
         "date": "2026-07-26",
         "reviews": 330,
-        "new": 219,
+        "new": 221,
         "minutes": 30.8
       },
       {
         "date": "2026-07-27",
         "reviews": 472,
-        "new": 227,
+        "new": 232,
         "minutes": 55.3
       },
       {
         "date": "2026-07-28",
         "reviews": 419,
-        "new": 390,
+        "new": 396,
         "minutes": 47.3
       },
       {
         "date": "2026-07-29",
         "reviews": 427,
-        "new": 258,
+        "new": 266,
         "minutes": 66.2
       },
       {
         "date": "2026-07-30",
         "reviews": 376,
-        "new": 324,
+        "new": 345,
         "minutes": 53.8
       },
       {
         "date": "2026-07-31",
         "reviews": 350,
-        "new": 249,
+        "new": 251,
         "minutes": 52.0
       },
       {
         "date": "2026-08-01",
         "reviews": 515,
-        "new": 317,
+        "new": 341,
         "minutes": 50.9
       },
       {
         "date": "2026-08-02",
         "reviews": 71,
-        "new": 52,
+        "new": 58,
         "minutes": 11.4
       },
       {
         "date": "2026-08-03",
         "reviews": 678,
-        "new": 289,
+        "new": 316,
         "minutes": 81.4
       },
       {
         "date": "2026-08-04",
         "reviews": 624,
-        "new": 214,
+        "new": 247,
         "minutes": 86.7
       },
       {
         "date": "2026-08-05",
         "reviews": 725,
-        "new": 222,
+        "new": 285,
         "minutes": 97.9
       },
       {
@@ -2207,9 +2207,9 @@
       },
       {
         "date": "2026-08-08",
-        "reviews": 24,
-        "new": 4,
-        "minutes": 4.1
+        "reviews": 467,
+        "new": 98,
+        "minutes": 56.4
       }
     ],
     "decks": [
@@ -2217,10 +2217,10 @@
         "id": 1785181252796,
         "name": "French Daily Audio + Reading",
         "cards": 5011,
-        "learned": 2572,
-        "mature": 1049,
-        "newRemaining": 2439,
-        "percent": 51.33
+        "learned": 2617,
+        "mature": 1069,
+        "newRemaining": 2394,
+        "percent": 52.23
       },
       {
         "id": 1777946190612,
