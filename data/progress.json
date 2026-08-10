@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-08-09T22:42:15-04:00",
+  "updatedAt": "2026-08-09T23:42:19-04:00",
   "today": {
     "date": "2026-08-09",
     "focusMinutes": 15
   },
   "anki": {
     "today": {
-      "reviews": 196,
-      "new": 31,
-      "minutes": 30.3,
+      "reviews": 204,
+      "new": 33,
+      "minutes": 32.8,
       "activityComplete": true,
       "goalPercent": 100
     },
     "total": {
       "cards": 25985,
       "mature": 1093,
-      "learned": 2716,
-      "newRemaining": 23269,
-      "percent": 10.45
+      "learned": 2717,
+      "newRemaining": 23268,
+      "percent": 10.46
     },
     "streak": 58,
     "history": [
@@ -2076,13 +2076,13 @@
       {
         "date": "2026-07-18",
         "reviews": 471,
-        "new": 246,
+        "new": 247,
         "minutes": 57.2
       },
       {
         "date": "2026-07-19",
         "reviews": 323,
-        "new": 322,
+        "new": 324,
         "minutes": 35.0
       },
       {
@@ -2178,19 +2178,19 @@
       {
         "date": "2026-08-04",
         "reviews": 624,
-        "new": 271,
+        "new": 272,
         "minutes": 86.7
       },
       {
         "date": "2026-08-05",
         "reviews": 725,
-        "new": 316,
+        "new": 317,
         "minutes": 97.9
       },
       {
         "date": "2026-08-06",
         "reviews": 511,
-        "new": 142,
+        "new": 143,
         "minutes": 69.4
       },
       {
@@ -2207,9 +2207,9 @@
       },
       {
         "date": "2026-08-09",
-        "reviews": 196,
-        "new": 31,
-        "minutes": 30.3
+        "reviews": 204,
+        "new": 33,
+        "minutes": 32.8
       }
     ],
     "decks": [
@@ -2217,10 +2217,10 @@
         "id": 1785181252796,
         "name": "French Daily Audio + Reading",
         "cards": 5011,
-        "learned": 2636,
+        "learned": 2637,
         "mature": 1078,
-        "newRemaining": 2375,
-        "percent": 52.6
+        "newRemaining": 2374,
+        "percent": 52.62
       },
       {
         "id": 1777946190612,
