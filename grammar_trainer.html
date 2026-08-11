@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09110f">
+  <title>法语语法速刷</title>
+  <style>
+    :root{--bg:#09110f;--panel:#0f1b17;--panel2:#15251f;--line:#294239;--text:#f4f7f5;--muted:#9bb2a9;--mint:#68e2ae;--cyan:#6dcbd7;--red:#ff756f;--yellow:#ffd166}
+    *{box-sizing:border-box}
+    html{color-scheme:dark}
+    body{margin:0;background:linear-gradient(150deg,#08120f 0,#10241c 48%,#0b1718 100%);color:var(--text);font-family:Inter,"Segoe UI","Microsoft YaHei",sans-serif;min-height:100vh}
+    button,input,select{font:inherit}
+    button{cursor:pointer}
+    a{color:var(--cyan)}
+    .shell{width:min(1380px,calc(100% - 28px));margin:auto;padding:16px 0 28px}
+    .top{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:end;margin-bottom:12px}
+    h1,h2,h3,p{margin:0}
+    h1{font-size:clamp(25px,3vw,38px);letter-spacing:0}
+    .subtitle{margin-top:5px;color:var(--muted)}
+    .nav{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}
+    .nav a,.iconBtn{min-height:36px;display:inline-flex;align-items:center;padding:0 12px;border:0;background:var(--panel2);color:var(--text);text-decoration:none;font-weight:750}
+    .dashboard{display:grid;grid-template-columns:270px minmax(0,1fr);gap:10px;align-items:start}
+    .side,.workspace,.summary{border:1px solid var(--line);background:rgba(15,27,23,.94)}
+    .side{position:sticky;top:10px;max-height:calc(100vh - 20px);overflow:auto;padding:12px}
+    .today{padding:13px;background:linear-gradient(130deg,rgba(104,226,174,.18),rgba(109,203,215,.08));border-left:4px solid var(--mint)}
+    .today strong{display:block;font-size:40px;line-height:1;font-variant-numeric:tabular-nums}
+    .today span{color:var(--muted);font-size:12px}
+    .bar{height:7px;background:#07100d;margin-top:10px;overflow:hidden}
+    .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--mint),var(--cyan));transition:width .35s ease}
+    .modeNav{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:10px 0}
+    .modeBtn{min-height:42px;border:0;background:#182923;color:var(--text);font-weight:800}
+    .modeBtn.active{background:linear-gradient(100deg,var(--mint),var(--cyan));color:#07120e}
+    .filters{display:grid;gap:7px}
+    input,select{width:100%;min-height:39px;padding:7px 9px;border:1px solid var(--line);background:#09130f;color:var(--text);outline:none}
+    input:focus,select:focus{border-color:var(--cyan)}
+    .topicList{display:grid;gap:4px;margin-top:9px}
+    .topicBtn{min-height:37px;padding:0 9px;border:0;background:transparent;color:var(--muted);display:flex;justify-content:space-between;align-items:center;text-align:left}
+    .topicBtn:hover,.topicBtn.active{background:#1a2c25;color:var(--text)}
+    .topicBtn b{color:var(--mint);font-variant-numeric:tabular-nums}
+    .backup{display:flex;gap:6px;margin-top:10px}
+    .backup button,.backup label{flex:1;min-height:35px;display:flex;align-items:center;justify-content:center;border:0;background:#1b2d27;color:var(--muted);font-size:12px;font-weight:750;cursor:pointer}
+    .backup input{display:none}
+    .workspace{min-height:720px}
+    .workspaceHead{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 16px;border-bottom:1px solid var(--line)}
+    .workspaceHead h2{font-size:18px}
+    .workspaceHead p{font-size:12px;color:var(--muted);margin-top:3px}
+    .headStats{display:flex;gap:14px;color:var(--muted);font-size:12px;white-space:nowrap}
+    .headStats b{color:var(--text);font-size:16px}
+    .cards{padding:8px}
+    .qa{border-bottom:1px solid var(--line);background:rgba(21,37,31,.62)}
+    .qa+.qa{margin-top:7px}
+    .question{width:100%;min-height:62px;padding:12px 14px;border:0;background:transparent;color:var(--text);display:grid;grid-template-columns:auto 1fr auto;gap:11px;align-items:center;text-align:left}
+    .index{width:30px;height:30px;display:grid;place-items:center;background:#223830;color:var(--mint);font-weight:850;font-size:12px}
+    .qText{font-weight:800;line-height:1.55}
+    .tags{display:flex;gap:5px;align-items:center}
+    .tag{padding:3px 6px;background:#20332d;color:var(--muted);font-size:11px}
+    .chev{color:var(--muted);font-size:18px;transition:transform .2s}
+    .qa.open .chev{transform:rotate(180deg)}
+    .answer{display:none;padding:0 14px 14px 55px}
+    .qa.open .answer{display:block}
+    .answerCore{padding:14px;background:#08120e;border-left:3px solid var(--cyan);line-height:1.7}
+    .example{margin-top:8px;color:#d9ece5;font-family:"Segoe UI",sans-serif}
+    .grade{display:flex;align-items:center;gap:7px;margin-top:10px}
+    .grade button{min-height:38px;padding:0 18px;border:0;font-weight:850}
+    .wrong{background:rgba(255,117,111,.18);color:#ffc5c2}
+    .right{background:var(--mint);color:#062015}
+    .source{margin-left:auto;font-size:12px;color:var(--muted)}
+    .gradedRight{box-shadow:inset 4px 0 var(--mint)}
+    .gradedWrong{box-shadow:inset 4px 0 var(--red)}
+    .empty{padding:70px 20px;text-align:center;color:var(--muted)}
+    .articleTable{width:100%;border-collapse:collapse;margin-top:10px;font-size:14px}
+    .articleTable th,.articleTable td{border:1px solid #365247;padding:7px;text-align:center}
+    .articleTable th{color:var(--mint);background:#12231c}
+    @media(max-width:850px){.shell{width:min(100% - 16px,720px);padding-top:9px}.top{grid-template-columns:1fr}.nav{justify-content:flex-start}.dashboard{grid-template-columns:1fr}.side{position:static;max-height:none}.topicList{grid-template-columns:1fr 1fr}.workspace{min-height:60vh}.question{grid-template-columns:auto 1fr}.tags{grid-column:2}.chev{display:none}.answer{padding-left:14px}.headStats{display:none}}
+  </style>
+</head>
+<body>
+<main class="shell">
+  <header class="top">
+    <div><h1>法语语法速刷</h1><p class="subtitle">先在脑中回答，再揭晓；最后诚实标记答对或答错。</p></div>
+    <nav class="nav"><a href="index.html">监督台</a><a href="morphology.html">词形训练</a><a href="https://www.frenchcircles.ca/writing-grammar/" target="_blank" rel="noopener">French Circles</a></nav>
+  </header>
+  <section class="dashboard">
+    <aside class="side">
+      <div class="today"><strong id="dailyPct">0%</strong><span id="dailyText">今日 0 / 20</span><div class="bar"><i id="dailyBar"></i></div></div>
+      <div class="modeNav">
+        <button class="modeBtn active" data-mode="daily">今日速刷</button>
+        <button class="modeBtn" data-mode="wrong">错题重练</button>
+        <button class="modeBtn" data-mode="all">完整目录</button>
+        <button class="modeBtn" data-mode="random">随机 20 题</button>
+      </div>
+      <div class="filters">
+        <input id="search" type="search" placeholder="搜索规则、例句或专题">
+        <select id="level"><option value="all">全部等级</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select>
+      </div>
+      <div class="topicList" id="topics"></div>
+      <div class="backup"><button id="exportBtn">备份记录</button><label>恢复记录<input id="importFile" type="file" accept="application/json"></label></div>
+    </aside>
+    <section class="workspace">
+      <header class="workspaceHead">
+        <div><h2 id="viewTitle">今日速刷</h2><p id="viewHint">到期卡优先，再加入未学卡。</p></div>
+        <div class="headStats"><span>总掌握 <b id="mastered">0</b></span><span>累计答错 <b id="wrongCount">0</b></span><span>题库 <b id="totalCount">0</b></span></div>
+      </header>
+      <div class="cards" id="cards"></div>
+    </section>
+  </section>
+</main>
+<script src="grammar_data.js"></script>
+<script>
+const KEY="french-grammar-spoiler-v1",DAILY_TARGET=20;
+let state=loadState(), mode="daily", topic="全部", randomIds=[];
+const $=s=>document.querySelector(s), day=()=>new Date().toLocaleDateString("sv-SE");
+function loadState(){try{return JSON.parse(localStorage.getItem(KEY))||{cards:{},days:{}}}catch{return {cards:{},days:{}}}}
+function save(){localStorage.setItem(KEY,JSON.stringify(state))}
+function rec(id){return state.cards[id]||(state.cards[id]={right:0,wrong:0,streak:0,due:"2000-01-01",last:"",lastGrade:""})}
+function addDays(n){const d=new Date();d.setDate(d.getDate()+n);return d.toLocaleDateString("sv-SE")}
+function todayIds(){return state.days[day()]||(state.days[day()]=[])}
+function dailyDeck(){
+  const due=GRAMMAR_CARDS.filter(c=>rec(c.id).due<=day()).sort((a,b)=>(rec(b.id).wrong-rec(a.id).wrong)||rec(a.id).due.localeCompare(rec(b.id).due));
+  const chosen=[],seen=new Set();
+  [...due,...GRAMMAR_CARDS].forEach(c=>{if(chosen.length<DAILY_TARGET&&!seen.has(c.id)){seen.add(c.id);chosen.push(c)}});
+  return chosen;
+}
+function filtered(){
+  let items;
+  if(mode==="daily") items=dailyDeck();
+  else if(mode==="wrong") items=GRAMMAR_CARDS.filter(c=>rec(c.id).wrong>0&&rec(c.id).streak<3).sort((a,b)=>rec(b.id).wrong-rec(a.id).wrong);
+  else if(mode==="random") items=randomIds.map(id=>GRAMMAR_CARDS.find(c=>c.id===id)).filter(Boolean);
+  else items=[...GRAMMAR_CARDS];
+  const q=$("#search").value.trim().toLowerCase(),level=$("#level").value;
+  return items.filter(c=>(topic==="全部"||c.topic===topic)&&(level==="all"||c.level===level)&&(!q||`${c.q} ${c.a} ${c.ex} ${c.topic}`.toLowerCase().includes(q)));
+}
+function articleTable(){return `<table class="articleTable"><tr><th>类别</th><th>阳性单数</th><th>阴性单数</th><th>元音/哑音 h</th><th>复数</th></tr><tr><td>定冠词</td><td>le</td><td>la</td><td>l’</td><td>les</td></tr><tr><td>不定冠词</td><td>un</td><td>une</td><td>un / une</td><td>des</td></tr><tr><td>部分冠词</td><td>du</td><td>de la</td><td>de l’</td><td>des</td></tr></table>`}
+function render(){
+  const items=filtered(),done=new Set(todayIds()),pct=Math.min(100,Math.round(done.size/DAILY_TARGET*100));
+  $("#dailyPct").textContent=pct+"%"; $("#dailyText").textContent=`今日 ${done.size} / ${DAILY_TARGET}`; $("#dailyBar").style.width=pct+"%";
+  $("#totalCount").textContent=GRAMMAR_CARDS.length; $("#mastered").textContent=GRAMMAR_CARDS.filter(c=>rec(c.id).streak>=3).length; $("#wrongCount").textContent=GRAMMAR_CARDS.reduce((n,c)=>n+rec(c.id).wrong,0);
+  const labels={daily:["今日速刷","到期卡优先，再加入未学卡。"],wrong:["错题重练","连续答对三次后移出这里。"],all:[topic==="全部"?"完整语法目录":topic,"按专题浏览并随时自测。"],random:["随机 20 题","跨专题快速检查记忆。"]};
+  $("#viewTitle").textContent=labels[mode][0];$("#viewHint").textContent=labels[mode][1];
+  $("#cards").innerHTML=items.length?items.map((c,i)=>{const r=rec(c.id),marked=r.last===day()?` graded${r.lastGrade==="right"?"Right":"Wrong"}`:"";return `<article class="qa${marked}" data-id="${c.id}"><button class="question" type="button"><span class="index">${String(i+1).padStart(2,"0")}</span><span class="qText">${c.q}</span><span class="tags"><span class="tag">${c.level}</span><span class="tag">${c.topic}</span><span class="chev">⌄</span></span></button><div class="answer"><div class="answerCore">${c.a}${c.id==="art-02"?articleTable():""}${c.ex?`<p class="example">例：${c.ex}</p>`:""}</div><div class="grade"><button class="wrong" data-grade="wrong">答错</button><button class="right" data-grade="right">答对</button><a class="source" href="${c.src}" target="_blank" rel="noopener">查看原专题</a></div></div></article>`}).join(""):`<div class="empty">这里暂时没有题目。答错一些题后，错题会自动集中到这里。</div>`;
+  document.querySelectorAll(".question").forEach(b=>b.onclick=()=>b.closest(".qa").classList.toggle("open"));
+  document.querySelectorAll("[data-grade]").forEach(b=>b.onclick=e=>{e.stopPropagation();grade(b.closest(".qa").dataset.id,b.dataset.grade)});
+}
+function grade(id,result){
+  const r=rec(id),intervals=[1,2,4,7,14,30];r.last=day();r.lastGrade=result;
+  if(result==="right"){r.right++;r.streak++;r.due=addDays(intervals[Math.min(r.streak-1,intervals.length-1)])}else{r.wrong++;r.streak=0;r.due=day()}
+  if(!todayIds().includes(id))todayIds().push(id);save();render();
+  requestAnimationFrame(()=>document.querySelector(`[data-id="${id}"]`)?.classList.add("open"));
+}
+function renderTopics(){
+  const topics=["全部",...new Set(GRAMMAR_CARDS.map(c=>c.topic))];
+  $("#topics").innerHTML=topics.map(t=>`<button class="topicBtn${t===topic?" active":""}" data-topic="${t}"><span>${t}</span><b>${t==="全部"?GRAMMAR_CARDS.length:GRAMMAR_CARDS.filter(c=>c.topic===t).length}</b></button>`).join("");
+  document.querySelectorAll("[data-topic]").forEach(b=>b.onclick=()=>{topic=b.dataset.topic;if(mode==="daily"||mode==="wrong"||mode==="random")mode="all";syncModes();renderTopics();render()});
+}
+function syncModes(){document.querySelectorAll("[data-mode]").forEach(b=>b.classList.toggle("active",b.dataset.mode===mode))}
+document.querySelectorAll("[data-mode]").forEach(b=>b.onclick=()=>{mode=b.dataset.mode;topic="全部";if(mode==="random")randomIds=[...GRAMMAR_CARDS].sort(()=>Math.random()-.5).slice(0,20).map(c=>c.id);syncModes();renderTopics();render()});
+$("#search").oninput=()=>{if($("#search").value.trim()){mode="all";topic="全部";syncModes();renderTopics()}render()};
+$("#level").onchange=()=>{if($("#level").value!=="all"){mode="all";topic="全部";syncModes();renderTopics()}render()};
+$("#exportBtn").onclick=()=>{const blob=new Blob([JSON.stringify(state,null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=`grammar-progress-${day()}.json`;a.click();URL.revokeObjectURL(a.href)};
+$("#importFile").onchange=async e=>{try{const next=JSON.parse(await e.target.files[0].text());if(!next.cards||!next.days)throw new Error();state=next;save();render()}catch{alert("这不是有效的语法训练备份文件。")}};
+renderTopics();render();
+</script>
+</body>
+</html>
