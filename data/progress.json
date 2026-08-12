@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-08-12T18:02:15-04:00",
+  "updatedAt": "2026-08-12T19:02:18-04:00",
   "today": {
     "date": "2026-08-12",
-    "focusMinutes": 0
+    "focusMinutes": 1
   },
   "anki": {
     "today": {
-      "reviews": 0,
+      "reviews": 6,
       "new": 0,
-      "minutes": 0,
-      "activityComplete": false,
-      "goalPercent": 0
+      "minutes": 1.3,
+      "activityComplete": true,
+      "goalPercent": 100
     },
     "total": {
       "cards": 25985,
@@ -19,7 +19,7 @@
       "newRemaining": 23136,
       "percent": 10.96
     },
-    "streak": 0,
+    "streak": 61,
     "history": [
       {
         "date": "2025-08-13",
@@ -1848,7 +1848,7 @@
       {
         "date": "2026-06-13",
         "reviews": 195,
-        "new": 273,
+        "new": 274,
         "minutes": 34.9
       },
       {
@@ -2010,7 +2010,7 @@
       {
         "date": "2026-07-10",
         "reviews": 372,
-        "new": 442,
+        "new": 443,
         "minutes": 55.6
       },
       {
@@ -2052,7 +2052,7 @@
       {
         "date": "2026-07-17",
         "reviews": 252,
-        "new": 346,
+        "new": 347,
         "minutes": 24.5
       },
       {
@@ -2124,7 +2124,7 @@
       {
         "date": "2026-07-29",
         "reviews": 427,
-        "new": 291,
+        "new": 292,
         "minutes": 66.2
       },
       {
@@ -2166,13 +2166,13 @@
       {
         "date": "2026-08-05",
         "reviews": 725,
-        "new": 437,
+        "new": 438,
         "minutes": 97.9
       },
       {
         "date": "2026-08-06",
         "reviews": 511,
-        "new": 269,
+        "new": 270,
         "minutes": 69.4
       },
       {
@@ -2207,9 +2207,9 @@
       },
       {
         "date": "2026-08-12",
-        "reviews": 0,
+        "reviews": 6,
         "new": 0,
-        "minutes": 0
+        "minutes": 1.3
       }
     ],
     "decks": [
