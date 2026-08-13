@@ -516,22 +516,28 @@
       }
     },
     "2026-08-13": {
-      "reading": 40.0,
+      "reading": 70.0,
       "grammar": 0,
       "verb": 0,
-      "warnings": [],
+      "warnings": [
+        {
+          "source": "www.bilibili.com",
+          "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+          "capturedAt": "2026-08-13T08:35:18.902Z"
+        }
+      ],
       "sources": {
-        "freetcf-reading": 40.0
+        "freetcf-reading": 70.0
       }
     }
   },
   "lastContext": "reading",
   "lastPing": {
-    "category": "reading",
-    "source": "freetcf-reading",
-    "seconds": 10,
-    "title": "Free TCF Canada Practice & Tests",
-    "url": "https://www.freetcf.com/question?pageType=test&category=listening&paperId=test1&qnumber=7",
-    "capturedAt": "2026-08-13T06:44:03.393Z"
+    "category": "distraction",
+    "source": "www.bilibili.com",
+    "seconds": 0,
+    "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+    "url": "https://www.bilibili.com/",
+    "capturedAt": "2026-08-13T08:35:44.716Z"
   }
 }
