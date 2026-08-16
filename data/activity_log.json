@@ -529,15 +529,24 @@
       "sources": {
         "freetcf-reading": 70.0
       }
+    },
+    "2026-08-16": {
+      "reading": 0,
+      "grammar": 35.0,
+      "verb": 0,
+      "warnings": [],
+      "sources": {
+        "adobe-acrobat": 35.0
+      }
     }
   },
-  "lastContext": "reading",
+  "lastContext": "grammar",
   "lastPing": {
-    "category": "distraction",
-    "source": "www.bilibili.com",
-    "seconds": 0,
-    "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
-    "url": "https://www.bilibili.com/",
-    "capturedAt": "2026-08-13T08:35:44.716Z"
+    "category": "grammar",
+    "source": "adobe-acrobat",
+    "seconds": 5,
+    "title": "TCF 口语part1 到Page 9.pdf - Adobe Acrobat Reader (64-bit)",
+    "idleSeconds": 0.1,
+    "capturedAt": "2026-08-16T19:54:51-0400"
   }
 }
