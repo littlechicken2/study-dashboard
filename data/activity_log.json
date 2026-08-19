@@ -541,11 +541,11 @@
     },
     "2026-08-19": {
       "reading": 0,
-      "grammar": 175.0,
+      "grammar": 185.0,
       "verb": 0,
       "warnings": [],
       "sources": {
-        "adobe-acrobat": 175.0
+        "adobe-acrobat": 185.0
       }
     }
   },
@@ -555,7 +555,7 @@
     "source": "adobe-acrobat",
     "seconds": 5,
     "title": "TCF 口语part1 到Page 9.pdf - Adobe Acrobat Reader (64-bit)",
-    "idleSeconds": 0.0,
-    "capturedAt": "2026-08-19T10:44:57-0400"
+    "idleSeconds": 0.1,
+    "capturedAt": "2026-08-19T11:21:17-0400"
   }
 }
