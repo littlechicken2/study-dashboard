@@ -550,11 +550,11 @@
     },
     "2026-08-20": {
       "reading": 0,
-      "grammar": 460.0,
+      "grammar": 785.0,
       "verb": 0,
       "warnings": [],
       "sources": {
-        "adobe-acrobat": 460.0
+        "adobe-acrobat": 785.0
       }
     }
   },
@@ -563,8 +563,8 @@
     "category": "grammar",
     "source": "adobe-acrobat",
     "seconds": 5,
-    "title": "法语  一  修订本_11989441.pdf - Adobe Acrobat Reader (64-bit)",
-    "idleSeconds": 0.1,
-    "capturedAt": "2026-08-20T05:08:49-0400"
+    "title": "",
+    "idleSeconds": 0,
+    "capturedAt": "2026-08-20T10:29:21-0400"
   }
 }
