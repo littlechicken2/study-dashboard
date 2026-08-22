@@ -565,6 +565,15 @@
       "sources": {
         "adobe-acrobat": 245.0
       }
+    },
+    "2026-08-22": {
+      "reading": 0,
+      "grammar": 55.0,
+      "verb": 0,
+      "warnings": [],
+      "sources": {
+        "adobe-acrobat": 55.0
+      }
     }
   },
   "lastContext": "grammar",
@@ -572,8 +581,8 @@
     "category": "grammar",
     "source": "adobe-acrobat",
     "seconds": 5,
-    "title": "TCF 口语part1 到Page 12.pdf - Adobe Acrobat Reader (64-bit)",
-    "idleSeconds": 0.0,
-    "capturedAt": "2026-08-21T15:08:59-0400"
+    "title": "TCF 口语part1 到Page 9.pdf - Adobe Acrobat Reader (64-bit)",
+    "idleSeconds": 5.7,
+    "capturedAt": "2026-08-22T04:11:55-0400"
   }
 }
