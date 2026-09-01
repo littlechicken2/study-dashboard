@@ -577,11 +577,11 @@
     },
     "2026-08-31": {
       "reading": 0,
-      "grammar": 105.0,
+      "grammar": 490.0,
       "verb": 0,
       "warnings": [],
       "sources": {
-        "adobe-acrobat": 105.0
+        "adobe-acrobat": 490.0
       }
     }
   },
@@ -590,8 +590,8 @@
     "category": "grammar",
     "source": "adobe-acrobat",
     "seconds": 5,
-    "title": "法语基础语法  到否定句冠词P17.pdf - Adobe Acrobat Reader (64-bit)",
-    "idleSeconds": 0,
-    "capturedAt": "2026-08-31T19:54:51-0400"
+    "title": "法语  一  修订本_11989441.pdf - Adobe Acrobat Reader (64-bit)",
+    "idleSeconds": 1.7,
+    "capturedAt": "2026-08-31T20:51:01-0400"
   }
 }
