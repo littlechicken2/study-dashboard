@@ -592,6 +592,15 @@
       "sources": {
         "adobe-acrobat": 5.0
       }
+    },
+    "2026-09-14": {
+      "reading": 0,
+      "grammar": 75.0,
+      "verb": 0,
+      "warnings": [],
+      "sources": {
+        "adobe-acrobat": 75.0
+      }
     }
   },
   "lastContext": "grammar",
@@ -599,8 +608,8 @@
     "category": "grammar",
     "source": "adobe-acrobat",
     "seconds": 5,
-    "title": "Adobe Acrobat",
+    "title": "",
     "idleSeconds": 0.1,
-    "capturedAt": "2026-09-03T21:24:27-0400"
+    "capturedAt": "2026-09-14T21:16:21-0400"
   }
 }
