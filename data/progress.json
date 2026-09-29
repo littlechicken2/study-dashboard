@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T19:09:34-04:00",
+  "updatedAt": "2026-09-28T20:09:37-04:00",
   "today": {
     "date": "2026-09-28",
     "focusMinutes": 2
@@ -7613,9 +7613,9 @@
     "today": {
       "date": "2026-09-28",
       "readingMinutes": 0.0,
-      "grammarMinutes": 2.2,
+      "grammarMinutes": 2.3,
       "verbMinutes": 0.0,
-      "totalMinutes": 2.2,
+      "totalMinutes": 2.3,
       "warnings": []
     },
     "history": [
@@ -10783,9 +10783,9 @@
       {
         "date": "2026-09-28",
         "readingMinutes": 0.0,
-        "grammarMinutes": 2.2,
+        "grammarMinutes": 2.3,
         "verbMinutes": 0.0,
-        "totalMinutes": 2.2,
+        "totalMinutes": 2.3,
         "warnings": []
       }
     ],
