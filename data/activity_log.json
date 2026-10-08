@@ -763,6 +763,15 @@
       "sources": {
         "adobe-acrobat": 970.0
       }
+    },
+    "2026-10-08": {
+      "reading": 0,
+      "grammar": 225.0,
+      "verb": 0,
+      "warnings": [],
+      "sources": {
+        "adobe-acrobat": 225.0
+      }
     }
   },
   "lastContext": "grammar",
@@ -770,8 +779,8 @@
     "category": "grammar",
     "source": "adobe-acrobat",
     "seconds": 5,
-    "title": "Adobe Acrobat Reader (64-bit)",
-    "idleSeconds": 0.2,
-    "capturedAt": "2026-10-07T22:04:21-0400"
+    "title": "",
+    "idleSeconds": 18.3,
+    "capturedAt": "2026-10-08T11:01:46-0400"
   }
 }
