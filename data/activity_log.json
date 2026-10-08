@@ -757,11 +757,11 @@
     },
     "2026-10-07": {
       "reading": 0,
-      "grammar": 965.0,
+      "grammar": 970.0,
       "verb": 0,
       "warnings": [],
       "sources": {
-        "adobe-acrobat": 965.0
+        "adobe-acrobat": 970.0
       }
     }
   },
@@ -770,8 +770,8 @@
     "category": "grammar",
     "source": "adobe-acrobat",
     "seconds": 5,
-    "title": "Modern French Grammar Workbook A Practical Guide, 2nd Edition (Modern Grammars) (Lang, Margaret, Isabelle Perez) (z-libr",
-    "idleSeconds": 0,
-    "capturedAt": "2026-10-07T21:08:56-0400"
+    "title": "Adobe Acrobat Reader (64-bit)",
+    "idleSeconds": 0.2,
+    "capturedAt": "2026-10-07T22:04:21-0400"
   }
 }
