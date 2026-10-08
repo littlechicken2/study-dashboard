@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-10-07T23:02:36-04:00",
+  "updatedAt": "2026-10-08T08:01:40-04:00",
   "today": {
-    "date": "2026-10-07",
-    "focusMinutes": 16
+    "date": "2026-10-08",
+    "focusMinutes": 0
   },
   "anki": {
     "today": {
@@ -21,12 +21,6 @@
     },
     "streak": 0,
     "history": [
-      {
-        "date": "2025-10-08",
-        "reviews": 0,
-        "new": 0,
-        "minutes": 0
-      },
       {
         "date": "2025-10-09",
         "reviews": 0,
@@ -2210,6 +2204,12 @@
         "reviews": 0,
         "new": 0,
         "minutes": 0
+      },
+      {
+        "date": "2026-10-08",
+        "reviews": 0,
+        "new": 0,
+        "minutes": 0
       }
     ],
     "decks": [
@@ -2473,7 +2473,7 @@
         "completed": 87,
         "remaining": 1,
         "percent": 98.86,
-        "daysRemaining": 25,
+        "daysRemaining": 24,
         "deadline": "2026-10-31",
         "recommendedToday": 1,
         "yesterdayDone": 0,
@@ -2482,14 +2482,6 @@
       }
     },
     "history": [
-      {
-        "date": "2025-10-08",
-        "minutes": 0.0,
-        "videoMinutes": 0.0,
-        "pdfMinutes": 0.0,
-        "activityComplete": false,
-        "goalPercent": 0
-      },
       {
         "date": "2025-10-09",
         "minutes": 0.0,
@@ -5401,12 +5393,20 @@
         "pdfMinutes": 0.0,
         "activityComplete": false,
         "goalPercent": 0
+      },
+      {
+        "date": "2026-10-08",
+        "minutes": 0.0,
+        "videoMinutes": 0.0,
+        "pdfMinutes": 0.0,
+        "activityComplete": false,
+        "goalPercent": 0
       }
     ]
   },
   "reading": {
     "today": {
-      "date": "2026-10-07",
+      "date": "2026-10-08",
       "articles": 0,
       "minutes": 0,
       "goalPercent": 0.0,
@@ -5414,12 +5414,6 @@
       "activityComplete": false
     },
     "history": [
-      {
-        "date": "2025-10-08",
-        "articles": 0,
-        "minutes": 0,
-        "goalPercent": 0.0
-      },
       {
         "date": "2025-10-09",
         "articles": 0,
@@ -7602,6 +7596,12 @@
         "date": "2026-10-07",
         "articles": 0,
         "minutes": 0,
+        "goalPercent": 0.0
+      },
+      {
+        "date": "2026-10-08",
+        "articles": 0,
+        "minutes": 0,
         "goalPercent": 0.0,
         "target": 3,
         "activityComplete": false
@@ -7611,22 +7611,14 @@
   },
   "activity": {
     "today": {
-      "date": "2026-10-07",
+      "date": "2026-10-08",
       "readingMinutes": 0.0,
-      "grammarMinutes": 16.2,
+      "grammarMinutes": 0.0,
       "verbMinutes": 0.0,
-      "totalMinutes": 16.2,
+      "totalMinutes": 0.0,
       "warnings": []
     },
     "history": [
-      {
-        "date": "2025-10-08",
-        "readingMinutes": 0.0,
-        "grammarMinutes": 0.0,
-        "verbMinutes": 0.0,
-        "totalMinutes": 0.0,
-        "warnings": []
-      },
       {
         "date": "2025-10-09",
         "readingMinutes": 0.0,
@@ -10786,6 +10778,14 @@
         "grammarMinutes": 16.2,
         "verbMinutes": 0.0,
         "totalMinutes": 16.2,
+        "warnings": []
+      },
+      {
+        "date": "2026-10-08",
+        "readingMinutes": 0.0,
+        "grammarMinutes": 0.0,
+        "verbMinutes": 0.0,
+        "totalMinutes": 0.0,
         "warnings": []
       }
     ],
